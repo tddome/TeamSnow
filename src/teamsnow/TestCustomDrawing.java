@@ -8,14 +8,8 @@ package teamsnow;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import javax.swing.JPanel;
-import javax.swing.BorderFactory;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Graphics;
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
-
 
 /**
  *
