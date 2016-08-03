@@ -7,12 +7,13 @@ package teamsnow;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import javax.swing.JFrame;
 
 /**
  *
  * @author Troy
  */
-//hi
+
 public class TestJFrame extends javax.swing.JFrame {
 
     /**
@@ -41,14 +42,12 @@ public class TestJFrame extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel1.setText("CS 245 Project: Summer 2016");
 
-        jButton1.setText("Test Method");
+        jButton1.setText("Load Custom Window");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-
-        jLabel3.setText("uhh");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -70,7 +69,7 @@ public class TestJFrame extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(101, Short.MAX_VALUE)
+                .addContainerGap(117, Short.MAX_VALUE)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jButton1)
@@ -83,22 +82,10 @@ public class TestJFrame extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-//test
+
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        jLabel3.setText(testJPanelMessage());
     }//GEN-LAST:event_jButton1ActionPerformed
-
-    private static String testJPanelMessage() {
-        String s = "";
-        s += "Hello world!";
-        Date date = new Date();
-        s += "\nThe current time is: "+date.getTime()+"\n";
-        SimpleDateFormat f = new SimpleDateFormat("MM-dd-yyyy', and currently it is 'HH:mm:ss z");
-        String suh = f.format(date);
-        s += "\nSorry, the date is: "+suh+"";
-        return s;
-    }
     
     /**
      * @param args the command line arguments
