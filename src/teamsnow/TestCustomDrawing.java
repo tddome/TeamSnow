@@ -23,6 +23,9 @@ public class TestCustomDrawing {
         SwingUtilities.invokeLater(new Runnable() {
            public void run() {
                createGUI();
+               AL a = new AL("Test window");
+               a.setSize(350,100);
+               a.setVisible(true);
            } 
         });
     }
