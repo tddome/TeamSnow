@@ -50,6 +50,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       jLabel4 = new javax.swing.JLabel();
       jLabel5 = new javax.swing.JLabel();
       PlayMenu = new javax.swing.JPanel();
+      backButton2 = new javax.swing.JButton();
 
       setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
       setAutoRequestFocus(false);
@@ -259,15 +260,28 @@ public class QuarterProject245 extends javax.swing.JFrame {
 
       mainPanel.add(HighScoresMenu, "highscoresCard");
 
+      backButton2.setText("Back");
+      backButton2.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            backButton2ActionPerformed(evt);
+         }
+      });
+
       javax.swing.GroupLayout PlayMenuLayout = new javax.swing.GroupLayout(PlayMenu);
       PlayMenu.setLayout(PlayMenuLayout);
       PlayMenuLayout.setHorizontalGroup(
          PlayMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-         .addGap(0, 600, Short.MAX_VALUE)
+         .addGroup(PlayMenuLayout.createSequentialGroup()
+            .addContainerGap()
+            .addComponent(backButton2)
+            .addContainerGap(535, Short.MAX_VALUE))
       );
       PlayMenuLayout.setVerticalGroup(
          PlayMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-         .addGap(0, 409, Short.MAX_VALUE)
+         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PlayMenuLayout.createSequentialGroup()
+            .addContainerGap(371, Short.MAX_VALUE)
+            .addComponent(backButton2)
+            .addContainerGap())
       );
 
       mainPanel.add(PlayMenu, "playCard");
@@ -326,6 +340,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       CardLayout card = (CardLayout)mainPanel.getLayout();
       card.show(mainPanel, "mainmenuCard");
    }//GEN-LAST:event_backButton1ActionPerformed
+
+   private void backButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButton2ActionPerformed
+      // TODO add your handling code here:
+      CardLayout card = (CardLayout)mainPanel.getLayout();
+      card.show(mainPanel, "mainmenuCard");
+   }//GEN-LAST:event_backButton2ActionPerformed
     
     /**
      * @param args the command line arguments
@@ -379,6 +399,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
    private javax.swing.JLabel TeamName;
    private javax.swing.JButton backButton0;
    private javax.swing.JButton backButton1;
+   private javax.swing.JButton backButton2;
    private javax.swing.JButton debugButton;
    private javax.swing.JLabel jLabel1;
    private javax.swing.JLabel jLabel2;
