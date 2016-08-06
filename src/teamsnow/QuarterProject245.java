@@ -5,6 +5,8 @@
  */
 package teamsnow;
 
+import java.awt.CardLayout;
+
 /**
  *
  * @author Troy
@@ -28,21 +30,23 @@ public class QuarterProject245 extends javax.swing.JFrame {
    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
    private void initComponents() {
 
+      mainPanel = new javax.swing.JPanel();
       SplashPage = new javax.swing.JPanel();
       ProjectTitle = new javax.swing.JLabel();
       TeamName = new javax.swing.JLabel();
+      debugButton = new javax.swing.JButton();
       MainMenu = new javax.swing.JPanel();
       PlayButton = new javax.swing.JButton();
       HighScoresButton = new javax.swing.JButton();
       CreditsButton = new javax.swing.JButton();
       TeamLogo = new javax.swing.JLabel();
       CreditsMenu = new javax.swing.JPanel();
-      jButton1 = new javax.swing.JButton();
+      backButton0 = new javax.swing.JButton();
       jLabel1 = new javax.swing.JLabel();
       jLabel2 = new javax.swing.JLabel();
       jLabel3 = new javax.swing.JLabel();
       HighScoresMenu = new javax.swing.JPanel();
-      jButton2 = new javax.swing.JButton();
+      backButton1 = new javax.swing.JButton();
       jLabel4 = new javax.swing.JLabel();
       jLabel5 = new javax.swing.JLabel();
       PlayMenu = new javax.swing.JPanel();
@@ -50,14 +54,21 @@ public class QuarterProject245 extends javax.swing.JFrame {
       setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
       setAutoRequestFocus(false);
       setBackground(new java.awt.Color(255, 255, 255));
-      setPreferredSize(new java.awt.Dimension(600, 400));
-      getContentPane().setLayout(new java.awt.CardLayout());
+
+      mainPanel.setLayout(new java.awt.CardLayout());
 
       ProjectTitle.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
       ProjectTitle.setText("   CS 245 Project: Summer 2016");
 
       TeamName.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
       TeamName.setText("By: Team Snow");
+
+      debugButton.setText("Main Menu (debug)");
+      debugButton.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            debugButtonActionPerformed(evt);
+         }
+      });
 
       javax.swing.GroupLayout SplashPageLayout = new javax.swing.GroupLayout(SplashPage);
       SplashPage.setLayout(SplashPageLayout);
@@ -71,6 +82,10 @@ public class QuarterProject245 extends javax.swing.JFrame {
             .addGap(229, 229, 229)
             .addComponent(TeamName, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGap(232, 232, 232))
+         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SplashPageLayout.createSequentialGroup()
+            .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(debugButton)
+            .addGap(58, 58, 58))
       );
       SplashPageLayout.setVerticalGroup(
          SplashPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -79,10 +94,14 @@ public class QuarterProject245 extends javax.swing.JFrame {
             .addComponent(ProjectTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 157, Short.MAX_VALUE)
             .addGap(78, 78, 78)
             .addComponent(TeamName, javax.swing.GroupLayout.DEFAULT_SIZE, 58, Short.MAX_VALUE)
-            .addGap(110, 110, 110))
+            .addGap(40, 40, 40)
+            .addComponent(debugButton)
+            .addGap(38, 38, 38))
       );
 
-      getContentPane().add(SplashPage, "card0");
+      mainPanel.add(SplashPage, "splashCard");
+      CardLayout card = (CardLayout)mainPanel.getLayout();
+      card.show(mainPanel, "mainmenuCard");
 
       PlayButton.setFont(new java.awt.Font("Dialog", 1, 16)); // NOI18N
       PlayButton.setText("Play");
@@ -146,9 +165,14 @@ public class QuarterProject245 extends javax.swing.JFrame {
             .addContainerGap())
       );
 
-      getContentPane().add(MainMenu, "card1");
+      mainPanel.add(MainMenu, "mainmenuCard");
 
-      jButton1.setText("Back");
+      backButton0.setText("Back");
+      backButton0.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            backButton0ActionPerformed(evt);
+         }
+      });
 
       jLabel1.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
       jLabel1.setText("CREDITS");
@@ -164,34 +188,40 @@ public class QuarterProject245 extends javax.swing.JFrame {
       CreditsMenuLayout.setHorizontalGroup(
          CreditsMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
          .addGroup(CreditsMenuLayout.createSequentialGroup()
-            .addContainerGap()
-            .addComponent(jButton1)
-            .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CreditsMenuLayout.createSequentialGroup()
-            .addGap(0, 236, Short.MAX_VALUE)
-            .addGroup(CreditsMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-               .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-               .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-               .addComponent(jLabel1))
-            .addGap(206, 206, 206))
+            .addGroup(CreditsMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+               .addGroup(CreditsMenuLayout.createSequentialGroup()
+                  .addContainerGap()
+                  .addComponent(backButton0))
+               .addGroup(CreditsMenuLayout.createSequentialGroup()
+                  .addGap(213, 213, 213)
+                  .addGroup(CreditsMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                     .addComponent(jLabel1)
+                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))))
+            .addContainerGap(229, Short.MAX_VALUE))
       );
       CreditsMenuLayout.setVerticalGroup(
          CreditsMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
          .addGroup(CreditsMenuLayout.createSequentialGroup()
-            .addGap(84, 84, 84)
+            .addGap(92, 92, 92)
             .addComponent(jLabel1)
-            .addGap(42, 42, 42)
+            .addGap(28, 28, 28)
             .addComponent(jLabel2)
-            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
             .addComponent(jLabel3)
             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 154, Short.MAX_VALUE)
-            .addComponent(jButton1)
+            .addComponent(backButton0)
             .addContainerGap())
       );
 
-      getContentPane().add(CreditsMenu, "card2");
+      mainPanel.add(CreditsMenu, "creditsCard");
 
-      jButton2.setText("Back");
+      backButton1.setText("Back");
+      backButton1.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            backButton1ActionPerformed(evt);
+         }
+      });
 
       jLabel4.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
       jLabel4.setText("HIGH SCORES");
@@ -206,13 +236,13 @@ public class QuarterProject245 extends javax.swing.JFrame {
          .addGroup(HighScoresMenuLayout.createSequentialGroup()
             .addGroup(HighScoresMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                .addGroup(HighScoresMenuLayout.createSequentialGroup()
-                  .addContainerGap()
-                  .addComponent(jButton2))
-               .addGroup(HighScoresMenuLayout.createSequentialGroup()
                   .addGap(171, 171, 171)
                   .addGroup(HighScoresMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                      .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE)
-                     .addComponent(jLabel4))))
+                     .addComponent(jLabel4)))
+               .addGroup(HighScoresMenuLayout.createSequentialGroup()
+                  .addContainerGap()
+                  .addComponent(backButton1)))
             .addContainerGap(178, Short.MAX_VALUE))
       );
       HighScoresMenuLayout.setVerticalGroup(
@@ -223,11 +253,11 @@ public class QuarterProject245 extends javax.swing.JFrame {
             .addGap(34, 34, 34)
             .addComponent(jLabel5)
             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 183, Short.MAX_VALUE)
-            .addComponent(jButton2)
+            .addComponent(backButton1)
             .addContainerGap())
       );
 
-      getContentPane().add(HighScoresMenu, "card3");
+      mainPanel.add(HighScoresMenu, "highscoresCard");
 
       javax.swing.GroupLayout PlayMenuLayout = new javax.swing.GroupLayout(PlayMenu);
       PlayMenu.setLayout(PlayMenuLayout);
@@ -240,7 +270,18 @@ public class QuarterProject245 extends javax.swing.JFrame {
          .addGap(0, 409, Short.MAX_VALUE)
       );
 
-      getContentPane().add(PlayMenu, "card4");
+      mainPanel.add(PlayMenu, "playCard");
+
+      javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+      getContentPane().setLayout(layout);
+      layout.setHorizontalGroup(
+         layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+         .addComponent(mainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+      );
+      layout.setVerticalGroup(
+         layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+         .addComponent(mainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+      );
 
       pack();
       setLocationRelativeTo(null);
@@ -249,21 +290,42 @@ public class QuarterProject245 extends javax.swing.JFrame {
    private void PlayButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PlayButtonActionPerformed
       // TODO add your handling code here:
       //Play
-      
+      CardLayout card = (CardLayout)mainPanel.getLayout();
+      card.show(mainPanel, "playCard");
    }//GEN-LAST:event_PlayButtonActionPerformed
 
    private void HighScoresButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HighScoresButtonActionPerformed
       // TODO add your handling code here:
       //High scores
-      
+      CardLayout card = (CardLayout)mainPanel.getLayout();
+      card.show(mainPanel, "highscoresCard");
    }//GEN-LAST:event_HighScoresButtonActionPerformed
 
    private void CreditsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CreditsButtonActionPerformed
       // TODO add your handling code here:
       // Credits
       // Displays panel over main menu
-      
+      CardLayout card = (CardLayout)mainPanel.getLayout();
+      card.show(mainPanel, "creditsCard");
    }//GEN-LAST:event_CreditsButtonActionPerformed
+
+   private void debugButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_debugButtonActionPerformed
+      // TODO add your handling code here:
+      CardLayout card = (CardLayout)mainPanel.getLayout();
+      card.show(mainPanel, "mainmenuCard");
+   }//GEN-LAST:event_debugButtonActionPerformed
+
+   private void backButton0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButton0ActionPerformed
+      // TODO add your handling code here:
+      CardLayout card = (CardLayout)mainPanel.getLayout();
+      card.show(mainPanel, "mainmenuCard");
+   }//GEN-LAST:event_backButton0ActionPerformed
+
+   private void backButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButton1ActionPerformed
+      // TODO add your handling code here:
+      CardLayout card = (CardLayout)mainPanel.getLayout();
+      card.show(mainPanel, "mainmenuCard");
+   }//GEN-LAST:event_backButton1ActionPerformed
     
     /**
      * @param args the command line arguments
@@ -315,12 +377,14 @@ public class QuarterProject245 extends javax.swing.JFrame {
    private javax.swing.JPanel SplashPage;
    private javax.swing.JLabel TeamLogo;
    private javax.swing.JLabel TeamName;
-   private javax.swing.JButton jButton1;
-   private javax.swing.JButton jButton2;
+   private javax.swing.JButton backButton0;
+   private javax.swing.JButton backButton1;
+   private javax.swing.JButton debugButton;
    private javax.swing.JLabel jLabel1;
    private javax.swing.JLabel jLabel2;
    private javax.swing.JLabel jLabel3;
    private javax.swing.JLabel jLabel4;
    private javax.swing.JLabel jLabel5;
+   private javax.swing.JPanel mainPanel;
    // End of variables declaration//GEN-END:variables
 }
