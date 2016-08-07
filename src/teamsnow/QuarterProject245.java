@@ -75,19 +75,19 @@ public class QuarterProject245 extends javax.swing.JFrame {
         kButton = new javax.swing.JButton();
         LButton = new javax.swing.JButton();
         mButton = new javax.swing.JButton();
-        jButton17 = new javax.swing.JButton();
-        jButton18 = new javax.swing.JButton();
-        jButton19 = new javax.swing.JButton();
-        jButton20 = new javax.swing.JButton();
-        jButton21 = new javax.swing.JButton();
-        jButton22 = new javax.swing.JButton();
-        jButton23 = new javax.swing.JButton();
-        jButton24 = new javax.swing.JButton();
-        jButton25 = new javax.swing.JButton();
-        jButton26 = new javax.swing.JButton();
-        jButton27 = new javax.swing.JButton();
-        jButton28 = new javax.swing.JButton();
-        jButton29 = new javax.swing.JButton();
+        sButton = new javax.swing.JButton();
+        tButton = new javax.swing.JButton();
+        uButton = new javax.swing.JButton();
+        vButton = new javax.swing.JButton();
+        oButton = new javax.swing.JButton();
+        wButton = new javax.swing.JButton();
+        pButton = new javax.swing.JButton();
+        xButton = new javax.swing.JButton();
+        yButton = new javax.swing.JButton();
+        zButton = new javax.swing.JButton();
+        qButton = new javax.swing.JButton();
+        nButton = new javax.swing.JButton();
+        rButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setAutoRequestFocus(false);
@@ -360,31 +360,36 @@ public class QuarterProject245 extends javax.swing.JFrame {
 
         mButton.setText("M");
 
-        jButton17.setText("A");
+        sButton.setText("S");
 
-        jButton18.setText("A");
+        tButton.setText("T");
+        tButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tButtonActionPerformed(evt);
+            }
+        });
 
-        jButton19.setText("A");
+        uButton.setText("U");
 
-        jButton20.setText("A");
+        vButton.setText("V");
 
-        jButton21.setText("A");
+        oButton.setText("O");
 
-        jButton22.setText("A");
+        wButton.setText("W");
 
-        jButton23.setText("A");
+        pButton.setText("P");
 
-        jButton24.setText("A");
+        xButton.setText("X");
 
-        jButton25.setText("A");
+        yButton.setText("Y");
 
-        jButton26.setText("A");
+        zButton.setText("Z");
 
-        jButton27.setText("A");
+        qButton.setText("Q");
 
-        jButton28.setText("A");
+        nButton.setText("N");
 
-        jButton29.setText("A");
+        rButton.setText("R");
 
         javax.swing.GroupLayout PlayMenuLayout = new javax.swing.GroupLayout(PlayMenu);
         PlayMenu.setLayout(PlayMenuLayout);
@@ -411,31 +416,31 @@ public class QuarterProject245 extends javax.swing.JFrame {
                                 .addGroup(PlayMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(PlayMenuLayout.createSequentialGroup()
                                         .addGap(6, 6, 6)
-                                        .addComponent(jButton28, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(nButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton21, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(oButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton23, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(pButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton27, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(qButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton29, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(rButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(sButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(tButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(uButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton20, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(vButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton22, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(wButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton24, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(xButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(yButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jButton26, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(zButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(PlayMenuLayout.createSequentialGroup()
                                         .addComponent(aButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -493,19 +498,19 @@ public class QuarterProject245 extends javax.swing.JFrame {
                         .addComponent(jButton1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGroup(PlayMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton28)
-                    .addComponent(jButton21)
-                    .addComponent(jButton23)
-                    .addComponent(jButton27)
-                    .addComponent(jButton29)
-                    .addComponent(jButton17)
-                    .addComponent(jButton18)
-                    .addComponent(jButton19)
-                    .addComponent(jButton20)
-                    .addComponent(jButton22)
-                    .addComponent(jButton24)
-                    .addComponent(jButton25)
-                    .addComponent(jButton26))
+                    .addComponent(nButton)
+                    .addComponent(oButton)
+                    .addComponent(pButton)
+                    .addComponent(qButton)
+                    .addComponent(rButton)
+                    .addComponent(sButton)
+                    .addComponent(tButton)
+                    .addComponent(uButton)
+                    .addComponent(vButton)
+                    .addComponent(wButton)
+                    .addComponent(xButton)
+                    .addComponent(yButton)
+                    .addComponent(zButton))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(backButton2)
                 .addContainerGap())
@@ -577,6 +582,10 @@ public class QuarterProject245 extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
       
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void tButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tButtonActionPerformed
    
     /**
      * @param args the command line arguments
@@ -645,19 +654,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
     private javax.swing.JButton iButton;
     private javax.swing.JButton jButton;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton20;
-    private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton22;
-    private javax.swing.JButton jButton23;
-    private javax.swing.JButton jButton24;
-    private javax.swing.JButton jButton25;
-    private javax.swing.JButton jButton26;
-    private javax.swing.JButton jButton27;
-    private javax.swing.JButton jButton28;
-    private javax.swing.JButton jButton29;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -671,5 +667,18 @@ public class QuarterProject245 extends javax.swing.JFrame {
     private javax.swing.JButton kButton;
     private javax.swing.JButton mButton;
     private javax.swing.JPanel mainPanel;
+    private javax.swing.JButton nButton;
+    private javax.swing.JButton oButton;
+    private javax.swing.JButton pButton;
+    private javax.swing.JButton qButton;
+    private javax.swing.JButton rButton;
+    private javax.swing.JButton sButton;
+    private javax.swing.JButton tButton;
+    private javax.swing.JButton uButton;
+    private javax.swing.JButton vButton;
+    private javax.swing.JButton wButton;
+    private javax.swing.JButton xButton;
+    private javax.swing.JButton yButton;
+    private javax.swing.JButton zButton;
     // End of variables declaration//GEN-END:variables
 }
