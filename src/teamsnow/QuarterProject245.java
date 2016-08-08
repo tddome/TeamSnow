@@ -338,54 +338,179 @@ public class QuarterProject245 extends javax.swing.JFrame {
         });
 
         bButton.setText("B");
+        bButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bButtonActionPerformed(evt);
+            }
+        });
 
         cButton.setText("C");
+        cButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cButtonActionPerformed(evt);
+            }
+        });
 
         dButton.setText("D");
+        dButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dButtonActionPerformed(evt);
+            }
+        });
 
         eButton.setText("E");
+        eButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                eButtonActionPerformed(evt);
+            }
+        });
 
         fButton.setText("F");
+        fButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fButtonActionPerformed(evt);
+            }
+        });
 
         gButton.setText("G");
+        gButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gButtonActionPerformed(evt);
+            }
+        });
 
         hButton.setText("H");
+        hButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hButtonActionPerformed(evt);
+            }
+        });
 
         iButton.setText("I");
+        iButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                iButtonActionPerformed(evt);
+            }
+        });
 
         jButton.setText("J");
+        jButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonActionPerformed(evt);
+            }
+        });
 
         kButton.setText("K");
+        kButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kButtonActionPerformed(evt);
+            }
+        });
 
         LButton.setText("L");
+        LButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LButtonActionPerformed(evt);
+            }
+        });
 
         mButton.setText("M");
+        mButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mButtonActionPerformed(evt);
+            }
+        });
 
         sButton.setText("S");
+        sButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sButtonActionPerformed(evt);
+            }
+        });
 
         tButton.setText("T");
+        tButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tButtonActionPerformed(evt);
+            }
+        });
 
         uButton.setText("U");
+        uButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                uButtonActionPerformed(evt);
+            }
+        });
 
         vButton.setText("V");
+        vButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                vButtonActionPerformed(evt);
+            }
+        });
 
         oButton.setText("O");
+        oButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                oButtonActionPerformed(evt);
+            }
+        });
 
         wButton.setText("W");
+        wButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                wButtonActionPerformed(evt);
+            }
+        });
 
         pButton.setText("P");
+        pButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pButtonActionPerformed(evt);
+            }
+        });
 
         xButton.setText("X");
+        xButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                xButtonActionPerformed(evt);
+            }
+        });
 
         yButton.setText("Y");
+        yButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                yButtonActionPerformed(evt);
+            }
+        });
 
         zButton.setText("Z");
+        zButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                zButtonActionPerformed(evt);
+            }
+        });
 
         qButton.setText("Q");
+        qButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                qButtonActionPerformed(evt);
+            }
+        });
 
         nButton.setText("N");
+        nButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nButtonActionPerformed(evt);
+            }
+        });
 
         rButton.setText("R");
+        rButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rButtonActionPerformed(evt);
+            }
+        });
 
         jLabel11.setText("Date goes here");
 
@@ -617,6 +742,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
 
     private void bTMButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bTMButtonActionPerformed
         // TODO add your handling code here:
+        resetButtons();
          CardLayout card = (CardLayout)mainPanel.getLayout();
       card.show(mainPanel, "mainmenuCard");
     }//GEN-LAST:event_bTMButtonActionPerformed
@@ -626,7 +752,188 @@ public class QuarterProject245 extends javax.swing.JFrame {
        aButton.setActionCommand("enable");
        aButton.setEnabled(false);
     }//GEN-LAST:event_aButtonActionPerformed
-   
+
+    private void bButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bButtonActionPerformed
+       bButton.setMnemonic(KeyEvent.VK_B);
+       bButton.setActionCommand("enable");
+       bButton.setEnabled(false);
+    }//GEN-LAST:event_bButtonActionPerformed
+
+    private void cButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButtonActionPerformed
+       cButton.setMnemonic(KeyEvent.VK_C);
+       cButton.setActionCommand("enable");
+       cButton.setEnabled(false);
+    }//GEN-LAST:event_cButtonActionPerformed
+
+    private void dButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dButtonActionPerformed
+        dButton.setMnemonic(KeyEvent.VK_D);
+       dButton.setActionCommand("enable");
+       dButton.setEnabled(false);
+    }//GEN-LAST:event_dButtonActionPerformed
+
+    private void eButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eButtonActionPerformed
+        eButton.setMnemonic(KeyEvent.VK_E);
+       eButton.setActionCommand("enable");
+       eButton.setEnabled(false);
+    }//GEN-LAST:event_eButtonActionPerformed
+
+    private void fButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fButtonActionPerformed
+       fButton.setMnemonic(KeyEvent.VK_F);
+       fButton.setActionCommand("enable");
+       fButton.setEnabled(false);
+    }//GEN-LAST:event_fButtonActionPerformed
+
+    private void gButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gButtonActionPerformed
+        gButton.setMnemonic(KeyEvent.VK_G);
+       gButton.setActionCommand("enable");
+       gButton.setEnabled(false);
+    }//GEN-LAST:event_gButtonActionPerformed
+
+    private void hButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hButtonActionPerformed
+       hButton.setMnemonic(KeyEvent.VK_H);
+       hButton.setActionCommand("enable");
+       hButton.setEnabled(false);
+    }//GEN-LAST:event_hButtonActionPerformed
+
+    private void iButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_iButtonActionPerformed
+       iButton.setMnemonic(KeyEvent.VK_I);
+       iButton.setActionCommand("enable");
+       iButton.setEnabled(false);
+    }//GEN-LAST:event_iButtonActionPerformed
+
+    private void jButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonActionPerformed
+       jButton.setMnemonic(KeyEvent.VK_J);
+       jButton.setActionCommand("enable");
+       jButton.setEnabled(false);
+    }//GEN-LAST:event_jButtonActionPerformed
+
+    private void kButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kButtonActionPerformed
+        kButton.setMnemonic(KeyEvent.VK_K);
+       kButton.setActionCommand("enable");
+       kButton.setEnabled(false);
+    }//GEN-LAST:event_kButtonActionPerformed
+
+    private void LButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LButtonActionPerformed
+       LButton.setMnemonic(KeyEvent.VK_L);
+       LButton.setActionCommand("enable");
+       LButton.setEnabled(false);
+    }//GEN-LAST:event_LButtonActionPerformed
+
+    private void mButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mButtonActionPerformed
+       mButton.setMnemonic(KeyEvent.VK_M);
+       mButton.setActionCommand("enable");
+       mButton.setEnabled(false);
+    }//GEN-LAST:event_mButtonActionPerformed
+
+    private void nButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nButtonActionPerformed
+       nButton.setMnemonic(KeyEvent.VK_N);
+       nButton.setActionCommand("enable");
+       nButton.setEnabled(false);
+    }//GEN-LAST:event_nButtonActionPerformed
+
+    private void oButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_oButtonActionPerformed
+        oButton.setMnemonic(KeyEvent.VK_O);
+        oButton.setActionCommand("enable");
+        oButton.setEnabled(false);
+    }//GEN-LAST:event_oButtonActionPerformed
+
+    private void pButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pButtonActionPerformed
+       pButton.setMnemonic(KeyEvent.VK_P);
+       pButton.setActionCommand("enable");
+       pButton.setEnabled(false);
+    }//GEN-LAST:event_pButtonActionPerformed
+
+    private void qButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_qButtonActionPerformed
+       qButton.setMnemonic(KeyEvent.VK_Q);
+       qButton.setActionCommand("enable");
+       qButton.setEnabled(false);
+    }//GEN-LAST:event_qButtonActionPerformed
+
+    private void rButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rButtonActionPerformed
+        rButton.setMnemonic(KeyEvent.VK_R);
+       rButton.setActionCommand("enable");
+       rButton.setEnabled(false);
+    }//GEN-LAST:event_rButtonActionPerformed
+
+    private void sButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sButtonActionPerformed
+     sButton.setMnemonic(KeyEvent.VK_S);
+       sButton.setActionCommand("enable");
+       sButton.setEnabled(false);
+    }//GEN-LAST:event_sButtonActionPerformed
+
+    private void tButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tButtonActionPerformed
+      tButton.setMnemonic(KeyEvent.VK_T);
+      tButton.setActionCommand("enable");
+      tButton.setEnabled(false);
+    }//GEN-LAST:event_tButtonActionPerformed
+
+    private void uButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_uButtonActionPerformed
+        uButton.setMnemonic(KeyEvent.VK_U);
+       uButton.setActionCommand("enable");
+       uButton.setEnabled(false);
+    }//GEN-LAST:event_uButtonActionPerformed
+
+    private void vButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vButtonActionPerformed
+     vButton.setMnemonic(KeyEvent.VK_V);
+       vButton.setActionCommand("enable");
+       vButton.setEnabled(false);
+    }//GEN-LAST:event_vButtonActionPerformed
+
+    private void wButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wButtonActionPerformed
+        wButton.setMnemonic(KeyEvent.VK_W);
+       wButton.setActionCommand("enable");
+       wButton.setEnabled(false);
+    }//GEN-LAST:event_wButtonActionPerformed
+
+    private void xButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_xButtonActionPerformed
+        xButton.setMnemonic(KeyEvent.VK_X);
+       xButton.setActionCommand("enable");
+       xButton.setEnabled(false);
+    }//GEN-LAST:event_xButtonActionPerformed
+
+    private void yButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yButtonActionPerformed
+      yButton.setMnemonic(KeyEvent.VK_Y);
+      yButton.setActionCommand("enable");
+      yButton.setEnabled(false);
+    }//GEN-LAST:event_yButtonActionPerformed
+
+    private void zButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_zButtonActionPerformed
+       zButton.setMnemonic(KeyEvent.VK_Z);
+       zButton.setActionCommand("enable");
+       zButton.setEnabled(false);
+    }//GEN-LAST:event_zButtonActionPerformed
+   public void resetButtons()
+   {
+       aButton.setEnabled(true);
+       bButton.setEnabled(true);
+       cButton.setEnabled(true); 
+       dButton.setEnabled(true); 
+       eButton.setEnabled(true); 
+       fButton.setEnabled(true); 
+       gButton.setEnabled(true); 
+       hButton.setEnabled(true); 
+       iButton.setEnabled(true); 
+       jButton.setEnabled(true);
+       kButton.setEnabled(true);
+       LButton.setEnabled(true);
+       mButton.setEnabled(true);
+       nButton.setEnabled(true);
+       oButton.setEnabled(true);
+       pButton.setEnabled(true);
+       qButton.setEnabled(true);
+       rButton.setEnabled(true);
+       sButton.setEnabled(true);
+       tButton.setEnabled(true);
+       uButton.setEnabled(true);
+       vButton.setEnabled(true);
+       wButton.setEnabled(true);
+       xButton.setEnabled(true);
+       yButton.setEnabled(true);
+       zButton.setEnabled(true);
+             
+      
+   }
+    
     /**
      * @param args the command line arguments
      */
