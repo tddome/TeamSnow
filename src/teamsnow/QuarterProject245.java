@@ -40,7 +40,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
         SplashPage = new javax.swing.JPanel();
         ProjectTitle = new javax.swing.JLabel();
         TeamName = new javax.swing.JLabel();
-        debugButton = new javax.swing.JButton();
         MainMenu = new javax.swing.JPanel();
         PlayButton = new javax.swing.JButton();
         HighScoresButton = new javax.swing.JButton();
@@ -99,18 +98,23 @@ public class QuarterProject245 extends javax.swing.JFrame {
 
         mainPanel.setLayout(new java.awt.CardLayout());
 
+        ActionListener listen = new ActionListener() {
+            public void actionPerformed(ActionEvent ev) {
+                //Put card layout here
+                CardLayout card = (CardLayout)mainPanel.getLayout();
+                card.show(mainPanel, "mainmenuCard");
+            }
+        };
+
+        Timer t = new Timer(3000, listen);
+        t.setRepeats(false);
+        t.start();
+
         ProjectTitle.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         ProjectTitle.setText("   CS 245 Project: Summer 2016");
 
         TeamName.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         TeamName.setText("By: Team Snow");
-
-        debugButton.setText("Main Menu (debug)");
-        debugButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                debugButtonActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout SplashPageLayout = new javax.swing.GroupLayout(SplashPage);
         SplashPage.setLayout(SplashPageLayout);
@@ -122,23 +126,17 @@ public class QuarterProject245 extends javax.swing.JFrame {
                 .addContainerGap())
             .addGroup(SplashPageLayout.createSequentialGroup()
                 .addGap(229, 229, 229)
-                .addComponent(TeamName, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(TeamName, javax.swing.GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE)
                 .addGap(232, 232, 232))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, SplashPageLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(debugButton)
-                .addGap(58, 58, 58))
         );
         SplashPageLayout.setVerticalGroup(
             SplashPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SplashPageLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(ProjectTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 157, Short.MAX_VALUE)
+                .addComponent(ProjectTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 161, Short.MAX_VALUE)
                 .addGap(79, 79, 79)
-                .addComponent(TeamName, javax.swing.GroupLayout.DEFAULT_SIZE, 59, Short.MAX_VALUE)
-                .addGap(40, 40, 40)
-                .addComponent(debugButton)
-                .addGap(38, 38, 38))
+                .addComponent(TeamName, javax.swing.GroupLayout.DEFAULT_SIZE, 64, Short.MAX_VALUE)
+                .addGap(110, 110, 110))
         );
 
         mainPanel.add(SplashPage, "splashCard");
@@ -716,12 +714,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
       card.show(mainPanel, "creditsCard");
    }//GEN-LAST:event_CreditsButtonActionPerformed
 
-   private void debugButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_debugButtonActionPerformed
-      // TODO add your handling code here:
-      CardLayout card = (CardLayout)mainPanel.getLayout();
-      card.show(mainPanel, "mainmenuCard");
-   }//GEN-LAST:event_debugButtonActionPerformed
-
    private void backButton0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButton0ActionPerformed
       // TODO add your handling code here:
       CardLayout card = (CardLayout)mainPanel.getLayout();
@@ -994,7 +986,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
     private javax.swing.JButton backButton1;
     private javax.swing.JButton cButton;
     private javax.swing.JButton dButton;
-    private javax.swing.JButton debugButton;
     private javax.swing.JButton eButton;
     private javax.swing.JButton fButton;
     private javax.swing.JButton gButton;

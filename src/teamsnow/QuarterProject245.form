@@ -45,6 +45,7 @@
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="//CardLayout card = (CardLayout)mainPanel.getLayout();&#xa;//card.show(mainPanel, &quot;mainmenuCard&quot;);"/>
             <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JPanel()"/>
+            <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="ActionListener listen = new ActionListener() {&#xd;&#xa;    public void actionPerformed(ActionEvent ev) {&#xd;&#xa;        //Put card layout here&#xd;&#xa;        CardLayout card = (CardLayout)mainPanel.getLayout();&#xd;&#xa;        card.show(mainPanel, &quot;mainmenuCard&quot;);&#xd;&#xa;    }&#xd;&#xa;};&#xd;&#xa;&#xd;&#xa;Timer t = new Timer(3000, listen);&#xd;&#xa;t.setRepeats(false);&#xd;&#xa;t.start();"/>
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
@@ -62,13 +63,8 @@
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="229" max="-2" attributes="0"/>
-                      <Component id="TeamName" max="32767" attributes="0"/>
+                      <Component id="TeamName" pref="178" max="32767" attributes="0"/>
                       <EmptySpace min="-2" pref="232" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="debugButton" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -76,12 +72,10 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="ProjectTitle" pref="157" max="32767" attributes="0"/>
+                      <Component id="ProjectTitle" pref="161" max="32767" attributes="0"/>
                       <EmptySpace min="-2" pref="79" max="-2" attributes="0"/>
-                      <Component id="TeamName" pref="59" max="32767" attributes="0"/>
-                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                      <Component id="debugButton" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                      <Component id="TeamName" pref="64" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="110" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -102,14 +96,6 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="By: Team Snow"/>
               </Properties>
-            </Component>
-            <Component class="javax.swing.JButton" name="debugButton">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Main Menu (debug)"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="debugButtonActionPerformed"/>
-              </Events>
             </Component>
           </SubComponents>
         </Container>
