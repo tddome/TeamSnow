@@ -8,6 +8,7 @@ package teamsnow;
 import java.awt.CardLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
 import javax.swing.Timer;
 
 /**
@@ -141,8 +142,8 @@ public class QuarterProject245 extends javax.swing.JFrame {
         );
 
         mainPanel.add(SplashPage, "splashCard");
-        CardLayout card = (CardLayout)mainPanel.getLayout();
-        card.show(mainPanel, "mainmenuCard");
+        //CardLayout card = (CardLayout)mainPanel.getLayout();
+        //card.show(mainPanel, "mainmenuCard");
 
         PlayButton.setFont(new java.awt.Font("Dialog", 1, 16)); // NOI18N
         PlayButton.setText("Play");
@@ -330,6 +331,11 @@ public class QuarterProject245 extends javax.swing.JFrame {
         });
 
         aButton.setText("A");
+        aButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                aButtonActionPerformed(evt);
+            }
+        });
 
         bButton.setText("B");
 
@@ -614,6 +620,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
          CardLayout card = (CardLayout)mainPanel.getLayout();
       card.show(mainPanel, "mainmenuCard");
     }//GEN-LAST:event_bTMButtonActionPerformed
+
+    private void aButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aButtonActionPerformed
+       aButton.setMnemonic(KeyEvent.VK_A);
+       aButton.setActionCommand("enable");
+       aButton.setEnabled(false);
+    }//GEN-LAST:event_aButtonActionPerformed
    
     /**
      * @param args the command line arguments

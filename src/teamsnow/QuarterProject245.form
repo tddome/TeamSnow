@@ -43,7 +43,7 @@
       <SubComponents>
         <Container class="javax.swing.JPanel" name="SplashPage">
           <AuxValues>
-            <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="CardLayout card = (CardLayout)mainPanel.getLayout();&#xa;card.show(mainPanel, &quot;mainmenuCard&quot;);"/>
+            <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="//CardLayout card = (CardLayout)mainPanel.getLayout();&#xa;//card.show(mainPanel, &quot;mainmenuCard&quot;);"/>
             <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JPanel()"/>
           </AuxValues>
           <Constraints>
@@ -552,6 +552,9 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="A"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="aButtonActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="bButton">
               <Properties>
