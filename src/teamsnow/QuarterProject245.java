@@ -87,6 +87,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
         nButton = new javax.swing.JButton();
         rButton = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
         End = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
@@ -98,6 +99,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
 
         mainPanel.setLayout(new java.awt.CardLayout());
 
+        SplashPage.setPreferredSize(new java.awt.Dimension(600, 400));
         ActionListener listen = new ActionListener() {
             public void actionPerformed(ActionEvent ev) {
                 //Put card layout here
@@ -106,7 +108,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
             }
         };
 
-        Timer t = new Timer(3000, listen);
+        Timer t = new Timer(6000, listen);
         t.setRepeats(false);
         t.start();
 
@@ -126,16 +128,16 @@ public class QuarterProject245 extends javax.swing.JFrame {
                 .addContainerGap())
             .addGroup(SplashPageLayout.createSequentialGroup()
                 .addGap(229, 229, 229)
-                .addComponent(TeamName, javax.swing.GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE)
+                .addComponent(TeamName, javax.swing.GroupLayout.DEFAULT_SIZE, 192, Short.MAX_VALUE)
                 .addGap(232, 232, 232))
         );
         SplashPageLayout.setVerticalGroup(
             SplashPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SplashPageLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(ProjectTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 161, Short.MAX_VALUE)
+                .addComponent(ProjectTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 155, Short.MAX_VALUE)
                 .addGap(79, 79, 79)
-                .addComponent(TeamName, javax.swing.GroupLayout.DEFAULT_SIZE, 64, Short.MAX_VALUE)
+                .addComponent(TeamName, javax.swing.GroupLayout.DEFAULT_SIZE, 59, Short.MAX_VALUE)
                 .addGap(110, 110, 110))
         );
 
@@ -179,7 +181,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                 .addGroup(MainMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MainMenuLayout.createSequentialGroup()
                         .addComponent(TeamLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 108, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 161, Short.MAX_VALUE)
                         .addComponent(PlayButton, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MainMenuLayout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
@@ -238,7 +240,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                             .addComponent(jLabel1)
                             .addComponent(jLabel3)
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(202, Short.MAX_VALUE))
+                .addContainerGap(239, Short.MAX_VALUE))
         );
         CreditsMenuLayout.setVerticalGroup(
             CreditsMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -295,7 +297,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                     .addGroup(HighScoresMenuLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(backButton1)))
-                .addContainerGap(178, Short.MAX_VALUE))
+                .addContainerGap(230, Short.MAX_VALUE))
         );
         HighScoresMenuLayout.setVerticalGroup(
             HighScoresMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -310,7 +312,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                 .addComponent(jLabel7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel8)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 114, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 123, Short.MAX_VALUE)
                 .addComponent(backButton1)
                 .addContainerGap())
         );
@@ -512,6 +514,8 @@ public class QuarterProject245 extends javax.swing.JFrame {
 
         jLabel11.setText("Date goes here");
 
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/startScreen.png"))); // NOI18N
+
         javax.swing.GroupLayout PlayMenuLayout = new javax.swing.GroupLayout(PlayMenu);
         PlayMenu.setLayout(PlayMenuLayout);
         PlayMenuLayout.setHorizontalGroup(
@@ -520,7 +524,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(PlayMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(PlayMenuLayout.createSequentialGroup()
-                        .addGap(0, 6, Short.MAX_VALUE)
+                        .addGap(0, 20, Short.MAX_VALUE)
                         .addGroup(PlayMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(PlayMenuLayout.createSequentialGroup()
                                 .addGap(6, 6, 6)
@@ -576,11 +580,16 @@ public class QuarterProject245 extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(PlayMenuLayout.createSequentialGroup()
-                        .addComponent(jLabel9)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(PlayMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(skipButton, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addGroup(PlayMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(PlayMenuLayout.createSequentialGroup()
+                                .addComponent(jLabel9)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel11))
+                            .addGroup(PlayMenuLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 346, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(skipButton)))
                         .addGap(19, 19, 19)))
                 .addGap(29, 29, 29))
         );
@@ -595,8 +604,10 @@ public class QuarterProject245 extends javax.swing.JFrame {
                         .addGap(24, 24, 24)
                         .addComponent(jLabel11)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(skipButton)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 260, Short.MAX_VALUE)
+                        .addGroup(PlayMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(skipButton)
+                            .addComponent(jLabel14))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 73, Short.MAX_VALUE)
                 .addGroup(PlayMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(aButton)
                     .addComponent(bButton)
@@ -650,7 +661,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
         EndLayout.setHorizontalGroup(
             EndLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(EndLayout.createSequentialGroup()
-                .addContainerGap(201, Short.MAX_VALUE)
+                .addContainerGap(215, Short.MAX_VALUE)
                 .addGroup(EndLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, EndLayout.createSequentialGroup()
                         .addComponent(jLabel10)
@@ -726,12 +737,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
       card.show(mainPanel, "mainmenuCard");
    }//GEN-LAST:event_backButton1ActionPerformed
 
-    private void skipButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipButtonActionPerformed
-        // TODO add your handling code here:
-      CardLayout card = (CardLayout)mainPanel.getLayout();
-      card.show(mainPanel, "endCard");
-    }//GEN-LAST:event_skipButtonActionPerformed
-
     private void bTMButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bTMButtonActionPerformed
         // TODO add your handling code here:
         resetButtons();
@@ -739,89 +744,53 @@ public class QuarterProject245 extends javax.swing.JFrame {
       card.show(mainPanel, "mainmenuCard");
     }//GEN-LAST:event_bTMButtonActionPerformed
 
-    private void aButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aButtonActionPerformed
-       aButton.setMnemonic(KeyEvent.VK_A);
-       aButton.setActionCommand("enable");
-       aButton.setEnabled(false);
-    }//GEN-LAST:event_aButtonActionPerformed
-
-    private void bButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bButtonActionPerformed
-       bButton.setMnemonic(KeyEvent.VK_B);
-       bButton.setActionCommand("enable");
-       bButton.setEnabled(false);
-    }//GEN-LAST:event_bButtonActionPerformed
-
-    private void cButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButtonActionPerformed
-       cButton.setMnemonic(KeyEvent.VK_C);
-       cButton.setActionCommand("enable");
-       cButton.setEnabled(false);
-    }//GEN-LAST:event_cButtonActionPerformed
-
-    private void dButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dButtonActionPerformed
-        dButton.setMnemonic(KeyEvent.VK_D);
-       dButton.setActionCommand("enable");
-       dButton.setEnabled(false);
-    }//GEN-LAST:event_dButtonActionPerformed
-
-    private void eButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eButtonActionPerformed
-        eButton.setMnemonic(KeyEvent.VK_E);
-       eButton.setActionCommand("enable");
-       eButton.setEnabled(false);
-    }//GEN-LAST:event_eButtonActionPerformed
-
-    private void fButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fButtonActionPerformed
-       fButton.setMnemonic(KeyEvent.VK_F);
-       fButton.setActionCommand("enable");
-       fButton.setEnabled(false);
-    }//GEN-LAST:event_fButtonActionPerformed
-
-    private void gButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gButtonActionPerformed
-        gButton.setMnemonic(KeyEvent.VK_G);
-       gButton.setActionCommand("enable");
-       gButton.setEnabled(false);
-    }//GEN-LAST:event_gButtonActionPerformed
-
-    private void hButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hButtonActionPerformed
-       hButton.setMnemonic(KeyEvent.VK_H);
-       hButton.setActionCommand("enable");
-       hButton.setEnabled(false);
-    }//GEN-LAST:event_hButtonActionPerformed
-
-    private void iButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_iButtonActionPerformed
-       iButton.setMnemonic(KeyEvent.VK_I);
-       iButton.setActionCommand("enable");
-       iButton.setEnabled(false);
-    }//GEN-LAST:event_iButtonActionPerformed
-
-    private void jButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonActionPerformed
-       jButton.setMnemonic(KeyEvent.VK_J);
-       jButton.setActionCommand("enable");
-       jButton.setEnabled(false);
-    }//GEN-LAST:event_jButtonActionPerformed
-
-    private void kButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kButtonActionPerformed
-        kButton.setMnemonic(KeyEvent.VK_K);
-       kButton.setActionCommand("enable");
-       kButton.setEnabled(false);
-    }//GEN-LAST:event_kButtonActionPerformed
-
-    private void LButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LButtonActionPerformed
-       LButton.setMnemonic(KeyEvent.VK_L);
-       LButton.setActionCommand("enable");
-       LButton.setEnabled(false);
-    }//GEN-LAST:event_LButtonActionPerformed
-
-    private void mButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mButtonActionPerformed
-       mButton.setMnemonic(KeyEvent.VK_M);
-       mButton.setActionCommand("enable");
-       mButton.setEnabled(false);
-    }//GEN-LAST:event_mButtonActionPerformed
+    private void rButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rButtonActionPerformed
+        rButton.setMnemonic(KeyEvent.VK_R);
+        rButton.setActionCommand("enable");
+        rButton.setEnabled(false);
+    }//GEN-LAST:event_rButtonActionPerformed
 
     private void nButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nButtonActionPerformed
-       nButton.setMnemonic(KeyEvent.VK_N);
-       nButton.setActionCommand("enable");
-       nButton.setEnabled(false);
+        nButton.setMnemonic(KeyEvent.VK_N);
+        nButton.setActionCommand("enable");
+        nButton.setEnabled(false);
     }//GEN-LAST:event_nButtonActionPerformed
+
+    private void qButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_qButtonActionPerformed
+        qButton.setMnemonic(KeyEvent.VK_Q);
+        qButton.setActionCommand("enable");
+        qButton.setEnabled(false);
+    }//GEN-LAST:event_qButtonActionPerformed
+
+    private void zButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_zButtonActionPerformed
+        zButton.setMnemonic(KeyEvent.VK_Z);
+        zButton.setActionCommand("enable");
+        zButton.setEnabled(false);
+    }//GEN-LAST:event_zButtonActionPerformed
+
+    private void yButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yButtonActionPerformed
+        yButton.setMnemonic(KeyEvent.VK_Y);
+        yButton.setActionCommand("enable");
+        yButton.setEnabled(false);
+    }//GEN-LAST:event_yButtonActionPerformed
+
+    private void xButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_xButtonActionPerformed
+        xButton.setMnemonic(KeyEvent.VK_X);
+        xButton.setActionCommand("enable");
+        xButton.setEnabled(false);
+    }//GEN-LAST:event_xButtonActionPerformed
+
+    private void pButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pButtonActionPerformed
+        pButton.setMnemonic(KeyEvent.VK_P);
+        pButton.setActionCommand("enable");
+        pButton.setEnabled(false);
+    }//GEN-LAST:event_pButtonActionPerformed
+
+    private void wButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wButtonActionPerformed
+        wButton.setMnemonic(KeyEvent.VK_W);
+        wButton.setActionCommand("enable");
+        wButton.setEnabled(false);
+    }//GEN-LAST:event_wButtonActionPerformed
 
     private void oButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_oButtonActionPerformed
         oButton.setMnemonic(KeyEvent.VK_O);
@@ -829,71 +798,113 @@ public class QuarterProject245 extends javax.swing.JFrame {
         oButton.setEnabled(false);
     }//GEN-LAST:event_oButtonActionPerformed
 
-    private void pButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pButtonActionPerformed
-       pButton.setMnemonic(KeyEvent.VK_P);
-       pButton.setActionCommand("enable");
-       pButton.setEnabled(false);
-    }//GEN-LAST:event_pButtonActionPerformed
-
-    private void qButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_qButtonActionPerformed
-       qButton.setMnemonic(KeyEvent.VK_Q);
-       qButton.setActionCommand("enable");
-       qButton.setEnabled(false);
-    }//GEN-LAST:event_qButtonActionPerformed
-
-    private void rButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rButtonActionPerformed
-        rButton.setMnemonic(KeyEvent.VK_R);
-       rButton.setActionCommand("enable");
-       rButton.setEnabled(false);
-    }//GEN-LAST:event_rButtonActionPerformed
-
-    private void sButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sButtonActionPerformed
-     sButton.setMnemonic(KeyEvent.VK_S);
-       sButton.setActionCommand("enable");
-       sButton.setEnabled(false);
-    }//GEN-LAST:event_sButtonActionPerformed
-
-    private void tButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tButtonActionPerformed
-      tButton.setMnemonic(KeyEvent.VK_T);
-      tButton.setActionCommand("enable");
-      tButton.setEnabled(false);
-    }//GEN-LAST:event_tButtonActionPerformed
+    private void vButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vButtonActionPerformed
+        vButton.setMnemonic(KeyEvent.VK_V);
+        vButton.setActionCommand("enable");
+        vButton.setEnabled(false);
+    }//GEN-LAST:event_vButtonActionPerformed
 
     private void uButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_uButtonActionPerformed
         uButton.setMnemonic(KeyEvent.VK_U);
-       uButton.setActionCommand("enable");
-       uButton.setEnabled(false);
+        uButton.setActionCommand("enable");
+        uButton.setEnabled(false);
     }//GEN-LAST:event_uButtonActionPerformed
 
-    private void vButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vButtonActionPerformed
-     vButton.setMnemonic(KeyEvent.VK_V);
-       vButton.setActionCommand("enable");
-       vButton.setEnabled(false);
-    }//GEN-LAST:event_vButtonActionPerformed
+    private void tButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tButtonActionPerformed
+        tButton.setMnemonic(KeyEvent.VK_T);
+        tButton.setActionCommand("enable");
+        tButton.setEnabled(false);
+    }//GEN-LAST:event_tButtonActionPerformed
 
-    private void wButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wButtonActionPerformed
-        wButton.setMnemonic(KeyEvent.VK_W);
-       wButton.setActionCommand("enable");
-       wButton.setEnabled(false);
-    }//GEN-LAST:event_wButtonActionPerformed
+    private void sButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sButtonActionPerformed
+        sButton.setMnemonic(KeyEvent.VK_S);
+        sButton.setActionCommand("enable");
+        sButton.setEnabled(false);
+    }//GEN-LAST:event_sButtonActionPerformed
 
-    private void xButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_xButtonActionPerformed
-        xButton.setMnemonic(KeyEvent.VK_X);
-       xButton.setActionCommand("enable");
-       xButton.setEnabled(false);
-    }//GEN-LAST:event_xButtonActionPerformed
+    private void mButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mButtonActionPerformed
+        mButton.setMnemonic(KeyEvent.VK_M);
+        mButton.setActionCommand("enable");
+        mButton.setEnabled(false);
+    }//GEN-LAST:event_mButtonActionPerformed
 
-    private void yButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yButtonActionPerformed
-      yButton.setMnemonic(KeyEvent.VK_Y);
-      yButton.setActionCommand("enable");
-      yButton.setEnabled(false);
-    }//GEN-LAST:event_yButtonActionPerformed
+    private void LButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LButtonActionPerformed
+        LButton.setMnemonic(KeyEvent.VK_L);
+        LButton.setActionCommand("enable");
+        LButton.setEnabled(false);
+    }//GEN-LAST:event_LButtonActionPerformed
 
-    private void zButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_zButtonActionPerformed
-       zButton.setMnemonic(KeyEvent.VK_Z);
-       zButton.setActionCommand("enable");
-       zButton.setEnabled(false);
-    }//GEN-LAST:event_zButtonActionPerformed
+    private void kButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kButtonActionPerformed
+        kButton.setMnemonic(KeyEvent.VK_K);
+        kButton.setActionCommand("enable");
+        kButton.setEnabled(false);
+    }//GEN-LAST:event_kButtonActionPerformed
+
+    private void jButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonActionPerformed
+        jButton.setMnemonic(KeyEvent.VK_J);
+        jButton.setActionCommand("enable");
+        jButton.setEnabled(false);
+    }//GEN-LAST:event_jButtonActionPerformed
+
+    private void iButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_iButtonActionPerformed
+        iButton.setMnemonic(KeyEvent.VK_I);
+        iButton.setActionCommand("enable");
+        iButton.setEnabled(false);
+    }//GEN-LAST:event_iButtonActionPerformed
+
+    private void hButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hButtonActionPerformed
+        hButton.setMnemonic(KeyEvent.VK_H);
+        hButton.setActionCommand("enable");
+        hButton.setEnabled(false);
+    }//GEN-LAST:event_hButtonActionPerformed
+
+    private void gButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gButtonActionPerformed
+        gButton.setMnemonic(KeyEvent.VK_G);
+        gButton.setActionCommand("enable");
+        gButton.setEnabled(false);
+    }//GEN-LAST:event_gButtonActionPerformed
+
+    private void fButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fButtonActionPerformed
+        fButton.setMnemonic(KeyEvent.VK_F);
+        fButton.setActionCommand("enable");
+        fButton.setEnabled(false);
+    }//GEN-LAST:event_fButtonActionPerformed
+
+    private void eButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eButtonActionPerformed
+        eButton.setMnemonic(KeyEvent.VK_E);
+        eButton.setActionCommand("enable");
+        eButton.setEnabled(false);
+    }//GEN-LAST:event_eButtonActionPerformed
+
+    private void dButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dButtonActionPerformed
+        dButton.setMnemonic(KeyEvent.VK_D);
+        dButton.setActionCommand("enable");
+        dButton.setEnabled(false);
+    }//GEN-LAST:event_dButtonActionPerformed
+
+    private void cButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButtonActionPerformed
+        cButton.setMnemonic(KeyEvent.VK_C);
+        cButton.setActionCommand("enable");
+        cButton.setEnabled(false);
+    }//GEN-LAST:event_cButtonActionPerformed
+
+    private void bButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bButtonActionPerformed
+        bButton.setMnemonic(KeyEvent.VK_B);
+        bButton.setActionCommand("enable");
+        bButton.setEnabled(false);
+    }//GEN-LAST:event_bButtonActionPerformed
+
+    private void aButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aButtonActionPerformed
+        aButton.setMnemonic(KeyEvent.VK_A);
+        aButton.setActionCommand("enable");
+        aButton.setEnabled(false);
+    }//GEN-LAST:event_aButtonActionPerformed
+
+    private void skipButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipButtonActionPerformed
+        // TODO add your handling code here:
+        CardLayout card = (CardLayout)mainPanel.getLayout();
+        card.show(mainPanel, "endCard");
+    }//GEN-LAST:event_skipButtonActionPerformed
    public void resetButtons()
    {
        aButton.setEnabled(true);
@@ -964,7 +975,10 @@ public class QuarterProject245 extends javax.swing.JFrame {
         });
         
     }
+    private int count = 0;
+    private int index = 0;
     
+   
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton CreditsButton;
     private javax.swing.JPanel CreditsMenu;
@@ -996,6 +1010,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
