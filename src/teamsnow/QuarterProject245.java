@@ -11,6 +11,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Random;
 import javax.swing.Timer;
 
 /**
@@ -26,7 +27,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
     public QuarterProject245()
     {
         initComponents();
-  
+        this.words = new String[]{"abstract", "cemetery", "nurse", "pharmacy", "climbing"};
     }
 
     /**
@@ -720,6 +721,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
    private void PlayButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PlayButtonActionPerformed
       // TODO add your handling code here:
       //Play
+      beginPlay();
       CardLayout card = (CardLayout)mainPanel.getLayout();
       card.show(mainPanel, "playCard");
    }//GEN-LAST:event_PlayButtonActionPerformed
@@ -759,158 +761,132 @@ public class QuarterProject245 extends javax.swing.JFrame {
     }//GEN-LAST:event_bTMButtonActionPerformed
 
     private void rButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rButtonActionPerformed
-        rButton.setMnemonic(KeyEvent.VK_R);
-        rButton.setActionCommand("enable");
+        gameMoves();
         rButton.setEnabled(false);
     }//GEN-LAST:event_rButtonActionPerformed
 
     private void nButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nButtonActionPerformed
-        nButton.setMnemonic(KeyEvent.VK_N);
-        nButton.setActionCommand("enable");
+        gameMoves();
         nButton.setEnabled(false);
     }//GEN-LAST:event_nButtonActionPerformed
 
     private void qButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_qButtonActionPerformed
-        qButton.setMnemonic(KeyEvent.VK_Q);
-        qButton.setActionCommand("enable");
+        gameMoves();
         qButton.setEnabled(false);
     }//GEN-LAST:event_qButtonActionPerformed
 
     private void zButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_zButtonActionPerformed
-        zButton.setMnemonic(KeyEvent.VK_Z);
-        zButton.setActionCommand("enable");
+        gameMoves();
         zButton.setEnabled(false);
     }//GEN-LAST:event_zButtonActionPerformed
 
     private void yButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yButtonActionPerformed
-        yButton.setMnemonic(KeyEvent.VK_Y);
-        yButton.setActionCommand("enable");
+        gameMoves();
         yButton.setEnabled(false);
     }//GEN-LAST:event_yButtonActionPerformed
 
     private void xButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_xButtonActionPerformed
-        xButton.setMnemonic(KeyEvent.VK_X);
-        xButton.setActionCommand("enable");
+        gameMoves();    
         xButton.setEnabled(false);
     }//GEN-LAST:event_xButtonActionPerformed
 
     private void pButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pButtonActionPerformed
-        pButton.setMnemonic(KeyEvent.VK_P);
-        pButton.setActionCommand("enable");
+       gameMoves();  
         pButton.setEnabled(false);
     }//GEN-LAST:event_pButtonActionPerformed
 
     private void wButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wButtonActionPerformed
-        wButton.setMnemonic(KeyEvent.VK_W);
-        wButton.setActionCommand("enable");
+       gameMoves();  
         wButton.setEnabled(false);
     }//GEN-LAST:event_wButtonActionPerformed
 
     private void oButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_oButtonActionPerformed
-        oButton.setMnemonic(KeyEvent.VK_O);
-        oButton.setActionCommand("enable");
+        gameMoves();  
         oButton.setEnabled(false);
     }//GEN-LAST:event_oButtonActionPerformed
 
     private void vButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vButtonActionPerformed
-        vButton.setMnemonic(KeyEvent.VK_V);
-        vButton.setActionCommand("enable");
+        gameMoves();  
         vButton.setEnabled(false);
     }//GEN-LAST:event_vButtonActionPerformed
 
     private void uButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_uButtonActionPerformed
-        uButton.setMnemonic(KeyEvent.VK_U);
-        uButton.setActionCommand("enable");
+        gameMoves();  
         uButton.setEnabled(false);
     }//GEN-LAST:event_uButtonActionPerformed
 
     private void tButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tButtonActionPerformed
-        tButton.setMnemonic(KeyEvent.VK_T);
-        tButton.setActionCommand("enable");
+       gameMoves();  
         tButton.setEnabled(false);
     }//GEN-LAST:event_tButtonActionPerformed
 
     private void sButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sButtonActionPerformed
-        sButton.setMnemonic(KeyEvent.VK_S);
-        sButton.setActionCommand("enable");
+        gameMoves();  
         sButton.setEnabled(false);
     }//GEN-LAST:event_sButtonActionPerformed
 
     private void mButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mButtonActionPerformed
-        mButton.setMnemonic(KeyEvent.VK_M);
-        mButton.setActionCommand("enable");
+        gameMoves();  
         mButton.setEnabled(false);
     }//GEN-LAST:event_mButtonActionPerformed
 
     private void LButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LButtonActionPerformed
-        LButton.setMnemonic(KeyEvent.VK_L);
-        LButton.setActionCommand("enable");
+        gameMoves();  
         LButton.setEnabled(false);
     }//GEN-LAST:event_LButtonActionPerformed
 
     private void kButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kButtonActionPerformed
-        kButton.setMnemonic(KeyEvent.VK_K);
-        kButton.setActionCommand("enable");
+        gameMoves();  
         kButton.setEnabled(false);
     }//GEN-LAST:event_kButtonActionPerformed
 
     private void jButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonActionPerformed
-        jButton.setMnemonic(KeyEvent.VK_J);
-        jButton.setActionCommand("enable");
+        gameMoves();  
         jButton.setEnabled(false);
     }//GEN-LAST:event_jButtonActionPerformed
 
     private void iButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_iButtonActionPerformed
-        iButton.setMnemonic(KeyEvent.VK_I);
-        iButton.setActionCommand("enable");
+        gameMoves();  
         iButton.setEnabled(false);
     }//GEN-LAST:event_iButtonActionPerformed
 
     private void hButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hButtonActionPerformed
-        hButton.setMnemonic(KeyEvent.VK_H);
-        hButton.setActionCommand("enable");
+       gameMoves();  
         hButton.setEnabled(false);
     }//GEN-LAST:event_hButtonActionPerformed
 
     private void gButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gButtonActionPerformed
-        gButton.setMnemonic(KeyEvent.VK_G);
-        gButton.setActionCommand("enable");
+        gameMoves();  
         gButton.setEnabled(false);
     }//GEN-LAST:event_gButtonActionPerformed
 
     private void fButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fButtonActionPerformed
-        fButton.setMnemonic(KeyEvent.VK_F);
-        fButton.setActionCommand("enable");
+        gameMoves();  
         fButton.setEnabled(false);
     }//GEN-LAST:event_fButtonActionPerformed
 
     private void eButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eButtonActionPerformed
-        eButton.setMnemonic(KeyEvent.VK_E);
-        eButton.setActionCommand("enable");
+       gameMoves();  
         eButton.setEnabled(false);
     }//GEN-LAST:event_eButtonActionPerformed
 
     private void dButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dButtonActionPerformed
-        dButton.setMnemonic(KeyEvent.VK_D);
-        dButton.setActionCommand("enable");
+       gameMoves();  
         dButton.setEnabled(false);
     }//GEN-LAST:event_dButtonActionPerformed
 
     private void cButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButtonActionPerformed
-        cButton.setMnemonic(KeyEvent.VK_C);
-        cButton.setActionCommand("enable");
+        gameMoves();  
         cButton.setEnabled(false);
     }//GEN-LAST:event_cButtonActionPerformed
 
     private void bButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bButtonActionPerformed
-        bButton.setMnemonic(KeyEvent.VK_B);
-        bButton.setActionCommand("enable");
+       gameMoves();  
         bButton.setEnabled(false);
     }//GEN-LAST:event_bButtonActionPerformed
 
     private void aButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aButtonActionPerformed
-        aButton.setMnemonic(KeyEvent.VK_A);
-        aButton.setActionCommand("enable");
+        gameMoves();  
         aButton.setEnabled(false);
     }//GEN-LAST:event_aButtonActionPerformed
 
@@ -947,8 +923,35 @@ public class QuarterProject245 extends javax.swing.JFrame {
        xButton.setEnabled(true);
        yButton.setEnabled(true);
        zButton.setEnabled(true);
-             
-      
+   }
+   public void beginPlay()
+   {
+       resetButtons();
+       score = 100; // not too sure if the score resets
+     
+       Random rand = new Random();
+       randNumber = rand.nextInt(5);
+       
+       playWord = words[randNumber];
+       //this is where the drawings of the lines go
+       switch(randNumber)
+       {
+           case 0:
+                ;;
+           case 1:
+                ;;
+            case 2:
+                ;;
+            case 3:
+                ;;
+            case 4:
+                ;;
+       }
+   }
+
+   public void gameMoves()
+   {
+       System.out.println(playWord);
    }
     
     /**
@@ -991,7 +994,11 @@ public class QuarterProject245 extends javax.swing.JFrame {
     }
     private int count = 0;
     private int index = 0;
-    
+    private int score;
+    private int randNumber =0;
+    private final int SIZE = 5;
+    private String [] words = new String[SIZE];
+    private String playWord;
    
    // Variables declaration - do not modify//GEN-BEGIN:variables
    private javax.swing.JButton CreditsButton;
