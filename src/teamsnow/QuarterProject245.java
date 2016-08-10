@@ -24,7 +24,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
 import javax.swing.Timer;
-import java.awt.Graphics;
 
 
 /**
