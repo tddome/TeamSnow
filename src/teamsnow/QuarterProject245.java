@@ -35,14 +35,20 @@ import java.awt.Graphics;
 public class QuarterProject245 extends javax.swing.JFrame {
 
     /**
-     * Creates new form NewJFrame
+     * method:QuarterProject245
+     * Purpose:Constructor that Creates new form and sets the arrays with the proper words
      */
     public QuarterProject245()
     {
         initComponents();
         this.words = new String[]{"abstract", "cemetery", "nurse", "pharmacy", "climbing"};
     }
-
+    /**
+     * method:initComponents
+     * purpose:The methods that are in the generated code is the portion for the design area .
+     */
+    
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -905,6 +911,11 @@ public class QuarterProject245 extends javax.swing.JFrame {
       setLocationRelativeTo(null);
    }// </editor-fold>//GEN-END:initComponents
 
+      /**
+     * method:PlayButtonActionPerformed
+     * purpose:The methods does all the actions for the play button that calls the 
+     * begin play method and opens the play card.
+     */
    private void PlayButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PlayButtonActionPerformed
       // TODO add your handling code here:
       //Play
@@ -913,13 +924,20 @@ public class QuarterProject245 extends javax.swing.JFrame {
       card.show(mainPanel, "playCard");
    }//GEN-LAST:event_PlayButtonActionPerformed
 
+     /**
+     * method:HighScoresButtonActionPerformed
+     * purpose:The methods does all the actions for the High score button that opens the High score play card.
+     */
    private void HighScoresButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HighScoresButtonActionPerformed
       // TODO add your handling code here:
       //High scores
       CardLayout card = (CardLayout)mainPanel.getLayout();
       card.show(mainPanel, "highscoresCard");
    }//GEN-LAST:event_HighScoresButtonActionPerformed
-
+    /**
+     * method:CreditsButtonActionPerformed
+     * purpose:The methods does all the actions for the credit button that opens the credit play card.
+     */
    private void CreditsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CreditsButtonActionPerformed
       // TODO add your handling code here:
       // Credits
@@ -928,187 +946,393 @@ public class QuarterProject245 extends javax.swing.JFrame {
       card.show(mainPanel, "creditsCard");
    }//GEN-LAST:event_CreditsButtonActionPerformed
 
+   /**
+     * method:backButton0ActionPerformed 
+     * purpose:The methods does all the actions for the all the back button that takes the user back
+     *  to the main menu play card.
+     */
    private void backButton0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButton0ActionPerformed
       // TODO add your handling code here:
       CardLayout card = (CardLayout)mainPanel.getLayout();
       card.show(mainPanel, "mainmenuCard");
    }//GEN-LAST:event_backButton0ActionPerformed
 
+     /**
+     * method:backButton1ActionPerformed 
+     * purpose:The methods does all the actions for the all the back button that takes the user back
+     *  to the main menu play card.
+     */
    private void backButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButton1ActionPerformed
       // TODO add your handling code here:
       CardLayout card = (CardLayout)mainPanel.getLayout();
       card.show(mainPanel, "mainmenuCard");
    }//GEN-LAST:event_backButton1ActionPerformed
 
+   
+   /**
+     * method:bTMButtonActionPerformed 
+     * purpose:The methods does all the actions for the all the end hangman button that takes the user back
+     *  to the main menu play card and resets everything needed to play the game again.
+     */
     private void bTMButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bTMButtonActionPerformed
         // TODO add your handling code here:
         resetButtons();
         CardLayout card = (CardLayout)mainPanel.getLayout();
         card.show(mainPanel, "mainmenuCard");
     }//GEN-LAST:event_bTMButtonActionPerformed
-
+/**
+     * method:(Letter button for the gameButtonActionPerformed 
+     * purpose:The methods does all the actions for the all the letters to play the hangman 
+     * game that checks the word to the letter and if the user guess incorrectly more than six times
+     * the game ends. Otherwise if the word is guessed correctly the game also end, Status turns to false and 
+     * calls the games moves method. 
+     */
     private void rButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rButtonActionPerformed
         rStatus = false;
         gameMoves();
         rButton.setEnabled(false);
     }//GEN-LAST:event_rButtonActionPerformed
 
+    /**
+     * method:(Letter button for the gameButtonActionPerformed 
+     * purpose:The methods does all the actions for the all the letters to play the hangman 
+     * game that checks the word to the letter and if the user guess incorrectly more than six times
+     * the game ends. Otherwise if the word is guessed correctly the game also end, Status turns to false and 
+     * calls the games moves method. 
+     */
     private void nButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nButtonActionPerformed
         nStatus = false;
         gameMoves();
         nButton.setEnabled(false);
     }//GEN-LAST:event_nButtonActionPerformed
 
+    /**
+     * method:(Letter button for the gameButtonActionPerformed 
+     * purpose:The methods does all the actions for the all the letters to play the hangman 
+     * game that checks the word to the letter and if the user guess incorrectly more than six times
+     * the game ends. Otherwise if the word is guessed correctly the game also end, Status turns to false and 
+     * calls the games moves method. 
+     */
     private void qButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_qButtonActionPerformed
         qStatus = true;
         gameMoves();
         qButton.setEnabled(false);
     }//GEN-LAST:event_qButtonActionPerformed
 
+    /**
+     * method:(Letter button for the gameButtonActionPerformed 
+     * purpose:The methods does all the actions for the all the letters to play the hangman 
+     * game that checks the word to the letter and if the user guess incorrectly more than six times
+     * the game ends. Otherwise if the word is guessed correctly the game also end, Status turns to false and 
+     * calls the games moves method. 
+     */
     private void zButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_zButtonActionPerformed
         zStatus = true;
         gameMoves();
         zButton.setEnabled(false);
     }//GEN-LAST:event_zButtonActionPerformed
 
+    /**
+     * method:(Letter button for the gameButtonActionPerformed 
+     * purpose:The methods does all the actions for the all the letters to play the hangman 
+     * game that checks the word to the letter and if the user guess incorrectly more than six times
+     * the game ends. Otherwise if the word is guessed correctly the game also end, Status turns to false and 
+     * calls the games moves method. 
+     */
     private void yButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yButtonActionPerformed
         yStatus = false;
         gameMoves();
         yButton.setEnabled(false);
     }//GEN-LAST:event_yButtonActionPerformed
 
+    /**
+     * method:(Letter button for the gameButtonActionPerformed 
+     * purpose:The methods does all the actions for the all the letters to play the hangman 
+     * game that checks the word to the letter and if the user guess incorrectly more than six times
+     * the game ends. Otherwise if the word is guessed correctly the game also end, Status turns to false and 
+     * calls the games moves method. 
+     */
     private void xButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_xButtonActionPerformed
         xStatus = true;
         gameMoves();
         xButton.setEnabled(false);
     }//GEN-LAST:event_xButtonActionPerformed
 
+    /**
+     * method:(Letter button for the gameButtonActionPerformed 
+     * purpose:The methods does all the actions for the all the letters to play the hangman 
+     * game that checks the word to the letter and if the user guess incorrectly more than six times
+     * the game ends. Otherwise if the word is guessed correctly the game also end, Status turns to false and 
+     * calls the games moves method. 
+     */
     private void pButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pButtonActionPerformed
         pStatus = false;
         gameMoves();
         pButton.setEnabled(false);
     }//GEN-LAST:event_pButtonActionPerformed
 
+    /**
+     * method:(Letter button for the gameButtonActionPerformed 
+     * purpose:The methods does all the actions for the all the letters to play the hangman 
+     * game that checks the word to the letter and if the user guess incorrectly more than six times
+     * the game ends. Otherwise if the word is guessed correctly the game also end, Status turns to false and 
+     * calls the games moves method. 
+     */
     private void wButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wButtonActionPerformed
         wStatus = true;
         gameMoves();
         wButton.setEnabled(false);
     }//GEN-LAST:event_wButtonActionPerformed
 
+    /**
+     * method:(Letter button for the gameButtonActionPerformed 
+     * purpose:The methods does all the actions for the all the letters to play the hangman 
+     * game that checks the word to the letter and if the user guess incorrectly more than six times
+     * the game ends. Otherwise if the word is guessed correctly the game also end, Status turns to false and 
+     * calls the games moves method. 
+     */
     private void oButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_oButtonActionPerformed
         oStatus = true;
         gameMoves();
         oButton.setEnabled(false);
     }//GEN-LAST:event_oButtonActionPerformed
 
+    /**
+     * method:(Letter button for the gameButtonActionPerformed 
+     * purpose:The methods does all the actions for the all the letters to play the hangman 
+     * game that checks the word to the letter and if the user guess incorrectly more than six times
+     * the game ends. Otherwise if the word is guessed correctly the game also end, Status turns to false and 
+     * calls the games moves method. 
+     */
     private void vButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vButtonActionPerformed
         vStatus = true;
         gameMoves();
         vButton.setEnabled(false);
     }//GEN-LAST:event_vButtonActionPerformed
 
+    /**
+     * method:(Letter button for the gameButtonActionPerformed 
+     * purpose:The methods does all the actions for the all the letters to play the hangman 
+     * game that checks the word to the letter and if the user guess incorrectly more than six times
+     * the game ends. Otherwise if the word is guessed correctly the game also end, Status turns to false and 
+     * calls the games moves method. 
+     */
     private void uButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_uButtonActionPerformed
         uStatus = false;
         gameMoves();
         uButton.setEnabled(false);
     }//GEN-LAST:event_uButtonActionPerformed
 
+    /**
+     * method:(Letter button for the gameButtonActionPerformed 
+     * purpose:The methods does all the actions for the all the letters to play the hangman 
+     * game that checks the word to the letter and if the user guess incorrectly more than six times
+     * the game ends. Otherwise if the word is guessed correctly the game also end, Status turns to false and 
+     * calls the games moves method. 
+     */
     private void tButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tButtonActionPerformed
         tStatus = false;
         gameMoves();
         tButton.setEnabled(false);
     }//GEN-LAST:event_tButtonActionPerformed
 
+    /**
+     * method:(Letter button for the gameButtonActionPerformed 
+     * purpose:The methods does all the actions for the all the letters to play the hangman 
+     * game that checks the word to the letter and if the user guess incorrectly more than six times
+     * the game ends. Otherwise if the word is guessed correctly the game also end, Status turns to false and 
+     * calls the games moves method. 
+     */
     private void sButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sButtonActionPerformed
         sStatus = false;
         gameMoves();
         sButton.setEnabled(false);
     }//GEN-LAST:event_sButtonActionPerformed
 
+    /**
+     * method:(Letter button for the gameButtonActionPerformed 
+     * purpose:The methods does all the actions for the all the letters to play the hangman 
+     * game that checks the word to the letter and if the user guess incorrectly more than six times
+     * the game ends. Otherwise if the word is guessed correctly the game also end, Status turns to false and 
+     * calls the games moves method. 
+     */
     private void mButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mButtonActionPerformed
         mStatus = false;
         gameMoves();
         mButton.setEnabled(false);
     }//GEN-LAST:event_mButtonActionPerformed
 
+    /**
+     * method:(Letter button for the gameButtonActionPerformed 
+     * purpose:The methods does all the actions for the all the letters to play the hangman 
+     * game that checks the word to the letter and if the user guess incorrectly more than six times
+     * the game ends. Otherwise if the word is guessed correctly the game also end, Status turns to false and 
+     * calls the games moves method. 
+     */
     private void LButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LButtonActionPerformed
         lStatus = false;
         gameMoves();
         LButton.setEnabled(false);
     }//GEN-LAST:event_LButtonActionPerformed
 
+    /**
+     * method:(Letter button for the gameButtonActionPerformed 
+     * purpose:The methods does all the actions for the all the letters to play the hangman 
+     * game that checks the word to the letter and if the user guess incorrectly more than six times
+     * the game ends. Otherwise if the word is guessed correctly the game also end, Status turns to false and 
+     * calls the games moves method. 
+     */
     private void kButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kButtonActionPerformed
         kStatus = true;
         gameMoves();
         kButton.setEnabled(false);
     }//GEN-LAST:event_kButtonActionPerformed
 
+    /**
+     * method:(Letter button for the gameButtonActionPerformed 
+     * purpose:The methods does all the actions for the all the letters to play the hangman 
+     * game that checks the word to the letter and if the user guess incorrectly more than six times
+     * the game ends. Otherwise if the word is guessed correctly the game also end, Status turns to false and 
+     * calls the games moves method. 
+     */
     private void jButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonActionPerformed
         jStatus = true;
         gameMoves();
         jButton.setEnabled(false);
     }//GEN-LAST:event_jButtonActionPerformed
 
+    /**
+     * method:(Letter button for the gameButtonActionPerformed 
+     * purpose:The methods does all the actions for the all the letters to play the hangman 
+     * game that checks the word to the letter and if the user guess incorrectly more than six times
+     * the game ends. Otherwise if the word is guessed correctly the game also end, Status turns to false and 
+     * calls the games moves method. 
+     */
     private void iButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_iButtonActionPerformed
         iStatus = false;
         gameMoves();
         iButton.setEnabled(false);
     }//GEN-LAST:event_iButtonActionPerformed
 
+    /**
+     * method:(Letter button for the gameButtonActionPerformed 
+     * purpose:The methods does all the actions for the all the letters to play the hangman 
+     * game that checks the word to the letter and if the user guess incorrectly more than six times
+     * the game ends. Otherwise if the word is guessed correctly the game also end, Status turns to false and 
+     * calls the games moves method. 
+     */
     private void hButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hButtonActionPerformed
         hStatus = false;
         gameMoves();
         hButton.setEnabled(false);
     }//GEN-LAST:event_hButtonActionPerformed
 
+    /**
+     * method:(Letter button for the gameButtonActionPerformed 
+     * purpose:The methods does all the actions for the all the letters to play the hangman 
+     * game that checks the word to the letter and if the user guess incorrectly more than six times
+     * the game ends. Otherwise if the word is guessed correctly the game also end, Status turns to false and 
+     * calls the games moves method. 
+     */
     private void gButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gButtonActionPerformed
         gStatus = false;
         gameMoves();
         gButton.setEnabled(false);
     }//GEN-LAST:event_gButtonActionPerformed
 
+    /**
+     * method:(Letter button for the gameButtonActionPerformed 
+     * purpose:The methods does all the actions for the all the letters to play the hangman 
+     * game that checks the word to the letter and if the user guess incorrectly more than six times
+     * the game ends. Otherwise if the word is guessed correctly the game also end, Status turns to false and 
+     * calls the games moves method. 
+     */
     private void fButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fButtonActionPerformed
         fStatus = true;
         gameMoves();
         fButton.setEnabled(false);
     }//GEN-LAST:event_fButtonActionPerformed
 
+    /**
+     * method:(Letter button for the gameButtonActionPerformed 
+     * purpose:The methods does all the actions for the all the letters to play the hangman 
+     * game that checks the word to the letter and if the user guess incorrectly more than six times
+     * the game ends. Otherwise if the word is guessed correctly the game also end, Status turns to false and 
+     * calls the games moves method. 
+     */
     private void eButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eButtonActionPerformed
         eStatus = false;
         gameMoves();
         eButton.setEnabled(false);
     }//GEN-LAST:event_eButtonActionPerformed
 
+    /**
+     * method:(Letter button for the gameButtonActionPerformed 
+     * purpose:The methods does all the actions for the all the letters to play the hangman 
+     * game that checks the word to the letter and if the user guess incorrectly more than six times
+     * the game ends. Otherwise if the word is guessed correctly the game also end, Status turns to false and 
+     * calls the games moves method. 
+     */
     private void dButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dButtonActionPerformed
         dStatus = true;
         gameMoves();
         dButton.setEnabled(false);
     }//GEN-LAST:event_dButtonActionPerformed
 
+    /**
+     * method:(Letter button for the gameButtonActionPerformed 
+     * purpose:The methods does all the actions for the all the letters to play the hangman 
+     * game that checks the word to the letter and if the user guess incorrectly more than six times
+     * the game ends. Otherwise if the word is guessed correctly the game also end, Status turns to false and 
+     * calls the games moves method. 
+     */
     private void cButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButtonActionPerformed
         cStatus = false;
         gameMoves();
         cButton.setEnabled(false);
     }//GEN-LAST:event_cButtonActionPerformed
 
+    /**
+     * method:(Letter button for the gameButtonActionPerformed 
+     * purpose:The methods does all the actions for the all the letters to play the hangman 
+     * game that checks the word to the letter and if the user guess incorrectly more than six times
+     * the game ends. Otherwise if the word is guessed correctly the game also end, Status turns to false and 
+     * calls the games moves method. 
+     */
     private void bButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bButtonActionPerformed
         bStatus = false;
         gameMoves();
         bButton.setEnabled(false);
     }//GEN-LAST:event_bButtonActionPerformed
 
+    /**
+     * method:(Letter button for the gameButtonActionPerformed 
+     * purpose:The methods does all the actions for the all the letters to play the hangman 
+     * game that checks the word to the letter and if the user guess incorrectly more than six times
+     * the game ends. Otherwise if the word is guessed correctly the game also end, Status turns to false and 
+     * calls the games moves method. 
+     */
     private void aButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aButtonActionPerformed
         aStatus = false;
         gameMoves();
         aButton.setEnabled(false);
     }//GEN-LAST:event_aButtonActionPerformed
 
+    /**
+     * method:skipButtonActionPerformed
+     * purpose:The method skips the game by going to the end card and sets the score to zero.
+     */
     private void skipButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipButtonActionPerformed
         score = 0;
         CardLayout card = (CardLayout)mainPanel.getLayout();
         card.show(mainPanel, "endCard");
     }//GEN-LAST:event_skipButtonActionPerformed
-   public void resetButtons()
+   
+    /**
+     * method:resetButtons
+     * purpose:The method resets all variables, buttons and images to play the game again.
+     */
+    public void resetButtons()
    {
        count = 0;
        wordCount = 0;
@@ -1158,6 +1382,11 @@ public class QuarterProject245 extends javax.swing.JFrame {
                 endTimer.setRepeats(false);
                 endTimer.start();
    }
+    
+     /**
+     * method:resetStatus
+     * purpose:The method resets the status of the buttons to walk through each letter.
+     */
    public void resetStatus()
    {
          //sets values true
@@ -1189,6 +1418,11 @@ public class QuarterProject245 extends javax.swing.JFrame {
   zStatus = true;
    }
    
+     /**
+     * method:beginPlay
+     * purpose:The method sets the random number for the index and the word to a
+     * variable.
+     */
    public void beginPlay()
    {
        Random rand = new Random();
@@ -1196,12 +1430,16 @@ public class QuarterProject245 extends javax.swing.JFrame {
        
        playWord = words[randNumber];
           System.out.println(playWord);
-          
-       //this is where the drawings of the lines go
       
    }
    
-     
+    /**
+     * method:gameMoves
+     * purpose:The methods does all the actions for the all the letters to play the hangman 
+     * game that checks the word to the letter and if the user guess incorrectly more than six times
+     * the game ends. It also paints the image of the letter that has action listeners to perform the task 
+     * in real time.
+     */
    public void gameMoves()
    {
        System.out.println(count);
@@ -1734,13 +1972,10 @@ public class QuarterProject245 extends javax.swing.JFrame {
         System.out.println("The score is :" + score);
        }
    }
-   public void paintComponent(Graphics g) 
-    {
-      super.paintComponents(g);
-      g.drawLine(100, 10, 100, 100);
-    }
+   
     /**
-     * @param args the command line arguments
+     * method:main
+     * purpose: sets the thread to play the game and sets the board panels visible.
      */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
