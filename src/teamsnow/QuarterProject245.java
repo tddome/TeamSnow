@@ -18,6 +18,7 @@ import java.awt.Graphics;
 import java.awt.Dimension;
 import java.awt.Graphics;
 
+
 /**
  *
  * @author Troy
@@ -95,7 +96,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
         rButton = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        jLabelScore = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
         End = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
@@ -107,6 +108,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
 
         mainPanel.setLayout(new java.awt.CardLayout());
 
+        SplashPage.setMinimumSize(new java.awt.Dimension(600, 400));
         SplashPage.setPreferredSize(new java.awt.Dimension(600, 400));
         ActionListener listen = new ActionListener() {
             public void actionPerformed(ActionEvent ev) {
@@ -116,7 +118,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
             }
         };
 
-        Timer t = new Timer(6000, listen);
+        Timer t = new Timer(3000, listen);
         t.setRepeats(false);
         t.start();
 
@@ -145,7 +147,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
             SplashPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SplashPageLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(ProjectTitle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(ProjectTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 621, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(SplashPageLayout.createSequentialGroup()
                 .addGap(229, 229, 229)
@@ -156,9 +158,9 @@ public class QuarterProject245 extends javax.swing.JFrame {
             SplashPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SplashPageLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(ProjectTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 159, Short.MAX_VALUE)
+                .addComponent(ProjectTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 121, Short.MAX_VALUE)
                 .addGap(79, 79, 79)
-                .addComponent(TeamName, javax.swing.GroupLayout.DEFAULT_SIZE, 64, Short.MAX_VALUE)
+                .addComponent(TeamName, javax.swing.GroupLayout.DEFAULT_SIZE, 103, Short.MAX_VALUE)
                 .addGap(110, 110, 110))
         );
 
@@ -202,7 +204,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                 .addGroup(MainMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MainMenuLayout.createSequentialGroup()
                         .addComponent(TeamLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 161, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 141, Short.MAX_VALUE)
                         .addComponent(PlayButton, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MainMenuLayout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
@@ -261,7 +263,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                             .addComponent(jLabel1)
                             .addComponent(jLabel3)
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(239, Short.MAX_VALUE))
+                .addContainerGap(219, Short.MAX_VALUE))
         );
         CreditsMenuLayout.setVerticalGroup(
             CreditsMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -272,7 +274,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 165, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 175, Short.MAX_VALUE)
                 .addComponent(backButton0)
                 .addContainerGap())
         );
@@ -309,23 +311,26 @@ public class QuarterProject245 extends javax.swing.JFrame {
                 .addGroup(HighScoresMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(HighScoresMenuLayout.createSequentialGroup()
                         .addGap(171, 171, 171)
-                        .addGroup(HighScoresMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jLabel4))
                     .addGroup(HighScoresMenuLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(backButton1)))
-                .addContainerGap(231, Short.MAX_VALUE))
+                .addContainerGap(177, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, HighScoresMenuLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(HighScoresMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(123, 123, 123))
         );
         HighScoresMenuLayout.setVerticalGroup(
             HighScoresMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(HighScoresMenuLayout.createSequentialGroup()
                 .addGap(88, 88, 88)
                 .addComponent(jLabel4)
-                .addGap(34, 34, 34)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel6)
@@ -333,7 +338,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                 .addComponent(jLabel7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel8)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 123, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 149, Short.MAX_VALUE)
                 .addComponent(backButton1)
                 .addContainerGap())
         );
@@ -537,7 +542,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/startScreen.png"))); // NOI18N
 
-        jLabelScore.setText("score: "+ score);
+        jLabel13.setText("score: "+ score);
 
         javax.swing.GroupLayout PlayMenuLayout = new javax.swing.GroupLayout(PlayMenu);
         PlayMenu.setLayout(PlayMenuLayout);
@@ -555,10 +560,10 @@ public class QuarterProject245 extends javax.swing.JFrame {
                                 .addContainerGap())
                             .addGroup(PlayMenuLayout.createSequentialGroup()
                                 .addGap(119, 119, 119)
-                                .addComponent(jLabelScore)
+                                .addComponent(jLabel13)
                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                     .addGroup(PlayMenuLayout.createSequentialGroup()
-                        .addGap(0, 42, Short.MAX_VALUE)
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addGroup(PlayMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(PlayMenuLayout.createSequentialGroup()
                                 .addGroup(PlayMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -633,12 +638,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(jLabel11)
                         .addGap(2, 2, 2)
-                        .addComponent(jLabelScore)
+                        .addComponent(jLabel13)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(PlayMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(skipButton)
                             .addComponent(jLabel14))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 82, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 83, Short.MAX_VALUE)
                 .addGroup(PlayMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(aButton)
                     .addComponent(bButton)
@@ -678,8 +683,10 @@ public class QuarterProject245 extends javax.swing.JFrame {
         jLabel10.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         jLabel10.setText("Your score is ");
 
+        jLabel12.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         jLabel12.setText("score: " + score);
 
+        bTMButton.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         bTMButton.setText("End Hangman");
         bTMButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -691,29 +698,29 @@ public class QuarterProject245 extends javax.swing.JFrame {
         End.setLayout(EndLayout);
         EndLayout.setHorizontalGroup(
             EndLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, EndLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(bTMButton)
-                .addGap(268, 268, 268))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, EndLayout.createSequentialGroup()
-                .addContainerGap(216, Short.MAX_VALUE)
-                .addComponent(jLabel10)
-                .addGap(204, 204, 204))
             .addGroup(EndLayout.createSequentialGroup()
-                .addGap(304, 304, 304)
-                .addComponent(jLabel12)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(EndLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(EndLayout.createSequentialGroup()
+                        .addGap(185, 185, 185)
+                        .addComponent(jLabel10))
+                    .addGroup(EndLayout.createSequentialGroup()
+                        .addGap(245, 245, 245)
+                        .addComponent(jLabel12))
+                    .addGroup(EndLayout.createSequentialGroup()
+                        .addGap(229, 229, 229)
+                        .addComponent(bTMButton)))
+                .addContainerGap(193, Short.MAX_VALUE))
         );
         EndLayout.setVerticalGroup(
             EndLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(EndLayout.createSequentialGroup()
-                .addGap(90, 90, 90)
+                .addGap(91, 91, 91)
                 .addComponent(jLabel10)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(39, 39, 39)
                 .addComponent(jLabel12)
-                .addGap(99, 99, 99)
+                .addGap(63, 63, 63)
                 .addComponent(bTMButton)
-                .addContainerGap(120, Short.MAX_VALUE))
+                .addContainerGap(131, Short.MAX_VALUE))
         );
 
         mainPanel.add(End, "endCard");
@@ -788,11 +795,13 @@ public class QuarterProject245 extends javax.swing.JFrame {
     }//GEN-LAST:event_nButtonActionPerformed
 
     private void qButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_qButtonActionPerformed
+        qStatus = true;
         gameMoves();
         qButton.setEnabled(false);
     }//GEN-LAST:event_qButtonActionPerformed
 
     private void zButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_zButtonActionPerformed
+        zStatus = true;
         gameMoves();
         zButton.setEnabled(false);
     }//GEN-LAST:event_zButtonActionPerformed
@@ -804,6 +813,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
     }//GEN-LAST:event_yButtonActionPerformed
 
     private void xButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_xButtonActionPerformed
+         xStatus = true;
         gameMoves();    
         xButton.setEnabled(false);
     }//GEN-LAST:event_xButtonActionPerformed
@@ -815,17 +825,20 @@ public class QuarterProject245 extends javax.swing.JFrame {
     }//GEN-LAST:event_pButtonActionPerformed
 
     private void wButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wButtonActionPerformed
+       wStatus = true;
         gameMoves();  
         wButton.setEnabled(false);
     }//GEN-LAST:event_wButtonActionPerformed
 
     private void oButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_oButtonActionPerformed
-         gameMoves();  
+         oStatus = true;
+        gameMoves();  
         oButton.setEnabled(false);
     }//GEN-LAST:event_oButtonActionPerformed
 
     private void vButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_vButtonActionPerformed
-       gameMoves();  
+      vStatus = true;
+        gameMoves();  
         vButton.setEnabled(false);
     }//GEN-LAST:event_vButtonActionPerformed
 
@@ -855,17 +868,19 @@ public class QuarterProject245 extends javax.swing.JFrame {
 
     private void LButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LButtonActionPerformed
         lStatus = false;
-        gameMoves();  
+       gameMoves();  
         LButton.setEnabled(false);
     }//GEN-LAST:event_LButtonActionPerformed
 
     private void kButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kButtonActionPerformed
+        kStatus = true;
         gameMoves();  
         kButton.setEnabled(false);
     }//GEN-LAST:event_kButtonActionPerformed
 
     private void jButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonActionPerformed
-         gameMoves();  
+        jStatus = true;
+        gameMoves();  
         jButton.setEnabled(false);
     }//GEN-LAST:event_jButtonActionPerformed
 
@@ -877,7 +892,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
 
     private void hButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hButtonActionPerformed
         hStatus = false;
-        gameMoves();  
+       gameMoves();  
         hButton.setEnabled(false);
     }//GEN-LAST:event_hButtonActionPerformed
 
@@ -888,6 +903,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
     }//GEN-LAST:event_gButtonActionPerformed
 
     private void fButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fButtonActionPerformed
+        fStatus = true;
         gameMoves();  
         fButton.setEnabled(false);
     }//GEN-LAST:event_fButtonActionPerformed
@@ -899,13 +915,14 @@ public class QuarterProject245 extends javax.swing.JFrame {
     }//GEN-LAST:event_eButtonActionPerformed
 
     private void dButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dButtonActionPerformed
+        dStatus = true;
         gameMoves();  
         dButton.setEnabled(false);
     }//GEN-LAST:event_dButtonActionPerformed
 
     private void cButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cButtonActionPerformed
          cStatus = false;
-        gameMoves();  
+       gameMoves();  
         cButton.setEnabled(false);
     }//GEN-LAST:event_cButtonActionPerformed
 
@@ -922,12 +939,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
     }//GEN-LAST:event_aButtonActionPerformed
 
     private void skipButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipButtonActionPerformed
-        // TODO add your handling code here:
         CardLayout card = (CardLayout)mainPanel.getLayout();
         card.show(mainPanel, "endCard");
     }//GEN-LAST:event_skipButtonActionPerformed
    public void resetButtons()
    {
+       count = 0;
        aButton.setEnabled(true);
        bButton.setEnabled(true);
        cButton.setEnabled(true); 
@@ -954,245 +971,242 @@ public class QuarterProject245 extends javax.swing.JFrame {
        xButton.setEnabled(true);
        yButton.setEnabled(true);
        zButton.setEnabled(true);
-       
-       count = 0;
+   }
+   public void resetStatus()
+   {
+         //sets values true
+        aStatus = true;
+   bStatus = true;
+   cStatus = true;
+   dStatus = true;
+   eStatus = true;
+   fStatus = true;
+   gStatus = true;
+   hStatus = true;
+   iStatus = true;
+   jStatus = true;
+   kStatus = true;
+   lStatus = true;
+   mStatus = true;
+   nStatus = true;
+   oStatus = true;
+   pStatus = true;
+  qStatus = true;
+   rStatus = true;
+   sStatus = true;
+   tStatus = true;
+   uStatus = true;
+   vStatus = true;
+   wStatus = true;
+   xStatus = true;
+   yStatus = true;
+  zStatus = true;
    }
    
    public void beginPlay()
    {
-       resetButtons();
-       //score = 100; // not too sure if the score resets
-       //count = 0;
        Random rand = new Random();
        randNumber = rand.nextInt(A_SIZE);
        
        playWord = words[randNumber];
+          System.out.println(playWord);
        //this is where the drawings of the lines go
-       switch(randNumber)
+      /* switch(randNumber)
        {
-           case 0: 
+           case 0:
                 ;;
-           case 1: 
+           case 1:
                 ;;
-            case 2: 
+            case 2:
                 ;;
-            case 3: 
+            case 3:
                 ;;
-            case 4: 
+            case 4:
                 ;;
-       }
+       }*/
    }
-   
-   
+
      
    public void gameMoves()
    {
-       System.out.println(playWord);
-       switch(randNumber)
+       System.out.println(count);
+      switch(randNumber)
+             {
+             case 0: //abstract
+                 if (aStatus == false)
+                 {
+                     System.out.println("good");
+                 }
+                 else if (bStatus == false)
+                 {
+                     System.out.println("good");
+                 }
+                 else if (sStatus == false)
+                 {
+                     System.out.println("good");
+                 }
+                 else if (tStatus == false)
+                 {
+                     System.out.println("good");
+                 }
+                 else if (rStatus == false)
+                 {
+                     System.out.println("good");
+                 }
+                 else if (cStatus == false)
+                 {
+                     System.out.println("good");
+                 }
+                 else
+                 {
+                      System.out.println("bad");
+                      count++;
+                 }
+                 resetStatus();
+                   break;
+             case 1: //cemetary
+                 if (cStatus == false)
+                 {
+                     System.out.println("good");
+                 }
+                 else if (eStatus == false)
+                 {
+                     System.out.println("good");
+                 }
+                 else if (mStatus == false)
+                 {
+                     System.out.println("good");
+                 }
+                 else if (tStatus == false)
+                 {
+                     System.out.println("good");
+                 }
+                 else if (aStatus == false)
+                 {
+                     System.out.println("good");
+                 }
+                 else if (rStatus == false)
+                 {
+                     System.out.println("good");
+                 }
+                 else if (yStatus == false)
+                 {
+                     System.out.println("good");
+                 }
+                 else
+                 {
+                      System.out.println("bad");
+                      count++;
+                 }
+                 resetStatus();
+                   break;
+             case 2: //nurse 
+                 if (nStatus == false)
+                 {
+                     System.out.println("good");
+                 }
+                 else if (uStatus == false)
+                 {
+                     System.out.println("good");
+                 }
+                 else if (rStatus == false)
+                 {
+                     System.out.println("good");
+                 }
+                 else if (sStatus == false)
+                 {
+                     System.out.println("good");
+                 }
+                 else if (eStatus == false)
+                 {
+                     System.out.println("good");
+                 }
+                 else
+                 {
+                      System.out.println("bad");
+                      count++;
+                 }
+                 resetStatus();
+                   break;
+             
+             case 3://pharmacy
+                 if (pStatus == false)
+                 {
+                     System.out.println("good");
+                 }
+                 else if (hStatus == false)
+                 {
+                     System.out.println("good");
+                 }
+                 else if (aStatus == false)
+                 {
+                     System.out.println("good");
+                 }
+                 else if (rStatus == false)
+                 {
+                     System.out.println("good");
+                 }
+                 else if (mStatus == false)
+                 {
+                     System.out.println("good");
+                 }
+                 else if (cStatus == false)
+                 {
+                     System.out.println("good");
+                 }
+                 else if (yStatus == false)
+                 {
+                     System.out.println("good");
+                 }
+                 else
+                 {
+                      System.out.println("bad");
+                      count++;
+                 }
+                 resetStatus();
+                   break;   
+            
+             case 4://climbing
+                 if (cStatus == false)
+                 {
+                     System.out.println("good");
+                 }
+                 else if (lStatus == false)
+                 {
+                     System.out.println("good");
+                 }
+                 else if (iStatus == false)
+                 {
+                     System.out.println("good");
+                 }
+                 else if (mStatus == false)
+                 {
+                     System.out.println("good");
+                 }
+                 else if (bStatus == false)
+                 {
+                     System.out.println("good");
+                 }
+                 else if (nStatus == false)
+                 {
+                     System.out.println("good");
+                 }
+                 else if (gStatus == false)
+                 {
+                     System.out.println("good");
+                 }
+                 else
+                 {
+                      System.out.println("bad");
+                      count++;
+                 }
+                 resetStatus();
+                   break;
+             }
+       if (count == 6)
        {
-           case 0: // word is abstract
-               if (count == 6)
-               {
-                   
-                CardLayout card = (CardLayout)mainPanel.getLayout();
-                card.show(mainPanel, "endCard");
-               }
-               else
-               {
-                    if(aStatus == false)
-                    {
-                     
-                    }
-                    else if (bStatus == false)
-                    {
-                   
-                     }
-                    else if (sStatus == false)
-                    {
-                    
-                    }
-                    else if (tStatus == false)
-                    {
-                  
-                    }
-                    else if (rStatus == false)
-                    {
-                   
-                    }
-                     else if (cStatus == false)
-                    {
-                   
-                     }
-                    else
-                    {
-                     count = count + 1;
-                    score = score - 10;
-                    
-                     
-                    }
-               }
-                ;;
-           case 1: // word is cemetery
-               if (count == 6)
-               {
-                CardLayout card = (CardLayout)mainPanel.getLayout();
-                card.show(mainPanel, "endCard");
-               }
-               else
-               {
-                    if(cStatus == false)
-                    {
-                     
-                    }
-                    else if (eStatus == false)
-                    {
-                   
-                     }
-                    else if (mStatus == false)
-                    {
-                    
-                    }
-                    else if (tStatus == false)
-                    {
-                  
-                    }
-                    else if (rStatus == false)
-                    {
-                   
-                    }
-                     else if (yStatus == false)
-                    {
-                   
-                     }
-                    else
-                    {
-                     count = count + 1;
-                    score = score - 10;
-                     
-                    }
-               }
-                ;;
-            case 2: // word is nurse
-                if (count == 6)
-               {
-                CardLayout card = (CardLayout)mainPanel.getLayout();
-                card.show(mainPanel, "endCard");
-               }
-               else
-               {
-                    if(nStatus == false)
-                    {
-                     
-                    }
-                    else if (uStatus == false)
-                    {
-                   
-                     }
-                    else if (rStatus == false)
-                    {
-                    
-                    }
-                    else if (sStatus == false)
-                    {
-                  
-                    }
-                    else if (eStatus == false)
-                    {
-                   
-                    }
-                    else
-                    {
-                     count = count + 1;
-                    score = score - 10;
-                     
-                    }
-               }
-                ;;
-            case 3:  // word is pharmacy 
-                if (count == 6)
-               {
-                CardLayout card = (CardLayout)mainPanel.getLayout();
-                card.show(mainPanel, "endCard");
-               }
-               else
-               {
-                    if(pStatus == false)
-                    {
-                     
-                    }
-                    else if (hStatus == false)
-                    {
-                   
-                     }
-                    else if (aStatus == false)
-                    {
-                    
-                    }
-                    else if (rStatus == false)
-                    {
-                  
-                    }
-                    else if (mStatus == false)
-                    {
-                   
-                    }
-                     else if (cStatus == false)
-                    {
-                   
-                     }
-                      else if (yStatus == false)
-                    {
-                   
-                     }
-                    else
-                    {
-                     count = count + 1;
-                    score = score - 10;
-                     
-                    }
-               }
-                ;;
-            case 4: // word is climbing
-                
-                   if (count == 6)
-               {
-                CardLayout card = (CardLayout)mainPanel.getLayout();
-                card.show(mainPanel, "endCard");
-               }
-               else
-               {
-                    if(cStatus == false)
-                    {
-                     
-                    }
-                    else if (lStatus == false)
-                    {
-                   
-                     }
-                    else if (iStatus == false)
-                    {
-                    
-                    }
-                    else if (mStatus == false)
-                    {
-                  
-                    }
-                    else if (nStatus == false)
-                    {
-                   
-                    }
-                     else if (gStatus == false)
-                    {
-                   
-                     }
-                    else
-                    {
-                     count = count + 1;
-                    score = score - 10;
-                     
-                    }
-               }
-                ;;
+        CardLayout card = (CardLayout)mainPanel.getLayout();
+        card.show(mainPanel, "endCard");
        }
    }
     
@@ -1235,8 +1249,8 @@ public class QuarterProject245 extends javax.swing.JFrame {
         
     }
     private int count = 0;
-    private int score = 100;
-    private int randNumber =0;
+    private int score = 100; 
+    private int randNumber = 0;
     private final int A_SIZE = 5;
     private String [] words = new String[A_SIZE];
     private String playWord;
@@ -1244,26 +1258,29 @@ public class QuarterProject245 extends javax.swing.JFrame {
    private boolean aStatus = true;
    private boolean bStatus = true;
    private boolean cStatus = true;
-   
+   private boolean dStatus = true;
    private boolean eStatus = true;
-   
+   private boolean fStatus = true;
    private boolean gStatus = true;
    private boolean hStatus = true;
    private boolean iStatus = true;
-  
+   private boolean jStatus = true;
+   private boolean kStatus = true;
    private boolean lStatus = true;
    private boolean mStatus = true;
    private boolean nStatus = true;
-   
+   private boolean oStatus = true;
    private boolean pStatus = true;
- 
+  private boolean qStatus = true;
    private boolean rStatus = true;
    private boolean sStatus = true;
    private boolean tStatus = true;
    private boolean uStatus = true;
-  
+   private boolean vStatus = true;
+   private boolean wStatus = true;
+   private boolean xStatus = true;
    private boolean yStatus = true;
- 
+  private boolean zStatus = true;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton CreditsButton;
     private javax.swing.JPanel CreditsMenu;
@@ -1295,6 +1312,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -1304,7 +1322,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JLabel jLabelScore;
     private javax.swing.JButton kButton;
     private javax.swing.JButton mButton;
     private javax.swing.JPanel mainPanel;
