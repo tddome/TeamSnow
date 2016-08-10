@@ -1018,8 +1018,10 @@ public class QuarterProject245 extends javax.swing.JFrame {
    public void resetButtons()
    {
        count = 0;
-       wordCount = 1;
+       wordCount = 0;
        score = 100;
+       randNumber = 0;
+       aButton.setEnabled(true);
        bButton.setEnabled(true);
        cButton.setEnabled(true); 
        dButton.setEnabled(true); 
