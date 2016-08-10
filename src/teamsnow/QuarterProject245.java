@@ -6,25 +6,13 @@
 package teamsnow;
 
 import java.awt.CardLayout;
-import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
 import javax.swing.Timer;
 import java.awt.Graphics;
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Image;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
-import javax.imageio.ImageIO;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.SwingUtilities;
 
 
 /**
@@ -1005,6 +993,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
     }//GEN-LAST:event_aButtonActionPerformed
 
     private void skipButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipButtonActionPerformed
+        score = 0;
         CardLayout card = (CardLayout)mainPanel.getLayout();
         card.show(mainPanel, "endCard");
     }//GEN-LAST:event_skipButtonActionPerformed
