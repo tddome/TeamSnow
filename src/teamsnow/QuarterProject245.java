@@ -1,8 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+/***************************************************************
+* file: QuarterProject245.java
+* author: Daniel Fierros
+* author: Troy Dome
+* 
+* class: CS 245 – GUI
+*
+* assignment: program 1 version 1
+* date last modified: 08/10/2016
+*
+* purpose: This program is a hangman game that begins with a splash screen for 3 seconds
+* then enters the menu panel. Once at the menu panel the user has 3 options: (1)Play (2)High Score (3)Credits.
+* Once the play button is pressed the Hangman game begins with setting up the start display, then the user presses the 
+* desired letter.If the user guesses wrong 6 times, then the program ends, as well as when the user correctly guesses the word.
+* The High score button displays all the possible high scores(this does not update for now). The credits button displays the
+* authors.
+****************************************************************/ 
 package teamsnow;
 
 import java.awt.CardLayout;
