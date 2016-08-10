@@ -132,6 +132,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
 
       SplashPage.setMinimumSize(new java.awt.Dimension(600, 400));
       SplashPage.setPreferredSize(new java.awt.Dimension(600, 400));
+      /*
+      methods: ActionListener listen1 and listen2
+      purposes: Instances of setting the timer for the splash page,
+      so it may switch to the main menu after 3 seconds,
+      and the date+time implementation for the play page.
+      */
       ActionListener listen = new ActionListener() {
          public void actionPerformed(ActionEvent ev) {
             //Put card layout here
@@ -147,7 +153,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       ActionListener listen2 = new ActionListener() {
          public void actionPerformed(ActionEvent ev) {
             //Continuously update time here
-            SimpleDateFormat bub = new SimpleDateFormat("MMMMMMMMM dd,yyyy  HH:mm:ss");
+            SimpleDateFormat bub = new SimpleDateFormat("MMMMMMMMM dd, yyyy  HH:mm:ss");
             Date current = new Date();
             String theDate = bub.format(current);
             jLabel11.setText(theDate);
