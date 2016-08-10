@@ -391,7 +391,7 @@
         </Container>
         <Container class="javax.swing.JPanel" name="PlayMenu">
           <AuxValues>
-            <AuxValue name="JavaCodeGenerator_LayoutCodePost" type="java.lang.String" value="ActionListener listen3 = new ActionListener() {&#xa;            public void actionPerformed(ActionEvent ev) {&#xa;                //Continuously update score&#xa;               &#xa;                 jLabel15.setText(&quot;Score:&quot; + score);&#xa;&#xa;        if (randNumber == 2)&#xa;        {&#xa;           //short spaces&#xa;        jLabelSpcae.setIcon(new javax.swing.ImageIcon(getClass().getResource(&quot;/pictures/nSpace.png&quot;)));&#xa;        }&#xa;        else&#xa;         {&#xa;           //long spaces&#xa;         jLabelSpcae.setIcon(new javax.swing.ImageIcon(getClass().getResource(&quot;/pictures/longSpace.png&quot;)));&#xa;       }&#xa;&#xa;&#xa;   switch(randNumber)&#xa;              {&#xa;            case 0:&#xa;                if (wordCount == 8)&#xa;                 {&#xa;                  CardLayout card = (CardLayout)mainPanel.getLayout();&#xa;                   card.show(mainPanel, &quot;endCard&quot;);&#xa;                   &#xa;                 }&#xa;                break;&#xa;           case 1:&#xa;                if (wordCount == 8)&#xa;                 {&#xa;                  CardLayout card = (CardLayout)mainPanel.getLayout();&#xa;                   card.show(mainPanel, &quot;endCard&quot;);&#xa;                   &#xa;                 }&#xa;                break;&#xa;            case 2:&#xa;                if (wordCount == 5)&#xa;                 {&#xa;                  CardLayout card = (CardLayout)mainPanel.getLayout();&#xa;                   card.show(mainPanel, &quot;endCard&quot;);&#xa;                  &#xa;                 }&#xa;                break;&#xa;            case 3:&#xa;                if (wordCount == 8)&#xa;                 {&#xa;                  CardLayout card = (CardLayout)mainPanel.getLayout();&#xa;                   card.show(mainPanel, &quot;endCard&quot;);&#xa;                   &#xa;                 }&#xa;                break;&#xa;            case 4:&#xa;                if (wordCount == 8)&#xa;                 {&#xa;                  CardLayout card = (CardLayout)mainPanel.getLayout();&#xa;                   card.show(mainPanel, &quot;endCard&quot;);&#xa;                   &#xa;                 }&#xa;                break;&#xa;       }&#xa;            }&#xa;        };&#xa; Timer tScore = new Timer(0, listen3);&#xa;        tScore.start();"/>
+            <AuxValue name="JavaCodeGenerator_LayoutCodePost" type="java.lang.String" value="ActionListener listen3 = new ActionListener() {&#xa;            public void actionPerformed(ActionEvent ev) {&#xa;                //Continuously update score&#xa;               &#xa;                 jLabel15.setText(&quot;Score:&quot; + score);&#xa;&#xa;        if (randNumber == 2)&#xa;        {&#xa;           //short spaces&#xa;        jLabelSpcae.setIcon(new javax.swing.ImageIcon(getClass().getResource(&quot;/pictures/nSpace.png&quot;)));&#xa;        }&#xa;        else&#xa;         {&#xa;           //long spaces&#xa;         jLabelSpcae.setIcon(new javax.swing.ImageIcon(getClass().getResource(&quot;/pictures/longSpace.png&quot;)));&#xa;       }&#xa;if(count ==0)&#xa;        {&#xa;         jLabelHangman.setIcon(new javax.swing.ImageIcon(getClass().getResource(&quot;/pictures/startScreen.png&quot;)));&#xa;        }&#xa;       &#xa;else if(count ==1)&#xa;        {&#xa;         jLabelHangman.setIcon(new javax.swing.ImageIcon(getClass().getResource(&quot;/pictures/hmp1.png&quot;)));&#xa;        }&#xa;    else if(count == 2)&#xa;        {&#xa;         jLabelHangman.setIcon(new javax.swing.ImageIcon(getClass().getResource(&quot;/pictures/hmp3.png&quot;)));&#xa;        }&#xa;     else if(count == 3)&#xa;        {&#xa;         jLabelHangman.setIcon(new javax.swing.ImageIcon(getClass().getResource(&quot;/pictures/hmp4.png&quot;)));&#xa;        }&#xa; else if(count == 4)&#xa;        {&#xa;         jLabelHangman.setIcon(new javax.swing.ImageIcon(getClass().getResource(&quot;/pictures/hmp5.png&quot;)));&#xa;        }&#xa;         else if(count == 5)&#xa;        {&#xa;         jLabelHangman.setIcon(new javax.swing.ImageIcon(getClass().getResource(&quot;/pictures/hmp6.png&quot;)));&#xa;        }&#xa;         else if(count == 6)&#xa;        {&#xa;         jLabelHangman.setIcon(new javax.swing.ImageIcon(getClass().getResource(&quot;/pictures/hmp7.png&quot;)));&#xa;        }&#xa;   switch(randNumber)&#xa;              {&#xa;            case 0:&#xa;                if (wordCount == 8)&#xa;                 {&#xa;                  CardLayout card = (CardLayout)mainPanel.getLayout();&#xa;                   card.show(mainPanel, &quot;endCard&quot;);&#xa;                   &#xa;                 }&#xa;                break;&#xa;           case 1:&#xa;                if (wordCount == 8)&#xa;                 {&#xa;                  CardLayout card = (CardLayout)mainPanel.getLayout();&#xa;                   card.show(mainPanel, &quot;endCard&quot;);&#xa;                   &#xa;                 }&#xa;                break;&#xa;            case 2:&#xa;                if (wordCount == 5)&#xa;                 {&#xa;                  CardLayout card = (CardLayout)mainPanel.getLayout();&#xa;                   card.show(mainPanel, &quot;endCard&quot;);&#xa;                  &#xa;                 }&#xa;                break;&#xa;            case 3:&#xa;                if (wordCount == 8)&#xa;                 {&#xa;                  CardLayout card = (CardLayout)mainPanel.getLayout();&#xa;                   card.show(mainPanel, &quot;endCard&quot;);&#xa;                   &#xa;                 }&#xa;                break;&#xa;            case 4:&#xa;                if (wordCount == 8)&#xa;                 {&#xa;                  CardLayout card = (CardLayout)mainPanel.getLayout();&#xa;                   card.show(mainPanel, &quot;endCard&quot;);&#xa;                   &#xa;                 }&#xa;                break;&#xa;       }&#xa;            }&#xa;        };&#xa; Timer tScore = new Timer(0, listen3);&#xa;        tScore.start();"/>
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
@@ -413,76 +413,81 @@
                               <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace min="118" max="32767" attributes="0"/>
-                              <Component id="jLabel14" min="-2" pref="346" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
-                              <Component id="skipButton" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
+                          <Group type="102" attributes="0">
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="jLabelSpcae" min="-2" pref="592" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                                          <Component id="nButton" min="-2" pref="40" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="oButton" min="-2" pref="40" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="pButton" min="-2" pref="40" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="qButton" min="-2" pref="40" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="rButton" min="-2" pref="40" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="sButton" min="-2" pref="40" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="tButton" min="-2" pref="40" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="uButton" min="-2" pref="40" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="vButton" min="-2" pref="40" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="wButton" min="-2" pref="40" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="xButton" min="-2" pref="40" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="yButton" min="-2" pref="40" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="zButton" min="-2" pref="40" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                                              <Component id="nButton" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="oButton" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="pButton" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="qButton" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="rButton" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="sButton" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="tButton" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="uButton" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="vButton" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="wButton" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="xButton" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="yButton" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="zButton" min="-2" pref="40" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="aButton" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="bButton" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="cButton" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="dButton" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="eButton" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="fButton" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="gButton" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="hButton" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="iButton" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jButton" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="kButton" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="LButton" min="-2" pref="40" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="mButton" min="-2" pref="40" max="-2" attributes="0"/>
+                                          </Group>
                                       </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="aButton" min="-2" pref="40" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="bButton" min="-2" pref="40" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="cButton" min="-2" pref="40" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="dButton" min="-2" pref="40" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="eButton" min="-2" pref="40" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="fButton" min="-2" pref="40" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="gButton" min="-2" pref="40" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="hButton" min="-2" pref="40" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="iButton" min="-2" pref="40" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jButton" min="-2" pref="40" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="kButton" min="-2" pref="40" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="LButton" min="-2" pref="40" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="mButton" min="-2" pref="40" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Component id="jLabelSpcae" min="-2" pref="592" max="-2" attributes="0"/>
+                                          <Group type="102" attributes="0">
+                                              <Component id="jLabelHangman" min="-2" pref="405" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="skipButton" min="-2" max="-2" attributes="0"/>
+                                          </Group>
                                       </Group>
+                                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -509,12 +514,12 @@
                                   </Group>
                               </Group>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
-                                  <Component id="skipButton" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="skipButton" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelHangman" alignment="0" pref="250" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
-                      <EmptySpace pref="40" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabelSpcae" min="-2" pref="37" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -784,12 +789,7 @@
                 <Property name="text" type="java.lang.String" value="Date goes here"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel14">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/pictures/startScreen.png"/>
-                </Property>
-              </Properties>
+            <Component class="javax.swing.JLabel" name="jLabelHangman">
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel15">
               <Properties>
