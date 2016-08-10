@@ -17,7 +17,13 @@ import javax.swing.Timer;
 import java.awt.Graphics;
 import java.awt.Dimension;
 import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import javax.imageio.ImageIO;
 import javax.swing.JLabel;
+import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
 
@@ -98,11 +104,11 @@ public class QuarterProject245 extends javax.swing.JFrame {
         rButton = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
         End = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
         bTMButton = new javax.swing.JButton();
+        jLabel13 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setAutoRequestFocus(false);
@@ -160,9 +166,9 @@ public class QuarterProject245 extends javax.swing.JFrame {
             SplashPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SplashPageLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(ProjectTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 121, Short.MAX_VALUE)
+                .addComponent(ProjectTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE)
                 .addGap(79, 79, 79)
-                .addComponent(TeamName, javax.swing.GroupLayout.DEFAULT_SIZE, 103, Short.MAX_VALUE)
+                .addComponent(TeamName, javax.swing.GroupLayout.DEFAULT_SIZE, 109, Short.MAX_VALUE)
                 .addGap(110, 110, 110))
         );
 
@@ -276,7 +282,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 175, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 187, Short.MAX_VALUE)
                 .addComponent(backButton0)
                 .addContainerGap())
         );
@@ -317,7 +323,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                     .addGroup(HighScoresMenuLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(backButton1)))
-                .addContainerGap(177, Short.MAX_VALUE))
+                .addContainerGap(210, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, HighScoresMenuLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addGroup(HighScoresMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -340,7 +346,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                 .addComponent(jLabel7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel8)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 149, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 161, Short.MAX_VALUE)
                 .addComponent(backButton1)
                 .addContainerGap())
         );
@@ -544,7 +550,8 @@ public class QuarterProject245 extends javax.swing.JFrame {
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/startScreen.png"))); // NOI18N
 
-        jLabel13.setText("Score");
+        jLabel15.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jLabel15.setText("Score");
 
         javax.swing.GroupLayout PlayMenuLayout = new javax.swing.GroupLayout(PlayMenu);
         PlayMenu.setLayout(PlayMenuLayout);
@@ -555,15 +562,11 @@ public class QuarterProject245 extends javax.swing.JFrame {
                 .addGroup(PlayMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(PlayMenuLayout.createSequentialGroup()
                         .addComponent(jLabel9)
-                        .addGroup(PlayMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(PlayMenuLayout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel11)
-                                .addContainerGap())
-                            .addGroup(PlayMenuLayout.createSequentialGroup()
-                                .addGap(119, 119, 119)
-                                .addComponent(jLabel13)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addGap(109, 109, 109)
+                        .addComponent(jLabel15)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel11)
+                        .addContainerGap())
                     .addGroup(PlayMenuLayout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addGroup(PlayMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -638,14 +641,17 @@ public class QuarterProject245 extends javax.swing.JFrame {
                         .addComponent(jLabel9))
                     .addGroup(PlayMenuLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jLabel11)
-                        .addGap(2, 2, 2)
-                        .addComponent(jLabel13)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(PlayMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(skipButton)
-                            .addComponent(jLabel14))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 83, Short.MAX_VALUE)
+                            .addGroup(PlayMenuLayout.createSequentialGroup()
+                                .addComponent(jLabel11)
+                                .addGap(30, 30, 30))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PlayMenuLayout.createSequentialGroup()
+                                .addComponent(jLabel15)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
+                        .addGroup(PlayMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel14)
+                            .addComponent(skipButton))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 89, Short.MAX_VALUE)
                 .addGroup(PlayMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(aButton)
                     .addComponent(bButton)
@@ -678,55 +684,59 @@ public class QuarterProject245 extends javax.swing.JFrame {
                 .addGap(15, 15, 15))
         );
 
-        /*ActionListener listen3 = new ActionListener() {
-            public void actionPerformed(ActionEvent ev) {
-                jLabel13.setText("score" + score);
-
-                switch(randNumber)
-                {
-                    case 0:
-                    if (wordCount == 8)
-                    {
-                        CardLayout card = (CardLayout)mainPanel.getLayout();
-                        card.show(mainPanel, "endCard");
-                        System.out.println("The score is :" + score);
-                    }
-                    break;
-                    case 1:
-                    if (wordCount == 8)
-                    {
-                        CardLayout card = (CardLayout)mainPanel.getLayout();
-                        card.show(mainPanel, "endCard");
-                        System.out.println("The score is :" + score);
-                    }
-                    break;
-                    case 2:
-                    if (wordCount == 5)
-                    {
-                        CardLayout card = (CardLayout)mainPanel.getLayout();
-                        card.show(mainPanel, "endCard");
-                        System.out.println("The score is :" + score);
-                    }
-                    break;
-                    case 3:
-                    if (wordCount == 8)
-                    {
-                        CardLayout card = (CardLayout)mainPanel.getLayout();
-                        card.show(mainPanel, "endCard");
-                        System.out.println("The score is :" + score);
-                    }
-                    break;
-                    case 4:
-                    if (wordCount == 8)
-                    {
-                        CardLayout card = (CardLayout)mainPanel.getLayout();
-                        card.show(mainPanel, "endCard");
-                        System.out.println("The score is :" + score);
-                    }
-                    break;
-                }
+        /*switch(randNumber)
+        {
+            case 0:
+            if (wordCount == 8)
+            {
+                CardLayout card = (CardLayout)mainPanel.getLayout();
+                card.show(mainPanel, "endCard");
+                System.out.println("The score is :" + score);
             }
-        };*/
+            break;
+            case 1:
+            if (wordCount == 8)
+            {
+                CardLayout card = (CardLayout)mainPanel.getLayout();
+                card.show(mainPanel, "endCard");
+                System.out.println("The score is :" + score);
+            }
+            break;
+            case 2:
+            if (wordCount == 5)
+            {
+                CardLayout card = (CardLayout)mainPanel.getLayout();
+                card.show(mainPanel, "endCard");
+                System.out.println("The score is :" + score);
+            }
+            break;
+            case 3:
+            if (wordCount == 8)
+            {
+                CardLayout card = (CardLayout)mainPanel.getLayout();
+                card.show(mainPanel, "endCard");
+                System.out.println("The score is :" + score);
+            }
+            break;
+            case 4:
+            if (wordCount == 8)
+            {
+                CardLayout card = (CardLayout)mainPanel.getLayout();
+                card.show(mainPanel, "endCard");
+                System.out.println("The score is :" + score);
+            }
+            break;
+        }*/
+        ActionListener listen3 = new ActionListener() {
+            public void actionPerformed(ActionEvent ev) {
+                //Continuously update score
+
+                jLabel15.setText("Score:" + score);
+
+            }
+        };
+        Timer tScore = new Timer(0, listen3);
+        tScore.start();
 
         mainPanel.add(PlayMenu, "playCard");
 
@@ -735,9 +745,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
         jLabel10.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         jLabel10.setText("Your score is ");
 
-        jLabel12.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
-        jLabel12.setText("Score:" + score);
-
         bTMButton.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         bTMButton.setText("End Hangman");
         bTMButton.addActionListener(new java.awt.event.ActionListener() {
@@ -745,6 +752,9 @@ public class QuarterProject245 extends javax.swing.JFrame {
                 bTMButtonActionPerformed(evt);
             }
         });
+
+        jLabel13.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jLabel13.setText("Score:");
 
         javax.swing.GroupLayout EndLayout = new javax.swing.GroupLayout(End);
         End.setLayout(EndLayout);
@@ -756,11 +766,11 @@ public class QuarterProject245 extends javax.swing.JFrame {
                         .addGap(185, 185, 185)
                         .addComponent(jLabel10))
                     .addGroup(EndLayout.createSequentialGroup()
-                        .addGap(245, 245, 245)
-                        .addComponent(jLabel12))
-                    .addGroup(EndLayout.createSequentialGroup()
                         .addGap(229, 229, 229)
-                        .addComponent(bTMButton)))
+                        .addComponent(bTMButton))
+                    .addGroup(EndLayout.createSequentialGroup()
+                        .addGap(276, 276, 276)
+                        .addComponent(jLabel13)))
                 .addContainerGap(193, Short.MAX_VALUE))
         );
         EndLayout.setVerticalGroup(
@@ -769,19 +779,22 @@ public class QuarterProject245 extends javax.swing.JFrame {
                 .addGap(91, 91, 91)
                 .addComponent(jLabel10)
                 .addGap(39, 39, 39)
-                .addComponent(jLabel12)
-                .addGap(63, 63, 63)
+                .addComponent(jLabel13)
+                .addGap(69, 69, 69)
                 .addComponent(bTMButton)
-                .addContainerGap(131, Short.MAX_VALUE))
+                .addContainerGap(137, Short.MAX_VALUE))
         );
 
         ActionListener listen4 = new ActionListener() {
             public void actionPerformed(ActionEvent ev) {
                 //Continuously update score
-                jLabel12.setText("score" + score);
-                End.updateUI();
+
+                jLabel13.setText("Score:" + score);
+
             }
         };
+        Timer FScore = new Timer(0, listen4);
+        FScore.start();
 
         mainPanel.add(End, "endCard");
 
@@ -1073,9 +1086,9 @@ public class QuarterProject245 extends javax.swing.JFrame {
           System.out.println(playWord);
           
        //this is where the drawings of the lines go
-      /* switch(randNumber)
+       switch(randNumber)
        {
-           case 0:
+           case 0: 
                 break;
            case 1:
                 break;
@@ -1084,8 +1097,8 @@ public class QuarterProject245 extends javax.swing.JFrame {
             case 3:
                 break;
             case 4:
-                break
-       }*/
+                break;
+       }
    }
 
      
@@ -1309,6 +1322,11 @@ public class QuarterProject245 extends javax.swing.JFrame {
         System.out.println("The score is :" + score);
        }
    }
+   public void paintComponent(Graphics g) 
+    {
+      super.paintComponents(g);
+      g.drawLine(100, 10, 100, 100);
+    }
     /**
      * @param args the command line arguments
      */
@@ -1347,6 +1365,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
         });
         
     }
+    
     private int count = 0;
     private int wordCount = 1;
     private int score = 100; 
@@ -1411,9 +1430,9 @@ public class QuarterProject245 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
