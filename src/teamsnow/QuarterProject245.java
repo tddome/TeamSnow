@@ -94,6 +94,14 @@ public class QuarterProject245 extends javax.swing.JFrame {
         jLabelHangman = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabelSpcae = new javax.swing.JLabel();
+        jLabelLetter1 = new javax.swing.JLabel();
+        jLabelLetter3 = new javax.swing.JLabel();
+        jLabelLetter2 = new javax.swing.JLabel();
+        jLabelLetter4 = new javax.swing.JLabel();
+        jLabelLetter5 = new javax.swing.JLabel();
+        jLabelLetter6 = new javax.swing.JLabel();
+        jLabelLetter7 = new javax.swing.JLabel();
+        jLabelLetter8 = new javax.swing.JLabel();
         End = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
         bTMButton = new javax.swing.JButton();
@@ -144,7 +152,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
             SplashPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SplashPageLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(ProjectTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 621, Short.MAX_VALUE)
+                .addComponent(ProjectTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 669, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(SplashPageLayout.createSequentialGroup()
                 .addGap(229, 229, 229)
@@ -201,7 +209,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                 .addGroup(MainMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MainMenuLayout.createSequentialGroup()
                         .addComponent(TeamLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 141, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 189, Short.MAX_VALUE)
                         .addComponent(PlayButton, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MainMenuLayout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
@@ -260,7 +268,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                             .addComponent(jLabel1)
                             .addComponent(jLabel3)
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(219, Short.MAX_VALUE))
+                .addContainerGap(267, Short.MAX_VALUE))
         );
         CreditsMenuLayout.setVerticalGroup(
             CreditsMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -312,7 +320,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                     .addGroup(HighScoresMenuLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(backButton1)))
-                .addContainerGap(210, Short.MAX_VALUE))
+                .addContainerGap(258, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, HighScoresMenuLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addGroup(HighScoresMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -540,6 +548,22 @@ public class QuarterProject245 extends javax.swing.JFrame {
         jLabel15.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         jLabel15.setText("Score");
 
+        jLabelLetter1.setText("   ");
+
+        jLabelLetter3.setText("   ");
+
+        jLabelLetter2.setText("   ");
+
+        jLabelLetter4.setText("   ");
+
+        jLabelLetter5.setText("   ");
+
+        jLabelLetter6.setText("   ");
+
+        jLabelLetter7.setText("   ");
+
+        jLabelLetter8.setText("   ");
+
         javax.swing.GroupLayout PlayMenuLayout = new javax.swing.GroupLayout(PlayMenu);
         PlayMenu.setLayout(PlayMenuLayout);
         PlayMenuLayout.setHorizontalGroup(
@@ -555,8 +579,8 @@ public class QuarterProject245 extends javax.swing.JFrame {
                         .addComponent(jLabel11)
                         .addContainerGap())
                     .addGroup(PlayMenuLayout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addGroup(PlayMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGap(0, 60, Short.MAX_VALUE)
+                        .addGroup(PlayMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addGroup(PlayMenuLayout.createSequentialGroup()
                                 .addGroup(PlayMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(PlayMenuLayout.createSequentialGroup()
@@ -612,14 +636,35 @@ public class QuarterProject245 extends javax.swing.JFrame {
                                         .addComponent(LButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(mButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(29, 29, 29))
-                            .addGroup(PlayMenuLayout.createSequentialGroup()
-                                .addGroup(PlayMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabelSpcae, javax.swing.GroupLayout.PREFERRED_SIZE, 592, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(17, 17, 17))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, PlayMenuLayout.createSequentialGroup()
+                                .addGap(23, 23, 23)
+                                .addComponent(jLabelLetter1)
+                                .addGap(21, 21, 21)
+                                .addGroup(PlayMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(PlayMenuLayout.createSequentialGroup()
-                                        .addComponent(jLabelHangman, javax.swing.GroupLayout.PREFERRED_SIZE, 405, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(skipButton)))
+                                        .addComponent(jLabelHangman, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(skipButton)
+                                        .addContainerGap())
+                                    .addGroup(PlayMenuLayout.createSequentialGroup()
+                                        .addGap(43, 43, 43)
+                                        .addComponent(jLabelLetter2)
+                                        .addGap(70, 70, 70)
+                                        .addComponent(jLabelLetter3)
+                                        .addGap(62, 62, 62)
+                                        .addComponent(jLabelLetter4)
+                                        .addGap(67, 67, 67)
+                                        .addComponent(jLabelLetter5)
+                                        .addGap(59, 59, 59)
+                                        .addComponent(jLabelLetter6)
+                                        .addGap(70, 70, 70)
+                                        .addComponent(jLabelLetter7)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jLabelLetter8)
+                                        .addGap(56, 56, 56))))
+                            .addGroup(PlayMenuLayout.createSequentialGroup()
+                                .addComponent(jLabelSpcae, javax.swing.GroupLayout.PREFERRED_SIZE, 592, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(20, 20, 20))))))
         );
         PlayMenuLayout.setVerticalGroup(
@@ -628,22 +673,31 @@ public class QuarterProject245 extends javax.swing.JFrame {
                 .addGroup(PlayMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(PlayMenuLayout.createSequentialGroup()
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel9))
+                        .addComponent(jLabel9)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 225, Short.MAX_VALUE)
+                        .addGroup(PlayMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabelLetter1)
+                            .addComponent(jLabelLetter3)
+                            .addComponent(jLabelLetter2)
+                            .addComponent(jLabelLetter4)
+                            .addComponent(jLabelLetter5)
+                            .addComponent(jLabelLetter6)
+                            .addComponent(jLabelLetter7)
+                            .addComponent(jLabelLetter8)))
                     .addGroup(PlayMenuLayout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(PlayMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(PlayMenuLayout.createSequentialGroup()
-                                .addComponent(jLabel11)
-                                .addGap(30, 30, 30))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PlayMenuLayout.createSequentialGroup()
                                 .addComponent(jLabel15)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
-                        .addGroup(PlayMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(skipButton)
-                            .addComponent(jLabelHangman, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabelHangman, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(PlayMenuLayout.createSequentialGroup()
+                                .addComponent(jLabel11)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(skipButton)))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabelSpcae, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabelSpcae, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26)
                 .addGroup(PlayMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(aButton)
                     .addComponent(bButton)
@@ -721,97 +775,51 @@ public class QuarterProject245 extends javax.swing.JFrame {
                 {
                     jLabelHangman.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/hmp7.png")));
                 }
+
                 switch(randNumber)
                 {
                     case 0:
                     if (wordCount == 8)
                     {
-                        jLabelHangman.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/hmp7.png")));
-                        ActionListener listen5 = new ActionListener() {
-                            public void actionPerformed(ActionEvent ev) {
-                                //Put card layout here
-                                CardLayout card = (CardLayout)mainPanel.getLayout();
-                                card.show(mainPanel, "mainmenuCard");
-                            }
-                        };
+                        CardLayout card = (CardLayout)mainPanel.getLayout();
+                        card.show(mainPanel, "endCard");
 
-                        Timer endTimer = new Timer(3000, listen5);
-                        endTimer.setRepeats(false);
-                        endTimer.start();
                     }
                     break;
                     case 1:
                     if (wordCount == 8)
                     {
-                        jLabelHangman.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/hmp7.png")));
-                        ActionListener listen5 = new ActionListener() {
-                            public void actionPerformed(ActionEvent ev) {
-                                //Put card layout here
-                                CardLayout card = (CardLayout)mainPanel.getLayout();
-                                card.show(mainPanel, "mainmenuCard");
-                            }
-                        };
+                        CardLayout card = (CardLayout)mainPanel.getLayout();
+                        card.show(mainPanel, "endCard");
 
-                        Timer endTimer = new Timer(5000, listen5);
-                        endTimer.setRepeats(false);
-                        endTimer.start();
                     }
                     break;
                     case 2:
                     if (wordCount == 5)
                     {
-                        jLabelHangman.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/hmp7.png")));
-                        ActionListener listen5 = new ActionListener() {
-                            public void actionPerformed(ActionEvent ev) {
-                                //Put card layout here
-                                CardLayout card = (CardLayout)mainPanel.getLayout();
-                                card.show(mainPanel, "mainmenuCard");
-                            }
-                        };
-
-                        Timer endTimer = new Timer(5000, listen5);
-                        endTimer.setRepeats(false);
-                        endTimer.start();
+                        CardLayout card = (CardLayout)mainPanel.getLayout();
+                        card.show(mainPanel, "endCard");
 
                     }
                     break;
                     case 3:
                     if (wordCount == 8)
                     {
-                        jLabelHangman.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/hmp7.png")));
-                        ActionListener listen5 = new ActionListener() {
-                            public void actionPerformed(ActionEvent ev) {
-                                //Put card layout here
-                                CardLayout card = (CardLayout)mainPanel.getLayout();
-                                card.show(mainPanel, "mainmenuCard");
-                            }
-                        };
-
-                        Timer endTimer = new Timer(5000, listen5);
-                        endTimer.setRepeats(false);
-                        endTimer.start();
+                        CardLayout card = (CardLayout)mainPanel.getLayout();
+                        card.show(mainPanel, "endCard");
 
                     }
                     break;
                     case 4:
                     if (wordCount == 8)
                     {
-                        jLabelHangman.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/hmp7.png")));
-                        ActionListener listen5 = new ActionListener() {
-                            public void actionPerformed(ActionEvent ev) {
-                                //Put card layout here
-                                CardLayout card = (CardLayout)mainPanel.getLayout();
-                                card.show(mainPanel, "mainmenuCard");
-                            }
-                        };
-
-                        Timer endTimer = new Timer(5000, listen5);
-                        endTimer.setRepeats(false);
-                        endTimer.start();
+                        CardLayout card = (CardLayout)mainPanel.getLayout();
+                        card.show(mainPanel, "endCard");
 
                     }
                     break;
                 }
+
             }
         };
         Timer tScore = new Timer(0, listen3);
@@ -850,7 +858,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                     .addGroup(EndLayout.createSequentialGroup()
                         .addGap(276, 276, 276)
                         .addComponent(jLabel13)))
-                .addContainerGap(193, Short.MAX_VALUE))
+                .addContainerGap(241, Short.MAX_VALUE))
         );
         EndLayout.setVerticalGroup(
             EndLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1171,7 +1179,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
        //this is where the drawings of the lines go
       
    }
-
+   
      
    public void gameMoves()
    {
@@ -1183,31 +1191,94 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  {
                      System.out.println("good");
                      wordCount +=2;
+                     ActionListener listen5 = new ActionListener() {
+                public void actionPerformed(ActionEvent ev) {
+        
+                 jLabelLetter1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/A.png")));
+                 jLabelLetter6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/A.png")));
+                 }
+                 };
+
+                Timer endTimer = new Timer(0, listen5);
+                endTimer.setRepeats(false);
+                endTimer.start();
+                     
                  }
                  else if (bStatus == false)
                  {
                      System.out.println("good");
                      ++wordCount;
+                      ActionListener listen5 = new ActionListener() {
+                public void actionPerformed(ActionEvent ev) {
+        
+                 jLabelLetter2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/A.png")));
+                 }
+                 };
+
+                Timer endTimer = new Timer(0, listen5);
+                endTimer.setRepeats(false);
+                endTimer.start();
                  }
                  else if (sStatus == false)
                  {
                      System.out.println("good");
                     ++wordCount;
+                     ActionListener listen5 = new ActionListener() {
+                public void actionPerformed(ActionEvent ev) {
+        
+                 jLabelLetter1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/A.png")));
+                 }
+                 };
+
+                Timer endTimer = new Timer(0, listen5);
+                endTimer.setRepeats(false);
+                endTimer.start();
                  }
                  else if (tStatus == false)
                  {
                      System.out.println("good");
                      wordCount+=2;
+                      ActionListener listen5 = new ActionListener() {
+                public void actionPerformed(ActionEvent ev) {
+        
+                 jLabelLetter3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/A.png")));
+                 jLabelLetter8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/A.png")));
+                 }
+                 };
+
+                Timer endTimer = new Timer(0, listen5);
+                endTimer.setRepeats(false);
+                endTimer.start();
                  }
                  else if (rStatus == false)
                  {
                      System.out.println("good");
                      ++wordCount;
+                      ActionListener listen5 = new ActionListener() {
+                public void actionPerformed(ActionEvent ev) {
+        
+                 jLabelLetter4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/r.png")));
+                 }
+                 };
+
+                Timer endTimer = new Timer(0, listen5);
+                endTimer.setRepeats(false);
+                endTimer.start();
                  }
                  else if (cStatus == false)
                  {
                      System.out.println("good");
                      ++wordCount;
+                      ActionListener listen5 = new ActionListener() {
+                public void actionPerformed(ActionEvent ev) {
+        
+                 jLabelLetter5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/C.png")));
+                 }
+                 };
+
+                Timer endTimer = new Timer(0, listen5);
+                endTimer.setRepeats(false);
+                endTimer.start();
                  }
                  else
                  {
@@ -1507,6 +1578,14 @@ public class QuarterProject245 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel jLabelHangman;
+    private javax.swing.JLabel jLabelLetter1;
+    private javax.swing.JLabel jLabelLetter2;
+    private javax.swing.JLabel jLabelLetter3;
+    private javax.swing.JLabel jLabelLetter4;
+    private javax.swing.JLabel jLabelLetter5;
+    private javax.swing.JLabel jLabelLetter6;
+    private javax.swing.JLabel jLabelLetter7;
+    private javax.swing.JLabel jLabelLetter8;
     private javax.swing.JLabel jLabelSpcae;
     private javax.swing.JButton kButton;
     private javax.swing.JButton mButton;
