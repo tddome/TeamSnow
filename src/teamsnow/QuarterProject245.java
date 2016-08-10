@@ -638,7 +638,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                                         .addComponent(mButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGap(17, 17, 17))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, PlayMenuLayout.createSequentialGroup()
-                                .addGap(23, 23, 23)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jLabelLetter1)
                                 .addGap(21, 21, 21)
                                 .addGroup(PlayMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -648,21 +648,21 @@ public class QuarterProject245 extends javax.swing.JFrame {
                                         .addComponent(skipButton)
                                         .addContainerGap())
                                     .addGroup(PlayMenuLayout.createSequentialGroup()
-                                        .addGap(43, 43, 43)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addComponent(jLabelLetter2)
-                                        .addGap(70, 70, 70)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addComponent(jLabelLetter3)
-                                        .addGap(62, 62, 62)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addComponent(jLabelLetter4)
-                                        .addGap(67, 67, 67)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addComponent(jLabelLetter5)
-                                        .addGap(59, 59, 59)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addComponent(jLabelLetter6)
-                                        .addGap(70, 70, 70)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addComponent(jLabelLetter7)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addComponent(jLabelLetter8)
-                                        .addGap(56, 56, 56))))
+                                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                             .addGroup(PlayMenuLayout.createSequentialGroup()
                                 .addComponent(jLabelSpcae, javax.swing.GroupLayout.PREFERRED_SIZE, 592, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(20, 20, 20))))))
@@ -1136,6 +1136,23 @@ public class QuarterProject245 extends javax.swing.JFrame {
        xButton.setEnabled(true);
        yButton.setEnabled(true);
        zButton.setEnabled(true);
+        ActionListener listen5 = new ActionListener() {
+                public void actionPerformed(ActionEvent ev) {
+        
+                 jLabelLetter1.setIcon(new javax.swing.ImageIcon(getClass().getResource("")));
+                 jLabelLetter2.setIcon(new javax.swing.ImageIcon(getClass().getResource("")));
+                 jLabelLetter3.setIcon(new javax.swing.ImageIcon(getClass().getResource("")));
+                 jLabelLetter4.setIcon(new javax.swing.ImageIcon(getClass().getResource("")));
+                 jLabelLetter5.setIcon(new javax.swing.ImageIcon(getClass().getResource("")));
+                 jLabelLetter6.setIcon(new javax.swing.ImageIcon(getClass().getResource("")));
+                 jLabelLetter7.setIcon(new javax.swing.ImageIcon(getClass().getResource("")));
+                    jLabelLetter8.setIcon(new javax.swing.ImageIcon(getClass().getResource("")));
+                 }
+                 };
+
+                Timer endTimer = new Timer(0, listen5);
+                endTimer.setRepeats(false);
+                endTimer.start();
    }
    public void resetStatus()
    {
@@ -1211,7 +1228,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                       ActionListener listen5 = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
         
-                 jLabelLetter2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/A.png")));
+                 jLabelLetter2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/B.png")));
                  }
                  };
 
@@ -1226,7 +1243,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                      ActionListener listen5 = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
         
-                 jLabelLetter1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/A.png")));
+                 jLabelLetter3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/S.png")));
                  }
                  };
 
@@ -1241,8 +1258,8 @@ public class QuarterProject245 extends javax.swing.JFrame {
                       ActionListener listen5 = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
         
-                 jLabelLetter3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/A.png")));
-                 jLabelLetter8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/A.png")));
+                 jLabelLetter4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/T.png")));
+                 jLabelLetter8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/T.png")));
                  }
                  };
 
@@ -1257,7 +1274,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                       ActionListener listen5 = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
         
-                 jLabelLetter4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/r.png")));
+                 jLabelLetter5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/R.png")));
                  }
                  };
 
@@ -1272,7 +1289,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                       ActionListener listen5 = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
         
-                 jLabelLetter5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/C.png")));
+                 jLabelLetter7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/C.png")));
                  }
                  };
 
@@ -1293,31 +1310,93 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  {
                      System.out.println("good");
                      ++wordCount;
+                     ActionListener listen5 = new ActionListener() {
+                public void actionPerformed(ActionEvent ev) {
+        
+                 jLabelLetter1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/C.png")));
+                 }
+                 };
+
+                Timer endTimer = new Timer(0, listen5);
+                endTimer.setRepeats(false);
+                endTimer.start();
                  }
                  else if (eStatus == false)
                  {
                      System.out.println("good");
                      wordCount +=3;
+                     ActionListener listen5 = new ActionListener() {
+                public void actionPerformed(ActionEvent ev) {
+        
+                 jLabelLetter2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/E.png")));
+                 jLabelLetter4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/E.png")));
+                 jLabelLetter6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/E.png")));
+                 }
+                 };
+
+                Timer endTimer = new Timer(0, listen5);
+                endTimer.setRepeats(false);
+                endTimer.start();
                  }
                  else if (mStatus == false)
                  {
                      System.out.println("good");
                      ++wordCount;
+                     ActionListener listen5 = new ActionListener() {
+                public void actionPerformed(ActionEvent ev) {
+        
+                 jLabelLetter3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/M.png")));
+                 }
+                 };
+
+                Timer endTimer = new Timer(0, listen5);
+                endTimer.setRepeats(false);
+                endTimer.start();
                  }
                  else if (tStatus == false)
                  {
                      System.out.println("good");
                      ++wordCount;
+                     ActionListener listen5 = new ActionListener() {
+                public void actionPerformed(ActionEvent ev) {
+        
+                 jLabelLetter5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/T.png")));
+                 }
+                 };
+
+                Timer endTimer = new Timer(0, listen5);
+                endTimer.setRepeats(false);
+                endTimer.start();
                  }
                  else if (rStatus == false)
                  {
                      System.out.println("good");
                      ++wordCount;
+                     ActionListener listen5 = new ActionListener() {
+                public void actionPerformed(ActionEvent ev) {
+        
+                 jLabelLetter7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/R.png")));
+                 }
+                 };
+
+                Timer endTimer = new Timer(0, listen5);
+                endTimer.setRepeats(false);
+                endTimer.start();
                  }
                  else if (yStatus == false)
                  {
                      System.out.println("good");
                      ++wordCount;
+                     ActionListener listen5 = new ActionListener() {
+                public void actionPerformed(ActionEvent ev) {
+        
+                 jLabelLetter8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/Y.png")));
+                 }
+                 };
+
+                Timer endTimer = new Timer(0, listen5);
+                endTimer.setRepeats(false);
+                endTimer.start();
                  }
                  else
                  {
@@ -1332,26 +1411,76 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  {
                      System.out.println("good");
                      ++wordCount;
+                     ActionListener listen5 = new ActionListener() {
+                public void actionPerformed(ActionEvent ev) {
+        
+                 jLabelLetter1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/N.png")));
+                 }
+                 };
+
+                Timer endTimer = new Timer(0, listen5);
+                endTimer.setRepeats(false);
+                endTimer.start();
                  }
                  else if (uStatus == false)
                  {
                      System.out.println("good");
                      ++wordCount;
+                     ActionListener listen5 = new ActionListener() {
+                public void actionPerformed(ActionEvent ev) {
+        
+                 jLabelLetter2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/U.png")));
+                 }
+                 };
+
+                Timer endTimer = new Timer(0, listen5);
+                endTimer.setRepeats(false);
+                endTimer.start();
                  }
                  else if (rStatus == false)
                  {
                      System.out.println("good");
                      ++wordCount;
+                     ActionListener listen5 = new ActionListener() {
+                public void actionPerformed(ActionEvent ev) {
+        
+                 jLabelLetter3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/R.png")));
+                 }
+                 };
+
+                Timer endTimer = new Timer(0, listen5);
+                endTimer.setRepeats(false);
+                endTimer.start();
                  }
                  else if (sStatus == false)
                  {
                      System.out.println("good");
                      ++wordCount;
+                     ActionListener listen5 = new ActionListener() {
+                public void actionPerformed(ActionEvent ev) {
+        
+                 jLabelLetter4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/S.png")));
+                 }
+                 };
+
+                Timer endTimer = new Timer(0, listen5);
+                endTimer.setRepeats(false);
+                endTimer.start();
                  }
                  else if (eStatus == false)
                  {
                      System.out.println("good");
                      ++wordCount;
+                     ActionListener listen5 = new ActionListener() {
+                public void actionPerformed(ActionEvent ev) {
+        
+                 jLabelLetter5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/E.png")));
+                 }
+                 };
+
+                Timer endTimer = new Timer(0, listen5);
+                endTimer.setRepeats(false);
+                endTimer.start();
                  }
                  else
                  {
@@ -1367,36 +1496,107 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  {
                      System.out.println("good");
                      ++wordCount;
+                     ActionListener listen5 = new ActionListener() {
+                public void actionPerformed(ActionEvent ev) {
+        
+                 jLabelLetter1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/P.png")));
+                 }
+                 };
+
+                Timer endTimer = new Timer(0, listen5);
+                endTimer.setRepeats(false);
+                endTimer.start();
                  }
                  else if (hStatus == false)
                  {
                      System.out.println("good");
                      ++wordCount;
+                     ActionListener listen5 = new ActionListener() {
+                public void actionPerformed(ActionEvent ev) {
+        
+                 jLabelLetter2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/H.png")));
+                 }
+                 };
+
+                Timer endTimer = new Timer(0, listen5);
+                endTimer.setRepeats(false);
+                endTimer.start();
                  }
                  else if (aStatus == false)
                  {
                      System.out.println("good");
                      wordCount +=2;
+                     ActionListener listen5 = new ActionListener() {
+                public void actionPerformed(ActionEvent ev) {
+        
+                 jLabelLetter3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/A.png")));
+                  jLabelLetter6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/A.png")));
+                 }
+                 };
+
+                Timer endTimer = new Timer(0, listen5);
+                endTimer.setRepeats(false);
+                endTimer.start();
                  }
                  else if (rStatus == false)
                  {
                      System.out.println("good");
                      ++wordCount;
+                          ActionListener listen5 = new ActionListener() {
+                public void actionPerformed(ActionEvent ev) {
+        
+                 jLabelLetter4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/R.png")));
+                 }
+                 };
+
+                Timer endTimer = new Timer(0, listen5);
+                endTimer.setRepeats(false);
+                endTimer.start();
                  }
                  else if (mStatus == false)
                  {
                      System.out.println("good");
                      ++wordCount;
+                          ActionListener listen5 = new ActionListener() {
+                public void actionPerformed(ActionEvent ev) {
+        
+                 jLabelLetter5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/M.png")));
+                 }
+                 };
+
+                Timer endTimer = new Timer(0, listen5);
+                endTimer.setRepeats(false);
+                endTimer.start();
                  }
                  else if (cStatus == false)
                  {
                      System.out.println("good");
                      ++wordCount;
+                            ActionListener listen5 = new ActionListener() {
+                public void actionPerformed(ActionEvent ev) {
+        
+                 jLabelLetter7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/C.png")));
+                 }
+                 };
+
+                Timer endTimer = new Timer(0, listen5);
+                endTimer.setRepeats(false);
+                endTimer.start();
                  }
                  else if (yStatus == false)
                  {
                      System.out.println("good");
                      ++wordCount;
+                            ActionListener listen5 = new ActionListener() {
+                public void actionPerformed(ActionEvent ev) {
+        
+                 jLabelLetter8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/Y.png")));
+                 }
+                 };
+
+                Timer endTimer = new Timer(0, listen5);
+                endTimer.setRepeats(false);
+                endTimer.start();
                  }
                  else
                  {
@@ -1412,36 +1612,107 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  {
                      System.out.println("good");
                      ++wordCount;
+                            ActionListener listen5 = new ActionListener() {
+                public void actionPerformed(ActionEvent ev) {
+        
+                 jLabelLetter1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/C.png")));
+                 }
+                 };
+
+                Timer endTimer = new Timer(0, listen5);
+                endTimer.setRepeats(false);
+                endTimer.start();
                  }
                  else if (lStatus == false)
                  {
                      System.out.println("good");
                      ++wordCount;
+                            ActionListener listen5 = new ActionListener() {
+                public void actionPerformed(ActionEvent ev) {
+        
+                 jLabelLetter2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/L.png")));
+                 }
+                 };
+
+                Timer endTimer = new Timer(0, listen5);
+                endTimer.setRepeats(false);
+                endTimer.start();
                  }
                  else if (iStatus == false)
                  {
                      System.out.println("good");
                      wordCount+=2;
+                            ActionListener listen5 = new ActionListener() {
+                public void actionPerformed(ActionEvent ev) {
+        
+                 jLabelLetter3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/I.png")));
+                 jLabelLetter6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/I.png")));
+                 }
+                 };
+
+                Timer endTimer = new Timer(0, listen5);
+                endTimer.setRepeats(false);
+                endTimer.start();
                  }
                  else if (mStatus == false)
                  {
                      System.out.println("good");
                      ++wordCount;
+                             ActionListener listen5 = new ActionListener() {
+                public void actionPerformed(ActionEvent ev) {
+        
+                 jLabelLetter4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/M.png")));
+                 }
+                 };
+
+                Timer endTimer = new Timer(0, listen5);
+                endTimer.setRepeats(false);
+                endTimer.start();
                  }
                  else if (bStatus == false)
                  {
                      System.out.println("good");
                      ++wordCount;
+                             ActionListener listen5 = new ActionListener() {
+                public void actionPerformed(ActionEvent ev) {
+        
+                 jLabelLetter5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/B.png")));
+                 }
+                 };
+
+                Timer endTimer = new Timer(0, listen5);
+                endTimer.setRepeats(false);
+                endTimer.start();
                  }
                  else if (nStatus == false)
                  {
                      System.out.println("good");
                      ++wordCount;
+                             ActionListener listen5 = new ActionListener() {
+                public void actionPerformed(ActionEvent ev) {
+        
+                 jLabelLetter7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/N.png")));
+                 }
+                 };
+
+                Timer endTimer = new Timer(0, listen5);
+                endTimer.setRepeats(false);
+                endTimer.start();
                  }
                  else if (gStatus == false)
                  {
                      System.out.println("good");
                      ++wordCount;
+                             ActionListener listen5 = new ActionListener() {
+                public void actionPerformed(ActionEvent ev) {
+        
+                 jLabelLetter8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/G.png")));
+                 }
+                 };
+
+                Timer endTimer = new Timer(0, listen5);
+                endTimer.setRepeats(false);
+                endTimer.start();
                  }
                  else
                  {
