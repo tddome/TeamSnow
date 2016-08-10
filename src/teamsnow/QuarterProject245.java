@@ -684,55 +684,54 @@ public class QuarterProject245 extends javax.swing.JFrame {
                 .addGap(15, 15, 15))
         );
 
-        /*switch(randNumber)
-        {
-            case 0:
-            if (wordCount == 8)
-            {
-                CardLayout card = (CardLayout)mainPanel.getLayout();
-                card.show(mainPanel, "endCard");
-                System.out.println("The score is :" + score);
-            }
-            break;
-            case 1:
-            if (wordCount == 8)
-            {
-                CardLayout card = (CardLayout)mainPanel.getLayout();
-                card.show(mainPanel, "endCard");
-                System.out.println("The score is :" + score);
-            }
-            break;
-            case 2:
-            if (wordCount == 5)
-            {
-                CardLayout card = (CardLayout)mainPanel.getLayout();
-                card.show(mainPanel, "endCard");
-                System.out.println("The score is :" + score);
-            }
-            break;
-            case 3:
-            if (wordCount == 8)
-            {
-                CardLayout card = (CardLayout)mainPanel.getLayout();
-                card.show(mainPanel, "endCard");
-                System.out.println("The score is :" + score);
-            }
-            break;
-            case 4:
-            if (wordCount == 8)
-            {
-                CardLayout card = (CardLayout)mainPanel.getLayout();
-                card.show(mainPanel, "endCard");
-                System.out.println("The score is :" + score);
-            }
-            break;
-        }*/
         ActionListener listen3 = new ActionListener() {
             public void actionPerformed(ActionEvent ev) {
                 //Continuously update score
 
                 jLabel15.setText("Score:" + score);
+                switch(randNumber)
+                {
+                    case 0:
+                    if (wordCount == 8)
+                    {
+                        CardLayout card = (CardLayout)mainPanel.getLayout();
+                        card.show(mainPanel, "endCard");
 
+                    }
+                    break;
+                    case 1:
+                    if (wordCount == 8)
+                    {
+                        CardLayout card = (CardLayout)mainPanel.getLayout();
+                        card.show(mainPanel, "endCard");
+
+                    }
+                    break;
+                    case 2:
+                    if (wordCount == 5)
+                    {
+                        CardLayout card = (CardLayout)mainPanel.getLayout();
+                        card.show(mainPanel, "endCard");
+
+                    }
+                    break;
+                    case 3:
+                    if (wordCount == 8)
+                    {
+                        CardLayout card = (CardLayout)mainPanel.getLayout();
+                        card.show(mainPanel, "endCard");
+
+                    }
+                    break;
+                    case 4:
+                    if (wordCount == 8)
+                    {
+                        CardLayout card = (CardLayout)mainPanel.getLayout();
+                        card.show(mainPanel, "endCard");
+
+                    }
+                    break;
+                }
             }
         };
         Timer tScore = new Timer(0, listen3);
@@ -794,6 +793,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
             }
         };
         Timer FScore = new Timer(0, listen4);
+        // FScore.setRepeats(false);
         FScore.start();
 
         mainPanel.add(End, "endCard");
@@ -1146,7 +1146,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  }
                  resetStatus();
                    break;
-             case 1: //cemetary
+             case 1: //cemetery
                  if (cStatus == false)
                  {
                      System.out.println("good");
@@ -1155,7 +1155,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  else if (eStatus == false)
                  {
                      System.out.println("good");
-                     wordCount +=2;
+                     wordCount +=3;
                  }
                  else if (mStatus == false)
                  {
@@ -1163,11 +1163,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
                      ++wordCount;
                  }
                  else if (tStatus == false)
-                 {
-                     System.out.println("good");
-                     ++wordCount;
-                 }
-                 else if (aStatus == false)
                  {
                      System.out.println("good");
                      ++wordCount;
@@ -1367,7 +1362,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
     }
     
     private int count = 0;
-    private int wordCount = 1;
+    private int wordCount = 0;
     private int score = 100; 
     private int randNumber = 0;
     private final int A_SIZE = 5;
