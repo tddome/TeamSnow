@@ -726,40 +726,88 @@ public class QuarterProject245 extends javax.swing.JFrame {
                     case 0:
                     if (wordCount == 8)
                     {
-                        CardLayout card = (CardLayout)mainPanel.getLayout();
-                        card.show(mainPanel, "endCard");
+                        jLabelHangman.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/hmp7.png")));
+                        ActionListener listen5 = new ActionListener() {
+                            public void actionPerformed(ActionEvent ev) {
+                                //Put card layout here
+                                CardLayout card = (CardLayout)mainPanel.getLayout();
+                                card.show(mainPanel, "mainmenuCard");
+                            }
+                        };
 
+                        Timer endTimer = new Timer(3000, listen5);
+                        endTimer.setRepeats(false);
+                        endTimer.start();
                     }
                     break;
                     case 1:
                     if (wordCount == 8)
                     {
-                        CardLayout card = (CardLayout)mainPanel.getLayout();
-                        card.show(mainPanel, "endCard");
+                        jLabelHangman.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/hmp7.png")));
+                        ActionListener listen5 = new ActionListener() {
+                            public void actionPerformed(ActionEvent ev) {
+                                //Put card layout here
+                                CardLayout card = (CardLayout)mainPanel.getLayout();
+                                card.show(mainPanel, "mainmenuCard");
+                            }
+                        };
 
+                        Timer endTimer = new Timer(5000, listen5);
+                        endTimer.setRepeats(false);
+                        endTimer.start();
                     }
                     break;
                     case 2:
                     if (wordCount == 5)
                     {
-                        CardLayout card = (CardLayout)mainPanel.getLayout();
-                        card.show(mainPanel, "endCard");
+                        jLabelHangman.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/hmp7.png")));
+                        ActionListener listen5 = new ActionListener() {
+                            public void actionPerformed(ActionEvent ev) {
+                                //Put card layout here
+                                CardLayout card = (CardLayout)mainPanel.getLayout();
+                                card.show(mainPanel, "mainmenuCard");
+                            }
+                        };
+
+                        Timer endTimer = new Timer(5000, listen5);
+                        endTimer.setRepeats(false);
+                        endTimer.start();
 
                     }
                     break;
                     case 3:
                     if (wordCount == 8)
                     {
-                        CardLayout card = (CardLayout)mainPanel.getLayout();
-                        card.show(mainPanel, "endCard");
+                        jLabelHangman.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/hmp7.png")));
+                        ActionListener listen5 = new ActionListener() {
+                            public void actionPerformed(ActionEvent ev) {
+                                //Put card layout here
+                                CardLayout card = (CardLayout)mainPanel.getLayout();
+                                card.show(mainPanel, "mainmenuCard");
+                            }
+                        };
+
+                        Timer endTimer = new Timer(5000, listen5);
+                        endTimer.setRepeats(false);
+                        endTimer.start();
 
                     }
                     break;
                     case 4:
                     if (wordCount == 8)
                     {
-                        CardLayout card = (CardLayout)mainPanel.getLayout();
-                        card.show(mainPanel, "endCard");
+                        jLabelHangman.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/hmp7.png")));
+                        ActionListener listen5 = new ActionListener() {
+                            public void actionPerformed(ActionEvent ev) {
+                                //Put card layout here
+                                CardLayout card = (CardLayout)mainPanel.getLayout();
+                                card.show(mainPanel, "mainmenuCard");
+                            }
+                        };
+
+                        Timer endTimer = new Timer(5000, listen5);
+                        endTimer.setRepeats(false);
+                        endTimer.start();
 
                     }
                     break;
