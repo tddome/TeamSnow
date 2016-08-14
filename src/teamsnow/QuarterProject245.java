@@ -18,6 +18,8 @@
 package teamsnow;
 
 import java.awt.CardLayout;
+import java.awt.Color;
+import java.awt.Graphics;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.SimpleDateFormat;
@@ -120,6 +122,13 @@ public class QuarterProject245 extends javax.swing.JFrame {
         jLabelLetter7 = new javax.swing.JLabel();
         jLabelLetter8 = new javax.swing.JLabel();
         PointAndClickGame = new javax.swing.JPanel();
+        jLabelPACClock = new javax.swing.JLabel();
+        jLabelColor = new javax.swing.JLabel();
+        jLabelC1 = new javax.swing.JLabel();
+        jLabelC2 = new javax.swing.JLabel();
+        jLabelC3 = new javax.swing.JLabel();
+        jLabelC4 = new javax.swing.JLabel();
+        jLabelC5 = new javax.swing.JLabel();
         End = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
         bTMButton = new javax.swing.JButton();
@@ -187,9 +196,9 @@ public class QuarterProject245 extends javax.swing.JFrame {
             SplashPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(SplashPageLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(ProjectTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE)
+                .addComponent(ProjectTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 135, Short.MAX_VALUE)
                 .addGap(79, 79, 79)
-                .addComponent(TeamName, javax.swing.GroupLayout.DEFAULT_SIZE, 109, Short.MAX_VALUE)
+                .addComponent(TeamName, javax.swing.GroupLayout.DEFAULT_SIZE, 117, Short.MAX_VALUE)
                 .addGap(110, 110, 110))
         );
 
@@ -300,7 +309,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 187, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 203, Short.MAX_VALUE)
                 .addComponent(backButton0)
                 .addContainerGap())
         );
@@ -361,7 +370,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                 .addComponent(jLabel7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel8)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 162, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 177, Short.MAX_VALUE)
                 .addComponent(backButton1)
                 .addContainerGap())
         );
@@ -690,7 +699,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                     .addGroup(PlayMenuLayout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addComponent(jLabel9)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 225, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 241, Short.MAX_VALUE)
                         .addGroup(PlayMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabelLetter1)
                             .addComponent(jLabelLetter3)
@@ -798,7 +807,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                     if (wordCount == 8)
                     {
                         CardLayout card = (CardLayout)mainPanel.getLayout();
-                        card.show(mainPanel, "PACgame");
+                        card.show(mainPanel, "PACgameCard");
 
                     }
                     break;
@@ -806,7 +815,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                     if (wordCount == 8)
                     {
                         CardLayout card = (CardLayout)mainPanel.getLayout();
-                        card.show(mainPanel, "PACgame");
+                        card.show(mainPanel, "PACgameCard");
 
                     }
                     break;
@@ -814,7 +823,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                     if (wordCount == 5)
                     {
                         CardLayout card = (CardLayout)mainPanel.getLayout();
-                        card.show(mainPanel, "PACgame");
+                        card.show(mainPanel, "PACgameCard");
 
                     }
                     break;
@@ -822,7 +831,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                     if (wordCount == 8)
                     {
                         CardLayout card = (CardLayout)mainPanel.getLayout();
-                        card.show(mainPanel, "PACgame");
+                        card.show(mainPanel, "PACgameCard");
 
                     }
                     break;
@@ -830,7 +839,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                     if (wordCount == 8)
                     {
                         CardLayout card = (CardLayout)mainPanel.getLayout();
-                        card.show(mainPanel, "PACgame");
+                        card.show(mainPanel, "PACgameCard");
 
                     }
                     break;
@@ -843,18 +852,93 @@ public class QuarterProject245 extends javax.swing.JFrame {
 
         mainPanel.add(PlayMenu, "playCard");
 
+        PointAndClickGame.setMaximumSize(new java.awt.Dimension(600, 400));
+        PointAndClickGame.setMinimumSize(new java.awt.Dimension(600, 400));
+        PointAndClickGame.setPreferredSize(new java.awt.Dimension(600, 400));
+
+        jLabelPACClock.setText("Clock");
+
+        jLabelColor.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
+        jLabelColor.setText("Color");
+
+        jLabelC1.setText("Circle1");
+
+        jLabelC2.setText("Circle2");
+
+        jLabelC3.setText("Circle3");
+
+        jLabelC4.setText("Circle4");
+
+        jLabelC5.setText("Circle5");
+
         javax.swing.GroupLayout PointAndClickGameLayout = new javax.swing.GroupLayout(PointAndClickGame);
         PointAndClickGame.setLayout(PointAndClickGameLayout);
         PointAndClickGameLayout.setHorizontalGroup(
             PointAndClickGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 682, Short.MAX_VALUE)
+            .addGroup(PointAndClickGameLayout.createSequentialGroup()
+                .addGroup(PointAndClickGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PointAndClickGameLayout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabelPACClock))
+                    .addGroup(PointAndClickGameLayout.createSequentialGroup()
+                        .addGroup(PointAndClickGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(PointAndClickGameLayout.createSequentialGroup()
+                                .addGap(72, 72, 72)
+                                .addGroup(PointAndClickGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabelC2)
+                                    .addComponent(jLabelC1)))
+                            .addGroup(PointAndClickGameLayout.createSequentialGroup()
+                                .addGap(281, 281, 281)
+                                .addGroup(PointAndClickGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(PointAndClickGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabelColor)
+                                        .addGroup(PointAndClickGameLayout.createSequentialGroup()
+                                            .addComponent(jLabelC3)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(jLabelC4)))
+                                    .addGroup(PointAndClickGameLayout.createSequentialGroup()
+                                        .addGap(237, 237, 237)
+                                        .addComponent(jLabelC5)))))
+                        .addGap(105, 105, 105)))
+                .addContainerGap())
         );
         PointAndClickGameLayout.setVerticalGroup(
             PointAndClickGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 447, Short.MAX_VALUE)
+            .addGroup(PointAndClickGameLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabelPACClock)
+                .addGap(93, 93, 93)
+                .addComponent(jLabelC1)
+                .addGap(14, 14, 14)
+                .addComponent(jLabelColor)
+                .addGap(7, 7, 7)
+                .addComponent(jLabelC5)
+                .addGap(51, 51, 51)
+                .addComponent(jLabelC2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
+                .addGroup(PointAndClickGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PointAndClickGameLayout.createSequentialGroup()
+                        .addComponent(jLabelC3)
+                        .addGap(105, 105, 105))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PointAndClickGameLayout.createSequentialGroup()
+                        .addComponent(jLabelC4)
+                        .addGap(120, 120, 120))))
         );
 
-        mainPanel.add(PointAndClickGame, "PACgame");
+        ActionListener lPACGame = new ActionListener() {
+            public void actionPerformed(ActionEvent ev) {
+                //Continuously update time here
+                SimpleDateFormat bub = new SimpleDateFormat("MMMMMMMMM dd, yyyy  HH:mm:ss");
+                Date current = new Date();
+                String theDate = bub.format(current);
+                jLabelPACClock.setText(theDate);
+            }
+        };
+
+        Timer datePACGame = new Timer(500, lPACGame);
+        datePACGame.start();
+
+        mainPanel.add(PointAndClickGame, "PACgameCard");
 
         End.setName("end"); // NOI18N
 
@@ -898,7 +982,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                 .addComponent(jLabel13)
                 .addGap(69, 69, 69)
                 .addComponent(bTMButton)
-                .addContainerGap(137, Short.MAX_VALUE))
+                .addContainerGap(153, Short.MAX_VALUE))
         );
 
         ActionListener listen4 = new ActionListener() {
@@ -1344,7 +1428,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
     private void skipButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipButtonActionPerformed
         score = 0;
         CardLayout card = (CardLayout)mainPanel.getLayout();
-        card.show(mainPanel, "PACgame");
+        card.show(mainPanel, "PACgameCard");
     }//GEN-LAST:event_skipButtonActionPerformed
    
     /**
@@ -1987,7 +2071,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
        if (count == 6)
        {
         CardLayout card = (CardLayout)mainPanel.getLayout();
-      card.show(mainPanel, "PACgame");
+      card.show(mainPanel, "PACgameCard");
         System.out.println("The score is :" + score);
        }
    }
@@ -2107,6 +2191,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabelC1;
+    private javax.swing.JLabel jLabelC2;
+    private javax.swing.JLabel jLabelC3;
+    private javax.swing.JLabel jLabelC4;
+    private javax.swing.JLabel jLabelC5;
+    private javax.swing.JLabel jLabelColor;
     private javax.swing.JLabel jLabelHangman;
     private javax.swing.JLabel jLabelLetter1;
     private javax.swing.JLabel jLabelLetter2;
@@ -2116,6 +2206,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabelLetter6;
     private javax.swing.JLabel jLabelLetter7;
     private javax.swing.JLabel jLabelLetter8;
+    private javax.swing.JLabel jLabelPACClock;
     private javax.swing.JLabel jLabelSpcae;
     private javax.swing.JButton kButton;
     private javax.swing.JButton mButton;
