@@ -1117,7 +1117,32 @@ public class QuarterProject245 extends javax.swing.JFrame {
      */
    private void HighScoresButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HighScoresButtonActionPerformed
       // TODO add your handling code here:
-      //High scores
+      //High scores - using pieces from my methods above to quickly grab highscores txt file
+      File daHighScores = new File("highscores.txt");
+      //debug
+      System.out.println("highscores.txt exists? "+daHighScores.exists());
+      if(!(daHighScores.exists()))
+         try {
+            hsCreateFile();
+      } catch (FileNotFoundException ex) {
+         Logger.getLogger(QuarterProject245.class.getName()).log(Level.SEVERE, null, ex);
+      }
+      
+      //quickly update high scores page with whatever is in highscores text file
+      FileReader readHighScores;
+       try {
+          readHighScores = new FileReader(daHighScores);
+          BufferedReader scanHS = new BufferedReader(readHighScores);
+          highscore1.setText(scanHS.readLine());
+          highscore2.setText(scanHS.readLine());
+          highscore3.setText(scanHS.readLine());
+          highscore4.setText(scanHS.readLine());
+          
+       } catch (FileNotFoundException ex) {
+          Logger.getLogger(QuarterProject245.class.getName()).log(Level.SEVERE, null, ex);
+       } catch (IOException ex) {
+          Logger.getLogger(QuarterProject245.class.getName()).log(Level.SEVERE, null, ex);
+       }
       CardLayout card = (CardLayout)mainPanel.getLayout();
       card.show(mainPanel, "highscoresCard");
    }//GEN-LAST:event_HighScoresButtonActionPerformed
@@ -1756,8 +1781,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
        //reset since it was skipped, then main menu
        resetButtons();
        CardLayout card = (CardLayout)mainPanel.getLayout();
-       card.show(mainPanel, "menuCard");
-       System.out.println("It should switch to menuCard if this prints");
+       card.show(mainPanel, "mainmenuCard");
    }//GEN-LAST:event_doneButtonActionPerformed
    
     /**
