@@ -1766,6 +1766,9 @@ public class QuarterProject245 extends javax.swing.JFrame {
    private void doneButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_doneButtonActionPerformed
       // TODO add your handling code here:
       String uN = userName.getText();
+      //Initials only; else default setting (ABC)
+      if(uN.length() != 3)
+         uN = "ABC";
        try {
           String newScores = updateHighScores(uN, score);
           //scan through string
