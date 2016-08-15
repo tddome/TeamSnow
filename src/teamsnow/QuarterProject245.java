@@ -1349,6 +1349,9 @@ public class QuarterProject245 extends javax.swing.JFrame {
            Logger.getLogger(QuarterProject245.class.getName()).log(Level.SEVERE, null, ex);
         }
         
+        //for deciding which card displays
+        boolean setCardTrigger = false;
+        
         try {
            //check if they at least beat the lowest score by pulling the file into a string,
            String highScoresFile = new Scanner(new File("highscores.txt")).useDelimiter("\\Z").next();
@@ -1358,8 +1361,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
            System.out.println("High score was: "+score+"\nLowest score read was: "+lastScore);
            if(lastScore < score) {
               //get their name and update the high scores, since they did it
+              //debug
+              System.out.println("Did this trigger?");
               CardLayout card = (CardLayout)mainPanel.getLayout();
               card.show(mainPanel, "setCard");
+              System.out.println("Looks like it triggered");
+              setCardTrigger = true;
            }
              
         } catch (FileNotFoundException ex) {
@@ -1367,9 +1374,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
         }
         
         //Troy - if set card wasn't triggered, code will continue like normal
-        resetButtons();
-        CardLayout card = (CardLayout)mainPanel.getLayout();
-        card.show(mainPanel, "mainmenuCard");
+        if(setCardTrigger == false) {
+            resetButtons();
+            CardLayout card = (CardLayout)mainPanel.getLayout();
+            card.show(mainPanel, "mainmenuCard");
+            System.out.println("Did main menu trigger anyway...?");
+        }
     }//GEN-LAST:event_bTMButtonActionPerformed
 /**
      * method:(Letter button for the gameButtonActionPerformed 
@@ -1739,13 +1749,15 @@ public class QuarterProject245 extends javax.swing.JFrame {
           highscore1.setText(scanny.nextLine());
           highscore2.setText(scanny.nextLine());
           highscore3.setText(scanny.nextLine());
-          highscore4.setText(scanny.nextLine());
-          CardLayout card = (CardLayout)mainPanel.getLayout();
-          card.show(mainPanel, "menuCard");
-          
+          highscore4.setText(scanny.nextLine());       
        } catch (IOException ex) {
           Logger.getLogger(QuarterProject245.class.getName()).log(Level.SEVERE, null, ex);
        }
+       
+       //reset since it was skipped, then main menu
+       resetButtons();
+       CardLayout card = (CardLayout)mainPanel.getLayout();
+       card.show(mainPanel, "menuCard");
    }//GEN-LAST:event_doneButtonActionPerformed
    
     /**
