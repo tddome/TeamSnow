@@ -1272,6 +1272,17 @@ public class QuarterProject245 extends javax.swing.JFrame {
          theScores[theScores.length - 1] = oldScore;
       }
       
+      //weird case where all high scores are equal,
+      //but the last one is zero,
+      //and your score = the other scores,
+      //so you have to be put on the last score:
+      if(theCounter == 4) {
+         if(theScores[theScores.length - 1] < passedInVariable) {
+            theNames[theNames.length - 1] = passedInName;
+            theScores[theScores.length - 1] = passedInVariable;
+         }
+      }
+      
       //show the results after writing to file (debug)
       System.out.println("Names updated: " + Arrays.toString(theNames));
       System.out.println("Scores updated: " + Arrays.toString(theScores));
@@ -1771,6 +1782,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
          uN = "ABC";
        try {
           String newScores = updateHighScores(uN, score);
+          System.out.println("The string (Debug): \n"+newScores);
           //scan through string
           Scanner scanny = new Scanner(newScores);
           highscore1.setText(scanny.nextLine());
