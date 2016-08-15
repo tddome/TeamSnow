@@ -972,7 +972,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       End.setName("end"); // NOI18N
 
       jLabel10.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
-      jLabel10.setText("Your score is ");
+      jLabel10.setText("Game Over");
 
       bTMButton.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
       bTMButton.setText("End Hangman");
@@ -989,29 +989,27 @@ public class QuarterProject245 extends javax.swing.JFrame {
       End.setLayout(EndLayout);
       EndLayout.setHorizontalGroup(
          EndLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, EndLayout.createSequentialGroup()
+            .addGap(0, 246, Short.MAX_VALUE)
+            .addComponent(jLabel10)
+            .addGap(242, 242, 242))
          .addGroup(EndLayout.createSequentialGroup()
+            .addGap(268, 268, 268)
             .addGroup(EndLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-               .addGroup(EndLayout.createSequentialGroup()
-                  .addGap(185, 185, 185)
-                  .addComponent(jLabel10))
-               .addGroup(EndLayout.createSequentialGroup()
-                  .addGap(229, 229, 229)
-                  .addComponent(bTMButton))
-               .addGroup(EndLayout.createSequentialGroup()
-                  .addGap(276, 276, 276)
-                  .addComponent(jLabel13)))
-            .addContainerGap(263, Short.MAX_VALUE))
+               .addComponent(jLabel13)
+               .addComponent(bTMButton))
+            .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
       );
       EndLayout.setVerticalGroup(
          EndLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
          .addGroup(EndLayout.createSequentialGroup()
-            .addGap(91, 91, 91)
+            .addGap(95, 95, 95)
             .addComponent(jLabel10)
-            .addGap(39, 39, 39)
+            .addGap(35, 35, 35)
             .addComponent(jLabel13)
-            .addGap(69, 69, 69)
+            .addGap(60, 60, 60)
             .addComponent(bTMButton)
-            .addContainerGap(153, Short.MAX_VALUE))
+            .addContainerGap(162, Short.MAX_VALUE))
       );
 
       ActionListener listen4 = new ActionListener() {
@@ -1052,33 +1050,33 @@ public class QuarterProject245 extends javax.swing.JFrame {
       HighScoreSetLayout.setHorizontalGroup(
          HighScoreSetLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
          .addGroup(HighScoreSetLayout.createSequentialGroup()
-            .addContainerGap(187, Short.MAX_VALUE)
+            .addContainerGap(188, Short.MAX_VALUE)
             .addGroup(HighScoreSetLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, HighScoreSetLayout.createSequentialGroup()
                   .addComponent(jLabel12)
-                  .addGap(243, 243, 243))
-               .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, HighScoreSetLayout.createSequentialGroup()
-                  .addComponent(jLabel14)
-                  .addGap(183, 183, 183))
+                  .addGap(244, 244, 244))
                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, HighScoreSetLayout.createSequentialGroup()
                   .addComponent(userName, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                  .addGap(283, 283, 283))
+                  .addGap(288, 288, 288))
+               .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, HighScoreSetLayout.createSequentialGroup()
+                  .addComponent(jLabel14)
+                  .addGap(182, 182, 182))
                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, HighScoreSetLayout.createSequentialGroup()
                   .addComponent(doneButton)
-                  .addGap(306, 306, 306))))
+                  .addGap(307, 307, 307))))
       );
       HighScoreSetLayout.setVerticalGroup(
          HighScoreSetLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
          .addGroup(HighScoreSetLayout.createSequentialGroup()
-            .addGap(91, 91, 91)
+            .addGap(98, 98, 98)
             .addComponent(jLabel12)
-            .addGap(46, 46, 46)
-            .addComponent(jLabel14)
             .addGap(18, 18, 18)
+            .addComponent(jLabel14)
+            .addGap(12, 12, 12)
             .addComponent(userName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
             .addComponent(doneButton)
-            .addContainerGap(198, Short.MAX_VALUE))
+            .addContainerGap(225, Short.MAX_VALUE))
       );
 
       mainPanel.add(HighScoreSet, "setCard");
