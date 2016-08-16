@@ -917,7 +917,7 @@
             </Property>
           </Properties>
           <AuxValues>
-            <AuxValue name="JavaCodeGenerator_LayoutCodePost" type="java.lang.String" value="ActionListener lPACGame = new ActionListener() {&#xa;            public void actionPerformed(ActionEvent ev) {&#xa;                //Continuously update time here&#xa;                SimpleDateFormat bub = new SimpleDateFormat(&quot;MMMMMMMMM dd, yyyy  HH:mm:ss&quot;);&#xa;                Date current = new Date();&#xa;                String theDate = bub.format(current);&#xa;                jLabelPACClock.setText(theDate);&#xa;            }&#xa;        };&#xa;&#xa;        Timer datePACGame = new Timer(500, lPACGame);&#xa;        datePACGame.start();"/>
+            <AuxValue name="JavaCodeGenerator_LayoutCodePost" type="java.lang.String" value="ActionListener lPACGame = new ActionListener() {&#xa;            public void actionPerformed(ActionEvent ev) {&#xa;                //Continuously update time here&#xa;                SimpleDateFormat bub = new SimpleDateFormat(&quot;MMMMMMMMM dd, yyyy  HH:mm:ss&quot;);&#xa;                Date current = new Date();&#xa;                String theDate = bub.format(current);&#xa;                jLabelPACClock.setText(theDate);&#xa;            }&#xa;        };&#xa;&#xa;        Timer datePACGame = new Timer(500, lPACGame);&#xa;        datePACGame.start();&#xa;&#xa;&#xa;/*jButtonC1.addMouseListener(new java.awt.event.MouseAdapter() {&#xa;            public void mouseEntered(java.awt.event.MouseEvent evt) {&#xa;                jButtonC1.setBackground(Color.GREEN);&#xa;            }&#xa;            public void mouseExited(java.awt.event.MouseEvent evt) {&#xa;                jButtonC1.setBackground(UIManager.getColor(&quot;control&quot;));&#xa;            }&#xa;        });*/"/>
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
@@ -929,12 +929,8 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace pref="278" max="32767" attributes="0"/>
+                      <EmptySpace pref="472" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="jLabelColor" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="256" max="-2" attributes="0"/>
-                          </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <Component id="jButton1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
@@ -945,6 +941,13 @@
                           </Group>
                       </Group>
                   </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="jButtonC1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="jLabelColor" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="256" max="-2" attributes="0"/>
+                  </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
@@ -954,9 +957,17 @@
                       <Component id="jLabelPACClock" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
-                      <Component id="jLabelColor" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="224" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
+                              <Component id="jLabelColor" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                              <Component id="jButtonC1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="180" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -982,6 +993,22 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Color"/>
               </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButtonC1">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/pictures/blue.png"/>
+                </Property>
+                <Property name="borderPainted" type="boolean" value="false"/>
+                <Property name="contentAreaFilled" type="boolean" value="false"/>
+                <Property name="focusPainted" type="boolean" value="false"/>
+                <Property name="rolloverIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/pictures/yellow.png"/>
+                </Property>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="jButtonC1.setOpaque(false);"/>
+              </AuxValues>
             </Component>
           </SubComponents>
         </Container>
