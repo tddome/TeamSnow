@@ -133,13 +133,8 @@ public class QuarterProject245 extends javax.swing.JFrame {
         jLabelLetter8 = new javax.swing.JLabel();
         PointAndClickGame = new javax.swing.JPanel();
         jLabelPACClock = new javax.swing.JLabel();
-        jLabelColor = new javax.swing.JLabel();
-        jLabelC1 = new javax.swing.JLabel();
-        jLabelC2 = new javax.swing.JLabel();
-        jLabelC3 = new javax.swing.JLabel();
-        jLabelC4 = new javax.swing.JLabel();
-        jLabelC5 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jLabelColor = new javax.swing.JLabel();
         End = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
         bTMButton = new javax.swing.JButton();
@@ -657,7 +652,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                         .addComponent(LButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(mButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 6, Short.MAX_VALUE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, PlayMenuLayout.createSequentialGroup()
                         .addGroup(PlayMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(PlayMenuLayout.createSequentialGroup()
@@ -886,19 +881,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
 
         jLabelPACClock.setText("Clock");
 
-        jLabelColor.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
-        jLabelColor.setText("Color");
-
-        jLabelC1.setText("Circle1");
-
-        jLabelC2.setText("Circle2");
-
-        jLabelC3.setText("Circle3");
-
-        jLabelC4.setText("Circle4");
-
-        jLabelC5.setText("Circle5");
-
         jButton1.setText("skip (debug)");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -906,60 +888,36 @@ public class QuarterProject245 extends javax.swing.JFrame {
             }
         });
 
+        jLabelColor.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
+        jLabelColor.setText("Color");
+
         javax.swing.GroupLayout PointAndClickGameLayout = new javax.swing.GroupLayout(PointAndClickGame);
         PointAndClickGame.setLayout(PointAndClickGameLayout);
         PointAndClickGameLayout.setHorizontalGroup(
             PointAndClickGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PointAndClickGameLayout.createSequentialGroup()
+                .addContainerGap(278, Short.MAX_VALUE)
                 .addGroup(PointAndClickGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(PointAndClickGameLayout.createSequentialGroup()
-                        .addGap(72, 72, 72)
-                        .addGroup(PointAndClickGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabelC2)
-                            .addComponent(jLabelC1)))
-                    .addGroup(PointAndClickGameLayout.createSequentialGroup()
-                        .addGap(281, 281, 281)
-                        .addGroup(PointAndClickGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(PointAndClickGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabelColor)
-                                .addGroup(PointAndClickGameLayout.createSequentialGroup()
-                                    .addComponent(jLabelC3)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabelC4)))
-                            .addGroup(PointAndClickGameLayout.createSequentialGroup()
-                                .addGap(237, 237, 237)
-                                .addComponent(jLabelC5)))))
-                .addGap(105, 105, 105))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PointAndClickGameLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(PointAndClickGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton1)
-                    .addComponent(jLabelPACClock))
-                .addGap(141, 141, 141))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PointAndClickGameLayout.createSequentialGroup()
+                        .addComponent(jLabelColor)
+                        .addGap(256, 256, 256))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PointAndClickGameLayout.createSequentialGroup()
+                        .addComponent(jButton1)
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PointAndClickGameLayout.createSequentialGroup()
+                        .addComponent(jLabelPACClock)
+                        .addContainerGap())))
         );
         PointAndClickGameLayout.setVerticalGroup(
             PointAndClickGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PointAndClickGameLayout.createSequentialGroup()
                 .addGap(12, 12, 12)
                 .addComponent(jLabelPACClock)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton1)
-                .addGap(49, 49, 49)
-                .addComponent(jLabelC1)
-                .addGap(14, 14, 14)
+                .addGap(77, 77, 77)
                 .addComponent(jLabelColor)
-                .addGap(7, 7, 7)
-                .addComponent(jLabelC5)
-                .addGap(51, 51, 51)
-                .addComponent(jLabelC2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(PointAndClickGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PointAndClickGameLayout.createSequentialGroup()
-                        .addComponent(jLabelC3)
-                        .addGap(105, 105, 105))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PointAndClickGameLayout.createSequentialGroup()
-                        .addComponent(jLabelC4)
-                        .addGap(120, 120, 120))))
+                .addContainerGap(224, Short.MAX_VALUE))
         );
 
         ActionListener lPACGame = new ActionListener() {
@@ -2582,11 +2540,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JLabel jLabelC1;
-    private javax.swing.JLabel jLabelC2;
-    private javax.swing.JLabel jLabelC3;
-    private javax.swing.JLabel jLabelC4;
-    private javax.swing.JLabel jLabelC5;
     private javax.swing.JLabel jLabelColor;
     private javax.swing.JLabel jLabelHangman;
     private javax.swing.JLabel jLabelLetter1;
