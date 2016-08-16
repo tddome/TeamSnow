@@ -54,6 +54,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
     {
         initComponents();
         this.words = new String[]{"abstract", "cemetery", "nurse", "pharmacy", "climbing"};
+        this.colors = new String[]{"red","blue","yellow","purple","green"};
     }
     /**
      * method:initComponents
@@ -901,26 +902,51 @@ public class QuarterProject245 extends javax.swing.JFrame {
         jButtonC1.setBorderPainted(false);
         jButtonC1.setContentAreaFilled(false);
         jButtonC1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/bOver.png"))); // NOI18N
+        jButtonC1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonC1ActionPerformed(evt);
+            }
+        });
 
         jButtonC2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/green.png"))); // NOI18N
         jButtonC2.setBorderPainted(false);
         jButtonC2.setContentAreaFilled(false);
         jButtonC2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/gOver.png"))); // NOI18N
+        jButtonC2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonC2ActionPerformed(evt);
+            }
+        });
 
         jButtonC3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/purple.png"))); // NOI18N
         jButtonC3.setBorderPainted(false);
         jButtonC3.setContentAreaFilled(false);
         jButtonC3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/pOver.png"))); // NOI18N
+        jButtonC3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonC3ActionPerformed(evt);
+            }
+        });
 
         jButtonC4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/red.png"))); // NOI18N
         jButtonC4.setBorderPainted(false);
         jButtonC4.setContentAreaFilled(false);
         jButtonC4.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/rOver.png"))); // NOI18N
+        jButtonC4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonC4ActionPerformed(evt);
+            }
+        });
 
         jButtonC5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/yellow.png"))); // NOI18N
         jButtonC5.setBorderPainted(false);
         jButtonC5.setContentAreaFilled(false);
         jButtonC5.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/yOver.png"))); // NOI18N
+        jButtonC5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonC5ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout PointAndClickGameLayout = new javax.swing.GroupLayout(PointAndClickGame);
         PointAndClickGame.setLayout(PointAndClickGameLayout);
@@ -996,14 +1022,14 @@ public class QuarterProject245 extends javax.swing.JFrame {
         Timer datePACGame = new Timer(500, lPACGame);
         datePACGame.start();
 
-        /*jButtonC1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jButtonC1.setBackground(Color.GREEN);
+        ActionListener lPAC2 = new ActionListener() {
+            public void actionPerformed(ActionEvent ev) {
+                //does game operations
+                jLabelColor.setText(colorCh);
             }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jButtonC1.setBackground(UIManager.getColor("control"));
-            }
-        });*/
+        };
+        Timer tPAC = new Timer(0, lPAC2);
+        tPAC.start();
 
         mainPanel.add(PointAndClickGame, "PACgameCard");
 
@@ -1846,6 +1872,26 @@ public class QuarterProject245 extends javax.swing.JFrame {
        CardLayout card = (CardLayout)mainPanel.getLayout();
        card.show(mainPanel, "mainmenuCard");
    }//GEN-LAST:event_doneButtonActionPerformed
+
+    private void jButtonC1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonC1ActionPerformed
+        PACGmae();
+    }//GEN-LAST:event_jButtonC1ActionPerformed
+
+    private void jButtonC2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonC2ActionPerformed
+         PACGmae();
+    }//GEN-LAST:event_jButtonC2ActionPerformed
+
+    private void jButtonC3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonC3ActionPerformed
+         PACGmae();
+    }//GEN-LAST:event_jButtonC3ActionPerformed
+
+    private void jButtonC4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonC4ActionPerformed
+         PACGmae();
+    }//GEN-LAST:event_jButtonC4ActionPerformed
+
+    private void jButtonC5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonC5ActionPerformed
+       PACGmae();
+    }//GEN-LAST:event_jButtonC5ActionPerformed
    
     /**
      * method:resetButtons
@@ -1940,7 +1986,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
      /**
      * method:beginPlay
      * purpose:The method sets the random number for the index and the word to a
-     * variable.
+     * variable and the color to another variable.
      */
    public void beginPlay()
    {
@@ -1949,6 +1995,9 @@ public class QuarterProject245 extends javax.swing.JFrame {
        
        playWord = words[randNumber];
           System.out.println(playWord);
+          
+          colorCh = colors[randNumber];
+          System.out.println(colorCh);
       
    }
    
@@ -2492,6 +2541,10 @@ public class QuarterProject245 extends javax.swing.JFrame {
        }
    }
    
+   public void PACGmae()
+   {
+       countPAC++;
+   }
     /**
      * method:main
      * purpose: sets the thread to play the game and sets the board panels visible.
@@ -2533,12 +2586,15 @@ public class QuarterProject245 extends javax.swing.JFrame {
     }
     
     private int count = 0;
+    private int countPAC =0;
     private int wordCount = 0;
     private int score = 100; 
     private int randNumber = 0;
     private final int A_SIZE = 5;
     private String [] words = new String[A_SIZE];
+    private String [] colors = new String [A_SIZE];
     private String playWord;
+    private String colorCh;
     //status for game
    private boolean aStatus = true;
    private boolean bStatus = true;

@@ -917,7 +917,7 @@
             </Property>
           </Properties>
           <AuxValues>
-            <AuxValue name="JavaCodeGenerator_LayoutCodePost" type="java.lang.String" value="ActionListener lPACGame = new ActionListener() {&#xa;            public void actionPerformed(ActionEvent ev) {&#xa;                //Continuously update time here&#xa;                SimpleDateFormat bub = new SimpleDateFormat(&quot;MMMMMMMMM dd, yyyy  HH:mm:ss&quot;);&#xa;                Date current = new Date();&#xa;                String theDate = bub.format(current);&#xa;                jLabelPACClock.setText(theDate);&#xa;            }&#xa;        };&#xa;&#xa;        Timer datePACGame = new Timer(500, lPACGame);&#xa;        datePACGame.start();&#xa;&#xa;&#xa;/*jButtonC1.addMouseListener(new java.awt.event.MouseAdapter() {&#xa;            public void mouseEntered(java.awt.event.MouseEvent evt) {&#xa;                jButtonC1.setBackground(Color.GREEN);&#xa;            }&#xa;            public void mouseExited(java.awt.event.MouseEvent evt) {&#xa;                jButtonC1.setBackground(UIManager.getColor(&quot;control&quot;));&#xa;            }&#xa;        });*/"/>
+            <AuxValue name="JavaCodeGenerator_LayoutCodePost" type="java.lang.String" value="ActionListener lPACGame = new ActionListener() {&#xa;            public void actionPerformed(ActionEvent ev) {&#xa;                //Continuously update time here&#xa;                SimpleDateFormat bub = new SimpleDateFormat(&quot;MMMMMMMMM dd, yyyy  HH:mm:ss&quot;);&#xa;                Date current = new Date();&#xa;                String theDate = bub.format(current);&#xa;                jLabelPACClock.setText(theDate);&#xa;            }&#xa;        };&#xa;&#xa;        Timer datePACGame = new Timer(500, lPACGame);&#xa;        datePACGame.start();&#xa;&#xa;ActionListener lPAC2 = new ActionListener() {&#xa;            public void actionPerformed(ActionEvent ev) {&#xa;                //does game operations&#xa;                jLabelColor.setText(colorCh);&#xa;            }&#xa;        };&#xa; Timer tPAC = new Timer(0, lPAC2);&#xa;        tPAC.start();"/>
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
@@ -1035,6 +1035,9 @@
                   <Image iconType="3" name="/pictures/bOver.png"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonC1ActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="jButtonC2">
               <Properties>
@@ -1047,6 +1050,9 @@
                   <Image iconType="3" name="/pictures/gOver.png"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonC2ActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="jButtonC3">
               <Properties>
@@ -1059,6 +1065,9 @@
                   <Image iconType="3" name="/pictures/pOver.png"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonC3ActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="jButtonC4">
               <Properties>
@@ -1071,6 +1080,9 @@
                   <Image iconType="3" name="/pictures/rOver.png"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonC4ActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="jButtonC5">
               <Properties>
@@ -1083,6 +1095,9 @@
                   <Image iconType="3" name="/pictures/yOver.png"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonC5ActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
