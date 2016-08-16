@@ -135,13 +135,13 @@ public class QuarterProject245 extends javax.swing.JFrame {
         jLabelLetter8 = new javax.swing.JLabel();
         PointAndClickGame = new javax.swing.JPanel();
         jLabelPACClock = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
         jLabelColor = new javax.swing.JLabel();
-        jButtonC1 = new javax.swing.JButton();
-        jButtonC2 = new javax.swing.JButton();
-        jButtonC3 = new javax.swing.JButton();
-        jButtonC4 = new javax.swing.JButton();
-        jButtonC5 = new javax.swing.JButton();
+        jButtonBlue = new javax.swing.JButton();
+        jButtonGreen = new javax.swing.JButton();
+        jButtonPurple = new javax.swing.JButton();
+        jButtonRed = new javax.swing.JButton();
+        jButtonYellow = new javax.swing.JButton();
+        jLabelScorePAC = new javax.swing.JLabel();
         End = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
         bTMButton = new javax.swing.JButton();
@@ -888,65 +888,60 @@ public class QuarterProject245 extends javax.swing.JFrame {
 
         jLabelPACClock.setText("Clock");
 
-        jButton1.setText("skip (debug)");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-
-        jLabelColor.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
+        jLabelColor.setFont(new java.awt.Font("Lucida Grande", 1, 36)); // NOI18N
         jLabelColor.setText("Color");
 
-        jButtonC1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/blue.png"))); // NOI18N
-        jButtonC1.setBorderPainted(false);
-        jButtonC1.setContentAreaFilled(false);
-        jButtonC1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/bOver.png"))); // NOI18N
-        jButtonC1.addActionListener(new java.awt.event.ActionListener() {
+        jButtonBlue.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/blue.png"))); // NOI18N
+        jButtonBlue.setBorderPainted(false);
+        jButtonBlue.setContentAreaFilled(false);
+        jButtonBlue.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/bOver.png"))); // NOI18N
+        jButtonBlue.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonC1ActionPerformed(evt);
+                jButtonBlueActionPerformed(evt);
             }
         });
 
-        jButtonC2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/green.png"))); // NOI18N
-        jButtonC2.setBorderPainted(false);
-        jButtonC2.setContentAreaFilled(false);
-        jButtonC2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/gOver.png"))); // NOI18N
-        jButtonC2.addActionListener(new java.awt.event.ActionListener() {
+        jButtonGreen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/green.png"))); // NOI18N
+        jButtonGreen.setBorderPainted(false);
+        jButtonGreen.setContentAreaFilled(false);
+        jButtonGreen.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/gOver.png"))); // NOI18N
+        jButtonGreen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonC2ActionPerformed(evt);
+                jButtonGreenActionPerformed(evt);
             }
         });
 
-        jButtonC3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/purple.png"))); // NOI18N
-        jButtonC3.setBorderPainted(false);
-        jButtonC3.setContentAreaFilled(false);
-        jButtonC3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/pOver.png"))); // NOI18N
-        jButtonC3.addActionListener(new java.awt.event.ActionListener() {
+        jButtonPurple.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/purple.png"))); // NOI18N
+        jButtonPurple.setBorderPainted(false);
+        jButtonPurple.setContentAreaFilled(false);
+        jButtonPurple.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/pOver.png"))); // NOI18N
+        jButtonPurple.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonC3ActionPerformed(evt);
+                jButtonPurpleActionPerformed(evt);
             }
         });
 
-        jButtonC4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/red.png"))); // NOI18N
-        jButtonC4.setBorderPainted(false);
-        jButtonC4.setContentAreaFilled(false);
-        jButtonC4.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/rOver.png"))); // NOI18N
-        jButtonC4.addActionListener(new java.awt.event.ActionListener() {
+        jButtonRed.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/red.png"))); // NOI18N
+        jButtonRed.setBorderPainted(false);
+        jButtonRed.setContentAreaFilled(false);
+        jButtonRed.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/rOver.png"))); // NOI18N
+        jButtonRed.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonC4ActionPerformed(evt);
+                jButtonRedActionPerformed(evt);
             }
         });
 
-        jButtonC5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/yellow.png"))); // NOI18N
-        jButtonC5.setBorderPainted(false);
-        jButtonC5.setContentAreaFilled(false);
-        jButtonC5.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/yOver.png"))); // NOI18N
-        jButtonC5.addActionListener(new java.awt.event.ActionListener() {
+        jButtonYellow.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/yellow.png"))); // NOI18N
+        jButtonYellow.setBorderPainted(false);
+        jButtonYellow.setContentAreaFilled(false);
+        jButtonYellow.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/yOver.png"))); // NOI18N
+        jButtonYellow.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonC5ActionPerformed(evt);
+                jButtonYellowActionPerformed(evt);
             }
         });
+
+        jLabelScorePAC.setText("Score:");
 
         javax.swing.GroupLayout PointAndClickGameLayout = new javax.swing.GroupLayout(PointAndClickGame);
         PointAndClickGame.setLayout(PointAndClickGameLayout);
@@ -954,58 +949,58 @@ public class QuarterProject245 extends javax.swing.JFrame {
             PointAndClickGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PointAndClickGameLayout.createSequentialGroup()
                 .addGap(27, 27, 27)
-                .addComponent(jButtonC1)
+                .addComponent(jButtonBlue)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabelColor)
                 .addGap(87, 87, 87)
-                .addComponent(jButtonC5)
+                .addComponent(jButtonYellow)
                 .addGap(49, 49, 49))
             .addGroup(PointAndClickGameLayout.createSequentialGroup()
                 .addGap(96, 96, 96)
-                .addComponent(jButtonC2)
+                .addComponent(jButtonGreen)
                 .addGap(47, 47, 47)
-                .addComponent(jButtonC3)
+                .addComponent(jButtonPurple)
                 .addGap(49, 49, 49)
-                .addComponent(jButtonC4)
+                .addComponent(jButtonRed)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PointAndClickGameLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(PointAndClickGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabelPACClock, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addGap(237, 237, 237)
+                .addComponent(jLabelScorePAC)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabelPACClock)
                 .addContainerGap())
         );
         PointAndClickGameLayout.setVerticalGroup(
             PointAndClickGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PointAndClickGameLayout.createSequentialGroup()
                 .addGap(12, 12, 12)
-                .addComponent(jLabelPACClock)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1)
+                .addGroup(PointAndClickGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelPACClock)
+                    .addComponent(jLabelScorePAC))
                 .addGroup(PointAndClickGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PointAndClickGameLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButtonC3)
+                        .addComponent(jButtonPurple)
                         .addGap(47, 47, 47))
                     .addGroup(PointAndClickGameLayout.createSequentialGroup()
                         .addGroup(PointAndClickGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(PointAndClickGameLayout.createSequentialGroup()
-                                .addGap(77, 77, 77)
+                                .addGap(118, 118, 118)
                                 .addComponent(jLabelColor))
                             .addGroup(PointAndClickGameLayout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jButtonC1))
+                                .addGap(53, 53, 53)
+                                .addComponent(jButtonBlue))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PointAndClickGameLayout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButtonC5)))
+                                .addGap(57, 57, 57)
+                                .addComponent(jButtonYellow)))
                         .addGroup(PointAndClickGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(PointAndClickGameLayout.createSequentialGroup()
                                 .addGap(33, 33, 33)
-                                .addComponent(jButtonC2)
+                                .addComponent(jButtonGreen)
                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PointAndClickGameLayout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButtonC4)
+                                .addComponent(jButtonRed)
                                 .addGap(88, 88, 88))))))
         );
 
@@ -1025,7 +1020,39 @@ public class QuarterProject245 extends javax.swing.JFrame {
         ActionListener lPAC2 = new ActionListener() {
             public void actionPerformed(ActionEvent ev) {
                 //does game operations
-                jLabelColor.setText(colorCh);
+                jLabelColor.setText(colorDisplay);
+                jLabelScorePAC.setText("Score:" + score);
+                if (countPAC == 5)
+                {
+                    CardLayout card = (CardLayout)mainPanel.getLayout();
+                    card.show(mainPanel, "endCard");
+                }
+                else
+                {
+                    switch(randNumForColor)
+                    {
+                        case 0://green
+                        //System.out.println("green");
+                        jLabelColor.setForeground(new Color(76, 153, 0));
+                        break;
+                        case 1://purple
+                        //System.out.println("purple");
+                        jLabelColor.setForeground(new Color(51, 0, 102));
+                        break;
+                        case 2://yellow
+                        //System.out.println("yellow");
+                        jLabelColor.setForeground(Color.YELLOW);
+                        break;
+                        case 3://red
+                        //System.out.println("red");
+                        jLabelColor.setForeground(Color.RED);
+                        break;
+                        case 4://blue
+                        //System.out.println("blue");
+                        jLabelColor.setForeground(new Color(51, 153, 255));
+                        break;
+                    }
+                }
             }
         };
         Timer tPAC = new Timer(0, lPAC2);
@@ -1838,12 +1865,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
         card.show(mainPanel, "PACgameCard");
     }//GEN-LAST:event_skipButtonActionPerformed
 
-   private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-      // TODO add your handling code here:
-      CardLayout card = (CardLayout)mainPanel.getLayout();
-      card.show(mainPanel, "endCard");
-   }//GEN-LAST:event_jButton1ActionPerformed
-
    private void userNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userNameActionPerformed
       // TODO add your handling code here:
    }//GEN-LAST:event_userNameActionPerformed
@@ -1873,25 +1894,25 @@ public class QuarterProject245 extends javax.swing.JFrame {
        card.show(mainPanel, "mainmenuCard");
    }//GEN-LAST:event_doneButtonActionPerformed
 
-    private void jButtonC1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonC1ActionPerformed
-        PACGmae();
-    }//GEN-LAST:event_jButtonC1ActionPerformed
+    private void jButtonBlueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBlueActionPerformed
+       PACGmae(4);
+    }//GEN-LAST:event_jButtonBlueActionPerformed
 
-    private void jButtonC2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonC2ActionPerformed
-         PACGmae();
-    }//GEN-LAST:event_jButtonC2ActionPerformed
+    private void jButtonGreenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGreenActionPerformed
+        PACGmae(0);
+    }//GEN-LAST:event_jButtonGreenActionPerformed
 
-    private void jButtonC3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonC3ActionPerformed
-         PACGmae();
-    }//GEN-LAST:event_jButtonC3ActionPerformed
+    private void jButtonPurpleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPurpleActionPerformed
+         PACGmae(1);
+    }//GEN-LAST:event_jButtonPurpleActionPerformed
 
-    private void jButtonC4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonC4ActionPerformed
-         PACGmae();
-    }//GEN-LAST:event_jButtonC4ActionPerformed
+    private void jButtonRedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRedActionPerformed
+         PACGmae(3);
+    }//GEN-LAST:event_jButtonRedActionPerformed
 
-    private void jButtonC5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonC5ActionPerformed
-       PACGmae();
-    }//GEN-LAST:event_jButtonC5ActionPerformed
+    private void jButtonYellowActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonYellowActionPerformed
+       PACGmae(2);
+    }//GEN-LAST:event_jButtonYellowActionPerformed
    
     /**
      * method:resetButtons
@@ -1899,10 +1920,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
      */
     public void resetButtons()
    {
+      resetPAC();
        count = 0;
        wordCount = 0;
        score = 100;
        randNumber = 0;
+       randNumForColor =0;
        aButton.setEnabled(true);
        bButton.setEnabled(true);
        cButton.setEnabled(true); 
@@ -1995,9 +2018,10 @@ public class QuarterProject245 extends javax.swing.JFrame {
        
        playWord = words[randNumber];
           System.out.println(playWord);
+          colorDisplay = colors[randNumber];
           
-          colorCh = colors[randNumber];
-          System.out.println(colorCh);
+          randNumForColor = rand.nextInt(A_SIZE);
+          System.out.println(randNumForColor);
       
    }
    
@@ -2541,9 +2565,80 @@ public class QuarterProject245 extends javax.swing.JFrame {
        }
    }
    
-   public void PACGmae()
+   public void PACGmae(int value)
    {
-       countPAC++;
+       switch(randNumForColor)
+             {
+             case 0://green
+                 if(randNumForColor == value)
+                 {
+                     System.out.println("score +100");
+                     score = score + 100;
+                 }
+                 else
+                 {
+                     System.out.println("not correct color");
+                 }
+                    break;
+             case 1://purple
+                  if(randNumForColor == value)
+                 {
+                     System.out.println("score +100");
+                     score = score + 100;
+                 }
+                 else
+                 {
+                     System.out.println("not correct color");
+                 }
+                    break;  
+             case 2://yellow 
+                  if(randNumForColor == value)
+                 {
+                     System.out.println("score +100");
+                     score = score + 100;
+                 }
+                 else
+                 {
+                     System.out.println("not correct color");
+                 }
+                    break;
+              case 3://red
+                   if(randNumForColor == value)
+                 {
+                     System.out.println("score +100");
+                     score = score + 100;
+                 }
+                 else
+                 {
+                     System.out.println("not correct color");
+                 }
+                    break;
+              case 4://blue 
+                   if(randNumForColor == value)
+                 {
+                     System.out.println("score +100");
+                     score = score + 100;
+                 }
+                 else
+                 {
+                     System.out.println("not correct color");
+                 }
+                    break;
+              }
+            countPAC++;
+            resetPAC();
+   }
+   public void resetPAC()
+   {
+       Random rand = new Random();
+       randNumber = rand.nextInt(A_SIZE);
+          colorDisplay = colors[randNumber];
+          
+       Random rand1 = new Random();
+          randNumForColor = rand1.nextInt(A_SIZE);
+          System.out.println(randNumForColor);
+          
+       
    }
     /**
      * method:main
@@ -2586,7 +2681,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
     }
     
     private int count = 0;
-    private int countPAC =0;
     private int wordCount = 0;
     private int score = 100; 
     private int randNumber = 0;
@@ -2594,8 +2688,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
     private String [] words = new String[A_SIZE];
     private String [] colors = new String [A_SIZE];
     private String playWord;
-    private String colorCh;
-    //status for game
+    private String colorDisplay;
+    private String colorClicked;
+    private String colorGiven;
+    private int randNumForColor =0;
+    private int countPAC =0;
+//status for game
    private boolean aStatus = true;
    private boolean bStatus = true;
    private boolean cStatus = true;
@@ -2656,12 +2754,11 @@ public class QuarterProject245 extends javax.swing.JFrame {
     private javax.swing.JLabel highscore4;
     private javax.swing.JButton iButton;
     private javax.swing.JButton jButton;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButtonC1;
-    private javax.swing.JButton jButtonC2;
-    private javax.swing.JButton jButtonC3;
-    private javax.swing.JButton jButtonC4;
-    private javax.swing.JButton jButtonC5;
+    private javax.swing.JButton jButtonBlue;
+    private javax.swing.JButton jButtonGreen;
+    private javax.swing.JButton jButtonPurple;
+    private javax.swing.JButton jButtonRed;
+    private javax.swing.JButton jButtonYellow;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -2684,6 +2781,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabelLetter7;
     private javax.swing.JLabel jLabelLetter8;
     private javax.swing.JLabel jLabelPACClock;
+    private javax.swing.JLabel jLabelScorePAC;
     private javax.swing.JLabel jLabelSpcae;
     private javax.swing.JButton kButton;
     private javax.swing.JButton mButton;

@@ -917,7 +917,7 @@
             </Property>
           </Properties>
           <AuxValues>
-            <AuxValue name="JavaCodeGenerator_LayoutCodePost" type="java.lang.String" value="ActionListener lPACGame = new ActionListener() {&#xa;            public void actionPerformed(ActionEvent ev) {&#xa;                //Continuously update time here&#xa;                SimpleDateFormat bub = new SimpleDateFormat(&quot;MMMMMMMMM dd, yyyy  HH:mm:ss&quot;);&#xa;                Date current = new Date();&#xa;                String theDate = bub.format(current);&#xa;                jLabelPACClock.setText(theDate);&#xa;            }&#xa;        };&#xa;&#xa;        Timer datePACGame = new Timer(500, lPACGame);&#xa;        datePACGame.start();&#xa;&#xa;ActionListener lPAC2 = new ActionListener() {&#xa;            public void actionPerformed(ActionEvent ev) {&#xa;                //does game operations&#xa;                jLabelColor.setText(colorCh);&#xa;            }&#xa;        };&#xa; Timer tPAC = new Timer(0, lPAC2);&#xa;        tPAC.start();"/>
+            <AuxValue name="JavaCodeGenerator_LayoutCodePost" type="java.lang.String" value="ActionListener lPACGame = new ActionListener() {&#xa;            public void actionPerformed(ActionEvent ev) {&#xa;                //Continuously update time here&#xa;                SimpleDateFormat bub = new SimpleDateFormat(&quot;MMMMMMMMM dd, yyyy  HH:mm:ss&quot;);&#xa;                Date current = new Date();&#xa;                String theDate = bub.format(current);&#xa;                jLabelPACClock.setText(theDate);&#xa;            }&#xa;        };&#xa;&#xa;        Timer datePACGame = new Timer(500, lPACGame);&#xa;        datePACGame.start();&#xa;&#xa;ActionListener lPAC2 = new ActionListener() {&#xa;            public void actionPerformed(ActionEvent ev) {&#xa;                //does game operations&#xa;                jLabelColor.setText(colorDisplay);&#xa;                 jLabelScorePAC.setText(&quot;Score:&quot; + score);&#xa;               if (countPAC == 5)&#xa;                {&#xa;                 CardLayout card = (CardLayout)mainPanel.getLayout();&#xa;                 card.show(mainPanel, &quot;endCard&quot;);&#xa;                }&#xa;                else&#xa;                    {&#xa;                        switch(randNumForColor)&#xa;                             {&#xa;                            case 0://green&#xa;                                 //System.out.println(&quot;green&quot;);&#xa;                                   jLabelColor.setForeground(new Color(76, 153, 0));&#xa;                                break;&#xa;                            case 1://purple&#xa;                                 //System.out.println(&quot;purple&quot;);&#xa;                                jLabelColor.setForeground(new Color(51, 0, 102));&#xa;                                 break;  &#xa;                            case 2://yellow &#xa;                                //System.out.println(&quot;yellow&quot;);&#xa;                                jLabelColor.setForeground(Color.YELLOW);&#xa;                                 break;&#xa;                            case 3://red&#xa;                                //System.out.println(&quot;red&quot;);&#xa;                                jLabelColor.setForeground(Color.RED);&#xa;                                break;&#xa;                            case 4://blue &#xa;                                //System.out.println(&quot;blue&quot;);&#xa;                                jLabelColor.setForeground(new Color(51, 153, 255));&#xa;                                break;&#xa;                            }&#xa;                    }&#xa;            }&#xa;        };&#xa; Timer tPAC = new Timer(0, lPAC2);&#xa;        tPAC.start();"/>
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
@@ -930,28 +930,27 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                      <Component id="jButtonC1" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButtonBlue" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="jLabelColor" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
-                      <Component id="jButtonC5" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButtonYellow" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
-                      <Component id="jButtonC2" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButtonGreen" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
-                      <Component id="jButtonC3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButtonPurple" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
-                      <Component id="jButtonC4" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButtonRed" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="62" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="-2" pref="237" max="-2" attributes="0"/>
+                      <Component id="jLabelScorePAC" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jButton1" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelPACClock" alignment="1" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="jLabelPACClock" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -960,39 +959,40 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                      <Component id="jLabelPACClock" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabelPACClock" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabelScorePAC" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace max="32767" attributes="0"/>
-                              <Component id="jButtonC3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jButtonPurple" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
-                                      <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="118" max="-2" attributes="0"/>
                                       <Component id="jLabelColor" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jButtonC1" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+                                      <Component id="jButtonBlue" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jButtonC5" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
+                                      <Component id="jButtonYellow" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
                                       <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                                      <Component id="jButtonC2" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jButtonGreen" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
                                       <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="jButtonC4" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jButtonRed" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
@@ -1008,23 +1008,15 @@
                 <Property name="text" type="java.lang.String" value="Clock"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton1">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="skip (debug)"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
-              </Events>
-            </Component>
             <Component class="javax.swing.JLabel" name="jLabelColor">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Lucida Grande" size="24" style="1"/>
+                  <Font name="Lucida Grande" size="36" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Color"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="jButtonC1">
+            <Component class="javax.swing.JButton" name="jButtonBlue">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/pictures/blue.png"/>
@@ -1036,10 +1028,10 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonC1ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonBlueActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="jButtonC2">
+            <Component class="javax.swing.JButton" name="jButtonGreen">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/pictures/green.png"/>
@@ -1051,10 +1043,10 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonC2ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonGreenActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="jButtonC3">
+            <Component class="javax.swing.JButton" name="jButtonPurple">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/pictures/purple.png"/>
@@ -1066,10 +1058,10 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonC3ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonPurpleActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="jButtonC4">
+            <Component class="javax.swing.JButton" name="jButtonRed">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/pictures/red.png"/>
@@ -1081,10 +1073,10 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonC4ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonRedActionPerformed"/>
               </Events>
             </Component>
-            <Component class="javax.swing.JButton" name="jButtonC5">
+            <Component class="javax.swing.JButton" name="jButtonYellow">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/pictures/yellow.png"/>
@@ -1096,8 +1088,13 @@
                 </Property>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonC5ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonYellowActionPerformed"/>
               </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabelScorePAC">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Score:"/>
+              </Properties>
             </Component>
           </SubComponents>
         </Container>
