@@ -1928,7 +1928,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
      */
     public void resetButtons()
    {
-      resetPAC();
        count = 0;
        wordCount = 0;
        score = 100;
@@ -2671,9 +2670,8 @@ public class QuarterProject245 extends javax.swing.JFrame {
           
             int l5x = rand.nextInt(PointAndClickGame.getWidth()-jButtonYellow.getWidth());
           int l5y = rand.nextInt(PointAndClickGame.getHeight()-jButtonYellow.getHeight());
-
-         
           
+         
         
                    ActionListener rPACGame = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
