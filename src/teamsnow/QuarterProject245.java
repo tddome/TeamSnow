@@ -1103,7 +1103,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
                 //Continuously update score
 
                 jLabel13.setText("Score:" + score);
-
+                if(endGame == true)
+                {
+                    resetButtons();
+                    CardLayout card = (CardLayout)mainPanel.getLayout();
+                    card.show(mainPanel, "mainmenuCard");
+                }
             }
         };
         Timer FScore = new Timer(0, listen4);
@@ -1446,7 +1451,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
      */
     private void bTMButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bTMButtonActionPerformed
         // TODO add your handling code here:
-        
+        endGame = true;
         //Troy - adding in high scores check
         File daHighScores = new File("highscores.txt");
         //debug
@@ -2667,8 +2672,8 @@ public class QuarterProject245 extends javax.swing.JFrame {
             int l5x = rand.nextInt(PointAndClickGame.getWidth()-jButtonYellow.getWidth());
           int l5y = rand.nextInt(PointAndClickGame.getHeight()-jButtonYellow.getHeight());
 
-
-      
+         
+          
         
                    ActionListener rPACGame = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
@@ -2737,6 +2742,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
     private String colorDisplay;
     private int randNumForColor =0;
     private int countPAC =0;
+    private boolean endGame = false;
 //status for game
    private boolean aStatus = true;
    private boolean bStatus = true;

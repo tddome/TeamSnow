@@ -1104,7 +1104,7 @@
             </Property>
           </Properties>
           <AuxValues>
-            <AuxValue name="JavaCodeGenerator_LayoutCodePost" type="java.lang.String" value="ActionListener listen4 = new ActionListener() {&#xa;            public void actionPerformed(ActionEvent ev) {&#xa;                //Continuously update score&#xa;               &#xa;                 jLabel13.setText(&quot;Score:&quot; + score);&#xa;             &#xa;            }&#xa;        };&#xa; Timer FScore = new Timer(0, listen4);&#xa;       // FScore.setRepeats(false);&#xa;        FScore.start();"/>
+            <AuxValue name="JavaCodeGenerator_LayoutCodePost" type="java.lang.String" value="ActionListener listen4 = new ActionListener() {&#xa;            public void actionPerformed(ActionEvent ev) {&#xa;                //Continuously update score&#xa;               &#xa;                 jLabel13.setText(&quot;Score:&quot; + score);&#xa;             if(endGame == true)&#xa;                {&#xa;                resetButtons();&#xa;                CardLayout card = (CardLayout)mainPanel.getLayout();&#xa;                card.show(mainPanel, &quot;mainmenuCard&quot;);&#xa;                }&#xa;            }&#xa;        };&#xa; Timer FScore = new Timer(0, listen4);&#xa;       // FScore.setRepeats(false);&#xa;        FScore.start();"/>
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
