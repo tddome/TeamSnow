@@ -36,13 +36,7 @@ import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.Timer;
-import javax.swing.UIManager;
 
-
-/**
- *
- * @author Troy
- */
 
 public class QuarterProject245 extends javax.swing.JFrame {
 
@@ -1211,7 +1205,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
      * method:HighScoresButtonActionPerformed
      * purpose:The methods does all the actions for the High score button that opens the High score play card.
      */
-   
    private void HighScoresButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HighScoresButtonActionPerformed
       // TODO add your handling code here:
       //High scores - using pieces from my methods above to quickly grab highscores txt file
@@ -1278,19 +1271,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       card.show(mainPanel, "mainmenuCard");
    }//GEN-LAST:event_backButton1ActionPerformed
 
-   
    /**
     * 
-    * @author Troy
     * Method name: updateHighScores
     * Method purpose: Updates high scores if user passed in has a good enough score.
     * A new high score file will be generated if one does not already exist.
     * Returns a string of the file's contents, so the jLabel may be updated.
-    * @param userName
-    * @param userScore
-    * @return 
-    * @throws java.io.FileNotFoundException
-    * 
     */
    public static String updateHighScores(String userName, int userScore) throws FileNotFoundException, IOException {
       //for reading the highscores file
@@ -1396,13 +1382,10 @@ public class QuarterProject245 extends javax.swing.JFrame {
    
    /**
     * 
-    * @author Troy
     * Method name: hsCreateFile
     * Method purpose: Creates high scores file if one does not exist
-    * @throws java.io.FileNotFoundException
     * 
     */
-   
    public static void hsCreateFile() throws FileNotFoundException {
       try (PrintWriter addHighScores = new PrintWriter("highscores.txt")) {
          addHighScores.println("ABC ... 0");
@@ -1417,15 +1400,11 @@ public class QuarterProject245 extends javax.swing.JFrame {
 
    /**
     * 
-    * @author Troy
     * Method name: hsModifyFile
     * Method purpose: Modifies the high scores by updating it with any new changes.
     * This is accomplished through simply posting the array data,
     * which was either untouched (user did not high score),'
     * or has an index updated (user did get a high score).
-    * @param scores
-    * @param names
-    * @throws FileNotFoundException
     * 
     */
    public static void hsModifyFile(int[] scores, String[] names) throws FileNotFoundException {
@@ -1437,16 +1416,13 @@ public class QuarterProject245 extends javax.swing.JFrame {
          e.getMessage();
       }
    }
+   
    /**
     * 
-    * @author Troy
     * Method name: indexUserRankedInto
     * Method purpose: Once scores are stored, see if user's high score is better than the others.
     * If so, update it and make sure it doesn't overwrite the lower scores.
     * If not, return a -1 to notify that the user didn't get a high score.
-    * @param s
-    * @param userScore
-    * @return
     * 
     */
    public static int indexUserRankedInto(int[] s, int userScore) {
@@ -1462,7 +1438,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       //returns -1 if nothing updated
       return -1;
    }
-  
+  ////////////////////////////////////////////////////////need to update purpose
    /**
      * method:bTMButtonActionPerformed 
      * purpose:The methods does all the actions for the all the end hangman button that takes the user back
@@ -1863,10 +1839,19 @@ public class QuarterProject245 extends javax.swing.JFrame {
         card.show(mainPanel, "PACgameCard");
     }//GEN-LAST:event_skipButtonActionPerformed
 
+    
+    ///////////////////troy idk what this is for?????
    private void userNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userNameActionPerformed
       // TODO add your handling code here:
    }//GEN-LAST:event_userNameActionPerformed
 
+   
+   
+   ////////////////////////////////////////troy update comment
+    /**
+     * method:doneButtonActionPerformed
+     * Purpose:.
+     */
    private void doneButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_doneButtonActionPerformed
       // TODO add your handling code here:
       String uN = userName.getText();
@@ -1892,22 +1877,42 @@ public class QuarterProject245 extends javax.swing.JFrame {
        card.show(mainPanel, "mainmenuCard");
    }//GEN-LAST:event_doneButtonActionPerformed
 
+   /**
+     * method:jButtonPurpleActionPerformed
+     * Purpose:the method just calls the PACGmae method and gives the value associated with the color.
+     */ 
     private void jButtonPurpleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPurpleActionPerformed
          PACGmae(1);
     }//GEN-LAST:event_jButtonPurpleActionPerformed
 
+    /**
+     * method:jButtonRedActionPerformed
+     * Purpose:the method just calls the PACGmae method and gives the value associated with the color.
+     */ 
     private void jButtonRedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRedActionPerformed
          PACGmae(3);
     }//GEN-LAST:event_jButtonRedActionPerformed
 
+    /**
+     * method:jButtonYellowActionPerformed
+     * Purpose:the method just calls the PACGmae method and gives the value associated with the color.
+     */
     private void jButtonYellowActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonYellowActionPerformed
        PACGmae(2);
     }//GEN-LAST:event_jButtonYellowActionPerformed
 
+    /**
+     * method:jButtonGreenActionPerformed
+     * Purpose:the method just calls the PACGmae method and gives the value associated with the color.
+     */
     private void jButtonGreenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGreenActionPerformed
          PACGmae(0);
     }//GEN-LAST:event_jButtonGreenActionPerformed
 
+    /**
+     * method:jButtonBlueActionPerformed
+     * Purpose:the method just calls the PACGmae method and gives the value associated with the color.
+     */
     private void jButtonBlueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBlueActionPerformed
         PACGmae(4);
     }//GEN-LAST:event_jButtonBlueActionPerformed
@@ -2562,7 +2567,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
         System.out.println("The score is :" + score);
        }
    }
-   
+   /**
+     * method:PACGmae
+     * Purpose:the method updates the score and makes sure that the color given
+     * by the random number generator this function also calls resetPAC method 
+     * and increments the countPAC variable to run the five rounds  .
+     */
    public void PACGmae(int value)
    {
        switch(randNumForColor)
@@ -2626,6 +2636,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
             countPAC++;
             resetPAC();
    }
+   
+   /**
+     * method:resetPAC
+     * Purpose:this method resets the color title that is displayed, resets the
+     * color needed to win the round and changes the position of the circle buttons.
+     */
    public void resetPAC()
    {
        Random rand = new Random();
