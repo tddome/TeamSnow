@@ -2709,12 +2709,13 @@ public class QuarterProject245 extends javax.swing.JFrame {
           randNumForColor = rand.nextInt(A_SIZE);
           System.out.println(randNumForColor);
           
-          int boardRand = rand.nextInt(13);
+          int boardRand = 0;
            
-          System.out.println("rearewr"+boardRand);
+          
           ActionListener rPACGame = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
                     PointAndClickGame.setLayout(null);
+                    int boardRand = rand.nextInt(13);
                  switch(boardRand)
              {
              case 0:
