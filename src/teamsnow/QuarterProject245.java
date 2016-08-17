@@ -5,15 +5,18 @@
 * 
 * class: CS 245 – GUI
 *
-* assignment: program 1 version 1
-* date last modified: 08/10/2016
+* assignment: program 1 version 2
+* date last modified: 08/17/2016
 *
 * purpose: This program is a hangman game that begins with a splash screen for 3 seconds
 * then enters the menu panel. Once at the menu panel the user has 3 options: (1)Play (2)High Score (3)Credits.
 * Once the play button is pressed the Hangman game begins with setting up the start display, then the user presses the 
 * desired letter.If the user guesses wrong 6 times, then the program ends, as well as when the user correctly guesses the word.
-* The High score button displays all the possible high scores(this does not update for now). The credits button displays the
-* authors.
+* Then the program goes to the next game that shows the user some buttons and they must match the color to get plus 100 points
+* otherwise no points given. This process is done for 5 rounds then it goes to the end screen. The lowest high score is checked 
+* and if the current score is greater than that score, then the program updates the score to the board with the possibility to enter
+* name.The High score button displays all the possible high scores that have been played, it gets the data from a file.
+* The credits button displays the authors.
 ****************************************************************/ 
 package teamsnow;
 
