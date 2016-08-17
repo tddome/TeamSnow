@@ -1465,6 +1465,8 @@ public class QuarterProject245 extends javax.swing.JFrame {
         
         //for deciding which card displays
         boolean setCardTrigger = false;
+        /////////////////////////////////////////////////////////////////////////////////////////
+        //needs to be fixed
        /* 
         try {
            //check if they at least beat the lowest score by pulling the file into a string,
