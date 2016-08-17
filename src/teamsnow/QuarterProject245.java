@@ -1059,7 +1059,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       jLabel10.setText("Game Over");
 
       bTMButton.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
-      bTMButton.setText("End Hangman");
+      bTMButton.setText("End Game");
       bTMButton.addActionListener(new java.awt.event.ActionListener() {
          public void actionPerformed(java.awt.event.ActionEvent evt) {
             bTMButtonActionPerformed(evt);
@@ -1073,26 +1073,25 @@ public class QuarterProject245 extends javax.swing.JFrame {
       End.setLayout(EndLayout);
       EndLayout.setHorizontalGroup(
          EndLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, EndLayout.createSequentialGroup()
-            .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(bTMButton)
-            .addGap(234, 234, 234))
          .addGroup(EndLayout.createSequentialGroup()
             .addGroup(EndLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                .addGroup(EndLayout.createSequentialGroup()
                   .addGap(268, 268, 268)
                   .addComponent(jLabel13))
                .addGroup(EndLayout.createSequentialGroup()
-                  .addGap(203, 203, 203)
+                  .addGap(238, 238, 238)
+                  .addComponent(bTMButton))
+               .addGroup(EndLayout.createSequentialGroup()
+                  .addGap(196, 196, 196)
                   .addComponent(jLabel10)))
-            .addContainerGap(204, Short.MAX_VALUE))
+            .addContainerGap(211, Short.MAX_VALUE))
       );
       EndLayout.setVerticalGroup(
          EndLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
          .addGroup(EndLayout.createSequentialGroup()
-            .addGap(97, 97, 97)
+            .addGap(100, 100, 100)
             .addComponent(jLabel10)
-            .addGap(33, 33, 33)
+            .addGap(30, 30, 30)
             .addComponent(jLabel13)
             .addGap(18, 18, 18)
             .addComponent(bTMButton)
@@ -1117,9 +1116,9 @@ public class QuarterProject245 extends javax.swing.JFrame {
       HighScoreSet.setPreferredSize(new java.awt.Dimension(600, 400));
 
       jLabel12.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-      jLabel12.setText("Set Your Initials");
+      jLabel12.setText("New High Score!");
 
-      jLabel14.setText("Enter Initials (If not 3 letters or not text, ABC by default).");
+      jLabel14.setText("Enter Your Initials Below!");
 
       userName.setHorizontalAlignment(javax.swing.JTextField.CENTER);
       userName.addActionListener(new java.awt.event.ActionListener() {
@@ -1135,7 +1134,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
          }
       });
 
-      jLabel5.setText("If you got a high score, you will be displayed on the high score page.");
+      jLabel5.setText(" (If not 3 letters or not text, ABC by default)");
 
       javax.swing.GroupLayout HighScoreSetLayout = new javax.swing.GroupLayout(HighScoreSet);
       HighScoreSet.setLayout(HighScoreSetLayout);
@@ -1147,18 +1146,18 @@ public class QuarterProject245 extends javax.swing.JFrame {
                   .addGap(201, 201, 201)
                   .addComponent(jLabel12))
                .addGroup(HighScoreSetLayout.createSequentialGroup()
-                  .addGap(142, 142, 142)
-                  .addComponent(jLabel14))
-               .addGroup(HighScoreSetLayout.createSequentialGroup()
                   .addGap(262, 262, 262)
                   .addComponent(doneButton))
                .addGroup(HighScoreSetLayout.createSequentialGroup()
                   .addGap(242, 242, 242)
                   .addComponent(userName, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                .addGroup(HighScoreSetLayout.createSequentialGroup()
-                  .addGap(110, 110, 110)
+                  .addGap(223, 223, 223)
+                  .addComponent(jLabel14))
+               .addGroup(HighScoreSetLayout.createSequentialGroup()
+                  .addGap(174, 174, 174)
                   .addComponent(jLabel5)))
-            .addContainerGap(109, Short.MAX_VALUE))
+            .addContainerGap(188, Short.MAX_VALUE))
       );
       HighScoreSetLayout.setVerticalGroup(
          HighScoreSetLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1167,9 +1166,9 @@ public class QuarterProject245 extends javax.swing.JFrame {
             .addComponent(jLabel12)
             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
             .addComponent(jLabel14)
-            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+            .addGap(2, 2, 2)
             .addComponent(jLabel5)
-            .addGap(8, 8, 8)
+            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
             .addComponent(userName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
             .addComponent(doneButton)
@@ -1275,7 +1274,61 @@ public class QuarterProject245 extends javax.swing.JFrame {
       CardLayout card = (CardLayout)mainPanel.getLayout();
       card.show(mainPanel, "mainmenuCard");
    }//GEN-LAST:event_backButton1ActionPerformed
-
+   
+   /**
+    * 
+    * Method name: checkIfUserHighScored
+    * Method purpose: Checks to see if the user high scored.
+    * Returns a false if they didn't, true if they did.
+    */
+   public boolean checkIfUserHighScored(int userScore) throws FileNotFoundException, IOException {
+      File daHighScores = new File("highscores.txt");
+      //debug
+      System.out.println("highscores.txt exists? "+daHighScores.exists());
+      if(!(daHighScores.exists()))
+         hsCreateFile();
+      
+      //Scan file for the scores and store in array
+      int[] theScores = new int[4];
+      //Scan file for the names and store in array
+      String[] theNames = new String[4];
+      //create a counter for the arrays
+      int theCounter = 0;
+      
+      //set up the ability to read each line in the high scores
+      FileReader readHighScores = new FileReader(daHighScores);
+      BufferedReader scanHS = new BufferedReader(readHighScores);
+      //read in the name of the person first through readNextLine check
+      String readNextLine;
+      
+      //scans each line and takes the information it needs per line
+      //(Name first, skips dots, score last)
+      while((readNextLine = scanHS.readLine()) != null) {
+         //first three characters of line are read
+         theNames[theCounter] = readNextLine.substring(0, Math.min(readNextLine.length(), 3));
+         
+         //print it (debug)
+         //System.out.println(""+theNames[theCounter]);
+         
+         //last three characters of line are read (after the last space)
+         theScores[theCounter] = Integer.parseInt(readNextLine.substring(readNextLine.lastIndexOf(' ') + 1));
+         
+         //print it (debug)
+         //System.out.println(""+theScores[theCounter]);
+         
+         theCounter++;
+      }
+      
+      //show the results before writing to file (debug)
+      System.out.println("Names old: " + Arrays.toString(theNames));
+      System.out.println("Scores old: " + Arrays.toString(theScores));
+      
+      if(userScore <= theScores[3])
+         return false; //user did not high score; lower than lowest
+      else
+         return true; //user did high score, higher than lowest
+   }
+   
    /**
     * 
     * Method name: updateHighScores
@@ -1455,9 +1508,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
     private void bTMButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bTMButtonActionPerformed
         // TODO add your handling code here:
         //Troy - adding in high scores check
-      // resetButtons();
-            CardLayout card = (CardLayout)mainPanel.getLayout();
-            //card.show(mainPanel, "mainmenuCard");
         
          File daHighScores = new File("highscores.txt");
         //debug
@@ -1468,41 +1518,24 @@ public class QuarterProject245 extends javax.swing.JFrame {
         } catch (FileNotFoundException ex) {
            Logger.getLogger(QuarterProject245.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
-        //for deciding which card displays
-        boolean setCardTrigger = false;
-        /////////////////////////////////////////////////////////////////////////////////////////
-        //needs to be fixed
-       /* 
-        try {
-           //check if they at least beat the lowest score by pulling the file into a string,
-           String highScoresFile = new Scanner(new File("highscores.txt")).useDelimiter("\\Z").next();
-           //and then check the last integer in the file (lowest score)
-           int lastScore = Integer.parseInt(highScoresFile.substring(highScoresFile.lastIndexOf(' ') + 1));
-           //debug
-           System.out.println("High score was: "+score+"\nLowest score read was: "+lastScore);
-           if(lastScore < score) {
-              //get their name and update the high scores, since they did it
-              //debug
-              System.out.println("Did this trigger?");
-             // CardLayout card = (CardLayout)mainPanel.getLayout();
-              card.show(mainPanel, "setCard");
-              System.out.println("Looks like it triggered");
-              setCardTrigger = true;
-           }
-             
-        } catch (FileNotFoundException ex) {
-           Logger.getLogger(QuarterProject245.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        */
-        //Troy - if set card wasn't triggered, code will continue like normal
-        if(setCardTrigger == false) {
+       
+       //check which card displays here
             userEndScore = score;
-            resetButtons();
-            //CardLayout card = (CardLayout)mainPanel.getLayout();
-            card.show(mainPanel, "setCard");
-            System.out.println("Did setCard trigger?");
-        }
+            try {
+               boolean didUserHighScore = checkIfUserHighScored(score);
+               
+               resetButtons();
+               if(didUserHighScore) {
+                     CardLayout card = (CardLayout)mainPanel.getLayout();
+                     card.show(mainPanel, "setCard");
+                  }
+               else {
+                  CardLayout card = (CardLayout)mainPanel.getLayout();
+                  card.show(mainPanel, "mainmenuCard");     
+               }
+            } catch (IOException ex) {
+               Logger.getLogger(QuarterProject245.class.getName()).log(Level.SEVERE, null, ex);
+            }
     }//GEN-LAST:event_bTMButtonActionPerformed
 
     /**
