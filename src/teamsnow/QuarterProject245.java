@@ -135,13 +135,13 @@ public class QuarterProject245 extends javax.swing.JFrame {
         jLabelLetter8 = new javax.swing.JLabel();
         PointAndClickGame = new javax.swing.JPanel();
         jLabelPACClock = new javax.swing.JLabel();
-        jLabelColor = new javax.swing.JLabel();
         jButtonBlue = new javax.swing.JButton();
-        jButtonGreen = new javax.swing.JButton();
         jButtonPurple = new javax.swing.JButton();
         jButtonRed = new javax.swing.JButton();
         jButtonYellow = new javax.swing.JButton();
         jLabelScorePAC = new javax.swing.JLabel();
+        jButtonGreen = new javax.swing.JButton();
+        jLabelColor = new javax.swing.JLabel();
         End = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
         bTMButton = new javax.swing.JButton();
@@ -888,9 +888,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
 
         jLabelPACClock.setText("Clock");
 
-        jLabelColor.setFont(new java.awt.Font("Lucida Grande", 1, 36)); // NOI18N
-        jLabelColor.setText("Color");
-
         jButtonBlue.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/blue.png"))); // NOI18N
         jButtonBlue.setBorderPainted(false);
         jButtonBlue.setContentAreaFilled(false);
@@ -898,16 +895,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
         jButtonBlue.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonBlueActionPerformed(evt);
-            }
-        });
-
-        jButtonGreen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/green.png"))); // NOI18N
-        jButtonGreen.setBorderPainted(false);
-        jButtonGreen.setContentAreaFilled(false);
-        jButtonGreen.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/gOver.png"))); // NOI18N
-        jButtonGreen.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonGreenActionPerformed(evt);
             }
         });
 
@@ -943,29 +930,42 @@ public class QuarterProject245 extends javax.swing.JFrame {
 
         jLabelScorePAC.setText("Score:");
 
+        jButtonGreen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/green.png"))); // NOI18N
+        jButtonGreen.setBorderPainted(false);
+        jButtonGreen.setContentAreaFilled(false);
+        jButtonGreen.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/gOver.png"))); // NOI18N
+        jButtonGreen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonGreenActionPerformed(evt);
+            }
+        });
+
+        jLabelColor.setFont(new java.awt.Font("Lucida Grande", 1, 36)); // NOI18N
+        jLabelColor.setText("Color");
+
         javax.swing.GroupLayout PointAndClickGameLayout = new javax.swing.GroupLayout(PointAndClickGame);
         PointAndClickGame.setLayout(PointAndClickGameLayout);
         PointAndClickGameLayout.setHorizontalGroup(
             PointAndClickGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PointAndClickGameLayout.createSequentialGroup()
-                .addGap(27, 27, 27)
+                .addGap(21, 21, 21)
                 .addComponent(jButtonBlue)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabelColor, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addComponent(jLabelColor, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(37, 37, 37)
                 .addComponent(jButtonYellow)
                 .addGap(49, 49, 49))
             .addGroup(PointAndClickGameLayout.createSequentialGroup()
-                .addGap(96, 96, 96)
+                .addGap(94, 94, 94)
                 .addComponent(jButtonGreen)
-                .addGap(47, 47, 47)
+                .addGap(49, 49, 49)
                 .addComponent(jButtonPurple)
                 .addGap(49, 49, 49)
                 .addComponent(jButtonRed)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PointAndClickGameLayout.createSequentialGroup()
                 .addGap(237, 237, 237)
-                .addComponent(jLabelScorePAC, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabelScorePAC, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabelPACClock)
                 .addContainerGap())
@@ -980,28 +980,23 @@ public class QuarterProject245 extends javax.swing.JFrame {
                 .addGroup(PointAndClickGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PointAndClickGameLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButtonPurple)
-                        .addGap(47, 47, 47))
+                        .addComponent(jButtonBlue)
+                        .addGap(16, 16, 16)
+                        .addGroup(PointAndClickGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButtonPurple)
+                            .addComponent(jButtonGreen))
+                        .addGap(43, 43, 43))
                     .addGroup(PointAndClickGameLayout.createSequentialGroup()
                         .addGroup(PointAndClickGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(PointAndClickGameLayout.createSequentialGroup()
-                                .addGap(53, 53, 53)
-                                .addComponent(jButtonBlue))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PointAndClickGameLayout.createSequentialGroup()
                                 .addGap(57, 57, 57)
                                 .addComponent(jButtonYellow))
                             .addGroup(PointAndClickGameLayout.createSequentialGroup()
                                 .addGap(118, 118, 118)
                                 .addComponent(jLabelColor)))
-                        .addGroup(PointAndClickGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(PointAndClickGameLayout.createSequentialGroup()
-                                .addGap(33, 33, 33)
-                                .addComponent(jButtonGreen)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PointAndClickGameLayout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButtonRed)
-                                .addGap(88, 88, 88))))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButtonRed)
+                        .addGap(88, 88, 88))))
         );
 
         ActionListener lPACGame = new ActionListener() {
@@ -1216,6 +1211,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
      * method:HighScoresButtonActionPerformed
      * purpose:The methods does all the actions for the High score button that opens the High score play card.
      */
+   
    private void HighScoresButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HighScoresButtonActionPerformed
       // TODO add your handling code here:
       //High scores - using pieces from my methods above to quickly grab highscores txt file
@@ -1247,7 +1243,8 @@ public class QuarterProject245 extends javax.swing.JFrame {
       CardLayout card = (CardLayout)mainPanel.getLayout();
       card.show(mainPanel, "highscoresCard");
    }//GEN-LAST:event_HighScoresButtonActionPerformed
-    /**
+   
+   /**
      * method:CreditsButtonActionPerformed
      * purpose:The methods does all the actions for the credit button that opens the credit play card.
      */
@@ -1405,6 +1402,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
     * @throws java.io.FileNotFoundException
     * 
     */
+   
    public static void hsCreateFile() throws FileNotFoundException {
       try (PrintWriter addHighScores = new PrintWriter("highscores.txt")) {
          addHighScores.println("ABC ... 0");
@@ -1416,7 +1414,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
          e.getMessage();
       }
    }
-   
+
    /**
     * 
     * @author Troy
@@ -1439,7 +1437,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
          e.getMessage();
       }
    }
-   
    /**
     * 
     * @author Troy
@@ -1465,7 +1462,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       //returns -1 if nothing updated
       return -1;
    }
-   
+  
    /**
      * method:bTMButtonActionPerformed 
      * purpose:The methods does all the actions for the all the end hangman button that takes the user back
@@ -1517,7 +1514,8 @@ public class QuarterProject245 extends javax.swing.JFrame {
             System.out.println("Did main menu trigger anyway...?");
         }
     }//GEN-LAST:event_bTMButtonActionPerformed
-/**
+
+    /**
      * method:(Letter button for the gameButtonActionPerformed 
      * purpose:The methods does all the actions for the all the letters to play the hangman 
      * game that checks the word to the letter and if the user guess incorrectly more than six times
@@ -1894,10 +1892,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
        card.show(mainPanel, "mainmenuCard");
    }//GEN-LAST:event_doneButtonActionPerformed
 
-    private void jButtonGreenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGreenActionPerformed
-        PACGmae(0);
-    }//GEN-LAST:event_jButtonGreenActionPerformed
-
     private void jButtonPurpleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPurpleActionPerformed
          PACGmae(1);
     }//GEN-LAST:event_jButtonPurpleActionPerformed
@@ -1909,6 +1903,10 @@ public class QuarterProject245 extends javax.swing.JFrame {
     private void jButtonYellowActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonYellowActionPerformed
        PACGmae(2);
     }//GEN-LAST:event_jButtonYellowActionPerformed
+
+    private void jButtonGreenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGreenActionPerformed
+         PACGmae(0);
+    }//GEN-LAST:event_jButtonGreenActionPerformed
 
     private void jButtonBlueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBlueActionPerformed
         PACGmae(4);
@@ -2637,20 +2635,24 @@ public class QuarterProject245 extends javax.swing.JFrame {
           randNumForColor = rand.nextInt(A_SIZE);
           System.out.println(randNumForColor);
           
-          int l1x = rand.nextInt(525);
-          int l1y = rand.nextInt(325);
+            
+        int l1x = rand.nextInt(PointAndClickGame.getWidth()-jButtonBlue.getWidth());
+          int l1y = rand.nextInt(PointAndClickGame.getHeight()-jButtonBlue.getHeight());
           
-           int l2x = rand.nextInt(525);
-          int l2y = rand.nextInt(325);
+           int l2x = rand.nextInt(PointAndClickGame.getWidth()-jButtonRed.getWidth());
+          int l2y = rand.nextInt(PointAndClickGame.getHeight()-jButtonRed.getHeight());
           
-            int l3x = rand.nextInt(525);
-          int l3y = rand.nextInt(325);
+            int l3x = rand.nextInt(PointAndClickGame.getWidth()-jButtonGreen.getWidth());
+          int l3y = rand.nextInt(PointAndClickGame.getHeight()-jButtonGreen.getHeight());
           
-            int l4x = rand.nextInt(525);
-          int l4y = rand.nextInt(325);
+            int l4x = rand.nextInt(PointAndClickGame.getWidth()-jButtonPurple.getWidth());
+          int l4y = rand.nextInt(PointAndClickGame.getHeight()-jButtonPurple.getHeight());
           
-            int l5x = rand.nextInt(525);
-          int l5y = rand.nextInt(325);
+            int l5x = rand.nextInt(PointAndClickGame.getWidth()-jButtonYellow.getWidth());
+          int l5y = rand.nextInt(PointAndClickGame.getHeight()-jButtonYellow.getHeight());
+
+
+      
         
                    ActionListener rPACGame = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
@@ -2717,8 +2719,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
     private String [] colors = new String [A_SIZE];
     private String playWord;
     private String colorDisplay;
-    private String colorClicked;
-    private String colorGiven;
     private int randNumForColor =0;
     private int countPAC =0;
 //status for game
