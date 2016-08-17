@@ -2710,17 +2710,17 @@ public class QuarterProject245 extends javax.swing.JFrame {
         int l1x = rand.nextInt(PointAndClickGame.getWidth()-jButtonBlue.getWidth());
           int l1y = rand.nextInt(PointAndClickGame.getHeight()-jButtonBlue.getHeight());
           
-           int l2x = rand.nextInt(PointAndClickGame.getWidth()-jButtonRed.getWidth()-10);
-          int l2y = rand.nextInt(PointAndClickGame.getHeight()-jButtonRed.getHeight()-10);
+           int l2x = rand.nextInt(PointAndClickGame.getWidth()-jButtonRed.getWidth()-20);
+          int l2y = rand.nextInt(PointAndClickGame.getHeight()-jButtonRed.getHeight()-20);
           
-            int l3x = rand.nextInt(PointAndClickGame.getWidth()-jButtonGreen.getWidth()-15);
-          int l3y = rand.nextInt(PointAndClickGame.getHeight()-jButtonGreen.getHeight()-15);
+            int l3x = rand.nextInt(PointAndClickGame.getWidth()-jButtonGreen.getWidth()-25);
+          int l3y = rand.nextInt(PointAndClickGame.getHeight()-jButtonGreen.getHeight()-25);
           
-            int l4x = rand.nextInt(PointAndClickGame.getWidth()-jButtonPurple.getWidth()-20);
-          int l4y = rand.nextInt(PointAndClickGame.getHeight()-jButtonPurple.getHeight()-20);
+            int l4x = rand.nextInt(PointAndClickGame.getWidth()-jButtonPurple.getWidth()-30);
+          int l4y = rand.nextInt(PointAndClickGame.getHeight()-jButtonPurple.getHeight()-30);
           
-            int l5x = rand.nextInt(PointAndClickGame.getWidth()-jButtonYellow.getWidth()-25);
-          int l5y = rand.nextInt(PointAndClickGame.getHeight()-jButtonYellow.getHeight()-25);
+            int l5x = rand.nextInt(PointAndClickGame.getWidth()-jButtonYellow.getWidth()-35);
+          int l5y = rand.nextInt(PointAndClickGame.getHeight()-jButtonYellow.getHeight()-35);
           
          
         
