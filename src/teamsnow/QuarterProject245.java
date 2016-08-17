@@ -2709,19 +2709,155 @@ public class QuarterProject245 extends javax.swing.JFrame {
           randNumForColor = rand.nextInt(A_SIZE);
           System.out.println(randNumForColor);
           
+          int boardRand = rand.nextInt(13);
+           
+          System.out.println("rearewr"+boardRand);
+          ActionListener rPACGame = new ActionListener() {
+                public void actionPerformed(ActionEvent ev) {
+                    PointAndClickGame.setLayout(null);
+                 switch(boardRand)
+             {
+             case 0:
+                 jButtonBlue.setLocation(446, 192);
+                 jButtonRed.setLocation(20, 265);
+                 jButtonGreen.setLocation(331, 50);
+                 jButtonPurple.setLocation(172, 44);
+                jButtonYellow.setLocation(45, 8);
+                            break;
+                        case 1:
+                  jButtonBlue.setLocation(450,53 );
+                 jButtonRed.setLocation(120, 13);
+                 jButtonGreen.setLocation(7, 10);
+                 jButtonPurple.setLocation(5, 199);
+                jButtonYellow.setLocation(100, 226);
+                            break;  
+                    case 2:
+                  jButtonBlue.setLocation(152,218 );
+                 jButtonRed.setLocation(17, 58);
+                 jButtonGreen.setLocation(407, 234);
+                 jButtonPurple.setLocation(17, 231);
+                jButtonYellow.setLocation(135, 52);
+                 
+                         break;
+                    case 3:
+                         jButtonBlue.setLocation(112,16 );
+                 jButtonRed.setLocation(331, 55);
+                 jButtonGreen.setLocation(413, 256);
+                 jButtonPurple.setLocation(126, 169);
+                jButtonYellow.setLocation(433, 127);
+                  
+                        break;
+                    case 4:
+                       jButtonBlue.setLocation(118,12 );
+                 jButtonRed.setLocation(278, 116);
+                 jButtonGreen.setLocation(202, 233);
+                 jButtonPurple.setLocation(119, 211);
+                jButtonYellow.setLocation(337, 46);
+                  
+                        break;
+                case 5:
+                   jButtonBlue.setLocation(117,195 );
+                 jButtonRed.setLocation(426, 34);
+                 jButtonGreen.setLocation(230, 15);
+                 jButtonPurple.setLocation(328, 230);
+                jButtonYellow.setLocation(338, 54);
+                  
+                        break;
+                  case 6:
+                       jButtonBlue.setLocation(211,23 );
+                 jButtonRed.setLocation(225,262 );
+                 jButtonGreen.setLocation(143,189 );
+                 jButtonPurple.setLocation(355, 21);
+                jButtonYellow.setLocation(110, 109);
+      
+                        break;
+                        
+                     case 7:
+                       jButtonBlue.setLocation(41, 5);
+                 jButtonRed.setLocation(331, 140);
+                 jButtonGreen.setLocation(36, 147);
+                 jButtonPurple.setLocation(198, 224);
+                jButtonYellow.setLocation(200, 53);
+      
+                        break;
+                    
+                     case 8:
+                       jButtonBlue.setLocation(405, 62);
+                 jButtonRed.setLocation(416,158 );
+                 jButtonGreen.setLocation(102,116 );
+                 jButtonPurple.setLocation(11,68 );
+                jButtonYellow.setLocation(249, 196);
+      
+                        break;
+                        
+                    case 9:
+                       jButtonBlue.setLocation(231, 19);
+                 jButtonRed.setLocation(428, 121);
+                 jButtonGreen.setLocation(11, 114);
+                 jButtonPurple.setLocation(12, 9);
+                jButtonYellow.setLocation(276, 248);
+      
+                        break;
+                        
+                   case 10:
+                       jButtonBlue.setLocation(79, 220);
+                 jButtonRed.setLocation(404, 207);
+                 jButtonGreen.setLocation(369, 37);
+                 jButtonPurple.setLocation(216, 29);
+                jButtonYellow.setLocation(122, 65);
+      
+                        break;
+                        
+                    case 11:
+                       jButtonBlue.setLocation(314, 134);
+                 jButtonRed.setLocation(270, 27);
+                 jButtonGreen.setLocation(247, 258);
+                 jButtonPurple.setLocation(433, 228);
+                jButtonYellow.setLocation(85, 95);
+      
+                        break;
+                        
+                     case 12:
+                       jButtonBlue.setLocation(403, 90);
+                 jButtonRed.setLocation(19, 56);
+                 jButtonGreen.setLocation(344, 218);
+                 jButtonPurple.setLocation(341, 11);
+                jButtonYellow.setLocation(36, 209);
+      
+                        break;
+                        
+                  case 13:
+                       jButtonBlue.setLocation(35, 77);
+                 jButtonRed.setLocation(229, 262);
+                 jButtonGreen.setLocation(77, 212);
+                 jButtonPurple.setLocation(405, 48);
+                jButtonYellow.setLocation(313, 169);
+      
+                        break;
+                    
+                    } 
+                 }
+                 };
+           Timer rPACTimer = new Timer(0, rPACGame);
+                rPACTimer.setRepeats(false);
+                rPACTimer.start();
             
-        int l1x = rand.nextInt(PointAndClickGame.getWidth()-jButtonBlue.getWidth());
+        /*int l1x = rand.nextInt(PointAndClickGame.getWidth()-jButtonBlue.getWidth());
           int l1y = rand.nextInt(PointAndClickGame.getHeight()-jButtonBlue.getHeight());
+          
           
            int l2x = rand.nextInt(PointAndClickGame.getWidth()-jButtonRed.getWidth()-20);
           int l2y = rand.nextInt(PointAndClickGame.getHeight()-jButtonRed.getHeight()-20);
-          
+            
+            
             int l3x = rand.nextInt(PointAndClickGame.getWidth()-jButtonGreen.getWidth()-25);
           int l3y = rand.nextInt(PointAndClickGame.getHeight()-jButtonGreen.getHeight()-25);
+     
           
-            int l4x = rand.nextInt(PointAndClickGame.getWidth()-jButtonPurple.getWidth()-30);
+          int l4x = rand.nextInt(PointAndClickGame.getWidth()-jButtonPurple.getWidth()-30);
           int l4y = rand.nextInt(PointAndClickGame.getHeight()-jButtonPurple.getHeight()-30);
-          
+            
+            
             int l5x = rand.nextInt(PointAndClickGame.getWidth()-jButtonYellow.getWidth()-35);
           int l5y = rand.nextInt(PointAndClickGame.getHeight()-jButtonYellow.getHeight()-35);
           
@@ -2741,7 +2877,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
 
                 Timer rPACTimer = new Timer(0, rPACGame);
                 rPACTimer.setRepeats(false);
-                rPACTimer.start();
+                rPACTimer.start();*/
    }
     /**
      * method:main
