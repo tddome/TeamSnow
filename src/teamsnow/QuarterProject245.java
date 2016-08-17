@@ -1835,7 +1835,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
     }//GEN-LAST:event_aButtonActionPerformed
 
     /**
-     * method:skipButtonActionPerformed
+     * method: skipButtonActionPerformed
      * purpose:The method skips the game by going to the end card and sets the score to zero.
      */
     private void skipButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_skipButtonActionPerformed
@@ -1843,19 +1843,26 @@ public class QuarterProject245 extends javax.swing.JFrame {
         CardLayout card = (CardLayout)mainPanel.getLayout();
         card.show(mainPanel, "PACgameCard");
     }//GEN-LAST:event_skipButtonActionPerformed
-
     
-    ///////////////////troy idk what this is for?????
+    /**
+     * method: userNameActionPerformed
+     * purpose: This is used to take in the user's input (their initials).
+     * No code is required in here, since the text is saved into the object,
+     * and then accessed via method calls on the input object,
+     * which is then used to write their name to the file.
+     * However, this is still needed to take in input.
+     */
    private void userNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userNameActionPerformed
       // TODO add your handling code here:
    }//GEN-LAST:event_userNameActionPerformed
 
-   
-   
-   ////////////////////////////////////////troy update comment
     /**
-     * method:doneButtonActionPerformed
-     * Purpose:.
+     * method: doneButtonActionPerformed
+     * Purpose: When this button is activated, it will check the user's input
+     * From the text field userName (see method above),
+     * check to make sure it fits the initial requirements,
+     * and then will write the high scores from the file to the high score page.
+     * Everything is then reset, and then the main menu is accessed.
      */
    private void doneButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_doneButtonActionPerformed
       // TODO add your handling code here:
