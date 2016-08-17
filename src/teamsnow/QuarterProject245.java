@@ -1103,12 +1103,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
                 //Continuously update score
 
                 jLabel13.setText("Score:" + score);
-                if(endGame == true)
-                {
-                    resetButtons();
-                    CardLayout card = (CardLayout)mainPanel.getLayout();
-                    card.show(mainPanel, "mainmenuCard");
-                }
             }
         };
         Timer FScore = new Timer(0, listen4);
@@ -1391,6 +1385,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
     * Method purpose: Creates high scores file if one does not exist
     * 
     */
+   
    public static void hsCreateFile() throws FileNotFoundException {
       try (PrintWriter addHighScores = new PrintWriter("highscores.txt")) {
          addHighScores.println("ABC ... 0");
@@ -1412,6 +1407,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
     * or has an index updated (user did get a high score).
     * 
     */
+   
    public static void hsModifyFile(int[] scores, String[] names) throws FileNotFoundException {
       try (PrintWriter addHighScores = new PrintWriter("highscores.txt")) {
          for(int i = 0; i < scores.length; i++)
@@ -1430,6 +1426,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
     * If not, return a -1 to notify that the user didn't get a high score.
     * 
     */
+   
    public static int indexUserRankedInto(int[] s, int userScore) {
       boolean updatedScore = false;
       for(int i = 0; i < s.length; i++) {
@@ -1451,9 +1448,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
      */
     private void bTMButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bTMButtonActionPerformed
         // TODO add your handling code here:
-        endGame = true;
         //Troy - adding in high scores check
-        File daHighScores = new File("highscores.txt");
+      // resetButtons();
+            CardLayout card = (CardLayout)mainPanel.getLayout();
+            //card.show(mainPanel, "mainmenuCard");
+        
+         File daHighScores = new File("highscores.txt");
         //debug
         System.out.println("highscores.txt exists? "+daHighScores.exists());
         if(!(daHighScores.exists()))
@@ -1465,7 +1465,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
         
         //for deciding which card displays
         boolean setCardTrigger = false;
-        
+       /* 
         try {
            //check if they at least beat the lowest score by pulling the file into a string,
            String highScoresFile = new Scanner(new File("highscores.txt")).useDelimiter("\\Z").next();
@@ -1477,7 +1477,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
               //get their name and update the high scores, since they did it
               //debug
               System.out.println("Did this trigger?");
-              CardLayout card = (CardLayout)mainPanel.getLayout();
+             // CardLayout card = (CardLayout)mainPanel.getLayout();
               card.show(mainPanel, "setCard");
               System.out.println("Looks like it triggered");
               setCardTrigger = true;
@@ -1486,11 +1486,11 @@ public class QuarterProject245 extends javax.swing.JFrame {
         } catch (FileNotFoundException ex) {
            Logger.getLogger(QuarterProject245.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
+        */
         //Troy - if set card wasn't triggered, code will continue like normal
         if(setCardTrigger == false) {
             resetButtons();
-            CardLayout card = (CardLayout)mainPanel.getLayout();
+            //CardLayout card = (CardLayout)mainPanel.getLayout();
             card.show(mainPanel, "mainmenuCard");
             System.out.println("Did main menu trigger anyway...?");
         }
@@ -1866,7 +1866,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
      */
    private void doneButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_doneButtonActionPerformed
       // TODO add your handling code here:
-      String uN = userName.getText();
+     /* String uN = userName.getText();
       //Initials only; else default setting (ABC)
       if(uN.length() != 3)
          uN = "ABC";
@@ -1886,7 +1886,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
        //reset since it was skipped, then main menu
        resetButtons();
        CardLayout card = (CardLayout)mainPanel.getLayout();
-       card.show(mainPanel, "mainmenuCard");
+       card.show(mainPanel, "mainmenuCard");*/
    }//GEN-LAST:event_doneButtonActionPerformed
 
    /**
@@ -1940,6 +1940,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
        score = 100;
        randNumber = 0;
        randNumForColor =0;
+       countPAC =0;
        aButton.setEnabled(true);
        bButton.setEnabled(true);
        cButton.setEnabled(true); 
@@ -2747,7 +2748,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
     private String colorDisplay;
     private int randNumForColor =0;
     private int countPAC =0;
-    private boolean endGame = false;
+   
 //status for game
    private boolean aStatus = true;
    private boolean bStatus = true;
