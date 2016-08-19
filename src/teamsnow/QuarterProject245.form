@@ -917,7 +917,7 @@
             </Property>
           </Properties>
           <AuxValues>
-            <AuxValue name="JavaCodeGenerator_LayoutCodePost" type="java.lang.String" value="ActionListener lPACGame = new ActionListener() {&#xa;            public void actionPerformed(ActionEvent ev) {&#xa;                //Continuously update time here&#xa;                SimpleDateFormat bub = new SimpleDateFormat(&quot;MMMMMMMMM dd, yyyy  HH:mm:ss&quot;);&#xa;                Date current = new Date();&#xa;                String theDate = bub.format(current);&#xa;                jLabelPACClock.setText(theDate);&#xa;            }&#xa;        };&#xa;&#xa;        Timer datePACGame = new Timer(500, lPACGame);&#xa;        datePACGame.start();&#xa;&#xa;ActionListener lPAC2 = new ActionListener() {&#xa;            public void actionPerformed(ActionEvent ev) {&#xa;                //does game operations&#xa;                jLabelColor.setText(colorDisplay);&#xa;                 jLabelScorePAC.setText(&quot;Score:&quot; + score);&#xa;               if (countPAC == 5)&#xa;                {&#xa;                 CardLayout card = (CardLayout)mainPanel.getLayout();&#xa;                 card.show(mainPanel, &quot;endCard&quot;);&#xa;                }&#xa;                else&#xa;                    {&#xa;                        switch(randNumForColor)&#xa;                             {&#xa;                            case 0://green&#xa;                                 //System.out.println(&quot;green&quot;);&#xa;                                   jLabelColor.setForeground(new Color(76, 153, 0));&#xa;                                break;&#xa;                            case 1://purple&#xa;                                 //System.out.println(&quot;purple&quot;);&#xa;                                jLabelColor.setForeground(new Color(51, 0, 102));&#xa;                                 break;  &#xa;                            case 2://yellow &#xa;                                //System.out.println(&quot;yellow&quot;);&#xa;                                jLabelColor.setForeground(Color.YELLOW);&#xa;                                 break;&#xa;                            case 3://red&#xa;                                //System.out.println(&quot;red&quot;);&#xa;                                jLabelColor.setForeground(Color.RED);&#xa;                                break;&#xa;                            case 4://blue &#xa;                                //System.out.println(&quot;blue&quot;);&#xa;                                jLabelColor.setForeground(new Color(51, 153, 255));&#xa;                                break;&#xa;                            }&#xa;                    }&#xa;            }&#xa;        };&#xa; Timer tPAC = new Timer(0, lPAC2);&#xa;        tPAC.start();"/>
+            <AuxValue name="JavaCodeGenerator_LayoutCodePost" type="java.lang.String" value="ActionListener lPACGame = new ActionListener() {&#xa;            public void actionPerformed(ActionEvent ev) {&#xa;                //Continuously update time here&#xa;                SimpleDateFormat bub = new SimpleDateFormat(&quot;MMMMMMMMM dd, yyyy  HH:mm:ss&quot;);&#xa;                Date current = new Date();&#xa;                String theDate = bub.format(current);&#xa;                jLabelPACClock.setText(theDate);&#xa;            }&#xa;        };&#xa;&#xa;        Timer datePACGame = new Timer(500, lPACGame);&#xa;        datePACGame.start();&#xa;&#xa;ActionListener lPAC2 = new ActionListener() {&#xa;            public void actionPerformed(ActionEvent ev) {&#xa;                //does game operations&#xa;                jLabelColor.setText(colorDisplay);&#xa;                 jLabelScorePAC.setText(&quot;Score:&quot; + score);&#xa;               if (countPAC == 5)&#xa;                {&#xa;                 CardLayout card = (CardLayout)mainPanel.getLayout();&#xa;                 card.show(mainPanel, &quot;sudokuCard&quot;);&#xa;                }&#xa;                else&#xa;                    {&#xa;                        switch(randNumForColor)&#xa;                             {&#xa;                            case 0://green&#xa;                                 //System.out.println(&quot;green&quot;);&#xa;                                   jLabelColor.setForeground(new Color(76, 153, 0));&#xa;                                break;&#xa;                            case 1://purple&#xa;                                 //System.out.println(&quot;purple&quot;);&#xa;                                jLabelColor.setForeground(new Color(51, 0, 102));&#xa;                                 break;  &#xa;                            case 2://yellow &#xa;                                //System.out.println(&quot;yellow&quot;);&#xa;                                jLabelColor.setForeground(Color.YELLOW);&#xa;                                 break;&#xa;                            case 3://red&#xa;                                //System.out.println(&quot;red&quot;);&#xa;                                jLabelColor.setForeground(Color.RED);&#xa;                                break;&#xa;                            case 4://blue &#xa;                                //System.out.println(&quot;blue&quot;);&#xa;                                jLabelColor.setForeground(new Color(51, 153, 255));&#xa;                                break;&#xa;                            }&#xa;                    }&#xa;            }&#xa;        };&#xa; Timer tPAC = new Timer(0, lPAC2);&#xa;        tPAC.start();"/>
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
@@ -1104,7 +1104,7 @@
             </Property>
           </Properties>
           <AuxValues>
-            <AuxValue name="JavaCodeGenerator_LayoutCodePost" type="java.lang.String" value="ActionListener listen4 = new ActionListener() {&#xa;            public void actionPerformed(ActionEvent ev) {&#xa;                //Continuously update score&#xa;               &#xa;                 jLabel13.setText(&quot;Score:&quot; + score);&#xa;            }&#xa;        };&#xa; Timer FScore = new Timer(0, listen4);&#xa;       // FScore.setRepeats(false);&#xa;        FScore.start();"/>
+            <AuxValue name="JavaCodeGenerator_LayoutCodePost" type="java.lang.String" value="ActionListener listen4 = new ActionListener() {&#xa;            public void actionPerformed(ActionEvent ev) {&#xa;                //Continuously update score&#xa;               &#xa;                 jLabel13.setText(&quot;Score: &quot; + score);&#xa;            }&#xa;        };&#xa; Timer FScore = new Timer(0, listen4);&#xa;       // FScore.setRepeats(false);&#xa;        FScore.start();"/>
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
@@ -1117,17 +1117,16 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace min="-2" pref="268" max="-2" attributes="0"/>
-                              <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="238" max="-2" attributes="0"/>
-                              <Component id="bTMButton" min="-2" max="-2" attributes="0"/>
-                          </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="196" max="-2" attributes="0"/>
                               <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="238" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
+                                  <Component id="bTMButton" min="-2" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                       </Group>
                       <EmptySpace pref="211" max="32767" attributes="0"/>
@@ -1139,11 +1138,11 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
                       <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="bTMButton" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="141" max="32767" attributes="0"/>
+                      <EmptySpace pref="153" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1278,6 +1277,81 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value=" (If not 3 letters or not text, ABC by default)"/>
               </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="SudokuGame">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="ActionListener sudokuClockListener = new ActionListener() {&#xa;            public void actionPerformed(ActionEvent ev) {&#xa;                //Continuously update time here for the sudoku panel&#xa;                SimpleDateFormat bub = new SimpleDateFormat(&quot;MMMMMMMMM dd, yyyy  HH:mm:ss&quot;);&#xa;                Date current = new Date();&#xa;                String theDate = bub.format(current);&#xa;                sudokuClock.setText(theDate);&#xa;            }&#xa;        };&#xa;&#xa;Timer sudokuClockTimer = new Timer(500, sudokuClockListener);&#xa;sudokuClockTimer.start();"/>
+          </AuxValues>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+              <CardConstraints cardName="sudokuCard"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="SudokuTitle" min="-2" max="-2" attributes="0"/>
+                          <Component id="sudokuSubmit" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="446" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="sudokuClock" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="sudokuQuit" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="sudokuClock" min="-2" max="-2" attributes="0"/>
+                          <Component id="SudokuTitle" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="276" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="sudokuSubmit" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="sudokuQuit" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="SudokuTitle">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Dialog" size="24" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Sudoku"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="sudokuClock">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Clock"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="sudokuSubmit">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Submit"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="sudokuQuit">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Quit"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="sudokuQuitActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>

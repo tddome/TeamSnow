@@ -149,6 +149,11 @@ public class QuarterProject245 extends javax.swing.JFrame {
       userName = new javax.swing.JTextField();
       doneButton = new javax.swing.JButton();
       jLabel5 = new javax.swing.JLabel();
+      SudokuGame = new javax.swing.JPanel();
+      SudokuTitle = new javax.swing.JLabel();
+      sudokuClock = new javax.swing.JLabel();
+      sudokuSubmit = new javax.swing.JButton();
+      sudokuQuit = new javax.swing.JButton();
 
       setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
       setAutoRequestFocus(false);
@@ -1018,7 +1023,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
             if (countPAC == 5)
             {
                CardLayout card = (CardLayout)mainPanel.getLayout();
-               card.show(mainPanel, "endCard");
+               card.show(mainPanel, "sudokuCard");
             }
             else
             {
@@ -1079,14 +1084,13 @@ public class QuarterProject245 extends javax.swing.JFrame {
          .addGroup(EndLayout.createSequentialGroup()
             .addGroup(EndLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                .addGroup(EndLayout.createSequentialGroup()
-                  .addGap(268, 268, 268)
-                  .addComponent(jLabel13))
+                  .addGap(196, 196, 196)
+                  .addComponent(jLabel10))
                .addGroup(EndLayout.createSequentialGroup()
                   .addGap(238, 238, 238)
-                  .addComponent(bTMButton))
-               .addGroup(EndLayout.createSequentialGroup()
-                  .addGap(196, 196, 196)
-                  .addComponent(jLabel10)))
+                  .addGroup(EndLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                     .addComponent(jLabel13)
+                     .addComponent(bTMButton))))
             .addContainerGap(211, Short.MAX_VALUE))
       );
       EndLayout.setVerticalGroup(
@@ -1094,18 +1098,18 @@ public class QuarterProject245 extends javax.swing.JFrame {
          .addGroup(EndLayout.createSequentialGroup()
             .addGap(100, 100, 100)
             .addComponent(jLabel10)
-            .addGap(30, 30, 30)
+            .addGap(18, 18, 18)
             .addComponent(jLabel13)
             .addGap(18, 18, 18)
             .addComponent(bTMButton)
-            .addContainerGap(141, Short.MAX_VALUE))
+            .addContainerGap(153, Short.MAX_VALUE))
       );
 
       ActionListener listen4 = new ActionListener() {
          public void actionPerformed(ActionEvent ev) {
             //Continuously update score
 
-            jLabel13.setText("Score:" + score);
+            jLabel13.setText("Score: " + score);
          }
       };
       Timer FScore = new Timer(0, listen4);
@@ -1179,6 +1183,64 @@ public class QuarterProject245 extends javax.swing.JFrame {
       );
 
       mainPanel.add(HighScoreSet, "setCard");
+
+      ActionListener sudokuClockListener = new ActionListener() {
+         public void actionPerformed(ActionEvent ev) {
+            //Continuously update time here for the sudoku panel
+            SimpleDateFormat bub = new SimpleDateFormat("MMMMMMMMM dd, yyyy  HH:mm:ss");
+            Date current = new Date();
+            String theDate = bub.format(current);
+            sudokuClock.setText(theDate);
+         }
+      };
+
+      Timer sudokuClockTimer = new Timer(500, sudokuClockListener);
+      sudokuClockTimer.start();
+
+      SudokuTitle.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+      SudokuTitle.setText("Sudoku");
+
+      sudokuClock.setText("Clock");
+
+      sudokuSubmit.setText("Submit");
+
+      sudokuQuit.setText("Quit");
+      sudokuQuit.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            sudokuQuitActionPerformed(evt);
+         }
+      });
+
+      javax.swing.GroupLayout SudokuGameLayout = new javax.swing.GroupLayout(SudokuGame);
+      SudokuGame.setLayout(SudokuGameLayout);
+      SudokuGameLayout.setHorizontalGroup(
+         SudokuGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+         .addGroup(SudokuGameLayout.createSequentialGroup()
+            .addContainerGap()
+            .addGroup(SudokuGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+               .addComponent(SudokuTitle)
+               .addComponent(sudokuSubmit))
+            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 446, Short.MAX_VALUE)
+            .addGroup(SudokuGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+               .addComponent(sudokuClock, javax.swing.GroupLayout.Alignment.TRAILING)
+               .addComponent(sudokuQuit, javax.swing.GroupLayout.Alignment.TRAILING))
+            .addContainerGap())
+      );
+      SudokuGameLayout.setVerticalGroup(
+         SudokuGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+         .addGroup(SudokuGameLayout.createSequentialGroup()
+            .addContainerGap()
+            .addGroup(SudokuGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+               .addComponent(sudokuClock)
+               .addComponent(SudokuTitle))
+            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 276, Short.MAX_VALUE)
+            .addGroup(SudokuGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+               .addComponent(sudokuSubmit)
+               .addComponent(sudokuQuit))
+            .addGap(54, 54, 54))
+      );
+
+      mainPanel.add(SudokuGame, "sudokuCard");
 
       javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
       getContentPane().setLayout(layout);
@@ -1974,6 +2036,22 @@ public class QuarterProject245 extends javax.swing.JFrame {
     private void jButtonBlueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBlueActionPerformed
         PACGmae(4);
     }//GEN-LAST:event_jButtonBlueActionPerformed
+
+   private void sudokuQuitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sudokuQuitActionPerformed
+      // TODO add your handling code here:
+      
+      //reset everything, this also enables this very button to work.
+      //since I have to do this to get the button to work,
+      //I need to follow the same logic I did in End game screen
+      //and set user's score to another variable so it's not reset
+      //and then set it back. Investigating later to see why
+      userEndScore = score;
+      resetButtons();
+      score = userEndScore;
+      CardLayout gameEnding = (CardLayout)mainPanel.getLayout();
+      gameEnding.show(mainPanel, "endCard");
+      System.out.println("Does the quit button work on sudoku?");
+   }//GEN-LAST:event_sudokuQuitActionPerformed
    
     /**
      * method:resetButtons
@@ -2974,6 +3052,8 @@ public class QuarterProject245 extends javax.swing.JFrame {
    private javax.swing.JPanel PointAndClickGame;
    private javax.swing.JLabel ProjectTitle;
    private javax.swing.JPanel SplashPage;
+   private javax.swing.JPanel SudokuGame;
+   private javax.swing.JLabel SudokuTitle;
    private javax.swing.JLabel TeamLogo;
    private javax.swing.JLabel TeamName;
    private javax.swing.JButton aButton;
@@ -3034,6 +3114,9 @@ public class QuarterProject245 extends javax.swing.JFrame {
    private javax.swing.JButton rButton;
    private javax.swing.JButton sButton;
    private javax.swing.JButton skipButton;
+   private javax.swing.JLabel sudokuClock;
+   private javax.swing.JButton sudokuQuit;
+   private javax.swing.JButton sudokuSubmit;
    private javax.swing.JButton tButton;
    private javax.swing.JButton uButton;
    private javax.swing.JTextField userName;
