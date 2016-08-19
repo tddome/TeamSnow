@@ -154,7 +154,39 @@ public class QuarterProject245 extends javax.swing.JFrame {
       sudokuClock = new javax.swing.JLabel();
       sudokuSubmit = new javax.swing.JButton();
       sudokuQuit = new javax.swing.JButton();
-      jLabel6 = new javax.swing.JLabel();
+      gridUserInputTemplate = new javax.swing.JTextField();
+      gridfield0 = new javax.swing.JLabel();
+      gridfield1 = new javax.swing.JTextField();
+      gridfield3 = new javax.swing.JLabel();
+      gridfield5 = new javax.swing.JLabel();
+      gridfield8 = new javax.swing.JLabel();
+      gridfield15 = new javax.swing.JLabel();
+      gridfield19 = new javax.swing.JLabel();
+      gridfield24 = new javax.swing.JLabel();
+      gridfield25 = new javax.swing.JLabel();
+      gridfield27 = new javax.swing.JLabel();
+      gridfield29 = new javax.swing.JLabel();
+      gridfield31 = new javax.swing.JLabel();
+      gridfield33 = new javax.swing.JLabel();
+      gridfield34 = new javax.swing.JLabel();
+      gridfield40 = new javax.swing.JLabel();
+      gridfield46 = new javax.swing.JLabel();
+      gridfield47 = new javax.swing.JLabel();
+      gridfield49 = new javax.swing.JLabel();
+      gridfield51 = new javax.swing.JLabel();
+      gridfield53 = new javax.swing.JLabel();
+      gridfield55 = new javax.swing.JLabel();
+      gridfield56 = new javax.swing.JLabel();
+      gridfield61 = new javax.swing.JLabel();
+      gridfield65 = new javax.swing.JLabel();
+      gridfield72 = new javax.swing.JLabel();
+      gridfield75 = new javax.swing.JLabel();
+      gridfield77 = new javax.swing.JLabel();
+      gridfield80 = new javax.swing.JLabel();
+      backgroundGrid = new javax.swing.JLabel();
+      gridbutton1 = new javax.swing.JButton();
+      gridbutton2 = new javax.swing.JButton();
+      gridbutton3 = new javax.swing.JButton();
 
       setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
       setAutoRequestFocus(false);
@@ -1197,13 +1229,20 @@ public class QuarterProject245 extends javax.swing.JFrame {
 
       Timer sudokuClockTimer = new Timer(500, sudokuClockListener);
       sudokuClockTimer.start();
+      SudokuGame.setLayout(null);
 
       SudokuTitle.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
       SudokuTitle.setText("Sudoku");
+      SudokuGame.add(SudokuTitle);
+      SudokuTitle.setBounds(10, 10, 89, 32);
 
       sudokuClock.setText("Clock");
+      SudokuGame.add(sudokuClock);
+      sudokuClock.setBounds(440, 6, 160, 16);
 
       sudokuSubmit.setText("Submit");
+      SudokuGame.add(sudokuSubmit);
+      sudokuSubmit.setBounds(38, 309, 70, 32);
 
       sudokuQuit.setText("Quit");
       sudokuQuit.addActionListener(new java.awt.event.ActionListener() {
@@ -1211,52 +1250,191 @@ public class QuarterProject245 extends javax.swing.JFrame {
             sudokuQuitActionPerformed(evt);
          }
       });
+      SudokuGame.add(sudokuQuit);
+      sudokuQuit.setBounds(503, 312, 53, 32);
 
-      jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/grid.jpg"))); // NOI18N
-      jLabel6.setText("board");
-      jLabel6.setMaximumSize(new java.awt.Dimension(359, 359));
-      jLabel6.setMinimumSize(new java.awt.Dimension(359, 359));
-      jLabel6.setPreferredSize(new java.awt.Dimension(359, 359));
+      gridUserInputTemplate.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
+      gridUserInputTemplate.setText("5");
+      gridUserInputTemplate.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+      SudokuGame.add(gridUserInputTemplate);
+      gridUserInputTemplate.setBounds(30, 140, 14, 40);
 
-      javax.swing.GroupLayout SudokuGameLayout = new javax.swing.GroupLayout(SudokuGame);
-      SudokuGame.setLayout(SudokuGameLayout);
-      SudokuGameLayout.setHorizontalGroup(
-         SudokuGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-         .addGroup(SudokuGameLayout.createSequentialGroup()
-            .addContainerGap()
-            .addComponent(SudokuTitle)
-            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(sudokuClock)
-            .addContainerGap())
-         .addGroup(SudokuGameLayout.createSequentialGroup()
-            .addGap(38, 38, 38)
-            .addComponent(sudokuSubmit)
-            .addGap(18, 18, 18)
-            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addGap(18, 18, 18)
-            .addComponent(sudokuQuit)
-            .addGap(0, 44, Short.MAX_VALUE))
-      );
-      SudokuGameLayout.setVerticalGroup(
-         SudokuGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-         .addGroup(SudokuGameLayout.createSequentialGroup()
-            .addContainerGap()
-            .addGroup(SudokuGameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-               .addGroup(javax.swing.GroupLayout.Alignment.LEADING, SudokuGameLayout.createSequentialGroup()
-                  .addGap(22, 22, 22)
-                  .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                  .addGap(0, 13, Short.MAX_VALUE))
-               .addGroup(javax.swing.GroupLayout.Alignment.LEADING, SudokuGameLayout.createSequentialGroup()
-                  .addComponent(SudokuTitle)
-                  .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                  .addComponent(sudokuSubmit)
-                  .addGap(59, 59, 59))
-               .addGroup(SudokuGameLayout.createSequentialGroup()
-                  .addComponent(sudokuClock)
-                  .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                  .addComponent(sudokuQuit)
-                  .addGap(56, 56, 56))))
-      );
+      gridfield0.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
+      gridfield0.setText("8");
+      SudokuGame.add(gridfield0);
+      gridfield0.setBounds(140, 30, 20, 40);
+
+      gridfield1.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
+      gridfield1.setText("5");
+      gridfield1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+      SudokuGame.add(gridfield1);
+      gridfield1.setBounds(180, 30, 14, 40);
+
+      gridfield3.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
+      gridfield3.setText("4");
+      SudokuGame.add(gridfield3);
+      gridfield3.setBounds(260, 40, 12, 20);
+
+      gridfield5.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
+      gridfield5.setText("6");
+      SudokuGame.add(gridfield5);
+      gridfield5.setBounds(340, 30, 20, 40);
+
+      gridfield8.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
+      gridfield8.setText(" 7");
+      SudokuGame.add(gridfield8);
+      gridfield8.setBounds(450, 30, 30, 40);
+
+      gridfield15.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
+      gridfield15.setText("4");
+      SudokuGame.add(gridfield15);
+      gridfield15.setBounds(380, 70, 12, 30);
+
+      gridfield19.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
+      gridfield19.setText("1");
+      SudokuGame.add(gridfield19);
+      gridfield19.setBounds(180, 110, 12, 30);
+
+      gridfield24.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
+      gridfield24.setText("6");
+      SudokuGame.add(gridfield24);
+      gridfield24.setBounds(380, 110, 12, 30);
+
+      gridfield25.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
+      gridfield25.setText("5");
+      SudokuGame.add(gridfield25);
+      gridfield25.setBounds(420, 110, 12, 30);
+
+      gridfield27.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
+      gridfield27.setText("5");
+      SudokuGame.add(gridfield27);
+      gridfield27.setBounds(140, 150, 20, 30);
+
+      gridfield29.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
+      gridfield29.setText("9");
+      SudokuGame.add(gridfield29);
+      gridfield29.setBounds(220, 150, 12, 30);
+
+      gridfield31.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
+      gridfield31.setText("3");
+      SudokuGame.add(gridfield31);
+      gridfield31.setBounds(300, 150, 12, 30);
+
+      gridfield33.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
+      gridfield33.setText("7");
+      SudokuGame.add(gridfield33);
+      gridfield33.setBounds(380, 150, 12, 30);
+
+      gridfield34.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
+      gridfield34.setText("8");
+      SudokuGame.add(gridfield34);
+      gridfield34.setBounds(420, 150, 12, 30);
+
+      gridfield40.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
+      gridfield40.setText("7");
+      SudokuGame.add(gridfield40);
+      gridfield40.setBounds(300, 190, 12, 30);
+
+      gridfield46.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
+      gridfield46.setText("4");
+      SudokuGame.add(gridfield46);
+      gridfield46.setBounds(180, 230, 12, 30);
+
+      gridfield47.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
+      gridfield47.setText("8");
+      SudokuGame.add(gridfield47);
+      gridfield47.setBounds(220, 230, 12, 30);
+
+      gridfield49.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
+      gridfield49.setText("2");
+      SudokuGame.add(gridfield49);
+      gridfield49.setBounds(300, 230, 12, 30);
+
+      gridfield51.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
+      gridfield51.setText("1");
+      SudokuGame.add(gridfield51);
+      gridfield51.setBounds(380, 230, 12, 30);
+
+      gridfield53.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
+      gridfield53.setText(" 3");
+      SudokuGame.add(gridfield53);
+      gridfield53.setBounds(450, 230, 20, 30);
+
+      gridfield55.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
+      gridfield55.setText("5");
+      SudokuGame.add(gridfield55);
+      gridfield55.setBounds(180, 270, 12, 30);
+
+      gridfield56.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
+      gridfield56.setText("2");
+      SudokuGame.add(gridfield56);
+      gridfield56.setBounds(220, 270, 12, 30);
+
+      gridfield61.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
+      gridfield61.setText("9");
+      SudokuGame.add(gridfield61);
+      gridfield61.setBounds(420, 270, 12, 30);
+
+      gridfield65.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
+      gridfield65.setText("1");
+      SudokuGame.add(gridfield65);
+      gridfield65.setBounds(220, 310, 12, 30);
+
+      gridfield72.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
+      gridfield72.setText("3");
+      SudokuGame.add(gridfield72);
+      gridfield72.setBounds(140, 350, 12, 30);
+
+      gridfield75.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
+      gridfield75.setText("9");
+      SudokuGame.add(gridfield75);
+      gridfield75.setBounds(260, 350, 12, 30);
+
+      gridfield77.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
+      gridfield77.setText("2");
+      SudokuGame.add(gridfield77);
+      gridfield77.setBounds(340, 350, 12, 30);
+
+      gridfield80.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
+      gridfield80.setText(" 5");
+      SudokuGame.add(gridfield80);
+      gridfield80.setBounds(450, 350, 20, 30);
+
+      backgroundGrid.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/grid.jpg"))); // NOI18N
+      backgroundGrid.setText("2");
+      backgroundGrid.setAlignmentY(0.0F);
+      backgroundGrid.setMaximumSize(new java.awt.Dimension(359, 359));
+      backgroundGrid.setMinimumSize(new java.awt.Dimension(359, 359));
+      backgroundGrid.setPreferredSize(new java.awt.Dimension(359, 359));
+      SudokuGame.add(backgroundGrid);
+      backgroundGrid.setBounds(126, 28, 359, 359);
+
+      gridbutton1.setText("jButton1");
+      gridbutton1.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton1ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton1);
+      gridbutton1.setBounds(130, 70, 30, 40);
+
+      gridbutton2.setText("jButton1");
+      gridbutton2.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton2ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton2);
+      gridbutton2.setBounds(170, 70, 30, 40);
+
+      gridbutton3.setText("jButton1");
+      gridbutton3.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton3ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton3);
+      gridbutton3.setBounds(210, 70, 30, 40);
 
       mainPanel.add(SudokuGame, "sudokuCard");
 
@@ -2070,6 +2248,21 @@ public class QuarterProject245 extends javax.swing.JFrame {
       gameEnding.show(mainPanel, "endCard");
       System.out.println("Does the quit button work on sudoku?");
    }//GEN-LAST:event_sudokuQuitActionPerformed
+
+   private void gridbutton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton1ActionPerformed
+      // TODO add your handling code here:
+      System.out.println("Hey what's up? Button number 1 here");
+   }//GEN-LAST:event_gridbutton1ActionPerformed
+
+   private void gridbutton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton2ActionPerformed
+      // TODO add your handling code here:
+      System.out.println("Testing out this null layout! Button number 2 here");
+   }//GEN-LAST:event_gridbutton2ActionPerformed
+
+   private void gridbutton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton3ActionPerformed
+      // TODO add your handling code here:
+      System.out.println("This is pretty neat. Button number 3 here");
+   }//GEN-LAST:event_gridbutton3ActionPerformed
    
     /**
      * method:resetButtons
@@ -3079,12 +3272,45 @@ public class QuarterProject245 extends javax.swing.JFrame {
    private javax.swing.JButton bTMButton;
    private javax.swing.JButton backButton0;
    private javax.swing.JButton backButton1;
+   private javax.swing.JLabel backgroundGrid;
    private javax.swing.JButton cButton;
    private javax.swing.JButton dButton;
    private javax.swing.JButton doneButton;
    private javax.swing.JButton eButton;
    private javax.swing.JButton fButton;
    private javax.swing.JButton gButton;
+   private javax.swing.JTextField gridUserInputTemplate;
+   private javax.swing.JButton gridbutton1;
+   private javax.swing.JButton gridbutton2;
+   private javax.swing.JButton gridbutton3;
+   private javax.swing.JLabel gridfield0;
+   private javax.swing.JTextField gridfield1;
+   private javax.swing.JLabel gridfield15;
+   private javax.swing.JLabel gridfield19;
+   private javax.swing.JLabel gridfield24;
+   private javax.swing.JLabel gridfield25;
+   private javax.swing.JLabel gridfield27;
+   private javax.swing.JLabel gridfield29;
+   private javax.swing.JLabel gridfield3;
+   private javax.swing.JLabel gridfield31;
+   private javax.swing.JLabel gridfield33;
+   private javax.swing.JLabel gridfield34;
+   private javax.swing.JLabel gridfield40;
+   private javax.swing.JLabel gridfield46;
+   private javax.swing.JLabel gridfield47;
+   private javax.swing.JLabel gridfield49;
+   private javax.swing.JLabel gridfield5;
+   private javax.swing.JLabel gridfield51;
+   private javax.swing.JLabel gridfield53;
+   private javax.swing.JLabel gridfield55;
+   private javax.swing.JLabel gridfield56;
+   private javax.swing.JLabel gridfield61;
+   private javax.swing.JLabel gridfield65;
+   private javax.swing.JLabel gridfield72;
+   private javax.swing.JLabel gridfield75;
+   private javax.swing.JLabel gridfield77;
+   private javax.swing.JLabel gridfield8;
+   private javax.swing.JLabel gridfield80;
    private javax.swing.JButton hButton;
    private javax.swing.JLabel highscore1;
    private javax.swing.JLabel highscore2;
@@ -3108,7 +3334,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
    private javax.swing.JLabel jLabel3;
    private javax.swing.JLabel jLabel4;
    private javax.swing.JLabel jLabel5;
-   private javax.swing.JLabel jLabel6;
    private javax.swing.JLabel jLabel9;
    private javax.swing.JLabel jLabelColor;
    private javax.swing.JLabel jLabelHangman;
