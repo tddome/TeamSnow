@@ -1325,17 +1325,17 @@ public class QuarterProject245 extends javax.swing.JFrame {
       gridfield8.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
       gridfield8.setText(" 7");
       SudokuGame.add(gridfield8);
-      gridfield8.setBounds(450, 30, 30, 40);
+      gridfield8.setBounds(450, 40, 20, 30);
 
       gridfield15.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
       gridfield15.setText("4");
       SudokuGame.add(gridfield15);
-      gridfield15.setBounds(380, 70, 30, 30);
+      gridfield15.setBounds(380, 70, 20, 30);
 
       gridfield19.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
       gridfield19.setText("1");
       SudokuGame.add(gridfield19);
-      gridfield19.setBounds(180, 110, 30, 30);
+      gridfield19.setBounds(180, 110, 20, 30);
 
       gridfield24.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
       gridfield24.setText("6");
@@ -1350,27 +1350,27 @@ public class QuarterProject245 extends javax.swing.JFrame {
       gridfield27.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
       gridfield27.setText("5");
       SudokuGame.add(gridfield27);
-      gridfield27.setBounds(140, 150, 30, 30);
+      gridfield27.setBounds(140, 150, 20, 30);
 
       gridfield29.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
       gridfield29.setText("9");
       SudokuGame.add(gridfield29);
-      gridfield29.setBounds(220, 150, 30, 30);
+      gridfield29.setBounds(220, 150, 20, 30);
 
       gridfield31.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
       gridfield31.setText("3");
       SudokuGame.add(gridfield31);
-      gridfield31.setBounds(300, 150, 30, 30);
+      gridfield31.setBounds(300, 150, 20, 30);
 
       gridfield33.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
       gridfield33.setText("7");
       SudokuGame.add(gridfield33);
-      gridfield33.setBounds(380, 150, 30, 30);
+      gridfield33.setBounds(380, 150, 20, 30);
 
       gridfield34.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
       gridfield34.setText("8");
       SudokuGame.add(gridfield34);
-      gridfield34.setBounds(420, 150, 40, 30);
+      gridfield34.setBounds(420, 150, 20, 40);
 
       gridfield40.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
       gridfield40.setText("7");
@@ -1400,7 +1400,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       gridfield53.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
       gridfield53.setText(" 3");
       SudokuGame.add(gridfield53);
-      gridfield53.setBounds(450, 230, 40, 30);
+      gridfield53.setBounds(450, 230, 20, 30);
 
       gridfield55.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
       gridfield55.setText("5");
@@ -1430,7 +1430,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       gridfield75.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
       gridfield75.setText("9");
       SudokuGame.add(gridfield75);
-      gridfield75.setBounds(260, 350, 30, 30);
+      gridfield75.setBounds(260, 350, 20, 30);
 
       gridfield77.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
       gridfield77.setText("2");
@@ -1440,7 +1440,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       gridfield80.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
       gridfield80.setText(" 5");
       SudokuGame.add(gridfield80);
-      gridfield80.setBounds(450, 350, 40, 30);
+      gridfield80.setBounds(450, 350, 20, 30);
 
       backgroundGrid.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/grid.jpg"))); // NOI18N
       backgroundGrid.setText("2");
