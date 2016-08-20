@@ -466,6 +466,8 @@ public class QuarterProject245 extends javax.swing.JFrame {
         });
 
         aButton.setText("A");
+        aButton.setToolTipText("Click any letter to play:"
+            + "A");
         aButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 aButtonActionPerformed(evt);
@@ -473,6 +475,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
         });
 
         bButton.setText("B");
+        bButton.setToolTipText("B");
         bButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bButtonActionPerformed(evt);
@@ -480,6 +483,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
         });
 
         cButton.setText("C");
+        cButton.setToolTipText("C");
         cButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cButtonActionPerformed(evt);
@@ -487,6 +491,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
         });
 
         dButton.setText("D");
+        dButton.setToolTipText("D");
         dButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 dButtonActionPerformed(evt);
@@ -494,6 +499,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
         });
 
         eButton.setText("E");
+        eButton.setToolTipText("E");
         eButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 eButtonActionPerformed(evt);
@@ -501,6 +507,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
         });
 
         fButton.setText("F");
+        fButton.setToolTipText("F");
         fButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 fButtonActionPerformed(evt);
@@ -508,6 +515,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
         });
 
         gButton.setText("G");
+        gButton.setToolTipText("G");
         gButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 gButtonActionPerformed(evt);
@@ -515,6 +523,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
         });
 
         hButton.setText("H");
+        hButton.setToolTipText("H");
         hButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 hButtonActionPerformed(evt);
@@ -522,6 +531,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
         });
 
         iButton.setText("I");
+        iButton.setToolTipText("I");
         iButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 iButtonActionPerformed(evt);
@@ -529,6 +539,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
         });
 
         jButton.setText("J");
+        jButton.setToolTipText("J");
         jButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonActionPerformed(evt);
@@ -536,6 +547,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
         });
 
         kButton.setText("K");
+        kButton.setToolTipText("K");
         kButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 kButtonActionPerformed(evt);
@@ -543,6 +555,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
         });
 
         LButton.setText("L");
+        LButton.setToolTipText("L");
         LButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LButtonActionPerformed(evt);
@@ -550,6 +563,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
         });
 
         mButton.setText("M");
+        mButton.setToolTipText("M");
         mButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mButtonActionPerformed(evt);
@@ -557,6 +571,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
         });
 
         sButton.setText("S");
+        sButton.setToolTipText("S");
         sButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 sButtonActionPerformed(evt);
@@ -564,6 +579,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
         });
 
         tButton.setText("T");
+        tButton.setToolTipText("T");
         tButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tButtonActionPerformed(evt);
@@ -571,6 +587,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
         });
 
         uButton.setText("U");
+        uButton.setToolTipText("U");
         uButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 uButtonActionPerformed(evt);
@@ -578,6 +595,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
         });
 
         vButton.setText("V");
+        vButton.setToolTipText("V");
         vButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 vButtonActionPerformed(evt);
@@ -585,6 +603,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
         });
 
         oButton.setText("O");
+        oButton.setToolTipText("O");
         oButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 oButtonActionPerformed(evt);
@@ -592,6 +611,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
         });
 
         wButton.setText("W");
+        wButton.setToolTipText("W");
         wButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 wButtonActionPerformed(evt);
@@ -599,6 +619,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
         });
 
         pButton.setText("P");
+        pButton.setToolTipText("P");
         pButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 pButtonActionPerformed(evt);
@@ -606,6 +627,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
         });
 
         xButton.setText("X");
+        xButton.setToolTipText("X");
         xButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 xButtonActionPerformed(evt);
@@ -613,6 +635,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
         });
 
         yButton.setText("Y");
+        yButton.setToolTipText("Y");
         yButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 yButtonActionPerformed(evt);
@@ -620,6 +643,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
         });
 
         zButton.setText("Z");
+        zButton.setToolTipText("Z");
         zButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 zButtonActionPerformed(evt);
@@ -627,6 +651,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
         });
 
         qButton.setText("Q");
+        qButton.setToolTipText("Q");
         qButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 qButtonActionPerformed(evt);
@@ -634,6 +659,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
         });
 
         nButton.setText("N");
+        nButton.setToolTipText("N");
         nButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 nButtonActionPerformed(evt);
@@ -641,6 +667,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
         });
 
         rButton.setText("R");
+        rButton.setToolTipText("R");
         rButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rButtonActionPerformed(evt);

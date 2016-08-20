@@ -662,6 +662,9 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="aButtonActionPerformed"/>
               </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="aButton.setToolTipText(&quot;Click any letter to play:&quot;&#xa;+ &quot;A&quot;);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JButton" name="bButton">
               <Properties>
@@ -670,6 +673,9 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bButtonActionPerformed"/>
               </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="bButton.setToolTipText(&quot;B&quot;);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JButton" name="cButton">
               <Properties>
@@ -678,6 +684,9 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cButtonActionPerformed"/>
               </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="cButton.setToolTipText(&quot;C&quot;);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JButton" name="dButton">
               <Properties>
@@ -686,6 +695,9 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="dButtonActionPerformed"/>
               </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="dButton.setToolTipText(&quot;D&quot;);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JButton" name="eButton">
               <Properties>
@@ -694,6 +706,9 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="eButtonActionPerformed"/>
               </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="eButton.setToolTipText(&quot;E&quot;);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JButton" name="fButton">
               <Properties>
@@ -702,6 +717,9 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fButtonActionPerformed"/>
               </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="fButton.setToolTipText(&quot;F&quot;);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JButton" name="gButton">
               <Properties>
@@ -710,6 +728,9 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gButtonActionPerformed"/>
               </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="gButton.setToolTipText(&quot;G&quot;);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JButton" name="hButton">
               <Properties>
@@ -718,6 +739,9 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hButtonActionPerformed"/>
               </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="hButton.setToolTipText(&quot;H&quot;);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JButton" name="iButton">
               <Properties>
@@ -726,6 +750,9 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="iButtonActionPerformed"/>
               </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="iButton.setToolTipText(&quot;I&quot;);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JButton" name="jButton">
               <Properties>
@@ -734,6 +761,9 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonActionPerformed"/>
               </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton.setToolTipText(&quot;J&quot;);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JButton" name="kButton">
               <Properties>
@@ -742,6 +772,9 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="kButtonActionPerformed"/>
               </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="kButton.setToolTipText(&quot;K&quot;);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JButton" name="LButton">
               <Properties>
@@ -750,6 +783,9 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="LButtonActionPerformed"/>
               </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="LButton.setToolTipText(&quot;L&quot;);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JButton" name="mButton">
               <Properties>
@@ -758,6 +794,9 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mButtonActionPerformed"/>
               </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="mButton.setToolTipText(&quot;M&quot;);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JButton" name="sButton">
               <Properties>
@@ -766,6 +805,9 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="sButtonActionPerformed"/>
               </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="sButton.setToolTipText(&quot;S&quot;);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JButton" name="tButton">
               <Properties>
@@ -774,6 +816,9 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tButtonActionPerformed"/>
               </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="tButton.setToolTipText(&quot;T&quot;);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JButton" name="uButton">
               <Properties>
@@ -782,6 +827,9 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="uButtonActionPerformed"/>
               </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="uButton.setToolTipText(&quot;U&quot;);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JButton" name="vButton">
               <Properties>
@@ -790,6 +838,9 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="vButtonActionPerformed"/>
               </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="vButton.setToolTipText(&quot;V&quot;);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JButton" name="oButton">
               <Properties>
@@ -798,6 +849,9 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="oButtonActionPerformed"/>
               </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="oButton.setToolTipText(&quot;O&quot;);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JButton" name="wButton">
               <Properties>
@@ -806,6 +860,9 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="wButtonActionPerformed"/>
               </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="wButton.setToolTipText(&quot;W&quot;);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JButton" name="pButton">
               <Properties>
@@ -814,6 +871,9 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="pButtonActionPerformed"/>
               </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="pButton.setToolTipText(&quot;P&quot;);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JButton" name="xButton">
               <Properties>
@@ -822,6 +882,9 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="xButtonActionPerformed"/>
               </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="xButton.setToolTipText(&quot;X&quot;);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JButton" name="yButton">
               <Properties>
@@ -830,6 +893,9 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="yButtonActionPerformed"/>
               </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="yButton.setToolTipText(&quot;Y&quot;);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JButton" name="zButton">
               <Properties>
@@ -838,6 +904,9 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="zButtonActionPerformed"/>
               </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="zButton.setToolTipText(&quot;Z&quot;);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JButton" name="qButton">
               <Properties>
@@ -846,6 +915,9 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="qButtonActionPerformed"/>
               </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="qButton.setToolTipText(&quot;Q&quot;);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JButton" name="nButton">
               <Properties>
@@ -854,6 +926,9 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nButtonActionPerformed"/>
               </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="nButton.setToolTipText(&quot;N&quot;);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JButton" name="rButton">
               <Properties>
@@ -862,6 +937,9 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rButtonActionPerformed"/>
               </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="rButton.setToolTipText(&quot;R&quot;);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel11">
               <Properties>
