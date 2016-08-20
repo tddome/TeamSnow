@@ -25,6 +25,7 @@ import java.awt.Color;
 import java.awt.CardLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -38,6 +39,11 @@ import java.util.Random;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.AbstractAction;
+import javax.swing.Action;
+import javax.swing.JComponent;
+import javax.swing.JOptionPane;
+import javax.swing.KeyStroke;
 import javax.swing.Timer;
 
 
@@ -1318,11 +1324,11 @@ public class QuarterProject245 extends javax.swing.JFrame {
         SudokuTitle.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         SudokuTitle.setText("Sudoku");
         SudokuGame.add(SudokuTitle);
-        SudokuTitle.setBounds(10, 10, 100, 30);
+        SudokuTitle.setBounds(10, 10, 92, 30);
 
         sudokuClock.setText("Clock");
         SudokuGame.add(sudokuClock);
-        sudokuClock.setBounds(430, 6, 170, 16);
+        sudokuClock.setBounds(440, 6, 160, 16);
 
         sudokuSubmit.setText("Submit");
         sudokuSubmit.setToolTipText("click to check your answer");
@@ -1332,7 +1338,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
             }
         });
         SudokuGame.add(sudokuSubmit);
-        sudokuSubmit.setBounds(10, 310, 88, 29);
+        sudokuSubmit.setBounds(30, 310, 88, 29);
 
         sudokuQuit.setText("Quit");
         sudokuQuit.setToolTipText("Click to quit the game");
@@ -1362,7 +1368,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
         gridfield8.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
         gridfield8.setText(" 7");
         SudokuGame.add(gridfield8);
-        gridfield8.setBounds(450, 40, 30, 30);
+        gridfield8.setBounds(450, 40, 20, 30);
 
         gridfield15.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
         gridfield15.setText("4");
@@ -1437,7 +1443,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
         gridfield53.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
         gridfield53.setText(" 3");
         SudokuGame.add(gridfield53);
-        gridfield53.setBounds(450, 230, 30, 30);
+        gridfield53.setBounds(450, 230, 20, 30);
 
         gridfield55.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
         gridfield55.setText("5");
@@ -1477,7 +1483,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
         gridfield80.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
         gridfield80.setText(" 5");
         SudokuGame.add(gridfield80);
-        gridfield80.setBounds(450, 350, 30, 30);
+        gridfield80.setBounds(450, 350, 20, 30);
 
         gridbutton1.setText("jButton1");
         gridbutton1.addActionListener(new java.awt.event.ActionListener() {
@@ -3009,6 +3015,8 @@ public class QuarterProject245 extends javax.swing.JFrame {
    private void gridbutton55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton55ActionPerformed
       // TODO add your handling code here:
    }//GEN-LAST:event_gridbutton55ActionPerformed
+
+   
    
     /**
      * method:resetButtons
