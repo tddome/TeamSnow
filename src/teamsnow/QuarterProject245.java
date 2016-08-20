@@ -154,9 +154,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       sudokuClock = new javax.swing.JLabel();
       sudokuSubmit = new javax.swing.JButton();
       sudokuQuit = new javax.swing.JButton();
-      gridUserTemplate = new javax.swing.JTextField();
       gridfield0 = new javax.swing.JLabel();
-      gridUser1 = new javax.swing.JTextField();
       gridfield3 = new javax.swing.JLabel();
       gridfield5 = new javax.swing.JLabel();
       gridfield8 = new javax.swing.JLabel();
@@ -183,10 +181,61 @@ public class QuarterProject245 extends javax.swing.JFrame {
       gridfield75 = new javax.swing.JLabel();
       gridfield77 = new javax.swing.JLabel();
       gridfield80 = new javax.swing.JLabel();
-      backgroundGrid = new javax.swing.JLabel();
       gridbutton1 = new javax.swing.JButton();
       gridbutton2 = new javax.swing.JButton();
       gridbutton3 = new javax.swing.JButton();
+      gridbutton4 = new javax.swing.JButton();
+      gridbutton5 = new javax.swing.JButton();
+      gridbutton6 = new javax.swing.JButton();
+      gridbutton7 = new javax.swing.JButton();
+      gridbutton8 = new javax.swing.JButton();
+      gridbutton9 = new javax.swing.JButton();
+      gridbutton10 = new javax.swing.JButton();
+      gridbutton11 = new javax.swing.JButton();
+      gridbutton12 = new javax.swing.JButton();
+      gridbutton13 = new javax.swing.JButton();
+      gridbutton14 = new javax.swing.JButton();
+      gridbutton15 = new javax.swing.JButton();
+      gridbutton16 = new javax.swing.JButton();
+      gridbutton17 = new javax.swing.JButton();
+      gridbutton18 = new javax.swing.JButton();
+      gridbutton19 = new javax.swing.JButton();
+      gridbutton20 = new javax.swing.JButton();
+      gridbutton21 = new javax.swing.JButton();
+      gridbutton22 = new javax.swing.JButton();
+      gridbutton23 = new javax.swing.JButton();
+      gridbutton24 = new javax.swing.JButton();
+      gridbutton25 = new javax.swing.JButton();
+      gridbutton26 = new javax.swing.JButton();
+      gridbutton27 = new javax.swing.JButton();
+      gridbutton28 = new javax.swing.JButton();
+      gridbutton29 = new javax.swing.JButton();
+      gridbutton30 = new javax.swing.JButton();
+      gridbutton31 = new javax.swing.JButton();
+      gridbutton32 = new javax.swing.JButton();
+      gridbutton33 = new javax.swing.JButton();
+      gridbutton34 = new javax.swing.JButton();
+      gridbutton35 = new javax.swing.JButton();
+      gridbutton36 = new javax.swing.JButton();
+      gridbutton37 = new javax.swing.JButton();
+      gridbutton38 = new javax.swing.JButton();
+      gridbutton39 = new javax.swing.JButton();
+      gridbutton40 = new javax.swing.JButton();
+      gridbutton41 = new javax.swing.JButton();
+      gridbutton42 = new javax.swing.JButton();
+      gridbutton43 = new javax.swing.JButton();
+      gridbutton44 = new javax.swing.JButton();
+      gridbutton45 = new javax.swing.JButton();
+      gridbutton46 = new javax.swing.JButton();
+      gridbutton47 = new javax.swing.JButton();
+      gridbutton48 = new javax.swing.JButton();
+      gridbutton49 = new javax.swing.JButton();
+      gridbutton50 = new javax.swing.JButton();
+      gridbutton51 = new javax.swing.JButton();
+      gridbutton52 = new javax.swing.JButton();
+      gridbutton54 = new javax.swing.JButton();
+      gridbutton55 = new javax.swing.JButton();
+      backgroundGrid = new javax.swing.JLabel();
 
       setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
       setAutoRequestFocus(false);
@@ -1295,22 +1344,10 @@ public class QuarterProject245 extends javax.swing.JFrame {
       SudokuGame.add(sudokuQuit);
       sudokuQuit.setBounds(510, 310, 53, 32);
 
-      gridUserTemplate.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
-      gridUserTemplate.setText("5");
-      gridUserTemplate.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-      SudokuGame.add(gridUserTemplate);
-      gridUserTemplate.setBounds(40, 80, 14, 20);
-
       gridfield0.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
       gridfield0.setText("8");
       SudokuGame.add(gridfield0);
       gridfield0.setBounds(140, 30, 20, 40);
-
-      gridUser1.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
-      gridUser1.setText("5");
-      gridUser1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-      SudokuGame.add(gridUser1);
-      gridUser1.setBounds(180, 40, 14, 20);
 
       gridfield3.setFont(new java.awt.Font("Dialog", 1, 22)); // NOI18N
       gridfield3.setText("4");
@@ -1442,15 +1479,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
       SudokuGame.add(gridfield80);
       gridfield80.setBounds(450, 350, 20, 30);
 
-      backgroundGrid.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/grid.jpg"))); // NOI18N
-      backgroundGrid.setText("2");
-      backgroundGrid.setAlignmentY(0.0F);
-      backgroundGrid.setMaximumSize(new java.awt.Dimension(359, 359));
-      backgroundGrid.setMinimumSize(new java.awt.Dimension(359, 359));
-      backgroundGrid.setPreferredSize(new java.awt.Dimension(359, 359));
-      SudokuGame.add(backgroundGrid);
-      backgroundGrid.setBounds(126, 28, 359, 359);
-
       gridbutton1.setText("jButton1");
       gridbutton1.addActionListener(new java.awt.event.ActionListener() {
          public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1458,7 +1486,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
          }
       });
       SudokuGame.add(gridbutton1);
-      gridbutton1.setBounds(130, 70, 30, 40);
+      gridbutton1.setBounds(170, 30, 30, 40);
 
       gridbutton2.setText("jButton1");
       gridbutton2.addActionListener(new java.awt.event.ActionListener() {
@@ -1477,6 +1505,474 @@ public class QuarterProject245 extends javax.swing.JFrame {
       });
       SudokuGame.add(gridbutton3);
       gridbutton3.setBounds(210, 70, 30, 40);
+
+      gridbutton4.setText("jButton1");
+      gridbutton4.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton4ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton4);
+      gridbutton4.setBounds(210, 30, 30, 40);
+
+      gridbutton5.setText("jButton1");
+      gridbutton5.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton5ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton5);
+      gridbutton5.setBounds(290, 30, 30, 40);
+
+      gridbutton6.setText("jButton1");
+      gridbutton6.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton6ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton6);
+      gridbutton6.setBounds(370, 30, 30, 40);
+
+      gridbutton7.setText("jButton1");
+      gridbutton7.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton7ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton7);
+      gridbutton7.setBounds(410, 30, 30, 40);
+
+      gridbutton8.setText("jButton1");
+      gridbutton8.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton8ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton8);
+      gridbutton8.setBounds(250, 70, 30, 40);
+
+      gridbutton9.setText("jButton1");
+      gridbutton9.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton9ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton9);
+      gridbutton9.setBounds(290, 70, 30, 40);
+
+      gridbutton10.setText("jButton1");
+      gridbutton10.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton10ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton10);
+      gridbutton10.setBounds(330, 70, 30, 40);
+
+      gridbutton11.setText("jButton1");
+      gridbutton11.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton11ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton11);
+      gridbutton11.setBounds(410, 70, 30, 40);
+
+      gridbutton12.setText("jButton1");
+      gridbutton12.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton12ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton12);
+      gridbutton12.setBounds(450, 70, 30, 40);
+
+      gridbutton13.setText("jButton1");
+      gridbutton13.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton13ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton13);
+      gridbutton13.setBounds(450, 110, 30, 40);
+
+      gridbutton14.setText("jButton1");
+      gridbutton14.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton14ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton14);
+      gridbutton14.setBounds(130, 110, 30, 40);
+
+      gridbutton15.setText("jButton1");
+      gridbutton15.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton15ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton15);
+      gridbutton15.setBounds(210, 110, 30, 40);
+
+      gridbutton16.setText("jButton1");
+      gridbutton16.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton16ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton16);
+      gridbutton16.setBounds(130, 190, 30, 40);
+
+      gridbutton17.setText("jButton1");
+      gridbutton17.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton17ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton17);
+      gridbutton17.setBounds(170, 150, 30, 40);
+
+      gridbutton18.setText("jButton1");
+      gridbutton18.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton18ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton18);
+      gridbutton18.setBounds(170, 190, 30, 40);
+
+      gridbutton19.setText("jButton1");
+      gridbutton19.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton19ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton19);
+      gridbutton19.setBounds(210, 190, 30, 40);
+
+      gridbutton20.setText("jButton1");
+      gridbutton20.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton20ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton20);
+      gridbutton20.setBounds(250, 110, 30, 40);
+
+      gridbutton21.setText("jButton1");
+      gridbutton21.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton21ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton21);
+      gridbutton21.setBounds(290, 110, 30, 40);
+
+      gridbutton22.setText("jButton1");
+      gridbutton22.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton22ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton22);
+      gridbutton22.setBounds(330, 110, 30, 40);
+
+      gridbutton23.setText("jButton1");
+      gridbutton23.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton23ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton23);
+      gridbutton23.setBounds(370, 190, 30, 40);
+
+      gridbutton24.setText("jButton1");
+      gridbutton24.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton24ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton24);
+      gridbutton24.setBounds(250, 150, 30, 40);
+
+      gridbutton25.setText("jButton1");
+      gridbutton25.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton25ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton25);
+      gridbutton25.setBounds(250, 190, 30, 40);
+
+      gridbutton26.setText("jButton1");
+      gridbutton26.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton26ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton26);
+      gridbutton26.setBounds(330, 150, 30, 40);
+
+      gridbutton27.setText("jButton1");
+      gridbutton27.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton27ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton27);
+      gridbutton27.setBounds(450, 150, 30, 40);
+
+      gridbutton28.setText("jButton1");
+      gridbutton28.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton28ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton28);
+      gridbutton28.setBounds(330, 190, 30, 40);
+
+      gridbutton29.setText("jButton1");
+      gridbutton29.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton29ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton29);
+      gridbutton29.setBounds(410, 190, 30, 40);
+
+      gridbutton30.setText("jButton1");
+      gridbutton30.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton30ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton30);
+      gridbutton30.setBounds(450, 190, 30, 40);
+
+      gridbutton31.setText("jButton1");
+      gridbutton31.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton31ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton31);
+      gridbutton31.setBounds(250, 230, 30, 40);
+
+      gridbutton32.setText("jButton1");
+      gridbutton32.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton32ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton32);
+      gridbutton32.setBounds(330, 230, 30, 40);
+
+      gridbutton33.setText("jButton1");
+      gridbutton33.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton33ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton33);
+      gridbutton33.setBounds(130, 230, 30, 40);
+
+      gridbutton34.setText("jButton1");
+      gridbutton34.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton34ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton34);
+      gridbutton34.setBounds(410, 230, 30, 40);
+
+      gridbutton35.setText("jButton1");
+      gridbutton35.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton35ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton35);
+      gridbutton35.setBounds(130, 270, 30, 40);
+
+      gridbutton36.setText("jButton1");
+      gridbutton36.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton36ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton36);
+      gridbutton36.setBounds(130, 310, 30, 40);
+
+      gridbutton37.setText("jButton1");
+      gridbutton37.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton37ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton37);
+      gridbutton37.setBounds(170, 310, 30, 40);
+
+      gridbutton38.setText("jButton1");
+      gridbutton38.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton38ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton38);
+      gridbutton38.setBounds(170, 350, 30, 30);
+
+      gridbutton39.setText("jButton1");
+      gridbutton39.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton39ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton39);
+      gridbutton39.setBounds(250, 270, 30, 40);
+
+      gridbutton40.setText("jButton1");
+      gridbutton40.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton40ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton40);
+      gridbutton40.setBounds(290, 270, 30, 40);
+
+      gridbutton41.setText("jButton1");
+      gridbutton41.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton41ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton41);
+      gridbutton41.setBounds(330, 270, 30, 40);
+
+      gridbutton42.setText("jButton1");
+      gridbutton42.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton42ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton42);
+      gridbutton42.setBounds(290, 310, 30, 40);
+
+      gridbutton43.setText("jButton1");
+      gridbutton43.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton43ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton43);
+      gridbutton43.setBounds(250, 310, 30, 40);
+
+      gridbutton44.setText("jButton1");
+      gridbutton44.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton44ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton44);
+      gridbutton44.setBounds(290, 350, 30, 30);
+
+      gridbutton45.setText("jButton1");
+      gridbutton45.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton45ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton45);
+      gridbutton45.setBounds(370, 270, 30, 40);
+
+      gridbutton46.setText("jButton1");
+      gridbutton46.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton46ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton46);
+      gridbutton46.setBounds(450, 270, 30, 40);
+
+      gridbutton47.setText("jButton1");
+      gridbutton47.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton47ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton47);
+      gridbutton47.setBounds(330, 310, 30, 40);
+
+      gridbutton48.setText("jButton1");
+      gridbutton48.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton48ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton48);
+      gridbutton48.setBounds(370, 310, 30, 40);
+
+      gridbutton49.setText("jButton1");
+      gridbutton49.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton49ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton49);
+      gridbutton49.setBounds(370, 350, 30, 30);
+
+      gridbutton50.setText("jButton1");
+      gridbutton50.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton50ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton50);
+      gridbutton50.setBounds(410, 350, 30, 30);
+
+      gridbutton51.setText("jButton1");
+      gridbutton51.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton51ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton51);
+      gridbutton51.setBounds(410, 310, 30, 40);
+
+      gridbutton52.setText("jButton1");
+      gridbutton52.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton52ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton52);
+      gridbutton52.setBounds(450, 310, 30, 40);
+
+      gridbutton54.setText("jButton1");
+      gridbutton54.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton54ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton54);
+      gridbutton54.setBounds(210, 350, 30, 30);
+
+      gridbutton55.setText("jButton1");
+      gridbutton55.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            gridbutton55ActionPerformed(evt);
+         }
+      });
+      SudokuGame.add(gridbutton55);
+      gridbutton55.setBounds(130, 70, 30, 40);
+
+      backgroundGrid.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/grid.jpg"))); // NOI18N
+      backgroundGrid.setText("2");
+      backgroundGrid.setAlignmentY(0.0F);
+      backgroundGrid.setMaximumSize(new java.awt.Dimension(359, 359));
+      backgroundGrid.setMinimumSize(new java.awt.Dimension(359, 359));
+      backgroundGrid.setPreferredSize(new java.awt.Dimension(359, 359));
+      SudokuGame.add(backgroundGrid);
+      backgroundGrid.setBounds(126, 28, 359, 359);
 
       mainPanel.add(SudokuGame, "sudokuCard");
 
@@ -2309,6 +2805,210 @@ public class QuarterProject245 extends javax.swing.JFrame {
    private void sudokuSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sudokuSubmitActionPerformed
       // TODO add your handling code here:
    }//GEN-LAST:event_sudokuSubmitActionPerformed
+
+   private void gridbutton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton4ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton4ActionPerformed
+
+   private void gridbutton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton5ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton5ActionPerformed
+
+   private void gridbutton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton6ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton6ActionPerformed
+
+   private void gridbutton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton7ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton7ActionPerformed
+
+   private void gridbutton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton8ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton8ActionPerformed
+
+   private void gridbutton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton9ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton9ActionPerformed
+
+   private void gridbutton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton10ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton10ActionPerformed
+
+   private void gridbutton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton11ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton11ActionPerformed
+
+   private void gridbutton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton12ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton12ActionPerformed
+
+   private void gridbutton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton13ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton13ActionPerformed
+
+   private void gridbutton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton14ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton14ActionPerformed
+
+   private void gridbutton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton15ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton15ActionPerformed
+
+   private void gridbutton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton16ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton16ActionPerformed
+
+   private void gridbutton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton17ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton17ActionPerformed
+
+   private void gridbutton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton18ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton18ActionPerformed
+
+   private void gridbutton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton19ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton19ActionPerformed
+
+   private void gridbutton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton20ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton20ActionPerformed
+
+   private void gridbutton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton21ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton21ActionPerformed
+
+   private void gridbutton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton22ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton22ActionPerformed
+
+   private void gridbutton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton23ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton23ActionPerformed
+
+   private void gridbutton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton24ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton24ActionPerformed
+
+   private void gridbutton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton25ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton25ActionPerformed
+
+   private void gridbutton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton26ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton26ActionPerformed
+
+   private void gridbutton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton27ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton27ActionPerformed
+
+   private void gridbutton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton28ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton28ActionPerformed
+
+   private void gridbutton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton29ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton29ActionPerformed
+
+   private void gridbutton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton30ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton30ActionPerformed
+
+   private void gridbutton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton31ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton31ActionPerformed
+
+   private void gridbutton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton32ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton32ActionPerformed
+
+   private void gridbutton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton33ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton33ActionPerformed
+
+   private void gridbutton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton34ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton34ActionPerformed
+
+   private void gridbutton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton35ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton35ActionPerformed
+
+   private void gridbutton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton36ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton36ActionPerformed
+
+   private void gridbutton37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton37ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton37ActionPerformed
+
+   private void gridbutton38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton38ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton38ActionPerformed
+
+   private void gridbutton39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton39ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton39ActionPerformed
+
+   private void gridbutton40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton40ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton40ActionPerformed
+
+   private void gridbutton41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton41ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton41ActionPerformed
+
+   private void gridbutton42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton42ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton42ActionPerformed
+
+   private void gridbutton43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton43ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton43ActionPerformed
+
+   private void gridbutton44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton44ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton44ActionPerformed
+
+   private void gridbutton45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton45ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton45ActionPerformed
+
+   private void gridbutton46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton46ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton46ActionPerformed
+
+   private void gridbutton47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton47ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton47ActionPerformed
+
+   private void gridbutton48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton48ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton48ActionPerformed
+
+   private void gridbutton49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton49ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton49ActionPerformed
+
+   private void gridbutton50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton50ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton50ActionPerformed
+
+   private void gridbutton51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton51ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton51ActionPerformed
+
+   private void gridbutton52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton52ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton52ActionPerformed
+
+   private void gridbutton54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton54ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton54ActionPerformed
+
+   private void gridbutton55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gridbutton55ActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_gridbutton55ActionPerformed
    
     /**
      * method:resetButtons
@@ -3325,11 +4025,60 @@ public class QuarterProject245 extends javax.swing.JFrame {
    private javax.swing.JButton eButton;
    private javax.swing.JButton fButton;
    private javax.swing.JButton gButton;
-   private javax.swing.JTextField gridUser1;
-   private javax.swing.JTextField gridUserTemplate;
    private javax.swing.JButton gridbutton1;
+   private javax.swing.JButton gridbutton10;
+   private javax.swing.JButton gridbutton11;
+   private javax.swing.JButton gridbutton12;
+   private javax.swing.JButton gridbutton13;
+   private javax.swing.JButton gridbutton14;
+   private javax.swing.JButton gridbutton15;
+   private javax.swing.JButton gridbutton16;
+   private javax.swing.JButton gridbutton17;
+   private javax.swing.JButton gridbutton18;
+   private javax.swing.JButton gridbutton19;
    private javax.swing.JButton gridbutton2;
+   private javax.swing.JButton gridbutton20;
+   private javax.swing.JButton gridbutton21;
+   private javax.swing.JButton gridbutton22;
+   private javax.swing.JButton gridbutton23;
+   private javax.swing.JButton gridbutton24;
+   private javax.swing.JButton gridbutton25;
+   private javax.swing.JButton gridbutton26;
+   private javax.swing.JButton gridbutton27;
+   private javax.swing.JButton gridbutton28;
+   private javax.swing.JButton gridbutton29;
    private javax.swing.JButton gridbutton3;
+   private javax.swing.JButton gridbutton30;
+   private javax.swing.JButton gridbutton31;
+   private javax.swing.JButton gridbutton32;
+   private javax.swing.JButton gridbutton33;
+   private javax.swing.JButton gridbutton34;
+   private javax.swing.JButton gridbutton35;
+   private javax.swing.JButton gridbutton36;
+   private javax.swing.JButton gridbutton37;
+   private javax.swing.JButton gridbutton38;
+   private javax.swing.JButton gridbutton39;
+   private javax.swing.JButton gridbutton4;
+   private javax.swing.JButton gridbutton40;
+   private javax.swing.JButton gridbutton41;
+   private javax.swing.JButton gridbutton42;
+   private javax.swing.JButton gridbutton43;
+   private javax.swing.JButton gridbutton44;
+   private javax.swing.JButton gridbutton45;
+   private javax.swing.JButton gridbutton46;
+   private javax.swing.JButton gridbutton47;
+   private javax.swing.JButton gridbutton48;
+   private javax.swing.JButton gridbutton49;
+   private javax.swing.JButton gridbutton5;
+   private javax.swing.JButton gridbutton50;
+   private javax.swing.JButton gridbutton51;
+   private javax.swing.JButton gridbutton52;
+   private javax.swing.JButton gridbutton54;
+   private javax.swing.JButton gridbutton55;
+   private javax.swing.JButton gridbutton6;
+   private javax.swing.JButton gridbutton7;
+   private javax.swing.JButton gridbutton8;
+   private javax.swing.JButton gridbutton9;
    private javax.swing.JLabel gridfield0;
    private javax.swing.JLabel gridfield15;
    private javax.swing.JLabel gridfield19;
