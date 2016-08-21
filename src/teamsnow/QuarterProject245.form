@@ -1417,31 +1417,30 @@
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="201" max="-2" attributes="0"/>
-                              <Component id="newHighScore" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="242" max="-2" attributes="0"/>
                               <Component id="userName" min="-2" pref="100" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="223" max="-2" attributes="0"/>
-                              <Component id="enterYourInitials" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="256" max="-2" attributes="0"/>
                               <Component id="HSSubmitButton" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="174" max="-2" attributes="0"/>
-                              <Component id="ifNot3Letters" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="117" max="-2" attributes="0"/>
                               <Component id="HighScoreError" min="-2" max="-2" attributes="0"/>
                           </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="185" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="ifNot3Letters" min="-2" max="-2" attributes="0"/>
+                                  <Component id="newHighScore" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="221" max="-2" attributes="0"/>
+                              <Component id="enterYourInitials" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
-                      <EmptySpace pref="188" max="32767" attributes="0"/>
+                      <EmptySpace pref="161" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1481,7 +1480,7 @@
             </Component>
             <Component class="javax.swing.JLabel" name="ifNot3Letters">
               <Properties>
-                <Property name="text" type="java.lang.String" value=" (If not 3 letters or not text, ABC by default)"/>
+                <Property name="text" type="java.lang.String" value="Initials must be 3 capital letters only!"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="HighScoreError">
@@ -1489,7 +1488,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Dialog" size="14" style="1"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Placeholder do not remove"/>
+                <Property name="text" type="java.lang.String" value="Placeholder for error message do not remove"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="userName">

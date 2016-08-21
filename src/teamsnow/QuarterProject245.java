@@ -1361,10 +1361,10 @@ public class QuarterProject245 extends javax.swing.JFrame {
 
       enterYourInitials.setText("Enter Your Initials Below!");
 
-      ifNot3Letters.setText(" (If not 3 letters or not text, ABC by default)");
+      ifNot3Letters.setText("Initials must be 3 capital letters only!");
 
       HighScoreError.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-      HighScoreError.setText("Placeholder do not remove");
+      HighScoreError.setText("Placeholder for error message do not remove");
 
       userName.setHorizontalAlignment(javax.swing.JTextField.CENTER);
       userName.addActionListener(new java.awt.event.ActionListener() {
@@ -1388,24 +1388,23 @@ public class QuarterProject245 extends javax.swing.JFrame {
          .addGroup(HighScoreSetLayout.createSequentialGroup()
             .addGroup(HighScoreSetLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                .addGroup(HighScoreSetLayout.createSequentialGroup()
-                  .addGap(201, 201, 201)
-                  .addComponent(newHighScore))
-               .addGroup(HighScoreSetLayout.createSequentialGroup()
                   .addGap(242, 242, 242)
                   .addComponent(userName, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-               .addGroup(HighScoreSetLayout.createSequentialGroup()
-                  .addGap(223, 223, 223)
-                  .addComponent(enterYourInitials))
                .addGroup(HighScoreSetLayout.createSequentialGroup()
                   .addGap(256, 256, 256)
                   .addComponent(HSSubmitButton))
                .addGroup(HighScoreSetLayout.createSequentialGroup()
-                  .addGap(174, 174, 174)
-                  .addComponent(ifNot3Letters))
-               .addGroup(HighScoreSetLayout.createSequentialGroup()
                   .addGap(117, 117, 117)
-                  .addComponent(HighScoreError)))
-            .addContainerGap(188, Short.MAX_VALUE))
+                  .addComponent(HighScoreError))
+               .addGroup(HighScoreSetLayout.createSequentialGroup()
+                  .addGap(185, 185, 185)
+                  .addGroup(HighScoreSetLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                     .addComponent(ifNot3Letters)
+                     .addComponent(newHighScore)))
+               .addGroup(HighScoreSetLayout.createSequentialGroup()
+                  .addGap(221, 221, 221)
+                  .addComponent(enterYourInitials)))
+            .addContainerGap(161, Short.MAX_VALUE))
       );
       HighScoreSetLayout.setVerticalGroup(
          HighScoreSetLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3602,7 +3601,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       String uN = userName.getText();
       //Doesn't contain all capital letters
       if(!(uN.matches("[A-Z]+"))) {
-         HighScoreError.setText("ERROR: Capital letters only, no numbers. Try again.");
+         HighScoreError.setText("ERROR: Three capital letters only, no numbers. Try again.");
       }
       //Isn't 3 characters in length
       else if(uN.length() != 3) {
