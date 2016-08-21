@@ -2467,7 +2467,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       //High scores - using pieces from my methods above to quickly grab highscores txt file
       File daHighScores = new File("highscores.txt");
       //debug
-      System.out.println("highscores.txt exists? "+daHighScores.exists());
+      //System.out.println("highscores.txt exists? "+daHighScores.exists());
       if(!(daHighScores.exists()))
          try {
             hsCreateFile();
@@ -2537,7 +2537,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
    public boolean checkIfUserHighScored(int userScore) throws FileNotFoundException, IOException {
       File daHighScores = new File("highscores.txt");
       //debug
-      System.out.println("highscores.txt exists? "+daHighScores.exists());
+      //System.out.println("highscores.txt exists? "+daHighScores.exists());
       if(!(daHighScores.exists()))
          hsCreateFile();
       
@@ -2573,8 +2573,8 @@ public class QuarterProject245 extends javax.swing.JFrame {
       }
       
       //show the results before writing to file (debug)
-      System.out.println("Names old: " + Arrays.toString(theNames));
-      System.out.println("Scores old: " + Arrays.toString(theScores));
+      //System.out.println("Names old: " + Arrays.toString(theNames));
+      //System.out.println("Scores old: " + Arrays.toString(theScores));
       
       if(userScore <= theScores[3])
          return false; //user did not high score; lower than lowest
@@ -2593,7 +2593,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       //for reading the highscores file
       File daHighScores = new File("highscores.txt");
       //debug
-      System.out.println("highscores.txt exists? "+daHighScores.exists());
+      //System.out.println("highscores.txt exists? "+daHighScores.exists());
       if(!(daHighScores.exists()))
          hsCreateFile();
       
@@ -3201,7 +3201,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
         
          File daHighScores = new File("highscores.txt");
         //debug
-        System.out.println("highscores.txt exists? "+daHighScores.exists());
+        //System.out.println("highscores.txt exists? "+daHighScores.exists());
         if(!(daHighScores.exists()))
          try {
             hsCreateFile();
@@ -3610,7 +3610,8 @@ public class QuarterProject245 extends javax.swing.JFrame {
       else {
          try {
             String newScores = updateHighScores(uN, userEndScore);
-            System.out.println("The string (Debug): \n"+newScores);
+            //debug
+            //System.out.println("The string (Debug): \n"+newScores);
             //scan through string
             Scanner scanny = new Scanner(newScores);
             highscore1.setText(scanny.nextLine());
