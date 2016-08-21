@@ -3706,6 +3706,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 1;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton1ActionPerformed
 
    private void userbutton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton2ActionPerformed
@@ -3713,6 +3714,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 2;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton2ActionPerformed
 
    private void userbutton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton11ActionPerformed
@@ -3720,6 +3722,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 11;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton11ActionPerformed
 
    private void sudokuSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sudokuSubmitActionPerformed
@@ -3770,6 +3773,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 10;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton10ActionPerformed
 
    private void userbutton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton4ActionPerformed
@@ -3777,6 +3781,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 4;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton4ActionPerformed
 
    private void userbutton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton6ActionPerformed
@@ -3784,6 +3789,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 6;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton6ActionPerformed
 
    private void userbutton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton7ActionPerformed
@@ -3791,6 +3797,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 7;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton7ActionPerformed
 
    private void userbutton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton12ActionPerformed
@@ -3798,6 +3805,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 12;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton12ActionPerformed
 
    private void userbutton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton13ActionPerformed
@@ -3805,6 +3813,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 13;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton13ActionPerformed
 
    private void userbutton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton14ActionPerformed
@@ -3812,6 +3821,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 14;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton14ActionPerformed
 
    private void userbutton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton16ActionPerformed
@@ -3819,6 +3829,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 16;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton16ActionPerformed
 
    private void userbutton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton17ActionPerformed
@@ -3826,6 +3837,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 17;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton17ActionPerformed
 
    private void userbutton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton26ActionPerformed
@@ -3833,6 +3845,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 26;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton26ActionPerformed
 
    private void userbutton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton18ActionPerformed
@@ -3840,6 +3853,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 18;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton18ActionPerformed
 
    private void userbutton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton20ActionPerformed
@@ -3847,6 +3861,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 20;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton20ActionPerformed
 
    private void userbutton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton36ActionPerformed
@@ -3854,6 +3869,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 36;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton36ActionPerformed
 
    private void userbutton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton28ActionPerformed
@@ -3861,6 +3877,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 28;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton28ActionPerformed
 
    private void userbutton37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton37ActionPerformed
@@ -3868,6 +3885,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 37;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton37ActionPerformed
 
    private void userbutton38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton38ActionPerformed
@@ -3875,6 +3893,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 38;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton38ActionPerformed
 
    private void userbutton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton21ActionPerformed
@@ -3882,6 +3901,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 21;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton21ActionPerformed
 
    private void userbutton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton22ActionPerformed
@@ -3889,6 +3909,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 22;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton22ActionPerformed
 
    private void userbutton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton23ActionPerformed
@@ -3896,6 +3917,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 23;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton23ActionPerformed
 
    private void userbutton42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton42ActionPerformed
@@ -3903,6 +3925,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 42;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton42ActionPerformed
 
    private void userbutton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton30ActionPerformed
@@ -3910,6 +3933,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 30;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton30ActionPerformed
 
    private void userbutton39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton39ActionPerformed
@@ -3917,6 +3941,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 39;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton39ActionPerformed
 
    private void userbutton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton32ActionPerformed
@@ -3924,6 +3949,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 32;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton32ActionPerformed
 
    private void userbutton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton35ActionPerformed
@@ -3931,6 +3957,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 35;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton35ActionPerformed
 
    private void userbutton41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton41ActionPerformed
@@ -3938,6 +3965,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 41;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton41ActionPerformed
 
    private void userbutton43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton43ActionPerformed
@@ -3945,6 +3973,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 43;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton43ActionPerformed
 
    private void userbutton44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton44ActionPerformed
@@ -3952,6 +3981,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 44;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton44ActionPerformed
 
    private void userbutton48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton48ActionPerformed
@@ -3959,6 +3989,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 48;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton48ActionPerformed
 
    private void userbutton50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton50ActionPerformed
@@ -3966,6 +3997,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 50;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton50ActionPerformed
 
    private void userbutton45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton45ActionPerformed
@@ -3973,6 +4005,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 45;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton45ActionPerformed
 
    private void userbutton52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton52ActionPerformed
@@ -3980,6 +4013,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 52;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton52ActionPerformed
 
    private void userbutton54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton54ActionPerformed
@@ -3987,6 +4021,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 54;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton54ActionPerformed
 
    private void userbutton63ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton63ActionPerformed
@@ -3994,6 +4029,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 63;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton63ActionPerformed
 
    private void userbutton64ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton64ActionPerformed
@@ -4001,6 +4037,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 64;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton64ActionPerformed
 
    private void userbutton73ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton73ActionPerformed
@@ -4008,6 +4045,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 73;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton73ActionPerformed
 
    private void userbutton57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton57ActionPerformed
@@ -4015,6 +4053,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 57;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton57ActionPerformed
 
    private void userbutton58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton58ActionPerformed
@@ -4022,6 +4061,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 58;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton58ActionPerformed
 
    private void userbutton59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton59ActionPerformed
@@ -4029,6 +4069,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 59;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton59ActionPerformed
 
    private void userbutton67ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton67ActionPerformed
@@ -4036,6 +4077,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 67;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton67ActionPerformed
 
    private void userbutton66ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton66ActionPerformed
@@ -4043,6 +4085,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 66;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton66ActionPerformed
 
    private void userbutton76ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton76ActionPerformed
@@ -4050,6 +4093,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 76;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton76ActionPerformed
 
    private void userbutton60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton60ActionPerformed
@@ -4057,6 +4101,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 60;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton60ActionPerformed
 
    private void userbutton62ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton62ActionPerformed
@@ -4064,6 +4109,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 62;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton62ActionPerformed
 
    private void userbutton68ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton68ActionPerformed
@@ -4071,6 +4117,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 68;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton68ActionPerformed
 
    private void userbutton69ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton69ActionPerformed
@@ -4078,6 +4125,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 69;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton69ActionPerformed
 
    private void userbutton78ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton78ActionPerformed
@@ -4085,6 +4133,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 78;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton78ActionPerformed
 
    private void userbutton79ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton79ActionPerformed
@@ -4092,6 +4141,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 79;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton79ActionPerformed
 
    private void userbutton70ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton70ActionPerformed
@@ -4099,6 +4149,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 70;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton70ActionPerformed
 
    private void userbutton71ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton71ActionPerformed
@@ -4106,6 +4157,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 71;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton71ActionPerformed
 
    private void userbutton74ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton74ActionPerformed
@@ -4113,6 +4165,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 74;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton74ActionPerformed
 
    private void userbutton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton9ActionPerformed
@@ -4120,6 +4173,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       currentButton = 9;
       popupUser.setLocationRelativeTo(null);
       popupUser.setVisible(true);
+      popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton9ActionPerformed
 
    private void popupOkButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_popupOkButtonActionPerformed
