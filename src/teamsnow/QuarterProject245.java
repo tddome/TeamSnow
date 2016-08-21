@@ -77,6 +77,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser = new javax.swing.JDialog();
       popupUserInput = new javax.swing.JTextField();
       popupDirections = new javax.swing.JLabel();
+      popupError = new javax.swing.JLabel();
       popupOkButton = new javax.swing.JButton();
       popupCancelButton = new javax.swing.JButton();
       mainPanel = new javax.swing.JPanel();
@@ -302,7 +303,8 @@ public class QuarterProject245 extends javax.swing.JFrame {
       userbutton78 = new javax.swing.JButton();
       userbutton79 = new javax.swing.JButton();
 
-      popupUser.setMinimumSize(new java.awt.Dimension(300, 200));
+      popupUser.setMaximumSize(new java.awt.Dimension(363, 200));
+      popupUser.setMinimumSize(new java.awt.Dimension(363, 200));
       popupUser.setResizable(false);
 
       popupUserInput.addActionListener(new java.awt.event.ActionListener() {
@@ -311,7 +313,10 @@ public class QuarterProject245 extends javax.swing.JFrame {
          }
       });
 
-      popupDirections.setText("   Enter an integer 1-9 to input into the selected box:");
+      popupDirections.setText("Enter an integer 1-9 to input into the selected box:");
+
+      popupError.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+      popupError.setText("ERROR: Input was not an integer. Try again.");
 
       popupOkButton.setText("Ok");
       popupOkButton.addActionListener(new java.awt.event.ActionListener() {
@@ -331,33 +336,40 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.getContentPane().setLayout(popupUserLayout);
       popupUserLayout.setHorizontalGroup(
          popupUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, popupUserLayout.createSequentialGroup()
+            .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(popupUserInput, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGap(144, 144, 144))
+         .addGroup(popupUserLayout.createSequentialGroup()
+            .addGap(127, 127, 127)
+            .addComponent(popupOkButton)
+            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+            .addComponent(popupCancelButton)
+            .addGap(0, 0, Short.MAX_VALUE))
          .addGroup(popupUserLayout.createSequentialGroup()
             .addGroup(popupUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                .addGroup(popupUserLayout.createSequentialGroup()
-                  .addGap(93, 93, 93)
-                  .addComponent(popupOkButton)
-                  .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                  .addComponent(popupCancelButton)
-                  .addGap(0, 0, Short.MAX_VALUE))
-               .addComponent(popupDirections, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 294, Short.MAX_VALUE))
-            .addContainerGap())
-         .addGroup(popupUserLayout.createSequentialGroup()
-            .addGap(127, 127, 127)
-            .addComponent(popupUserInput, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                  .addGap(41, 41, 41)
+                  .addComponent(popupDirections))
+               .addGroup(popupUserLayout.createSequentialGroup()
+                  .addGap(29, 29, 29)
+                  .addComponent(popupError)))
+            .addContainerGap(31, Short.MAX_VALUE))
       );
       popupUserLayout.setVerticalGroup(
          popupUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
          .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, popupUserLayout.createSequentialGroup()
-            .addContainerGap(55, Short.MAX_VALUE)
+            .addGap(21, 21, 21)
             .addComponent(popupDirections)
-            .addGap(18, 18, 18)
+            .addGap(12, 12, 12)
             .addComponent(popupUserInput, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-            .addGroup(popupUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+            .addGroup(popupUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                .addComponent(popupOkButton)
                .addComponent(popupCancelButton))
-            .addGap(43, 43, 43))
+            .addGap(18, 18, 18)
+            .addComponent(popupError)
+            .addContainerGap(46, Short.MAX_VALUE))
       );
 
       setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -2394,6 +2406,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       //Play
       beginPlay();
       resetSudokuBoard();
+      popupError.setVisible(false);
       CardLayout card = (CardLayout)mainPanel.getLayout();
       card.show(mainPanel, "playCard");
    }//GEN-LAST:event_PlayButtonActionPerformed
@@ -3803,9 +3816,31 @@ public class QuarterProject245 extends javax.swing.JFrame {
 
    private void popupOkButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_popupOkButtonActionPerformed
       // TODO add your handling code here:
-      updateSudokuBoard(currentButton, popupUserInput.getText());
-      popupUser.setVisible(false);
-      popupUserInput.setText("");
+      String usersInput = popupUserInput.getText();
+      
+      //user's input wrong, show error, do not continue
+      if(!(usersInput.matches("^[+-]?\\d+$"))) {
+         popupError.setText("ERROR: Input was not an integer. Try again.");
+         popupError.setVisible(true);
+         popupUserInput.setText("");
+      }
+      else {
+         //String = int, convert String to int to check range
+         int usersInputInt = Integer.parseInt(usersInput);
+         //user's input not in range, show error, do not continue
+         if(usersInputInt < 1 || usersInputInt > 9) {
+            popupError.setText("ERROR: Input must be 1-9. Try again.");
+            popupError.setVisible(true);
+            popupUserInput.setText("");
+         }
+         //input is correct, update board, continue
+         else {
+            popupError.setVisible(false);
+            updateSudokuBoard(currentButton, popupUserInput.getText());
+            popupUser.setVisible(false);
+            popupUserInput.setText("");
+         }
+      }
    }//GEN-LAST:event_popupOkButtonActionPerformed
 
    private void popupUserInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_popupUserInputActionPerformed
@@ -4962,6 +4997,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
    private javax.swing.JButton pButton;
    private javax.swing.JButton popupCancelButton;
    private javax.swing.JLabel popupDirections;
+   private javax.swing.JLabel popupError;
    private javax.swing.JButton popupOkButton;
    private javax.swing.JDialog popupUser;
    private javax.swing.JTextField popupUserInput;
