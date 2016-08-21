@@ -84,12 +84,13 @@ public class QuarterProject245 extends javax.swing.JFrame {
       SplashPage = new javax.swing.JPanel();
       ProjectTitle = new javax.swing.JLabel();
       TeamName = new javax.swing.JLabel();
-      jLabel5 = new javax.swing.JLabel();
+      PictureBackground = new javax.swing.JLabel();
       MainMenu = new javax.swing.JPanel();
       TeamLogo = new javax.swing.JLabel();
       PlayButton = new javax.swing.JButton();
       HighScoresButton = new javax.swing.JButton();
       CreditsButton = new javax.swing.JButton();
+      BlackBackground = new javax.swing.JLabel();
       CreditsMenu = new javax.swing.JPanel();
       backButton0 = new javax.swing.JButton();
       jLabel1 = new javax.swing.JLabel();
@@ -160,8 +161,9 @@ public class QuarterProject245 extends javax.swing.JFrame {
       newHighScore = new javax.swing.JLabel();
       enterYourInitials = new javax.swing.JLabel();
       ifNot3Letters = new javax.swing.JLabel();
+      HighScoreError = new javax.swing.JLabel();
       userName = new javax.swing.JTextField();
-      doneButton = new javax.swing.JButton();
+      HSSubmitButton = new javax.swing.JButton();
       SudokuGame = new javax.swing.JPanel();
       SudokuTitle = new javax.swing.JLabel();
       sudokuClock = new javax.swing.JLabel();
@@ -433,9 +435,9 @@ public class QuarterProject245 extends javax.swing.JFrame {
       SplashPage.add(TeamName);
       TeamName.setBounds(220, 300, 139, 24);
 
-      jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/splashpagebackground.jpg"))); // NOI18N
-      SplashPage.add(jLabel5);
-      jLabel5.setBounds(0, 0, 600, 400);
+      PictureBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/splashpagebackground.jpg"))); // NOI18N
+      SplashPage.add(PictureBackground);
+      PictureBackground.setBounds(0, 0, 600, 400);
 
       mainPanel.add(SplashPage, "splashCard");
       //CardLayout card = (CardLayout)mainPanel.getLayout();
@@ -444,10 +446,15 @@ public class QuarterProject245 extends javax.swing.JFrame {
       MainMenu.setMaximumSize(new java.awt.Dimension(600, 400));
       MainMenu.setMinimumSize(new java.awt.Dimension(600, 400));
       MainMenu.setPreferredSize(new java.awt.Dimension(600, 400));
+      MainMenu.setLayout(null);
 
       TeamLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/teamlogo.png"))); // NOI18N
+      MainMenu.add(TeamLogo);
+      TeamLogo.setBounds(6, 6, 200, 182);
 
+      PlayButton.setBackground(new java.awt.Color(0, 0, 0));
       PlayButton.setFont(new java.awt.Font("Dialog", 1, 16)); // NOI18N
+      PlayButton.setForeground(new java.awt.Color(255, 255, 255));
       PlayButton.setText("Play");
       PlayButton.setToolTipText("click to play");
       PlayButton.addActionListener(new java.awt.event.ActionListener() {
@@ -455,8 +462,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
             PlayButtonActionPerformed(evt);
          }
       });
+      MainMenu.add(PlayButton);
+      PlayButton.setBounds(414, 232, 180, 50);
 
+      HighScoresButton.setBackground(new java.awt.Color(0, 0, 0));
       HighScoresButton.setFont(new java.awt.Font("Dialog", 1, 16)); // NOI18N
+      HighScoresButton.setForeground(new java.awt.Color(255, 255, 255));
       HighScoresButton.setText("High Scores");
       HighScoresButton.setToolTipText("click to view the high scores");
       HighScoresButton.addActionListener(new java.awt.event.ActionListener() {
@@ -464,8 +475,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
             HighScoresButtonActionPerformed(evt);
          }
       });
+      MainMenu.add(HighScoresButton);
+      HighScoresButton.setBounds(414, 288, 180, 50);
 
+      CreditsButton.setBackground(new java.awt.Color(0, 0, 0));
       CreditsButton.setFont(new java.awt.Font("Dialog", 1, 16)); // NOI18N
+      CreditsButton.setForeground(new java.awt.Color(255, 255, 255));
       CreditsButton.setText("Credits");
       CreditsButton.setToolTipText("click to view Authors");
       CreditsButton.addActionListener(new java.awt.event.ActionListener() {
@@ -473,36 +488,13 @@ public class QuarterProject245 extends javax.swing.JFrame {
             CreditsButtonActionPerformed(evt);
          }
       });
+      MainMenu.add(CreditsButton);
+      CreditsButton.setBounds(414, 344, 180, 50);
 
-      javax.swing.GroupLayout MainMenuLayout = new javax.swing.GroupLayout(MainMenu);
-      MainMenu.setLayout(MainMenuLayout);
-      MainMenuLayout.setHorizontalGroup(
-         MainMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-         .addGroup(MainMenuLayout.createSequentialGroup()
-            .addContainerGap(414, Short.MAX_VALUE)
-            .addGroup(MainMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-               .addComponent(CreditsButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-               .addComponent(HighScoresButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-               .addComponent(PlayButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addContainerGap())
-         .addGroup(MainMenuLayout.createSequentialGroup()
-            .addContainerGap()
-            .addComponent(TeamLogo)
-            .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-      );
-      MainMenuLayout.setVerticalGroup(
-         MainMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MainMenuLayout.createSequentialGroup()
-            .addContainerGap()
-            .addComponent(TeamLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
-            .addComponent(PlayButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-            .addComponent(HighScoresButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-            .addComponent(CreditsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addContainerGap())
-      );
+      BlackBackground.setBackground(new java.awt.Color(0, 0, 0));
+      BlackBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/black.jpg"))); // NOI18N
+      MainMenu.add(BlackBackground);
+      BlackBackground.setBounds(0, 0, 600, 400);
 
       mainPanel.add(MainMenu, "mainmenuCard");
 
@@ -1371,6 +1363,9 @@ public class QuarterProject245 extends javax.swing.JFrame {
 
       ifNot3Letters.setText(" (If not 3 letters or not text, ABC by default)");
 
+      HighScoreError.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+      HighScoreError.setText("Placeholder");
+
       userName.setHorizontalAlignment(javax.swing.JTextField.CENTER);
       userName.addActionListener(new java.awt.event.ActionListener() {
          public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1378,11 +1373,11 @@ public class QuarterProject245 extends javax.swing.JFrame {
          }
       });
 
-      doneButton.setText("Submit");
-      doneButton.setToolTipText("Click to submit");
-      doneButton.addActionListener(new java.awt.event.ActionListener() {
+      HSSubmitButton.setText("Submit");
+      HSSubmitButton.setToolTipText("Click to submit");
+      HSSubmitButton.addActionListener(new java.awt.event.ActionListener() {
          public void actionPerformed(java.awt.event.ActionEvent evt) {
-            doneButtonActionPerformed(evt);
+            HSSubmitButtonActionPerformed(evt);
          }
       });
 
@@ -1402,11 +1397,14 @@ public class QuarterProject245 extends javax.swing.JFrame {
                   .addGap(223, 223, 223)
                   .addComponent(enterYourInitials))
                .addGroup(HighScoreSetLayout.createSequentialGroup()
+                  .addGap(256, 256, 256)
+                  .addComponent(HSSubmitButton))
+               .addGroup(HighScoreSetLayout.createSequentialGroup()
                   .addGap(174, 174, 174)
                   .addComponent(ifNot3Letters))
                .addGroup(HighScoreSetLayout.createSequentialGroup()
-                  .addGap(256, 256, 256)
-                  .addComponent(doneButton)))
+                  .addGap(117, 117, 117)
+                  .addComponent(HighScoreError)))
             .addContainerGap(188, Short.MAX_VALUE))
       );
       HighScoreSetLayout.setVerticalGroup(
@@ -1421,8 +1419,10 @@ public class QuarterProject245 extends javax.swing.JFrame {
             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
             .addComponent(userName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-            .addComponent(doneButton)
-            .addContainerGap(156, Short.MAX_VALUE))
+            .addComponent(HSSubmitButton)
+            .addGap(31, 31, 31)
+            .addComponent(HighScoreError)
+            .addContainerGap(106, Short.MAX_VALUE))
       );
 
       mainPanel.add(HighScoreSet, "setCard");
@@ -2449,7 +2449,11 @@ public class QuarterProject245 extends javax.swing.JFrame {
       // TODO add your handling code here:
       //Play
       beginPlay();
+      //for resetting previous user input on sudoku board
       resetSudokuBoard();
+      //for high score input
+      HighScoreError.setText("");
+      //for removing error in user input for sudoku
       popupError.setVisible(false);
       CardLayout card = (CardLayout)mainPanel.getLayout();
       card.show(mainPanel, "playCard");
@@ -3593,31 +3597,39 @@ public class QuarterProject245 extends javax.swing.JFrame {
      * and then will write the high scores from the file to the high score page.
      * Everything is then reset, and then the main menu is accessed.
      */
-   private void doneButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_doneButtonActionPerformed
+   private void HSSubmitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HSSubmitButtonActionPerformed
       // TODO add your handling code here:
-     String uN = userName.getText();
-      //Initials only; else default setting (ABC)
-      if(uN.length() != 3)
-         uN = "ABC";
-       try {
-          String newScores = updateHighScores(uN, userEndScore);
-          System.out.println("The string (Debug): \n"+newScores);
-          //scan through string
-          Scanner scanny = new Scanner(newScores);
-          highscore1.setText(scanny.nextLine());
-          highscore2.setText(scanny.nextLine());
-          highscore3.setText(scanny.nextLine());
-          highscore4.setText(scanny.nextLine());       
-       } catch (IOException ex) {
-          Logger.getLogger(QuarterProject245.class.getName()).log(Level.SEVERE, null, ex);
-       }
-       
-       //reset since it was skipped, then main menu
-       userEndScore = 0;
-       resetButtons();
-       CardLayout card = (CardLayout)mainPanel.getLayout();
-       card.show(mainPanel, "mainmenuCard");
-   }//GEN-LAST:event_doneButtonActionPerformed
+      String uN = userName.getText();
+      //Doesn't contain all capital letters
+      if(!(uN.matches("[A-Z]+"))) {
+         HighScoreError.setText("ERROR: Capital letters only, no numbers. Try again.");
+      }
+      //Isn't 3 characters in length
+      else if(uN.length() != 3) {
+         HighScoreError.setText("ERROR: Initials not 3 in length. Try again.");
+      }
+      else {
+         try {
+            String newScores = updateHighScores(uN, userEndScore);
+            System.out.println("The string (Debug): \n"+newScores);
+            //scan through string
+            Scanner scanny = new Scanner(newScores);
+            highscore1.setText(scanny.nextLine());
+            highscore2.setText(scanny.nextLine());
+            highscore3.setText(scanny.nextLine());
+            highscore4.setText(scanny.nextLine());       
+         } catch (IOException ex) {
+            Logger.getLogger(QuarterProject245.class.getName()).log(Level.SEVERE, null, ex);
+         }
+
+         //reset since it was skipped, then main menu
+         userEndScore = 0;
+         resetButtons();
+         HighScoreError.setText("");
+         CardLayout card = (CardLayout)mainPanel.getLayout();
+         card.show(mainPanel, "mainmenuCard");
+      }
+   }//GEN-LAST:event_HSSubmitButtonActionPerformed
 
    /**
      * method:jButtonPurpleActionPerformed
@@ -5190,14 +5202,18 @@ public class QuarterProject245 extends javax.swing.JFrame {
    private boolean yStatus = true;
   private boolean zStatus = true;
    // Variables declaration - do not modify//GEN-BEGIN:variables
+   private javax.swing.JLabel BlackBackground;
    private javax.swing.JButton CreditsButton;
    private javax.swing.JPanel CreditsMenu;
    private javax.swing.JPanel End;
+   private javax.swing.JButton HSSubmitButton;
+   private javax.swing.JLabel HighScoreError;
    private javax.swing.JPanel HighScoreSet;
    private javax.swing.JButton HighScoresButton;
    private javax.swing.JPanel HighScoresMenu;
    private javax.swing.JButton LButton;
    private javax.swing.JPanel MainMenu;
+   private javax.swing.JLabel PictureBackground;
    private javax.swing.JButton PlayButton;
    private javax.swing.JPanel PlayMenu;
    private javax.swing.JPanel PointAndClickGame;
@@ -5220,7 +5236,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
    private javax.swing.JLabel backgroundGrid;
    private javax.swing.JButton cButton;
    private javax.swing.JButton dButton;
-   private javax.swing.JButton doneButton;
    private javax.swing.JButton eButton;
    private javax.swing.JLabel enterYourInitials;
    private javax.swing.JButton fButton;
@@ -5327,7 +5342,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
    private javax.swing.JLabel jLabel2;
    private javax.swing.JLabel jLabel3;
    private javax.swing.JLabel jLabel4;
-   private javax.swing.JLabel jLabel5;
    private javax.swing.JLabel jLabel9;
    private javax.swing.JLabel jLabelColor;
    private javax.swing.JLabel jLabelHangman;
