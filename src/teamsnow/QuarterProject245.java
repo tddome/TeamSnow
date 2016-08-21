@@ -1364,7 +1364,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       ifNot3Letters.setText(" (If not 3 letters or not text, ABC by default)");
 
       HighScoreError.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-      HighScoreError.setText("Placeholder");
+      HighScoreError.setText("Placeholder do not remove");
 
       userName.setHorizontalAlignment(javax.swing.JTextField.CENTER);
       userName.addActionListener(new java.awt.event.ActionListener() {
