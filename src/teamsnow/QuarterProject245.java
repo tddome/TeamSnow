@@ -85,10 +85,10 @@ public class QuarterProject245 extends javax.swing.JFrame {
       ProjectTitle = new javax.swing.JLabel();
       TeamName = new javax.swing.JLabel();
       MainMenu = new javax.swing.JPanel();
+      TeamLogo = new javax.swing.JLabel();
       PlayButton = new javax.swing.JButton();
       HighScoresButton = new javax.swing.JButton();
       CreditsButton = new javax.swing.JButton();
-      TeamLogo = new javax.swing.JLabel();
       CreditsMenu = new javax.swing.JPanel();
       backButton0 = new javax.swing.JButton();
       jLabel1 = new javax.swing.JLabel();
@@ -457,6 +457,8 @@ public class QuarterProject245 extends javax.swing.JFrame {
       MainMenu.setMinimumSize(new java.awt.Dimension(600, 400));
       MainMenu.setPreferredSize(new java.awt.Dimension(600, 400));
 
+      TeamLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/teamlogo.png"))); // NOI18N
+
       PlayButton.setFont(new java.awt.Font("Dialog", 1, 16)); // NOI18N
       PlayButton.setText("Play");
       PlayButton.setToolTipText("click to play");
@@ -484,31 +486,28 @@ public class QuarterProject245 extends javax.swing.JFrame {
          }
       });
 
-      TeamLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/teamlogo.png"))); // NOI18N
-      TeamLogo.setText("jLabel1");
-
       javax.swing.GroupLayout MainMenuLayout = new javax.swing.GroupLayout(MainMenu);
       MainMenu.setLayout(MainMenuLayout);
       MainMenuLayout.setHorizontalGroup(
          MainMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
          .addGroup(MainMenuLayout.createSequentialGroup()
-            .addContainerGap()
-            .addComponent(TeamLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 108, Short.MAX_VALUE)
+            .addContainerGap(414, Short.MAX_VALUE)
             .addGroup(MainMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                .addComponent(CreditsButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
                .addComponent(HighScoresButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
                .addComponent(PlayButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addContainerGap())
+         .addGroup(MainMenuLayout.createSequentialGroup()
+            .addContainerGap()
+            .addComponent(TeamLogo)
+            .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
       );
       MainMenuLayout.setVerticalGroup(
          MainMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-         .addGroup(MainMenuLayout.createSequentialGroup()
-            .addContainerGap()
-            .addComponent(TeamLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addContainerGap(127, Short.MAX_VALUE))
          .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MainMenuLayout.createSequentialGroup()
-            .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addContainerGap()
+            .addComponent(TeamLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
             .addComponent(PlayButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
             .addComponent(HighScoresButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
