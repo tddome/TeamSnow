@@ -84,6 +84,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       SplashPage = new javax.swing.JPanel();
       ProjectTitle = new javax.swing.JLabel();
       TeamName = new javax.swing.JLabel();
+      jLabel5 = new javax.swing.JLabel();
       MainMenu = new javax.swing.JPanel();
       TeamLogo = new javax.swing.JLabel();
       PlayButton = new javax.swing.JButton();
@@ -418,36 +419,23 @@ public class QuarterProject245 extends javax.swing.JFrame {
 
       Timer tDate = new Timer(500, listen2);
       tDate.start();
+      SplashPage.setLayout(null);
 
-      ProjectTitle.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
-      ProjectTitle.setText("CS 245 Project: Summer 2016");
+      ProjectTitle.setFont(new java.awt.Font("Dialog", 1, 32)); // NOI18N
+      ProjectTitle.setForeground(new java.awt.Color(255, 255, 255));
+      ProjectTitle.setText("CS245 Project: Summer 2016");
+      SplashPage.add(ProjectTitle);
+      ProjectTitle.setBounds(80, 10, 450, 42);
 
       TeamName.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+      TeamName.setForeground(new java.awt.Color(255, 255, 255));
       TeamName.setText("By: Team Snow");
+      SplashPage.add(TeamName);
+      TeamName.setBounds(220, 300, 139, 24);
 
-      javax.swing.GroupLayout SplashPageLayout = new javax.swing.GroupLayout(SplashPage);
-      SplashPage.setLayout(SplashPageLayout);
-      SplashPageLayout.setHorizontalGroup(
-         SplashPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-         .addGroup(SplashPageLayout.createSequentialGroup()
-            .addGroup(SplashPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-               .addGroup(SplashPageLayout.createSequentialGroup()
-                  .addGap(226, 226, 226)
-                  .addComponent(TeamName))
-               .addGroup(SplashPageLayout.createSequentialGroup()
-                  .addGap(41, 41, 41)
-                  .addComponent(ProjectTitle)))
-            .addContainerGap(49, Short.MAX_VALUE))
-      );
-      SplashPageLayout.setVerticalGroup(
-         SplashPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-         .addGroup(SplashPageLayout.createSequentialGroup()
-            .addGap(35, 35, 35)
-            .addComponent(ProjectTitle)
-            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 178, Short.MAX_VALUE)
-            .addComponent(TeamName)
-            .addGap(116, 116, 116))
-      );
+      jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/splashpagebackground.jpg"))); // NOI18N
+      SplashPage.add(jLabel5);
+      jLabel5.setBounds(0, 0, 600, 400);
 
       mainPanel.add(SplashPage, "splashCard");
       //CardLayout card = (CardLayout)mainPanel.getLayout();
@@ -5339,6 +5327,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
    private javax.swing.JLabel jLabel2;
    private javax.swing.JLabel jLabel3;
    private javax.swing.JLabel jLabel4;
+   private javax.swing.JLabel jLabel5;
    private javax.swing.JLabel jLabel9;
    private javax.swing.JLabel jLabelColor;
    private javax.swing.JLabel jLabelHangman;
