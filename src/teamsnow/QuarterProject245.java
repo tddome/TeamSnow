@@ -4460,7 +4460,9 @@ public class QuarterProject245 extends javax.swing.JFrame {
    
    /**
     * Method name: popupOkButtonActionPerformed
-    * Method purpose: 
+    * Method purpose: Checks the user's input to see if they're submitting
+    * a number correctly for sudoku. Makes sure it's between 1-9 and it's
+    * actually a number. If it's correct, board will be updated with user's input.
     */
    private void popupOkButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_popupOkButtonActionPerformed
       // TODO add your handling code here:
@@ -4490,18 +4492,39 @@ public class QuarterProject245 extends javax.swing.JFrame {
          }
       }
    }//GEN-LAST:event_popupOkButtonActionPerformed
-
+   
+   /**
+    * Method name: popupUserInputActionPerformed
+    * Method purpose: Empty since it's just a text field, doesn't need to do anything.
+    * Input can be read from it if the user types text into it.
+    */
    private void popupUserInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_popupUserInputActionPerformed
       // TODO add your handling code here:
    }//GEN-LAST:event_popupUserInputActionPerformed
-
+   
+   /**
+    * Method name: popupCancelButtonActionPerformed
+    * Method purpose: Resets text field if user typed in something before canceling,
+    * and sets the error to hide (if they did get one in the window), and hides the window.
+    */
    private void popupCancelButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_popupCancelButtonActionPerformed
       // TODO add your handling code here:
       popupUser.setVisible(false);
       popupError.setVisible(false);
       popupUserInput.setText("");
    }//GEN-LAST:event_popupCancelButtonActionPerformed
-
+   
+   /**
+    * Method name: SSContinueButtonActionPerformed
+    * Method purpose: This is used in a rather peculiar way based on the instructions.
+    * It isn't specified if the user should get the sudokuPoints they did earn if they continue,
+    * So I just reward partial points if they decide to continue with empty spaces,
+    * yet the spaces they did get were correct.
+    * Otherwise, will continue instead of going back to the board, and prep the board
+    * for the next game since this is considered a Quit. Their sudokuPoints are
+    * calculated here and added onto their score, since they did attempt at the game,
+    * and didn't just Quit on the main board, which counts as them giving up.
+    */
    private void SSContinueButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SSContinueButtonActionPerformed
       // TODO add your handling code here:
       
@@ -4531,7 +4554,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       CardLayout gameEnding = (CardLayout)mainPanel.getLayout();
       gameEnding.show(mainPanel, "endCard");
    }//GEN-LAST:event_SSContinueButtonActionPerformed
-
+   
+   /**
+    * method: SSTryAgainButtonActionPerformed
+    * purpose: Takes you back to the board with no changes to the board,
+    * so they can try again (as the button says).
+    */
    private void SSTryAgainButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SSTryAgainButtonActionPerformed
       // TODO add your handling code here:
       CardLayout gameEnding = (CardLayout)mainPanel.getLayout();
@@ -5486,7 +5514,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
     }
     
     //For sudoku; user board, answer board, sudoku points to be added
-    //also, attempted array, to see if they already attempted an area (for points)
     private static int [] userBoard = new int [81];
     private static int [] answerBoard = {8,3,5,4,1,6,9,2,7,
                                          2,9,6,8,5,7,4,3,1,
