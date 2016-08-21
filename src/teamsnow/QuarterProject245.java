@@ -302,6 +302,11 @@ public class QuarterProject245 extends javax.swing.JFrame {
       userbutton76 = new javax.swing.JButton();
       userbutton78 = new javax.swing.JButton();
       userbutton79 = new javax.swing.JButton();
+      SudokuScore = new javax.swing.JPanel();
+      SudokuScoreDisplay = new javax.swing.JLabel();
+      SudokuScoreMessage = new javax.swing.JLabel();
+      SSContinueButton = new javax.swing.JButton();
+      SSTryAgainButton = new javax.swing.JButton();
 
       popupUser.setMinimumSize(new java.awt.Dimension(363, 200));
       popupUser.setResizable(false);
@@ -2380,6 +2385,59 @@ public class QuarterProject245 extends javax.swing.JFrame {
 
       mainPanel.add(SudokuGame, "sudokuCard");
 
+      SudokuScore.setMaximumSize(new java.awt.Dimension(600, 400));
+      SudokuScore.setMinimumSize(new java.awt.Dimension(600, 400));
+
+      SudokuScoreDisplay.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+      SudokuScoreDisplay.setText("Sudoku Score:");
+
+      SudokuScoreMessage.setText("Placeholder");
+
+      SSContinueButton.setText("Continue");
+      SSContinueButton.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            SSContinueButtonActionPerformed(evt);
+         }
+      });
+
+      SSTryAgainButton.setText("Try Again");
+      SSTryAgainButton.addActionListener(new java.awt.event.ActionListener() {
+         public void actionPerformed(java.awt.event.ActionEvent evt) {
+            SSTryAgainButtonActionPerformed(evt);
+         }
+      });
+
+      javax.swing.GroupLayout SudokuScoreLayout = new javax.swing.GroupLayout(SudokuScore);
+      SudokuScore.setLayout(SudokuScoreLayout);
+      SudokuScoreLayout.setHorizontalGroup(
+         SudokuScoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+         .addGroup(SudokuScoreLayout.createSequentialGroup()
+            .addGap(118, 118, 118)
+            .addGroup(SudokuScoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+               .addGroup(SudokuScoreLayout.createSequentialGroup()
+                  .addComponent(SSContinueButton)
+                  .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                  .addComponent(SSTryAgainButton))
+               .addComponent(SudokuScoreMessage)
+               .addComponent(SudokuScoreDisplay))
+            .addContainerGap(313, Short.MAX_VALUE))
+      );
+      SudokuScoreLayout.setVerticalGroup(
+         SudokuScoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+         .addGroup(SudokuScoreLayout.createSequentialGroup()
+            .addGap(78, 78, 78)
+            .addComponent(SudokuScoreDisplay)
+            .addGap(18, 18, 18)
+            .addComponent(SudokuScoreMessage)
+            .addGap(18, 18, 18)
+            .addGroup(SudokuScoreLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+               .addComponent(SSContinueButton)
+               .addComponent(SSTryAgainButton))
+            .addContainerGap(206, Short.MAX_VALUE))
+      );
+
+      mainPanel.add(SudokuScore, "sudokuScoreCard");
+
       javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
       getContentPane().setLayout(layout);
       layout.setHorizontalGroup(
@@ -2857,7 +2915,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
       
       //(NOTE: Attempts will NOT be set to true if they got it right immediately)
       //(Attempts are being used as a means to calculate points if incorrect spaces)
-      sudokuPoints = 540;
       for(int i = 0; i < userBoard.length; i++) {
          //user attempted and got it wrong or left it empty
          if(userBoard[i] != answerBoard[i]) {
@@ -2887,8 +2944,17 @@ public class QuarterProject245 extends javax.swing.JFrame {
        //    1 = sudokuPoints is 540, they got whole board right!
        //    2 = sudokuPoints less than 540, they got some wrong, offer to try again.
        //    3 = all attempts used, inform they won't get anymore points
-       if(sudokuPoints == 540) //case 1
-          return 1;
+       if(sudokuPoints == 540) { //case 1
+          boolean stillSpaces = false; //in case solutions are right, but still empty spaces
+          for(int i = 0; i < userBoard.length; i++) {
+             if(userBoard[i] == -1)
+                stillSpaces = true;
+          }
+          if(stillSpaces) //case 2, actually
+             return 2;
+          else //they really did fill in all correct solutions!
+             return 1;
+       }
        else {
           if(numberAttempts == 54) //case 3
              return 3;
@@ -3614,12 +3680,26 @@ public class QuarterProject245 extends javax.swing.JFrame {
       //I need to follow the same logic I did in End game screen
       //and set user's score to another variable so it's not reset
       //and then set it back. Investigating later to see why
+      
+      //reset sudokuPoints, don't add onto score since they Quit
+      sudokuPoints = 540;
+      //reset the board
+      resetSudokuBoard();
+      //
+      for(int i = 0; i < userAttempted.length; i++)
+         userAttempted[i] = false;
+      
+      //reset everything, this also enables this very button to work.
+      //since I have to do this to get the button to work,
+      //I need to follow the same logic I did in End game screen
+      //and set user's score to another variable so it's not reset
+      //and then set it back. Investigating later to see why
+      
       userEndScore = score;
       resetButtons();
       score = userEndScore;
       CardLayout gameEnding = (CardLayout)mainPanel.getLayout();
       gameEnding.show(mainPanel, "endCard");
-      System.out.println("Does the quit button work on sudoku?");
    }//GEN-LAST:event_sudokuQuitActionPerformed
 
    private void userbutton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton1ActionPerformed
@@ -3646,6 +3726,11 @@ public class QuarterProject245 extends javax.swing.JFrame {
    private void sudokuSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sudokuSubmitActionPerformed
       // TODO add your handling code here:
       
+      //do the weird fix to get endCard to display
+      userEndScore = score;
+      resetButtons();
+      score = userEndScore;
+      
       //Compare the arrays to see the discrepancies and calculate the score
       //    1 = sudokuPoints is 540, they got whole board right!
       //    2 = sudokuPoints less than 540, they got some wrong, offer to try again.
@@ -3654,17 +3739,27 @@ public class QuarterProject245 extends javax.swing.JFrame {
       
       //add to their total score and bring them to new page
       if(resultant == 1) {
-         score += sudokuPoints;
-         //bring to Sudoku screen, show sudoku points, change text, hide Try Again button, show Continue button
-         
+         //Inform they got the board right in one try, hide Try Again button
+         SudokuScoreDisplay.setText("Sudoku Score: "+sudokuPoints);
+         SudokuScoreMessage.setText("Congratulations! You won the board on your first try!");
+         SSTryAgainButton.setEnabled(false);
+         CardLayout gameEnding = (CardLayout)mainPanel.getLayout();
+         gameEnding.show(mainPanel, "sudokuScoreCard");
       }
       if(resultant == 2) {
-         //inform their solution isn't correct, show current sudoku points, offer to try again or quit
-         
+         //inform their solution isn't correct, show current sudoku points, offer to Continue or Try Again
+         SudokuScoreDisplay.setText("Sudoku Score: "+sudokuPoints);
+         SudokuScoreMessage.setText("Sorry, your solution is not correct. Did you want to continue or try again?");
+         CardLayout gameEnding = (CardLayout)mainPanel.getLayout();
+         gameEnding.show(mainPanel, "sudokuScoreCard");
       }
       if(resultant == 3) {
-         //hide Try Again button, show Continue button, inform they attempted all spaces, no points for them
-         
+         //Inform they attempted all spaces, no points for them, hide Try Again button
+         SudokuScoreDisplay.setText("Sudoku Score: "+sudokuPoints);
+         SudokuScoreMessage.setText("Sorry, you've gotten at least all spaces wrong once, no points for you :(");
+         SSTryAgainButton.setEnabled(false);
+         CardLayout gameEnding = (CardLayout)mainPanel.getLayout();
+         gameEnding.show(mainPanel, "sudokuScoreCard");
       }
             
       //Go to Sudoku submission screen
@@ -4067,6 +4162,42 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupError.setVisible(false);
       popupUserInput.setText("");
    }//GEN-LAST:event_popupCancelButtonActionPerformed
+
+   private void SSContinueButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SSContinueButtonActionPerformed
+      // TODO add your handling code here:
+      
+      //Check to see if they still have spaces empty; if so, dock points at this point
+      for(int i = 0; i < userBoard.length; i++)
+         if(userBoard[i] == -1)
+            sudokuPoints -= 10;
+      
+      //add on the points they earned from sudoku
+      score += sudokuPoints;
+      //reset sudokuPoints
+      sudokuPoints = 540;
+      //reset the board
+      resetSudokuBoard();
+      //
+      for(int i = 0; i < userAttempted.length; i++)
+         userAttempted[i] = false;
+      
+      //re-enable Try Again button if it was disabled
+      SSTryAgainButton.setEnabled(true);
+      
+      //go to score page
+      //do the weird fix to get endCard to display
+      userEndScore = score;
+      resetButtons();
+      score = userEndScore;
+      CardLayout gameEnding = (CardLayout)mainPanel.getLayout();
+      gameEnding.show(mainPanel, "endCard");
+   }//GEN-LAST:event_SSContinueButtonActionPerformed
+
+   private void SSTryAgainButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SSTryAgainButtonActionPerformed
+      // TODO add your handling code here:
+      CardLayout gameEnding = (CardLayout)mainPanel.getLayout();
+      gameEnding.show(mainPanel, "sudokuCard");
+   }//GEN-LAST:event_SSTryAgainButtonActionPerformed
 
    
    
@@ -5084,8 +5215,13 @@ public class QuarterProject245 extends javax.swing.JFrame {
    private javax.swing.JPanel PlayMenu;
    private javax.swing.JPanel PointAndClickGame;
    private javax.swing.JLabel ProjectTitle;
+   private javax.swing.JButton SSContinueButton;
+   private javax.swing.JButton SSTryAgainButton;
    private javax.swing.JPanel SplashPage;
    private javax.swing.JPanel SudokuGame;
+   private javax.swing.JPanel SudokuScore;
+   private javax.swing.JLabel SudokuScoreDisplay;
+   private javax.swing.JLabel SudokuScoreMessage;
    private javax.swing.JLabel SudokuTitle;
    private javax.swing.JLabel TeamLogo;
    private javax.swing.JLabel TeamName;
