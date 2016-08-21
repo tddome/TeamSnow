@@ -1867,12 +1867,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       griduser78.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser78.setText("0");
       SudokuGame.add(griduser78);
-      griduser78.setBounds(420, 350, 20, 30);
+      griduser78.setBounds(380, 350, 20, 30);
 
       griduser79.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser79.setText("0");
       SudokuGame.add(griduser79);
-      griduser79.setBounds(380, 350, 20, 30);
+      griduser79.setBounds(420, 350, 20, 30);
 
       backgroundGrid.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pictures/grid.jpg"))); // NOI18N
       backgroundGrid.setText("2");
