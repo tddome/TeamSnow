@@ -3850,6 +3850,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
    private void popupCancelButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_popupCancelButtonActionPerformed
       // TODO add your handling code here:
       popupUser.setVisible(false);
+      popupError.setVisible(false);
       popupUserInput.setText("");
    }//GEN-LAST:event_popupCancelButtonActionPerformed
 
