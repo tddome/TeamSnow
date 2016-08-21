@@ -2690,7 +2690,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
     * If not, return a -1 to notify that the user didn't get a high score.
     * 
     */
-   
    public static int indexUserRankedInto(int[] s, int userScore) {
       boolean updatedScore = false;
       for(int i = 0; i < s.length; i++) {
@@ -2707,6 +2706,21 @@ public class QuarterProject245 extends javax.swing.JFrame {
    
    /**
     * 
+    * Method name: stringToIntOrNegativeOne
+    * Method purpose: Converts passed in string to an integer, returns it.
+    * If the string was empty, user never input anything, set to -1.
+    * Additionally, you don't need to check if the String is an Integer,
+    * since that was already done in the game itself when user inputted.
+    */
+   public static int stringToIntOrNegativeOne(String s) {
+      if(s.equals(""))
+         return -1;
+      else
+         return Integer.parseInt(s);
+   }
+   
+   /**
+    * 
     * Method name: calculateSudokuBoard
     * Method purpose: Compares the array of the user's answers,
     * and the answer key created as a global variable.
@@ -2716,7 +2730,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
     * or if they just totally blew it and if they want to try again.
     * 
     */
-   public static void calculateSudokuScore() {
+   public static int calculateSudokuScore() {
       //set the user array based on the user's inputs
       //1. Start with hints
       userBoard[0] = answerBoard[0];
@@ -2748,13 +2762,85 @@ public class QuarterProject245 extends javax.swing.JFrame {
       userBoard[80] = answerBoard[80];
       
       //2. Then set the user's inputs
-      //If user input = null (left it blank), set value in array to -1
+      //Take strings from the boards using getText on their jLabels
+      //Then use method to convert strings to ints and insert in array
+      //If user didn't input anything on board, will detect, set to -1
+      //-1 will be used later to detect what spaces they left empty
+      userBoard[1] = stringToIntOrNegativeOne(griduser1.getText());
+      userBoard[2] = stringToIntOrNegativeOne(griduser2.getText());
+      userBoard[4] = stringToIntOrNegativeOne(griduser4.getText());
+      userBoard[6] = stringToIntOrNegativeOne(griduser6.getText());
+      userBoard[7] = stringToIntOrNegativeOne(griduser7.getText());
+      userBoard[9] = stringToIntOrNegativeOne(griduser9.getText());
+      userBoard[10] = stringToIntOrNegativeOne(griduser10.getText());
+      userBoard[11] = stringToIntOrNegativeOne(griduser11.getText());
+      userBoard[12] = stringToIntOrNegativeOne(griduser12.getText());
+      userBoard[13] = stringToIntOrNegativeOne(griduser13.getText());
+      userBoard[14] = stringToIntOrNegativeOne(griduser14.getText());
+      userBoard[16] = stringToIntOrNegativeOne(griduser16.getText());
+      userBoard[17] = stringToIntOrNegativeOne(griduser17.getText());
+      userBoard[18] = stringToIntOrNegativeOne(griduser18.getText());
+      userBoard[20] = stringToIntOrNegativeOne(griduser20.getText());
+      userBoard[21] = stringToIntOrNegativeOne(griduser21.getText());
+      userBoard[22] = stringToIntOrNegativeOne(griduser22.getText());
+      userBoard[23] = stringToIntOrNegativeOne(griduser23.getText());
+      userBoard[26] = stringToIntOrNegativeOne(griduser26.getText());
+      userBoard[28] = stringToIntOrNegativeOne(griduser28.getText());
+      userBoard[30] = stringToIntOrNegativeOne(griduser30.getText());
+      userBoard[32] = stringToIntOrNegativeOne(griduser32.getText());
+      userBoard[35] = stringToIntOrNegativeOne(griduser35.getText());
+      userBoard[36] = stringToIntOrNegativeOne(griduser36.getText());
+      userBoard[37] = stringToIntOrNegativeOne(griduser37.getText());
+      userBoard[38] = stringToIntOrNegativeOne(griduser38.getText());
+      userBoard[39] = stringToIntOrNegativeOne(griduser39.getText());
+      userBoard[41] = stringToIntOrNegativeOne(griduser41.getText());
+      userBoard[42] = stringToIntOrNegativeOne(griduser42.getText());
+      userBoard[43] = stringToIntOrNegativeOne(griduser43.getText());
+      userBoard[44] = stringToIntOrNegativeOne(griduser44.getText());
+      userBoard[45] = stringToIntOrNegativeOne(griduser45.getText());
+      userBoard[48] = stringToIntOrNegativeOne(griduser48.getText());
+      userBoard[50] = stringToIntOrNegativeOne(griduser50.getText());
+      userBoard[52] = stringToIntOrNegativeOne(griduser52.getText());
+      userBoard[54] = stringToIntOrNegativeOne(griduser54.getText());
+      userBoard[57] = stringToIntOrNegativeOne(griduser57.getText());
+      userBoard[58] = stringToIntOrNegativeOne(griduser58.getText());
+      userBoard[59] = stringToIntOrNegativeOne(griduser59.getText());
+      userBoard[60] = stringToIntOrNegativeOne(griduser60.getText());
+      userBoard[62] = stringToIntOrNegativeOne(griduser62.getText());
+      userBoard[63] = stringToIntOrNegativeOne(griduser63.getText());
+      userBoard[64] = stringToIntOrNegativeOne(griduser64.getText());
+      userBoard[66] = stringToIntOrNegativeOne(griduser66.getText());
+      userBoard[67] = stringToIntOrNegativeOne(griduser67.getText());
+      userBoard[68] = stringToIntOrNegativeOne(griduser68.getText());
+      userBoard[69] = stringToIntOrNegativeOne(griduser69.getText());
+      userBoard[70] = stringToIntOrNegativeOne(griduser70.getText());
+      userBoard[71] = stringToIntOrNegativeOne(griduser71.getText());
+      userBoard[73] = stringToIntOrNegativeOne(griduser73.getText());
+      userBoard[74] = stringToIntOrNegativeOne(griduser74.getText());
+      userBoard[76] = stringToIntOrNegativeOne(griduser76.getText());
+      userBoard[78] = stringToIntOrNegativeOne(griduser78.getText());
+      userBoard[79] = stringToIntOrNegativeOne(griduser79.getText());
       
       //3. Compare the arrays
-      //-1's will be considered automatic wrong's
-      //Else, compare the actual number and see if it's right
-      //If right, continue; If wrong, dock 10 points from sudokuPoints
+      //If right, continue; If wrong or -1, dock 10 points from sudokuPoints
+      sudokuPoints = 540;
+      for(int i = 0; i < userBoard.length; i++) {
+         if(userBoard[i] != answerBoard[i])
+            sudokuPoints -= 10; //subtract 10 if answer isn't correct
+      }
       
+       //4. Return number based on circumstance
+       //    1 = sudokuPoints is 540, they got whole board right!
+       //    2 = sudokuPoints is > 0 but < 540, they got some wrong, continue.
+       //    3 = sudokuPoints is 0, all answers wrong, offer for them to try again.
+       switch (sudokuPoints) {
+          case 540:
+             return 1;
+          case 0:
+             return 3;
+          default:
+             return 2;
+       }
    }
    
    /**
