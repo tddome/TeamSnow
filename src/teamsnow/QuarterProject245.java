@@ -2760,6 +2760,34 @@ public class QuarterProject245 extends javax.swing.JFrame {
       userBoard[75] = answerBoard[75];
       userBoard[77] = answerBoard[77];
       userBoard[80] = answerBoard[80];
+      //also set the attempts for the presets to true
+      userAttempted[0] = true;
+      userAttempted[3] = true;
+      userAttempted[5] = true;
+      userAttempted[8] = true;
+      userAttempted[15] = true;
+      userAttempted[19] = true;
+      userAttempted[24] = true;
+      userAttempted[25] = true;
+      userAttempted[27] = true;
+      userAttempted[29] = true;
+      userAttempted[31] = true;
+      userAttempted[33] = true;
+      userAttempted[34] = true;
+      userAttempted[40] = true;
+      userAttempted[46] = true;
+      userAttempted[47] = true;
+      userAttempted[49] = true;
+      userAttempted[51] = true;
+      userAttempted[53] = true;
+      userAttempted[55] = true;
+      userAttempted[56] = true;
+      userAttempted[61] = true;
+      userAttempted[65] = true;
+      userAttempted[72] = true;
+      userAttempted[75] = true;
+      userAttempted[77] = true;
+      userAttempted[80] = true;
       
       //2. Then set the user's inputs
       //Take strings from the boards using getText on their jLabels
@@ -2822,23 +2850,49 @@ public class QuarterProject245 extends javax.swing.JFrame {
       userBoard[79] = stringToIntOrNegativeOne(griduser79.getText());
       
       //3. Compare the arrays
-      //If right, continue; If wrong or -1, dock 10 points from sudokuPoints
+      
+      //If first attempt right, continue; If wrong, dock 10 points from sudokuPoints
+      //If they already attempted and got it wrong again, ignore and continue
+      //If they didn't answer the space, just ignore it altogether and continue
+      
+      //(NOTE: Attempts will NOT be set to true if they got it right immediately)
+      //(Attempts are being used as a means to calculate points if incorrect spaces)
       sudokuPoints = 540;
       for(int i = 0; i < userBoard.length; i++) {
-         if(userBoard[i] != answerBoard[i])
-            sudokuPoints -= 10; //subtract 10 if answer isn't correct
+         //user attempted and got it wrong or left it empty
+         if(userBoard[i] != answerBoard[i]) {
+            if(userBoard[i] == -1) //user didn't attempt, don't take points
+               continue;
+            else {
+               //first attempt
+               if(userAttempted[i] == false) {
+                  sudokuPoints -= 10; // was incorrect, take 10 points
+                  userAttempted[i] = true; //set attempt as done
+               }
+               else //not first attempt, don't dock again, continue
+                  continue;
+            }
+         }
+         else //they got the space right! don't dock and don't count an attempt
+            continue;
+      }
+      
+      int numberAttempts = 0;
+      for(int i = 0; i < userAttempted.length; i++) {
+         if(userAttempted[i] == true)
+            numberAttempts++;
       }
       
        //4. Return number based on circumstance
        //    1 = sudokuPoints is 540, they got whole board right!
-       //    2 = sudokuPoints is > 0 but < 540, they got some wrong, continue.
-       //    3 = sudokuPoints is 0, all answers wrong, offer for them to try again.
-       switch (sudokuPoints) {
-          case 540:
-             return 1;
-          case 0:
+       //    2 = sudokuPoints less than 540, they got some wrong, offer to try again.
+       //    3 = all attempts used, inform they won't get anymore points
+       if(sudokuPoints == 540) //case 1
+          return 1;
+       else {
+          if(numberAttempts == 54) //case 3
              return 3;
-          default:
+          else //case 2
              return 2;
        }
    }
@@ -3593,8 +3647,26 @@ public class QuarterProject245 extends javax.swing.JFrame {
       // TODO add your handling code here:
       
       //Compare the arrays to see the discrepancies and calculate the score
-      calculateSudokuScore();
+      //    1 = sudokuPoints is 540, they got whole board right!
+      //    2 = sudokuPoints less than 540, they got some wrong, offer to try again.
+      //    3 = all attempts used, inform they won't get anymore points
+      int resultant = calculateSudokuScore();
       
+      //add to their total score and bring them to new page
+      if(resultant == 1) {
+         score += sudokuPoints;
+         //bring to Sudoku screen, show sudoku points, change text, hide Try Again button, show Continue button
+         
+      }
+      if(resultant == 2) {
+         //inform their solution isn't correct, show current sudoku points, offer to try again or quit
+         
+      }
+      if(resultant == 3) {
+         //hide Try Again button, show Continue button, inform they attempted all spaces, no points for them
+         
+      }
+            
       //Go to Sudoku submission screen
       
    }//GEN-LAST:event_sudokuSubmitActionPerformed
@@ -4944,6 +5016,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
     }
     
     //For sudoku; user board, answer board, sudoku points to be added
+    //also, attempted array, to see if they already attempted an area (for points)
     private static int [] userBoard = new int [81];
     private static int [] answerBoard = {8,3,5,4,1,6,9,2,7,
                                          2,9,6,8,5,7,4,3,1,
@@ -4954,6 +5027,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                                          6,5,2,7,8,1,3,9,4,
                                          9,8,1,3,4,5,2,7,6,
                                          3,7,4,9,6,2,8,1,5};
+    private static boolean [] userAttempted = new boolean [81];
     private static int sudokuPoints = 540;
     
     private int currentButton = 0;
