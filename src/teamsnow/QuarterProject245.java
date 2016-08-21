@@ -302,7 +302,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
       userbutton78 = new javax.swing.JButton();
       userbutton79 = new javax.swing.JButton();
 
-      popupUser.setMaximumSize(new java.awt.Dimension(300, 200));
       popupUser.setMinimumSize(new java.awt.Dimension(300, 200));
       popupUser.setResizable(false);
 
@@ -1603,272 +1602,272 @@ public class QuarterProject245 extends javax.swing.JFrame {
       SudokuGame.add(gridfield80);
       gridfield80.setBounds(450, 350, 20, 30);
 
-      griduser1.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser1.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser1.setText("0");
       SudokuGame.add(griduser1);
       griduser1.setBounds(180, 30, 20, 40);
 
-      griduser2.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser2.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser2.setText("0");
       SudokuGame.add(griduser2);
       griduser2.setBounds(220, 30, 20, 40);
 
-      griduser4.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser4.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser4.setText("0");
       SudokuGame.add(griduser4);
       griduser4.setBounds(300, 30, 20, 40);
 
-      griduser6.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser6.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser6.setText("0");
       SudokuGame.add(griduser6);
       griduser6.setBounds(380, 30, 20, 40);
 
-      griduser7.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser7.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser7.setText("0");
       SudokuGame.add(griduser7);
       griduser7.setBounds(420, 30, 20, 40);
 
-      griduser9.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser9.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser9.setText("0");
       SudokuGame.add(griduser9);
       griduser9.setBounds(140, 70, 20, 40);
 
-      griduser10.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser10.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser10.setText("0");
       SudokuGame.add(griduser10);
       griduser10.setBounds(180, 70, 20, 40);
 
-      griduser11.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser11.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser11.setText("0");
       SudokuGame.add(griduser11);
       griduser11.setBounds(220, 70, 20, 40);
 
-      griduser12.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser12.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser12.setText("0");
       SudokuGame.add(griduser12);
       griduser12.setBounds(260, 70, 20, 40);
 
-      griduser13.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser13.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser13.setText("0");
       SudokuGame.add(griduser13);
       griduser13.setBounds(300, 70, 20, 40);
 
-      griduser14.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser14.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser14.setText("0");
       SudokuGame.add(griduser14);
       griduser14.setBounds(340, 70, 20, 40);
 
-      griduser16.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser16.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser16.setText("0");
       SudokuGame.add(griduser16);
       griduser16.setBounds(420, 70, 20, 40);
 
-      griduser17.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser17.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser17.setText("0");
       SudokuGame.add(griduser17);
       griduser17.setBounds(460, 70, 20, 40);
 
-      griduser18.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser18.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser18.setText("0");
       SudokuGame.add(griduser18);
       griduser18.setBounds(140, 110, 20, 40);
 
-      griduser20.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser20.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser20.setText("0");
       SudokuGame.add(griduser20);
       griduser20.setBounds(220, 110, 20, 40);
 
-      griduser21.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser21.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser21.setText("0");
       SudokuGame.add(griduser21);
       griduser21.setBounds(260, 110, 20, 40);
 
-      griduser22.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser22.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser22.setText("0");
       SudokuGame.add(griduser22);
       griduser22.setBounds(300, 110, 20, 40);
 
-      griduser23.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser23.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser23.setText("0");
       SudokuGame.add(griduser23);
       griduser23.setBounds(340, 110, 20, 40);
 
-      griduser26.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser26.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser26.setText("0");
       SudokuGame.add(griduser26);
       griduser26.setBounds(460, 110, 20, 40);
 
-      griduser28.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser28.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser28.setText("0");
       SudokuGame.add(griduser28);
       griduser28.setBounds(180, 150, 20, 40);
 
-      griduser30.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser30.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser30.setText("0");
       SudokuGame.add(griduser30);
       griduser30.setBounds(260, 150, 20, 40);
 
-      griduser32.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser32.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser32.setText("0");
       SudokuGame.add(griduser32);
       griduser32.setBounds(340, 150, 20, 40);
 
-      griduser35.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser35.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser35.setText("0");
       SudokuGame.add(griduser35);
       griduser35.setBounds(460, 150, 20, 40);
 
-      griduser36.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser36.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser36.setText("0");
       SudokuGame.add(griduser36);
       griduser36.setBounds(140, 190, 20, 40);
 
-      griduser37.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser37.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser37.setText("0");
       SudokuGame.add(griduser37);
       griduser37.setBounds(180, 190, 20, 40);
 
-      griduser38.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser38.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser38.setText("0");
       SudokuGame.add(griduser38);
       griduser38.setBounds(220, 190, 20, 40);
 
-      griduser39.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser39.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser39.setText("0");
       SudokuGame.add(griduser39);
       griduser39.setBounds(260, 190, 20, 40);
 
-      griduser41.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser41.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser41.setText("0");
       SudokuGame.add(griduser41);
       griduser41.setBounds(340, 190, 20, 40);
 
-      griduser42.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser42.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser42.setText("0");
       SudokuGame.add(griduser42);
       griduser42.setBounds(380, 190, 20, 40);
 
-      griduser43.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser43.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser43.setText("0");
       SudokuGame.add(griduser43);
       griduser43.setBounds(420, 190, 20, 40);
 
-      griduser44.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser44.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser44.setText("0");
       SudokuGame.add(griduser44);
       griduser44.setBounds(460, 190, 20, 40);
 
-      griduser45.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser45.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser45.setText("0");
       SudokuGame.add(griduser45);
       griduser45.setBounds(140, 230, 20, 40);
 
-      griduser48.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser48.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser48.setText("0");
       SudokuGame.add(griduser48);
       griduser48.setBounds(260, 230, 20, 40);
 
-      griduser50.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser50.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser50.setText("0");
       SudokuGame.add(griduser50);
       griduser50.setBounds(340, 230, 20, 40);
 
-      griduser52.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser52.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser52.setText("0");
       SudokuGame.add(griduser52);
       griduser52.setBounds(420, 230, 20, 40);
 
-      griduser54.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser54.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser54.setText("0");
       SudokuGame.add(griduser54);
       griduser54.setBounds(140, 270, 20, 40);
 
-      griduser57.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser57.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser57.setText("0");
       SudokuGame.add(griduser57);
       griduser57.setBounds(260, 270, 20, 40);
 
-      griduser58.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser58.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser58.setText("0");
       SudokuGame.add(griduser58);
       griduser58.setBounds(300, 270, 20, 40);
 
-      griduser59.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser59.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser59.setText("0");
       SudokuGame.add(griduser59);
       griduser59.setBounds(340, 270, 20, 40);
 
-      griduser60.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser60.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser60.setText("0");
       SudokuGame.add(griduser60);
       griduser60.setBounds(380, 270, 20, 40);
 
-      griduser62.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser62.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser62.setText("0");
       SudokuGame.add(griduser62);
       griduser62.setBounds(460, 270, 20, 40);
 
-      griduser63.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser63.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser63.setText("0");
       SudokuGame.add(griduser63);
       griduser63.setBounds(140, 310, 20, 40);
 
-      griduser64.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser64.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser64.setText("0");
       SudokuGame.add(griduser64);
       griduser64.setBounds(180, 310, 20, 40);
 
-      griduser66.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser66.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser66.setText("0");
       SudokuGame.add(griduser66);
       griduser66.setBounds(260, 310, 20, 40);
 
-      griduser67.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser67.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser67.setText("0");
       SudokuGame.add(griduser67);
       griduser67.setBounds(300, 310, 20, 40);
 
-      griduser68.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser68.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser68.setText("0");
       SudokuGame.add(griduser68);
       griduser68.setBounds(340, 310, 20, 40);
 
-      griduser69.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser69.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser69.setText("0");
       SudokuGame.add(griduser69);
       griduser69.setBounds(380, 310, 20, 40);
 
-      griduser70.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser70.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser70.setText("0");
       SudokuGame.add(griduser70);
       griduser70.setBounds(420, 310, 20, 40);
 
-      griduser71.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser71.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser71.setText("0");
       SudokuGame.add(griduser71);
       griduser71.setBounds(460, 310, 20, 40);
 
-      griduser73.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser73.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser73.setText("0");
       SudokuGame.add(griduser73);
       griduser73.setBounds(180, 350, 20, 29);
 
-      griduser74.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser74.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser74.setText("0");
       SudokuGame.add(griduser74);
       griduser74.setBounds(220, 350, 20, 30);
 
-      griduser76.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser76.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser76.setText("0");
       SudokuGame.add(griduser76);
       griduser76.setBounds(300, 350, 20, 30);
 
-      griduser78.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser78.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser78.setText("0");
       SudokuGame.add(griduser78);
       griduser78.setBounds(420, 350, 20, 30);
 
-      griduser79.setFont(new java.awt.Font("Dialog", 3, 22)); // NOI18N
+      griduser79.setFont(new java.awt.Font("Dialog", 0, 22)); // NOI18N
       griduser79.setText("0");
       SudokuGame.add(griduser79);
       griduser79.setBounds(380, 350, 20, 30);
@@ -2394,6 +2393,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       // TODO add your handling code here:
       //Play
       beginPlay();
+      resetSudokuBoard();
       CardLayout card = (CardLayout)mainPanel.getLayout();
       card.show(mainPanel, "playCard");
    }//GEN-LAST:event_PlayButtonActionPerformed
@@ -2691,6 +2691,69 @@ public class QuarterProject245 extends javax.swing.JFrame {
       }
       //returns -1 if nothing updated
       return -1;
+   }
+   
+   /**
+    * 
+    * Method name: resetSudokuBoard
+    * Method purpose: Resets the user's inputs to be blank.
+    * 
+    */
+   public static void resetSudokuBoard() {
+      griduser1.setText("");
+      griduser2.setText("");
+      griduser4.setText("");
+      griduser6.setText("");
+      griduser7.setText("");
+      griduser9.setText("");
+      griduser10.setText("");
+      griduser11.setText("");
+      griduser12.setText("");
+      griduser13.setText("");
+      griduser14.setText("");
+      griduser16.setText("");
+      griduser17.setText("");
+      griduser18.setText("");
+      griduser20.setText("");
+      griduser21.setText("");
+      griduser22.setText("");
+      griduser23.setText("");
+      griduser26.setText("");
+      griduser28.setText("");
+      griduser30.setText("");
+      griduser32.setText("");
+      griduser35.setText("");
+      griduser36.setText("");
+      griduser37.setText("");
+      griduser38.setText("");
+      griduser39.setText("");
+      griduser41.setText("");
+      griduser42.setText("");
+      griduser43.setText("");
+      griduser44.setText("");
+      griduser45.setText("");
+      griduser48.setText("");
+      griduser50.setText("");
+      griduser52.setText("");
+      griduser54.setText("");
+      griduser57.setText("");
+      griduser58.setText("");
+      griduser59.setText("");
+      griduser60.setText("");
+      griduser62.setText("");
+      griduser63.setText("");
+      griduser64.setText("");
+      griduser66.setText("");
+      griduser67.setText("");
+      griduser68.setText("");
+      griduser69.setText("");
+      griduser70.setText("");
+      griduser71.setText("");
+      griduser73.setText("");
+      griduser74.setText("");
+      griduser76.setText("");
+      griduser78.setText("");
+      griduser79.setText("");
    }
    
    /**
@@ -3364,12 +3427,16 @@ public class QuarterProject245 extends javax.swing.JFrame {
 
    private void userbutton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton2ActionPerformed
       // TODO add your handling code here:
-      System.out.println("Testing out this null layout! Button number 2 here");
+      currentButton = 2;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton2ActionPerformed
 
    private void userbutton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton11ActionPerformed
       // TODO add your handling code here:
-      System.out.println("This is pretty neat. Button number 3 here");
+      currentButton = 11;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton11ActionPerformed
 
    private void sudokuSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sudokuSubmitActionPerformed
@@ -3379,257 +3446,359 @@ public class QuarterProject245 extends javax.swing.JFrame {
 
    private void userbutton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton10ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 10;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton10ActionPerformed
 
    private void userbutton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton4ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 4;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton4ActionPerformed
 
    private void userbutton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton6ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 6;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton6ActionPerformed
 
    private void userbutton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton7ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 7;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton7ActionPerformed
 
    private void userbutton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton12ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 12;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton12ActionPerformed
 
    private void userbutton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton13ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 13;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton13ActionPerformed
 
    private void userbutton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton14ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 14;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton14ActionPerformed
 
    private void userbutton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton16ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 16;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton16ActionPerformed
 
    private void userbutton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton17ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 17;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton17ActionPerformed
 
    private void userbutton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton26ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 26;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton26ActionPerformed
 
    private void userbutton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton18ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 18;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton18ActionPerformed
 
    private void userbutton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton20ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 20;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton20ActionPerformed
 
    private void userbutton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton36ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 36;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton36ActionPerformed
 
    private void userbutton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton28ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 28;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton28ActionPerformed
 
    private void userbutton37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton37ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 37;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton37ActionPerformed
 
    private void userbutton38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton38ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 38;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton38ActionPerformed
 
    private void userbutton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton21ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 21;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton21ActionPerformed
 
    private void userbutton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton22ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 22;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton22ActionPerformed
 
    private void userbutton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton23ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 23;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton23ActionPerformed
 
    private void userbutton42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton42ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 42;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton42ActionPerformed
 
    private void userbutton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton30ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 30;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton30ActionPerformed
 
    private void userbutton39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton39ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 39;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton39ActionPerformed
 
    private void userbutton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton32ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 32;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton32ActionPerformed
 
    private void userbutton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton35ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 35;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton35ActionPerformed
 
    private void userbutton41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton41ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 41;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton41ActionPerformed
 
    private void userbutton43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton43ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 43;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton43ActionPerformed
 
    private void userbutton44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton44ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 44;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton44ActionPerformed
 
    private void userbutton48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton48ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 48;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton48ActionPerformed
 
    private void userbutton50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton50ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 50;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton50ActionPerformed
 
    private void userbutton45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton45ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 45;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton45ActionPerformed
 
    private void userbutton52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton52ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 52;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton52ActionPerformed
 
    private void userbutton54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton54ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 54;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton54ActionPerformed
 
    private void userbutton63ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton63ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 63;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton63ActionPerformed
 
    private void userbutton64ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton64ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 64;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton64ActionPerformed
 
    private void userbutton73ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton73ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 73;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton73ActionPerformed
 
    private void userbutton57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton57ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 57;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton57ActionPerformed
 
    private void userbutton58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton58ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 58;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton58ActionPerformed
 
    private void userbutton59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton59ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 59;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton59ActionPerformed
 
    private void userbutton67ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton67ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 67;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton67ActionPerformed
 
    private void userbutton66ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton66ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 66;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton66ActionPerformed
 
    private void userbutton76ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton76ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 76;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton76ActionPerformed
 
    private void userbutton60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton60ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 60;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton60ActionPerformed
 
    private void userbutton62ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton62ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 62;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton62ActionPerformed
 
    private void userbutton68ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton68ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 68;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton68ActionPerformed
 
    private void userbutton69ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton69ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 69;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton69ActionPerformed
 
    private void userbutton78ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton78ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 78;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton78ActionPerformed
 
    private void userbutton79ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton79ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 79;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton79ActionPerformed
 
    private void userbutton70ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton70ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 70;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton70ActionPerformed
 
    private void userbutton71ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton71ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 71;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton71ActionPerformed
 
    private void userbutton74ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton74ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 74;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton74ActionPerformed
 
    private void userbutton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton9ActionPerformed
       // TODO add your handling code here:
-      
+      currentButton = 9;
+      popupUser.setLocationRelativeTo(null);
+      popupUser.setVisible(true);
    }//GEN-LAST:event_userbutton9ActionPerformed
 
    private void popupOkButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_popupOkButtonActionPerformed

@@ -1884,7 +1884,7 @@
             <Component class="javax.swing.JLabel" name="griduser1">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -1900,7 +1900,7 @@
             <Component class="javax.swing.JLabel" name="griduser2">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -1916,7 +1916,7 @@
             <Component class="javax.swing.JLabel" name="griduser4">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -1932,7 +1932,7 @@
             <Component class="javax.swing.JLabel" name="griduser6">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -1948,7 +1948,7 @@
             <Component class="javax.swing.JLabel" name="griduser7">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -1964,7 +1964,7 @@
             <Component class="javax.swing.JLabel" name="griduser9">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -1980,7 +1980,7 @@
             <Component class="javax.swing.JLabel" name="griduser10">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -1996,7 +1996,7 @@
             <Component class="javax.swing.JLabel" name="griduser11">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2012,7 +2012,7 @@
             <Component class="javax.swing.JLabel" name="griduser12">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2028,7 +2028,7 @@
             <Component class="javax.swing.JLabel" name="griduser13">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2044,7 +2044,7 @@
             <Component class="javax.swing.JLabel" name="griduser14">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2060,7 +2060,7 @@
             <Component class="javax.swing.JLabel" name="griduser16">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2076,7 +2076,7 @@
             <Component class="javax.swing.JLabel" name="griduser17">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2092,7 +2092,7 @@
             <Component class="javax.swing.JLabel" name="griduser18">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2108,7 +2108,7 @@
             <Component class="javax.swing.JLabel" name="griduser20">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2124,7 +2124,7 @@
             <Component class="javax.swing.JLabel" name="griduser21">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2140,7 +2140,7 @@
             <Component class="javax.swing.JLabel" name="griduser22">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2156,7 +2156,7 @@
             <Component class="javax.swing.JLabel" name="griduser23">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2172,7 +2172,7 @@
             <Component class="javax.swing.JLabel" name="griduser26">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2188,7 +2188,7 @@
             <Component class="javax.swing.JLabel" name="griduser28">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2204,7 +2204,7 @@
             <Component class="javax.swing.JLabel" name="griduser30">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2220,7 +2220,7 @@
             <Component class="javax.swing.JLabel" name="griduser32">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2236,7 +2236,7 @@
             <Component class="javax.swing.JLabel" name="griduser35">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2252,7 +2252,7 @@
             <Component class="javax.swing.JLabel" name="griduser36">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2268,7 +2268,7 @@
             <Component class="javax.swing.JLabel" name="griduser37">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2284,7 +2284,7 @@
             <Component class="javax.swing.JLabel" name="griduser38">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2300,7 +2300,7 @@
             <Component class="javax.swing.JLabel" name="griduser39">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2316,7 +2316,7 @@
             <Component class="javax.swing.JLabel" name="griduser41">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2332,7 +2332,7 @@
             <Component class="javax.swing.JLabel" name="griduser42">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2348,7 +2348,7 @@
             <Component class="javax.swing.JLabel" name="griduser43">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2364,7 +2364,7 @@
             <Component class="javax.swing.JLabel" name="griduser44">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2380,7 +2380,7 @@
             <Component class="javax.swing.JLabel" name="griduser45">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2396,7 +2396,7 @@
             <Component class="javax.swing.JLabel" name="griduser48">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2412,7 +2412,7 @@
             <Component class="javax.swing.JLabel" name="griduser50">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2428,7 +2428,7 @@
             <Component class="javax.swing.JLabel" name="griduser52">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2444,7 +2444,7 @@
             <Component class="javax.swing.JLabel" name="griduser54">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2460,7 +2460,7 @@
             <Component class="javax.swing.JLabel" name="griduser57">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2476,7 +2476,7 @@
             <Component class="javax.swing.JLabel" name="griduser58">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2492,7 +2492,7 @@
             <Component class="javax.swing.JLabel" name="griduser59">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2508,7 +2508,7 @@
             <Component class="javax.swing.JLabel" name="griduser60">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2524,7 +2524,7 @@
             <Component class="javax.swing.JLabel" name="griduser62">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2540,7 +2540,7 @@
             <Component class="javax.swing.JLabel" name="griduser63">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2556,7 +2556,7 @@
             <Component class="javax.swing.JLabel" name="griduser64">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2572,7 +2572,7 @@
             <Component class="javax.swing.JLabel" name="griduser66">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2588,7 +2588,7 @@
             <Component class="javax.swing.JLabel" name="griduser67">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2604,7 +2604,7 @@
             <Component class="javax.swing.JLabel" name="griduser68">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2620,7 +2620,7 @@
             <Component class="javax.swing.JLabel" name="griduser69">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2636,7 +2636,7 @@
             <Component class="javax.swing.JLabel" name="griduser70">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2652,7 +2652,7 @@
             <Component class="javax.swing.JLabel" name="griduser71">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2668,7 +2668,7 @@
             <Component class="javax.swing.JLabel" name="griduser73">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2684,7 +2684,7 @@
             <Component class="javax.swing.JLabel" name="griduser74">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2700,7 +2700,7 @@
             <Component class="javax.swing.JLabel" name="griduser76">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2716,7 +2716,7 @@
             <Component class="javax.swing.JLabel" name="griduser78">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
@@ -2732,7 +2732,7 @@
             <Component class="javax.swing.JLabel" name="griduser79">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Dialog" size="22" style="3"/>
+                  <Font name="Dialog" size="22" style="0"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
