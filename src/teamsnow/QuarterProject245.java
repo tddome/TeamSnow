@@ -156,11 +156,11 @@ public class QuarterProject245 extends javax.swing.JFrame {
       bTMButton = new javax.swing.JButton();
       jLabel13 = new javax.swing.JLabel();
       HighScoreSet = new javax.swing.JPanel();
-      jLabel12 = new javax.swing.JLabel();
-      jLabel14 = new javax.swing.JLabel();
+      newHighScore = new javax.swing.JLabel();
+      enterYourInitials = new javax.swing.JLabel();
+      ifNot3Letters = new javax.swing.JLabel();
       userName = new javax.swing.JTextField();
       doneButton = new javax.swing.JButton();
-      jLabel5 = new javax.swing.JLabel();
       SudokuGame = new javax.swing.JPanel();
       SudokuTitle = new javax.swing.JLabel();
       sudokuClock = new javax.swing.JLabel();
@@ -303,7 +303,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
       userbutton78 = new javax.swing.JButton();
       userbutton79 = new javax.swing.JButton();
 
-      popupUser.setMaximumSize(new java.awt.Dimension(363, 200));
       popupUser.setMinimumSize(new java.awt.Dimension(363, 200));
       popupUser.setResizable(false);
 
@@ -1373,10 +1372,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       HighScoreSet.setMinimumSize(new java.awt.Dimension(600, 400));
       HighScoreSet.setPreferredSize(new java.awt.Dimension(600, 400));
 
-      jLabel12.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-      jLabel12.setText("New High Score!");
+      newHighScore.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+      newHighScore.setText("New High Score!");
 
-      jLabel14.setText("Enter Your Initials Below!");
+      enterYourInitials.setText("Enter Your Initials Below!");
+
+      ifNot3Letters.setText(" (If not 3 letters or not text, ABC by default)");
 
       userName.setHorizontalAlignment(javax.swing.JTextField.CENTER);
       userName.addActionListener(new java.awt.event.ActionListener() {
@@ -1385,15 +1386,13 @@ public class QuarterProject245 extends javax.swing.JFrame {
          }
       });
 
-      doneButton.setText("Done");
+      doneButton.setText("Submit");
       doneButton.setToolTipText("Click to submit");
       doneButton.addActionListener(new java.awt.event.ActionListener() {
          public void actionPerformed(java.awt.event.ActionEvent evt) {
             doneButtonActionPerformed(evt);
          }
       });
-
-      jLabel5.setText(" (If not 3 letters or not text, ABC by default)");
 
       javax.swing.GroupLayout HighScoreSetLayout = new javax.swing.GroupLayout(HighScoreSet);
       HighScoreSet.setLayout(HighScoreSetLayout);
@@ -1403,30 +1402,30 @@ public class QuarterProject245 extends javax.swing.JFrame {
             .addGroup(HighScoreSetLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                .addGroup(HighScoreSetLayout.createSequentialGroup()
                   .addGap(201, 201, 201)
-                  .addComponent(jLabel12))
-               .addGroup(HighScoreSetLayout.createSequentialGroup()
-                  .addGap(262, 262, 262)
-                  .addComponent(doneButton))
+                  .addComponent(newHighScore))
                .addGroup(HighScoreSetLayout.createSequentialGroup()
                   .addGap(242, 242, 242)
                   .addComponent(userName, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                .addGroup(HighScoreSetLayout.createSequentialGroup()
                   .addGap(223, 223, 223)
-                  .addComponent(jLabel14))
+                  .addComponent(enterYourInitials))
                .addGroup(HighScoreSetLayout.createSequentialGroup()
                   .addGap(174, 174, 174)
-                  .addComponent(jLabel5)))
+                  .addComponent(ifNot3Letters))
+               .addGroup(HighScoreSetLayout.createSequentialGroup()
+                  .addGap(256, 256, 256)
+                  .addComponent(doneButton)))
             .addContainerGap(188, Short.MAX_VALUE))
       );
       HighScoreSetLayout.setVerticalGroup(
          HighScoreSetLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
          .addGroup(HighScoreSetLayout.createSequentialGroup()
             .addGap(98, 98, 98)
-            .addComponent(jLabel12)
+            .addComponent(newHighScore)
             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-            .addComponent(jLabel14)
+            .addComponent(enterYourInitials)
             .addGap(2, 2, 2)
-            .addComponent(jLabel5)
+            .addComponent(ifNot3Letters)
             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
             .addComponent(userName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -2708,6 +2707,58 @@ public class QuarterProject245 extends javax.swing.JFrame {
    
    /**
     * 
+    * Method name: calculateSudokuBoard
+    * Method purpose: Compares the array of the user's answers,
+    * and the answer key created as a global variable.
+    * When any discrepancies are found, dock 10 points from sudokuPoints.
+    * Additionally, this will also change what the user is told on the
+    * end screen for the game, either the full points they got,
+    * or if they just totally blew it and if they want to try again.
+    * 
+    */
+   public static void calculateSudokuScore() {
+      //set the user array based on the user's inputs
+      //1. Start with hints
+      userBoard[0] = answerBoard[0];
+      userBoard[3] = answerBoard[3];
+      userBoard[5] = answerBoard[5];
+      userBoard[8] = answerBoard[8];
+      userBoard[15] = answerBoard[15];
+      userBoard[19] = answerBoard[19];
+      userBoard[24] = answerBoard[24];
+      userBoard[25] = answerBoard[25];
+      userBoard[27] = answerBoard[27];
+      userBoard[29] = answerBoard[29];
+      userBoard[31] = answerBoard[31];
+      userBoard[33] = answerBoard[33];
+      userBoard[34] = answerBoard[34];
+      userBoard[40] = answerBoard[40];
+      userBoard[46] = answerBoard[46];
+      userBoard[47] = answerBoard[47];
+      userBoard[49] = answerBoard[49];
+      userBoard[51] = answerBoard[51];
+      userBoard[53] = answerBoard[53];
+      userBoard[55] = answerBoard[55];
+      userBoard[56] = answerBoard[56];
+      userBoard[61] = answerBoard[61];
+      userBoard[65] = answerBoard[65];
+      userBoard[72] = answerBoard[72];
+      userBoard[75] = answerBoard[75];
+      userBoard[77] = answerBoard[77];
+      userBoard[80] = answerBoard[80];
+      
+      //2. Then set the user's inputs
+      //If user input = null (left it blank), set value in array to -1
+      
+      //3. Compare the arrays
+      //-1's will be considered automatic wrong's
+      //Else, compare the actual number and see if it's right
+      //If right, continue; If wrong, dock 10 points from sudokuPoints
+      
+   }
+   
+   /**
+    * 
     * Method name: resetSudokuBoard
     * Method purpose: Resets the user's inputs to be blank.
     * 
@@ -3454,6 +3505,11 @@ public class QuarterProject245 extends javax.swing.JFrame {
 
    private void sudokuSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sudokuSubmitActionPerformed
       // TODO add your handling code here:
+      
+      //Compare the arrays to see the discrepancies and calculate the score
+      calculateSudokuScore();
+      
+      //Go to Sudoku submission screen
       
    }//GEN-LAST:event_sudokuSubmitActionPerformed
 
@@ -4801,6 +4857,19 @@ public class QuarterProject245 extends javax.swing.JFrame {
         
     }
     
+    //For sudoku; user board, answer board, sudoku points to be added
+    private static int [] userBoard = new int [81];
+    private static int [] answerBoard = {8,3,5,4,1,6,9,2,7,
+                                         2,9,6,8,5,7,4,3,1,
+                                         4,1,7,2,9,3,6,5,8,
+                                         5,6,9,1,3,4,7,8,2,
+                                         1,2,3,6,7,8,5,4,9,
+                                         7,4,8,5,2,9,1,6,3,
+                                         6,5,2,7,8,1,3,9,4,
+                                         9,8,1,3,4,5,2,7,6,
+                                         3,7,4,9,6,2,8,1,5};
+    private static int sudokuPoints = 540;
+    
     private int currentButton = 0;
     private int count = 0;
     private int wordCount = 0;
@@ -4870,6 +4939,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
    private javax.swing.JButton dButton;
    private javax.swing.JButton doneButton;
    private javax.swing.JButton eButton;
+   private javax.swing.JLabel enterYourInitials;
    private javax.swing.JButton fButton;
    private javax.swing.JButton gButton;
    private javax.swing.JLabel gridfield0;
@@ -4959,6 +5029,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
    private javax.swing.JLabel highscore3;
    private javax.swing.JLabel highscore4;
    private javax.swing.JButton iButton;
+   private javax.swing.JLabel ifNot3Letters;
    private javax.swing.JButton jButton;
    private javax.swing.JButton jButtonBlue;
    private javax.swing.JButton jButtonGreen;
@@ -4968,14 +5039,11 @@ public class QuarterProject245 extends javax.swing.JFrame {
    private javax.swing.JLabel jLabel1;
    private javax.swing.JLabel jLabel10;
    private javax.swing.JLabel jLabel11;
-   private javax.swing.JLabel jLabel12;
    private javax.swing.JLabel jLabel13;
-   private javax.swing.JLabel jLabel14;
    private javax.swing.JLabel jLabel15;
    private javax.swing.JLabel jLabel2;
    private javax.swing.JLabel jLabel3;
    private javax.swing.JLabel jLabel4;
-   private javax.swing.JLabel jLabel5;
    private javax.swing.JLabel jLabel9;
    private javax.swing.JLabel jLabelColor;
    private javax.swing.JLabel jLabelHangman;
@@ -4994,6 +5062,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
    private javax.swing.JButton mButton;
    private javax.swing.JPanel mainPanel;
    private javax.swing.JButton nButton;
+   private javax.swing.JLabel newHighScore;
    private javax.swing.JButton oButton;
    private javax.swing.JButton pButton;
    private javax.swing.JButton popupCancelButton;
