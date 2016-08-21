@@ -427,7 +427,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       ProjectTitle.setForeground(new java.awt.Color(255, 255, 255));
       ProjectTitle.setText("CS245 Project: Summer 2016");
       SplashPage.add(ProjectTitle);
-      ProjectTitle.setBounds(80, 20, 470, 42);
+      ProjectTitle.setBounds(80, 20, 500, 42);
 
       TeamName.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
       TeamName.setForeground(new java.awt.Color(255, 255, 255));
@@ -2934,6 +2934,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
        //    1 = sudokuPoints is 540, they got the whole board right!
        //    2 = sudokuPoints less than 540, they got some wrong, offer to try again.
        //    3 = all attempts used, inform they won't get anymore points
+       isTheBoardRightNow = true;
        if(sudokuPoints == 540) { //case 1
           boolean stillSpaces = false; //in case solutions are right, but still empty spaces
           for(int i = 0; i < userBoard.length; i++) {
@@ -2946,10 +2947,19 @@ public class QuarterProject245 extends javax.swing.JFrame {
              return 1;
        }
        else {
-          if(numberAttempts == 54) //case 3
+          if(numberAttempts == 54 && sudokuPoints == 0) //case 3
              return 3;
-          else //case 2
-             return 2;
+          //they may have gotten the solution now, although incorrect initially; check
+          else {
+             for(int i = 0; i < userBoard.length; i++) {
+                if(userBoard[i] != answerBoard[i])
+                   isTheBoardRightNow = false;
+             }
+             if(isTheBoardRightNow)
+                return 1; //case 1, board is right now, although got some incorrect initially
+             else
+                return 2; //case 2, board still not right
+          }
        }
    }
    
@@ -3763,6 +3773,11 @@ public class QuarterProject245 extends javax.swing.JFrame {
       resetButtons();
       score = userEndScore;
       
+      //reset the buttons in case they've been through the menu before
+      //if they need to be turned off again, it'll happen below
+      SSTryAgainButton.setEnabled(true);
+      SSContinueButton.setEnabled(true);
+      
       //Compare the arrays to see the discrepancies and calculate the score
       //    1 = sudokuPoints is 540, they got whole board right!
       //    2 = sudokuPoints less than 540, they got some wrong, offer to try again.
@@ -3771,9 +3786,9 @@ public class QuarterProject245 extends javax.swing.JFrame {
       
       //add to their total score and bring them to new page
       if(resultant == 1) {
-         //Inform they got the board right in one try, hide Try Again button
+         //Inform they got the board right, hide Try Again button
          SudokuScoreDisplay.setText("Sudoku Score: "+sudokuPoints);
-         SudokuScoreMessage.setText("Congratulations! You won the board on your first try!");
+         SudokuScoreMessage.setText("Congratulations! You solved the board!");
          SSTryAgainButton.setEnabled(false);
          CardLayout gameEnding = (CardLayout)mainPanel.getLayout();
          gameEnding.show(mainPanel, "sudokuScoreCard");
@@ -3781,15 +3796,16 @@ public class QuarterProject245 extends javax.swing.JFrame {
       if(resultant == 2) {
          //inform their solution isn't correct, show current sudoku points, offer to Continue or Try Again
          SudokuScoreDisplay.setText("Sudoku Score: "+sudokuPoints);
-         SudokuScoreMessage.setText("Sorry, your solution is not correct. Did you want to continue or try again?");
+         SudokuScoreMessage.setText("Sorry, your solution is not correct or completed.");
+         SSContinueButton.setEnabled(false);
          CardLayout gameEnding = (CardLayout)mainPanel.getLayout();
          gameEnding.show(mainPanel, "sudokuScoreCard");
       }
       if(resultant == 3) {
          //Inform they attempted all spaces, no points for them, hide Try Again button
          SudokuScoreDisplay.setText("Sudoku Score: "+sudokuPoints);
-         SudokuScoreMessage.setText("Sorry, you've gotten at least all spaces wrong once, no points for you :(");
-         SSTryAgainButton.setEnabled(false);
+         SudokuScoreMessage.setText("Sorry, you've gotten at least all spaces wrong once... No points will be given, but you can still try.");
+         SSContinueButton.setEnabled(false);
          CardLayout gameEnding = (CardLayout)mainPanel.getLayout();
          gameEnding.show(mainPanel, "sudokuScoreCard");
       }
@@ -4528,11 +4544,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
    private void SSContinueButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SSContinueButtonActionPerformed
       // TODO add your handling code here:
       
-      //Check to see if they still have spaces empty; if so, dock points at this point
-      for(int i = 0; i < userBoard.length; i++)
-         if(userBoard[i] == -1)
-            sudokuPoints -= 10;
-      
       //add on the points they earned from sudoku
       score += sudokuPoints;
       //reset sudokuPoints
@@ -4542,9 +4553,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
       //
       for(int i = 0; i < userAttempted.length; i++)
          userAttempted[i] = false;
-      
-      //re-enable Try Again button if it was disabled
-      SSTryAgainButton.setEnabled(true);
       
       //go to score page
       //do the weird fix to get endCard to display
@@ -5513,7 +5521,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
         
     }
     
-    //For sudoku; user board, answer board, sudoku points to be added
+    //For sudoku; user board, answer board, sudoku points to be added, and board checking
     private static int [] userBoard = new int [81];
     private static int [] answerBoard = {8,3,5,4,1,6,9,2,7,
                                          2,9,6,8,5,7,4,3,1,
@@ -5526,6 +5534,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                                          3,7,4,9,6,2,8,1,5};
     private static boolean [] userAttempted = new boolean [81];
     private static int sudokuPoints = 540;
+    private static boolean isTheBoardRightNow = true;
     
     private int currentButton = 0;
     private int count = 0;
