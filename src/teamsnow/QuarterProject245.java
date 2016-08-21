@@ -2459,8 +2459,10 @@ public class QuarterProject245 extends javax.swing.JFrame {
    }//GEN-LAST:event_PlayButtonActionPerformed
 
      /**
-     * method:HighScoresButtonActionPerformed
-     * purpose:The methods does all the actions for the High score button that opens the High score play card.
+     * method: HighScoresButtonActionPerformed
+     * purpose: This will read in the high scores from the local file created to store user high scores.
+     * It will then populate the high scores menu, so long as a file exists.
+     * If one does not exist, then a blank one will be created to populate the screen.
      */
    private void HighScoresButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HighScoresButtonActionPerformed
       // TODO add your handling code here:
@@ -2495,8 +2497,8 @@ public class QuarterProject245 extends javax.swing.JFrame {
    }//GEN-LAST:event_HighScoresButtonActionPerformed
    
    /**
-     * method:CreditsButtonActionPerformed
-     * purpose:The methods does all the actions for the credit button that opens the credit play card.
+     * method: CreditsButtonActionPerformed
+     * purpose: The methods does all the actions for the credit button that opens the credit play card.
      */
    private void CreditsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CreditsButtonActionPerformed
       // TODO add your handling code here:
@@ -2507,8 +2509,8 @@ public class QuarterProject245 extends javax.swing.JFrame {
    }//GEN-LAST:event_CreditsButtonActionPerformed
 
    /**
-     * method:backButton0ActionPerformed 
-     * purpose:The methods does all the actions for the all the back button that takes the user back
+     * method: backButton0ActionPerformed 
+     * purpose: The methods does all the actions for the all the back button that takes the user back
      *  to the main menu play card.
      */
    private void backButton0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButton0ActionPerformed
@@ -2518,8 +2520,8 @@ public class QuarterProject245 extends javax.swing.JFrame {
    }//GEN-LAST:event_backButton0ActionPerformed
 
      /**
-     * method:backButton1ActionPerformed 
-     * purpose:The methods does all the actions for the all the back button that takes the user back
+     * method: backButton1ActionPerformed 
+     * purpose: The methods does all the actions for the all the back button that takes the user back
      *  to the main menu play card.
      */
    private void backButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButton1ActionPerformed
@@ -2694,10 +2696,9 @@ public class QuarterProject245 extends javax.swing.JFrame {
    /**
     * 
     * Method name: hsCreateFile
-    * Method purpose: Creates high scores file if one does not exist
+    * Method purpose: Creates high scores file if one does not exist.
     * 
     */
-   
    public static void hsCreateFile() throws FileNotFoundException {
       try (PrintWriter addHighScores = new PrintWriter("highscores.txt")) {
          addHighScores.println("ABC ... 0");
@@ -2719,7 +2720,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
     * or has an index updated (user did get a high score).
     * 
     */
-   
    public static void hsModifyFile(int[] scores, String[] names) throws FileNotFoundException {
       try (PrintWriter addHighScores = new PrintWriter("highscores.txt")) {
          for(int i = 0; i < scores.length; i++)
@@ -2931,7 +2931,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
       }
       
        //4. Return number based on circumstance
-       //    1 = sudokuPoints is 540, they got whole board right!
+       //    1 = sudokuPoints is 540, they got the whole board right!
        //    2 = sudokuPoints less than 540, they got some wrong, offer to try again.
        //    3 = all attempts used, inform they won't get anymore points
        if(sudokuPoints == 540) { //case 1
@@ -3670,7 +3670,15 @@ public class QuarterProject245 extends javax.swing.JFrame {
     private void jButtonBlueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBlueActionPerformed
         PACGmae(4);
     }//GEN-LAST:event_jButtonBlueActionPerformed
-
+   
+   /**
+    * 
+    * Method name: sudokuQuitActionPerformed
+    * Method purpose: This will reset the sudokuPoints to be back to the default value for next game,
+    * as well as resetting the board of the user's input. Additionally, resetButtons must be called
+    * for the buttons to properly work and quit out.
+    * 
+    */
    private void sudokuQuitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sudokuQuitActionPerformed
       // TODO add your handling code here:
       
@@ -3701,6 +3709,11 @@ public class QuarterProject245 extends javax.swing.JFrame {
       gameEnding.show(mainPanel, "endCard");
    }//GEN-LAST:event_sudokuQuitActionPerformed
 
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton1ActionPerformed
       // TODO add your handling code here:
       currentButton = 1;
@@ -3708,7 +3721,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton1ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton2ActionPerformed
       // TODO add your handling code here:
       currentButton = 2;
@@ -3716,7 +3734,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton2ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton11ActionPerformed
       // TODO add your handling code here:
       currentButton = 11;
@@ -3724,7 +3747,14 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton11ActionPerformed
-
+   
+   /**
+    * Method name: sudokuSubmitActionPerfomed
+    * Method purpose: Once submit is clicked, specifics of the game are calculated,
+    * with there being three possible scenarios. The board will update accordingly
+    * based on their progress in the game, and will handle what to do next
+    * within the sudokuScoreCard.
+    */
    private void sudokuSubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sudokuSubmitActionPerformed
       // TODO add your handling code here:
       
@@ -3763,11 +3793,13 @@ public class QuarterProject245 extends javax.swing.JFrame {
          CardLayout gameEnding = (CardLayout)mainPanel.getLayout();
          gameEnding.show(mainPanel, "sudokuScoreCard");
       }
-            
-      //Go to Sudoku submission screen
-      
    }//GEN-LAST:event_sudokuSubmitActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton10ActionPerformed
       // TODO add your handling code here:
       currentButton = 10;
@@ -3775,7 +3807,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton10ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton4ActionPerformed
       // TODO add your handling code here:
       currentButton = 4;
@@ -3783,7 +3820,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton4ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton6ActionPerformed
       // TODO add your handling code here:
       currentButton = 6;
@@ -3791,7 +3833,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton6ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton7ActionPerformed
       // TODO add your handling code here:
       currentButton = 7;
@@ -3799,7 +3846,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton7ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton12ActionPerformed
       // TODO add your handling code here:
       currentButton = 12;
@@ -3807,7 +3859,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton12ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton13ActionPerformed
       // TODO add your handling code here:
       currentButton = 13;
@@ -3815,7 +3872,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton13ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton14ActionPerformed
       // TODO add your handling code here:
       currentButton = 14;
@@ -3823,7 +3885,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton14ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton16ActionPerformed
       // TODO add your handling code here:
       currentButton = 16;
@@ -3831,7 +3898,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton16ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton17ActionPerformed
       // TODO add your handling code here:
       currentButton = 17;
@@ -3839,7 +3911,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton17ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton26ActionPerformed
       // TODO add your handling code here:
       currentButton = 26;
@@ -3847,7 +3924,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton26ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton18ActionPerformed
       // TODO add your handling code here:
       currentButton = 18;
@@ -3855,7 +3937,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton18ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton20ActionPerformed
       // TODO add your handling code here:
       currentButton = 20;
@@ -3863,7 +3950,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton20ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton36ActionPerformed
       // TODO add your handling code here:
       currentButton = 36;
@@ -3871,7 +3963,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton36ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton28ActionPerformed
       // TODO add your handling code here:
       currentButton = 28;
@@ -3879,7 +3976,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton28ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton37ActionPerformed
       // TODO add your handling code here:
       currentButton = 37;
@@ -3887,7 +3989,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton37ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton38ActionPerformed
       // TODO add your handling code here:
       currentButton = 38;
@@ -3895,7 +4002,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton38ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton21ActionPerformed
       // TODO add your handling code here:
       currentButton = 21;
@@ -3903,7 +4015,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton21ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton22ActionPerformed
       // TODO add your handling code here:
       currentButton = 22;
@@ -3911,7 +4028,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton22ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton23ActionPerformed
       // TODO add your handling code here:
       currentButton = 23;
@@ -3919,7 +4041,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton23ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton42ActionPerformed
       // TODO add your handling code here:
       currentButton = 42;
@@ -3927,7 +4054,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton42ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton30ActionPerformed
       // TODO add your handling code here:
       currentButton = 30;
@@ -3935,7 +4067,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton30ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton39ActionPerformed
       // TODO add your handling code here:
       currentButton = 39;
@@ -3943,7 +4080,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton39ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton32ActionPerformed
       // TODO add your handling code here:
       currentButton = 32;
@@ -3951,7 +4093,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton32ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton35ActionPerformed
       // TODO add your handling code here:
       currentButton = 35;
@@ -3959,7 +4106,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton35ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton41ActionPerformed
       // TODO add your handling code here:
       currentButton = 41;
@@ -3967,7 +4119,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton41ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton43ActionPerformed
       // TODO add your handling code here:
       currentButton = 43;
@@ -3975,7 +4132,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton43ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton44ActionPerformed
       // TODO add your handling code here:
       currentButton = 44;
@@ -3983,7 +4145,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton44ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton48ActionPerformed
       // TODO add your handling code here:
       currentButton = 48;
@@ -3991,7 +4158,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton48ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton50ActionPerformed
       // TODO add your handling code here:
       currentButton = 50;
@@ -3999,7 +4171,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton50ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton45ActionPerformed
       // TODO add your handling code here:
       currentButton = 45;
@@ -4007,7 +4184,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton45ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton52ActionPerformed
       // TODO add your handling code here:
       currentButton = 52;
@@ -4015,7 +4197,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton52ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton54ActionPerformed
       // TODO add your handling code here:
       currentButton = 54;
@@ -4023,7 +4210,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton54ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton63ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton63ActionPerformed
       // TODO add your handling code here:
       currentButton = 63;
@@ -4031,7 +4223,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton63ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton64ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton64ActionPerformed
       // TODO add your handling code here:
       currentButton = 64;
@@ -4039,7 +4236,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton64ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton73ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton73ActionPerformed
       // TODO add your handling code here:
       currentButton = 73;
@@ -4047,7 +4249,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton73ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton57ActionPerformed
       // TODO add your handling code here:
       currentButton = 57;
@@ -4055,7 +4262,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton57ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton58ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton58ActionPerformed
       // TODO add your handling code here:
       currentButton = 58;
@@ -4063,7 +4275,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton58ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton59ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton59ActionPerformed
       // TODO add your handling code here:
       currentButton = 59;
@@ -4071,7 +4288,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton59ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton67ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton67ActionPerformed
       // TODO add your handling code here:
       currentButton = 67;
@@ -4079,7 +4301,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton67ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton66ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton66ActionPerformed
       // TODO add your handling code here:
       currentButton = 66;
@@ -4087,7 +4314,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton66ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton76ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton76ActionPerformed
       // TODO add your handling code here:
       currentButton = 76;
@@ -4095,7 +4327,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton76ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton60ActionPerformed
       // TODO add your handling code here:
       currentButton = 60;
@@ -4103,7 +4340,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton60ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton62ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton62ActionPerformed
       // TODO add your handling code here:
       currentButton = 62;
@@ -4111,7 +4353,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton62ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton68ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton68ActionPerformed
       // TODO add your handling code here:
       currentButton = 68;
@@ -4119,7 +4366,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton68ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton69ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton69ActionPerformed
       // TODO add your handling code here:
       currentButton = 69;
@@ -4127,7 +4379,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton69ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton78ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton78ActionPerformed
       // TODO add your handling code here:
       currentButton = 78;
@@ -4135,7 +4392,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton78ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton79ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton79ActionPerformed
       // TODO add your handling code here:
       currentButton = 79;
@@ -4143,7 +4405,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton79ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton70ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton70ActionPerformed
       // TODO add your handling code here:
       currentButton = 70;
@@ -4151,7 +4418,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton70ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton71ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton71ActionPerformed
       // TODO add your handling code here:
       currentButton = 71;
@@ -4159,7 +4431,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton71ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton74ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton74ActionPerformed
       // TODO add your handling code here:
       currentButton = 74;
@@ -4167,7 +4444,12 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton74ActionPerformed
-
+   
+   /**
+    * Method name: userbutton#ActionPerformed
+    * Method purpose: currentButton updates so game knows what space you click on.
+    * Window centers in screen once opened, and focuses on textfield.
+    */
    private void userbutton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userbutton9ActionPerformed
       // TODO add your handling code here:
       currentButton = 9;
@@ -4175,7 +4457,11 @@ public class QuarterProject245 extends javax.swing.JFrame {
       popupUser.setVisible(true);
       popupUserInput.requestFocusInWindow();
    }//GEN-LAST:event_userbutton9ActionPerformed
-
+   
+   /**
+    * Method name: popupOkButtonActionPerformed
+    * Method purpose: 
+    */
    private void popupOkButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_popupOkButtonActionPerformed
       // TODO add your handling code here:
       String usersInput = popupUserInput.getText();
