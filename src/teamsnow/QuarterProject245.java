@@ -51,7 +51,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
     /**
      * method:QuarterProject245
      * Purpose:Constructor that Creates new form and sets the arrays with the proper words
-     * and crates operation for ESC to exit program and f1 function to show the authors.
+     * and creates operation for ESC to exit program and f1 function to show the authors.
      */
     public QuarterProject245()
     {
@@ -77,6 +77,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
             }
             });
     }
+    //Did you still want this comment block?
     /**
      * method:initComponents
      * purpose:The methods that are in the generated code is the portion for the design area .
