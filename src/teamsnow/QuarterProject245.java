@@ -77,12 +77,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
             }
             });
     }
-    //Did you still want this comment block?
-    /**
-     * method:initComponents
-     * purpose:The methods that are in the generated code is the portion for the design area .
-     */
-    
     
     /**
      * This method is called from within the constructor to initialize the form.
@@ -2457,7 +2451,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
       /**
      * method:PlayButtonActionPerformed
      * purpose:The methods does all the actions for the play button that calls the 
