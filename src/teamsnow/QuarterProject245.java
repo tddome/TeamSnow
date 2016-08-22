@@ -4714,7 +4714,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
      */
    public void gameMoves()
    {
-       System.out.println(count);
       switch(randNumber)
              {
              case 0: //abstract
