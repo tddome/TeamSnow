@@ -75,7 +75,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
             public void actionPerformed(ActionEvent e)
             {
                 System.out.print("Shows the Authors");
-                JOptionPane.showMessageDialog(mainPanel, "Daniel Fierros:009061390\nTroy Dome:009572849","Autohrs",JOptionPane.PLAIN_MESSAGE);
+                JOptionPane.showMessageDialog(mainPanel, "Daniel Fierros: 009061390\nTroy Dome: 009572849","Authors",JOptionPane.PLAIN_MESSAGE);
             }
             });
     }
