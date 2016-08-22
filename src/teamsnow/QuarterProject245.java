@@ -64,7 +64,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
          getRootPane().getActionMap().put("Exit",  new AbstractAction(){
             public void actionPerformed(ActionEvent e)
             {
-                System.out.print("Exiting the program.....");
                 System.exit(0);
             }
             });
@@ -74,7 +73,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
          getRootPane().getActionMap().put("ShowAuthors",  new AbstractAction(){
             public void actionPerformed(ActionEvent e)
             {
-                System.out.print("Shows the Authors");
                 JOptionPane.showMessageDialog(mainPanel, "Daniel Fierros: 009061390\nTroy Dome: 009572849","Authors",JOptionPane.PLAIN_MESSAGE);
             }
             });
@@ -4722,7 +4720,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
              case 0: //abstract
                  if (aStatus == false)
                  {
-                     System.out.println("good");
                      wordCount +=2;
                      ActionListener listen5 = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
@@ -4739,7 +4736,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  }
                  else if (bStatus == false)
                  {
-                     System.out.println("good");
                      ++wordCount;
                       ActionListener listen5 = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
@@ -4754,7 +4750,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  }
                  else if (sStatus == false)
                  {
-                     System.out.println("good");
                     ++wordCount;
                      ActionListener listen5 = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
@@ -4769,7 +4764,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  }
                  else if (tStatus == false)
                  {
-                     System.out.println("good");
                      wordCount+=2;
                       ActionListener listen5 = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
@@ -4785,7 +4779,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  }
                  else if (rStatus == false)
                  {
-                     System.out.println("good");
                      ++wordCount;
                       ActionListener listen5 = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
@@ -4800,7 +4793,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  }
                  else if (cStatus == false)
                  {
-                     System.out.println("good");
                      ++wordCount;
                       ActionListener listen5 = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
@@ -4824,7 +4816,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
              case 1: //cemetery
                  if (cStatus == false)
                  {
-                     System.out.println("good");
                      ++wordCount;
                      ActionListener listen5 = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
@@ -4839,7 +4830,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  }
                  else if (eStatus == false)
                  {
-                     System.out.println("good");
                      wordCount +=3;
                      ActionListener listen5 = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
@@ -4856,7 +4846,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  }
                  else if (mStatus == false)
                  {
-                     System.out.println("good");
                      ++wordCount;
                      ActionListener listen5 = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
@@ -4871,7 +4860,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  }
                  else if (tStatus == false)
                  {
-                     System.out.println("good");
                      ++wordCount;
                      ActionListener listen5 = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
@@ -4886,7 +4874,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  }
                  else if (rStatus == false)
                  {
-                     System.out.println("good");
                      ++wordCount;
                      ActionListener listen5 = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
@@ -4901,7 +4888,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  }
                  else if (yStatus == false)
                  {
-                     System.out.println("good");
                      ++wordCount;
                      ActionListener listen5 = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
@@ -4916,7 +4902,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  }
                  else
                  {
-                      System.out.println("bad");
                       count++;
                      score = score - 10;
                  }
@@ -4940,7 +4925,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  }
                  else if (uStatus == false)
                  {
-                     System.out.println("good");
                      ++wordCount;
                      ActionListener listen5 = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
@@ -4955,7 +4939,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  }
                  else if (rStatus == false)
                  {
-                     System.out.println("good");
                      ++wordCount;
                      ActionListener listen5 = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
@@ -4970,7 +4953,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  }
                  else if (sStatus == false)
                  {
-                     System.out.println("good");
                      ++wordCount;
                      ActionListener listen5 = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
@@ -4985,7 +4967,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  }
                  else if (eStatus == false)
                  {
-                     System.out.println("good");
                      ++wordCount;
                      ActionListener listen5 = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
@@ -5000,7 +4981,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  }
                  else
                  {
-                      System.out.println("bad");
                       count++;
                       score = score - 10;
                  }
@@ -5010,7 +4990,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
              case 3://pharmacy
                  if (pStatus == false)
                  {
-                     System.out.println("good");
                      ++wordCount;
                      ActionListener listen5 = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
@@ -5025,7 +5004,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  }
                  else if (hStatus == false)
                  {
-                     System.out.println("good");
                      ++wordCount;
                      ActionListener listen5 = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
@@ -5040,7 +5018,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  }
                  else if (aStatus == false)
                  {
-                     System.out.println("good");
                      wordCount +=2;
                      ActionListener listen5 = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
@@ -5056,7 +5033,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  }
                  else if (rStatus == false)
                  {
-                     System.out.println("good");
                      ++wordCount;
                           ActionListener listen5 = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
@@ -5071,7 +5047,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  }
                  else if (mStatus == false)
                  {
-                     System.out.println("good");
                      ++wordCount;
                           ActionListener listen5 = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
@@ -5086,7 +5061,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  }
                  else if (cStatus == false)
                  {
-                     System.out.println("good");
                      ++wordCount;
                             ActionListener listen5 = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
@@ -5101,7 +5075,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  }
                  else if (yStatus == false)
                  {
-                     System.out.println("good");
                      ++wordCount;
                             ActionListener listen5 = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
@@ -5116,7 +5089,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  }
                  else
                  {
-                      System.out.println("bad");
                       count++;
                       score = score - 10;
                  }
@@ -5126,7 +5098,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
              case 4://climbing
                  if (cStatus == false)
                  {
-                     System.out.println("good");
                      ++wordCount;
                             ActionListener listen5 = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
@@ -5141,7 +5112,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  }
                  else if (lStatus == false)
                  {
-                     System.out.println("good");
                      ++wordCount;
                             ActionListener listen5 = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
@@ -5156,7 +5126,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  }
                  else if (iStatus == false)
                  {
-                     System.out.println("good");
                      wordCount+=2;
                             ActionListener listen5 = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
@@ -5172,7 +5141,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  }
                  else if (mStatus == false)
                  {
-                     System.out.println("good");
                      ++wordCount;
                              ActionListener listen5 = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
@@ -5187,7 +5155,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  }
                  else if (bStatus == false)
                  {
-                     System.out.println("good");
                      ++wordCount;
                              ActionListener listen5 = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
@@ -5202,7 +5169,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  }
                  else if (nStatus == false)
                  {
-                     System.out.println("good");
                      ++wordCount;
                              ActionListener listen5 = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
@@ -5217,7 +5183,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  }
                  else if (gStatus == false)
                  {
-                     System.out.println("good");
                      ++wordCount;
                              ActionListener listen5 = new ActionListener() {
                 public void actionPerformed(ActionEvent ev) {
@@ -5232,7 +5197,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
                  }
                  else
                  {
-                      System.out.println("bad");
                       count++;
                       score = score - 10;
                  }
@@ -5243,7 +5207,6 @@ public class QuarterProject245 extends javax.swing.JFrame {
        {
         CardLayout card = (CardLayout)mainPanel.getLayout();
       card.show(mainPanel, "PACgameCard");
-        System.out.println("The score is :" + score);
        }
    }
    /**
@@ -5464,42 +5427,7 @@ public class QuarterProject245 extends javax.swing.JFrame {
                 rPACTimer.setRepeats(false);
                 rPACTimer.start();
             
-        /*int l1x = rand.nextInt(PointAndClickGame.getWidth()-jButtonBlue.getWidth());
-          int l1y = rand.nextInt(PointAndClickGame.getHeight()-jButtonBlue.getHeight());
-          
-          
-           int l2x = rand.nextInt(PointAndClickGame.getWidth()-jButtonRed.getWidth()-20);
-          int l2y = rand.nextInt(PointAndClickGame.getHeight()-jButtonRed.getHeight()-20);
-            
-            
-            int l3x = rand.nextInt(PointAndClickGame.getWidth()-jButtonGreen.getWidth()-25);
-          int l3y = rand.nextInt(PointAndClickGame.getHeight()-jButtonGreen.getHeight()-25);
-     
-          
-          int l4x = rand.nextInt(PointAndClickGame.getWidth()-jButtonPurple.getWidth()-30);
-          int l4y = rand.nextInt(PointAndClickGame.getHeight()-jButtonPurple.getHeight()-30);
-            
-            
-            int l5x = rand.nextInt(PointAndClickGame.getWidth()-jButtonYellow.getWidth()-35);
-          int l5y = rand.nextInt(PointAndClickGame.getHeight()-jButtonYellow.getHeight()-35);
-          
-         
-        
-                   ActionListener rPACGame = new ActionListener() {
-                public void actionPerformed(ActionEvent ev) {
-                 PointAndClickGame.setLayout(null);
-                 jButtonBlue.setLocation(l1x, l1y);
-                 jButtonRed.setLocation(l2x, l2y);
-                 jButtonGreen.setLocation(l3x, l3y);
-                 jButtonPurple.setLocation(l4x, l4y);
-                jButtonYellow.setLocation(l5x, l5y);
-                 }
-                 };
-                 
-
-                Timer rPACTimer = new Timer(0, rPACGame);
-                rPACTimer.setRepeats(false);
-                rPACTimer.start();*/
+       
    }
     /**
      * method:main
