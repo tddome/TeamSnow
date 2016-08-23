@@ -1,14 +1,13 @@
 /***************************************************************
-* file: QuarterProject245.java
-* author: Daniel Fierros
-* author: Troy Dome
+* File: QuarterProject245.java
+* Authors: Daniel Fierros, Troy Dome
 * 
-* class: CS 245 – GUI
+* Class: CS 245 – GUI
 *
-* assignment: program 1 version 3
-* date last modified: 08/23/2016
+* Assignment: Program 1 Version 3
+* Date Last Modified: 08/23/2016
 *
-* purpose: This program contains three games for the user to play, and will earn a score during the process.
+* Purpose: This program contains three games for the user to play, and will earn a score during the process.
 * A splash page is displayed for three seconds before displaying the main menu, 
 * which contains: (1)Play (2)High Score (3)Credits.
 * 
