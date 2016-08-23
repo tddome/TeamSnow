@@ -8,22 +8,31 @@
 * assignment: program 1 version 3
 * date last modified: 08/23/2016
 *
-* purpose: This program is a hangman game that begins with a splash screen for 3 seconds,
-* then enters the menu panel. Once at the menu panel, the user has 3 options: (1)Play (2)High Score (3)Credits.
-* Once the play button is pressed, the Hangman game begins with setting up the start display, then the user presses the 
-* desired letter. If the user guesses wrong 6 times, then the program ends, as well as when the user correctly guesses the word.
+* purpose: This program contains three games for the user to play, and will earn a score during the process.
+* A splash page is displayed for three seconds before displaying the main menu, 
+* which contains: (1)Play (2)High Score (3)Credits.
 * 
-* The program will then progress to the next game. The user will be presented with some buttons. They must match the color of the word
-* to get 100 points, otherwise no points are given. This process is done for 5 rounds then it goes to the end screen.
+* Once the play button is pressed, the first game, Hangman, will start. 
+* A display of the board and number of spaces will be presented.
+* The user may click on letters A-Z to guess the word. 
+* If the user guesses the word right, or guesses wrong 6 times,
+* then the program will move on to the next game.
 * 
-* The user will then be presented with the final game, which is Sudoku. The user must guess the board correctly, 
-* and is able to edit the spaces by clicking on the empty slots and inputting a number 1-9. If the board is wrong, they are offered a chance
-* to try again. For each incorrect space, 10 points will be taken for that game, and cannot be earned back. Once the board is correct, their sudoku score
-* will be added onto their current score. If the user quits or gets all spaces incorrect, no points will be given from Sudoku.
+* In the second game, the user will be presented with some buttons. They must match the color of the word presented
+* to get 100 points, otherwise no points are given. This process is done for 5 rounds before progressing to the final game.
 * 
-* The lowest high score is compared to the recorded scores, and if it is higher then the lowest, the user will be notified that they high scored.
-* An option will be given to record their initials to update the high scores. The high scores button will display such scores, all read from a file.
-* The credits button displays the authors. A shorthand version of this page can be viewed at any time by pressing F1. 
+* The third and final game in this program is Sudoku. The user must guess the board correctly, and is able to edit the spaces 
+* by clicking on the empty slots and inputting a number 1-9. If the board is wrong, they are offered a chance to try again.
+* For each incorrect space, 10 points will be taken for that game, and cannot be earned back. 
+* Once the board is correct, their Sudoku score will be added onto their current score. 
+* If the user quits or gets all spaces incorrect, no points will be given from Sudoku.
+* 
+* The lowest high score is compared to the recorded scores, and if it is at least higher then the lowest,
+* the user will be notified that they got a high score. An option will be given to record their initials,
+* which will update the high scores that are read from a local file, and can be checked on the main menu under High Scores.
+* 
+* The credits button displays the authors of the project, as well as providing their bronco numbers.
+* A shorthand version of this page can be viewed at any time by pressing F1. 
 * Pressing ESC will exit the program at any time.
 ****************************************************************/ 
 package teamsnow;
