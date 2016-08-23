@@ -5,18 +5,26 @@
 * 
 * class: CS 245 – GUI
 *
-* assignment: program 1 version 2
-* date last modified: 08/17/2016
+* assignment: program 1 version 3
+* date last modified: 08/23/2016
 *
-* purpose: This program is a hangman game that begins with a splash screen for 3 seconds
-* then enters the menu panel. Once at the menu panel the user has 3 options: (1)Play (2)High Score (3)Credits.
-* Once the play button is pressed the Hangman game begins with setting up the start display, then the user presses the 
-* desired letter.If the user guesses wrong 6 times, then the program ends, as well as when the user correctly guesses the word.
-* Then the program goes to the next game that shows the user some buttons and they must match the color to get plus 100 points
-* otherwise no points given. This process is done for 5 rounds then it goes to the end screen. The lowest high score is checked 
-* and if the current score is greater than that score, then the program updates the score to the board with the possibility to enter
-* name.The High score button displays all the possible high scores that have been played, it gets the data from a file.
-* The credits button displays the authors.
+* purpose: This program is a hangman game that begins with a splash screen for 3 seconds,
+* then enters the menu panel. Once at the menu panel, the user has 3 options: (1)Play (2)High Score (3)Credits.
+* Once the play button is pressed, the Hangman game begins with setting up the start display, then the user presses the 
+* desired letter. If the user guesses wrong 6 times, then the program ends, as well as when the user correctly guesses the word.
+* 
+* The program will then progress to the next game. The user will be presented with some buttons. They must match the color of the word
+* to get 100 points, otherwise no points are given. This process is done for 5 rounds then it goes to the end screen.
+* 
+* The user will then be presented with the final game, which is Sudoku. The user must guess the board correctly, 
+* and is able to edit the spaces by clicking on the empty slots and inputting a number 1-9. If the board is wrong, they are offered a chance
+* to try again. For each incorrect space, 10 points will be taken for that game, and cannot be earned back. Once the board is correct, their sudoku score
+* will be added onto their current score. If the user quits or gets all spaces incorrect, no points will be given from Sudoku.
+* 
+* The lowest high score is compared to the recorded scores, and if it is higher then the lowest, the user will be notified that they high scored.
+* An option will be given to record their initials to update the high scores. The high scores button will display such scores, all read from a file.
+* The credits button displays the authors. A shorthand version of this page can be viewed at any time by pressing F1. 
+* Pressing ESC will exit the program at any time.
 ****************************************************************/ 
 package teamsnow;
 
